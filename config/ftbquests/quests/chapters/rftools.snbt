@@ -5,7 +5,7 @@
 	filename: "rftools"
 	title: "RFTools"
 	icon: "rftoolsbase:machine_frame"
-	subtitle: ["이왕 이렇게 된 겸, 끝까지 가봅시다"]
+	subtitle: ["Since it's come to this, let's see it through to the end"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -16,14 +16,14 @@
 			shape: "square"
 			subtitle: "Machine Frame"
 			description: [
-				" 여태 우리가 해왔던 여정을 떠올려 봅시다."
-				" 돌을 부숴서 도구를 만들고, 톱니들을 돌려 전기를 만든 다음에, 석유를 뽑아내어 우주선을 제작하고 우주로 향하였죠."
-				" 외계 구조물에 영감을 받아 저장고 시스템을 구축한 것이 지금까지의 여정이었을 겁니다."
+				"Let's think about the journey we've been on."
+				"We broke stones to make tools, turned cogs to make electricity, extracted oil to build ships, and headed into space."
+				"And that's probably the journey we've been on so far, building storage systems inspired by alien structures."
 				""
-				" 하지만 우린 생존을 위해 지금까지 살아왔으며 지금 수준에선 꽤 살만한 수준이 되었을 겁니다."
-				" 그럼 이제부턴 도전적인 것들을 이루어봅시다."
+				"But we've come this far to survive, and we're probably at a pretty livable level."
+				"So let's do the challenging stuff from here on out."
 				""
-				" 로스트시티에서 영감을 받아 문명을 구축해보거나 행성을 넘어 차원을 만들어보자는 겁니다."
+				"Let's build a civilization inspired by Lost City, or let's create dimensions beyond the planet."
 			]
 			dependencies: [
 				"41E852745D27F461"
@@ -37,17 +37,17 @@
 			}]
 		}
 		{
-			title: "일방통행"
+			title: "One Way"
 			x: 1.0d
 			y: 0.0d
-			subtitle: "물질 송수신기"
+			subtitle: "Matter Transceiver"
 			description: [
-				" 차원을 창조하는 수준이 되고 그곳으로 향하려면 지금의 이동체계를 정비할 필요가 있습니다."
+				"If you want to become a dimension-creating level and head there, you need to overhaul your current transportation system."
 				""
-				" Matter Transmitter(물질 송신기)는 텔레포터의 입구, Matter Receiver(물질 수신기)는 텔레포터의 출구라고 이해하면 됩니다."
-				" Dialing Device(신호 장치)로 두 장치들의 신호를 입력하여 둘을 연결시킵니다. 교환원 처럼요."
+				" The Matter Transmitter is the entrance to the teleporter, and the Matter Receiver is the exit from the teleporter."
+				" The Dialing Device connects the two by entering signals from both devices. Like a telephone operator."
 				""
-				" 송수신기는 이름을 지정할 수 있고 신호 장치에서 이 이름으로 둘을 연결시킵니다."
+				" The Matter Receiver can be given a name, and the Signaling Device connects the two with that name."
 			]
 			dependencies: [
 				"1321462A488AAA99"
@@ -73,16 +73,16 @@
 			]
 		}
 		{
-			title: "휴대용 텔레포터"
+			title: "Portable Teleporter"
 			x: 1.0d
 			y: -1.0d
-			subtitle: "충전식 이동기"
+			subtitle: "Rechargeable Teleporter"
 			description: [
-				" Mekanism의 것들과 같이, RFTools 텔레포트 시스템에도 휴대용 텔레포터가 있습니다."
+				"Like the ones in Mekanism, the RFTools teleportation system also has a portable teleporter."
 				""
-				" 전력을 충전하고 물질 수신기에 쉬프트 우클릭을 하고 허공에 우클릭하면 지정한 곳으로 이동할 수 있죠."
+				" Charge it up, shift-right-click on a matter receiver, and right-click in thin air, and you'll be transported to wherever you specify."
 				""
-				" 개조를 해주면 여러개의 물질 수신기를 등록하여 원하는 장소로 이동할 수 있게 됩니다."
+				"With modifications, you can register multiple matter receivers to travel to any location."
 			]
 			dependencies: ["32C77E2E69F826A6"]
 			id: "024663429CB2E046"
@@ -99,16 +99,16 @@
 			}]
 		}
 		{
-			title: "차원 제작"
+			title: "Create Dimension"
 			x: 2.5d
 			y: 0.0d
-			subtitle: "차원 인쇄기"
+			subtitle: "Dimension Printer"
 			description: [
-				" 일단, 차원은 임의로 생성은 할 수 있습니다."
-				" 인쇄기(Enscriber)에 빈 차원 탭(Empty Dimension Tab)을 넣고 이름을 정해준 뒤에 바로 Store을 눌러주면 무작위 속성의 차원이 준비가 되죠."
+				"First of all, you can create dimensions arbitrarily."
+				"Just drop an Empty Dimension Tab into the Enscriber, give it a name, hit Store, and you'll have a dimension with random properties ready to go."
 				""
-				" 하지만 이렇게 차원을 만들었다고 해도, 그 차원을 실제로 유지시켜줄 전력이 필요합니다."
-				" 그 전력을 주는 장치는 다음 퀘스트에서 확인할 수 있습니다."
+				"But once you've created a dimension, you need a power source to actually keep it alive."
+				"You'll find that power source in the next quest."
 			]
 			dependencies: ["32C77E2E69F826A6"]
 			id: "02DD6730442B1C5E"
@@ -126,14 +126,14 @@
 			]
 		}
 		{
-			title: "차원 실행"
+			title: "Dimension Run"
 			x: 4.0d
 			y: 0.0d
-			subtitle: "차원 건설기"
+			subtitle: "Dimension Builder"
 			description: [
-				" 인쇄기에서 차원 탭을 제작했다면 차원 건설기(Dimension Builder)에서 막대한 전력을 쏟아부으며 차원을 활성화시킬 수 있습니다."
+				"Once you've created a dimension tab on the printer, you can activate the dimension by pouring a ton of power into it in the Dimension Builder."
 				""
-				" 활성화가 되었다면 신호 장치(Dialing Device)로 해당 차원의 물질 수신기 주파수와 물질 송신기를 연결시키면 그곳으로 떠날 준비는 된 것입니다."
+				" Once activated, you can use the Dialing Device to connect your matter transmitter with the matter receiver frequency of that dimension, and you're ready to go."
 			]
 			dependencies: ["02DD6730442B1C5E"]
 			id: "20691A9579EA325F"
@@ -144,18 +144,18 @@
 			}]
 		}
 		{
-			title: "사용자 차원 설정"
+			title: "User Dimension Settings"
 			x: 4.0d
 			y: 1.0d
-			subtitle: "딤렛 제작"
+			subtitle: "Creating a Dimlet"
 			description: [
-				" 그래요. 여러분은 원하는 차원을 제작하기 위해 여기까지 달려온 것이죠?"
-				" 임의의 차원을 만들고 들어가면 특정 이질적인 구조물을 볼 수 있을 겁니다. 그곳에 특정 딤렛을 찾을 수 있을겁니다."
+				" So, you've come all this way to create the dimension you want, right?"
+				" If you create an arbitrary dimension and enter it, you'll see certain heterogeneous structures, and you'll find certain dimlets there."
 				""
-				" 그 딤렛을 분석기(Researcher)에서 분석을 하여 잃어버린 지식)Lost Knowledge)을 얻을 수 있을겁니다. 등급에 따라 더욱 희귀한 태그의 딤렛을 제작할 수 있게 됩니다."
-				" 제작하려는 딤렛에 따라 요구하는 것이 담긴 흡수기(Absorber)가 필요하며 이는 해당 블록, 액체, 지형 또는 구조물에 설치하여 점차적으로 흡수시킬 수 있습니다."
+				"You can analyze those dimlets in Researcher to get Lost Knowledge, which will allow you to craft rarer and rarer tagged dimlets based on your rank."
+				"Depending on the dimlet you're crafting, you'll need an Absorber that contains its requirements, which can be placed on the corresponding block, liquid, terrain, or structure to gradually absorb it."
 				""
-				" 딤렛을 제작했다면 인쇄기에 등록하여 사용할 수 있습니다."
+				" Once you've created your dimlet, you can register it with the printer to use it."
 			]
 			dependencies: ["20691A9579EA325F"]
 			id: "74D642CC0F36C101"
@@ -200,26 +200,26 @@
 			]
 		}
 		{
-			title: "마을 이장(조별과제 팀장)"
+			title: "Town Hall Leader (Group Team Leader)"
 			icon: "minecolonies:blockhuttownhall"
 			x: -2.0d
 			y: 0.0d
-			subtitle: "타운 홀"
+			subtitle: "Town Hall"
 			description: [
-				" 보급 캠프(또는 보급선)이 설치되면 해당 건축물에 선반이라는 저장고가 있을 겁니다. 식량, 도구, 자원 등이 있을 것이고요."
-				" 제일 중요한 것은 건축 도구(Build Tool)과 타운 홀 아이템 입니다.  이 두개를 시작으로 진정한 문명을 세울 수 있을테니까요."
+				"When a supply camp (or supply ship) is set up, the building will have storage called shelves, which will contain food, tools, and resources."
+				" The most important items are the Build Tool and Town Hall items.  These are the two things that will allow you to build a true civilization."
 				""
-				" 타운 홀 부터의 건축물은 추후에 보게 될 건축가가 짓기 때문에 지형을 완벽하게 다듬을 필요는 없습니다. 그래도 건축가의 수고를 덜기 위해 좀 평평한 곳에 배치하는 것이 좋겠죠."
+				"The terrain doesn't need to be perfectly smooth, as the buildings from the Town Hall onwards will be built by the architects you'll see later, but you'll want to make it a little flatter to save them some work."
 				""
 				""
-				" 건축 도구를 가진채로 타운 홀을 설치하고 건축 도구 사용하기를 선택하면 홀로그램으로 어떤 건축물을 지을지 표시가 됩니다."
-				" 거기서 허공에 건축 도구를 우클릭하여 좌측 상단에서 오른쪽으로 [건축물] [양식] [레벨] 을 결정할 수 있습니다."
+				" Once you've set up your Town Hall with the building tools, select Use Building Tools, and you'll see a holographic representation of what you'll be building."
+				"From there, you can right-click on the building tool in the air to determine the [building] [style] [level] from top left to right."
 				""
-				" 건축물은 townhall(타운 홀)로 선택하고 건축 양식은 여러분이 마음에 드는 또는 쉽게 구할 수 있는 자원을 요구하는 쪽을 고르시면 됩니다."
-				" 레벨은 선택한다기 보단 미리보기니까 신경쓸 필요 없습니다. 어짜피 차근차근 레벨업을 하는 구조니까요."
+				"You can choose a townhall for your building, and a style that you like or one that requires readily available resources."
+				"Don't worry about the level, it's more of a preview than a choice, and you'll be leveling up gradually anyway."
 				""
-				" 모두 골랐다면 체크 표시를 눌러 확정을 해줍니다. 그럼 타운 홀 블록이 설치되죠."
-				" 우클릭을 하여 콜로니 생성을 해주면 이제 그 주변으로 점점 식민지에 참여하는 사람들을 볼 수 있습니다."
+				"Once you've selected all of them, click the checkmark to confirm, and the Town Hall block will be installed."
+				"Right-click to create a colony, and now you can see people joining the colony around it."
 			]
 			dependencies: ["176FAEB96DB809D1"]
 			id: "7A000EDDF58E8FAD"
@@ -237,22 +237,22 @@
 			]
 		}
 		{
-			title: "빌더헛"
+			title: "BuilderHut"
 			x: -3.5d
 			y: 0.0d
-			subtitle: "건축사무소"
+			subtitle: "Architects"
 			description: [
-				" 타운 홀을 설치했지만 건물이 지어지지는 않았습니다."
-				" 건축가를 고용하여 건축을 해야하기 때문이죠."
+				"A town hall has been set up, but no building has been built."
+				" That's because you need to hire an architect to build it."
 				""
-				" 건축사무소를 타운 홀과 동일한 방법으로 설치해줍니다.(같은 양식으로 지어야 좋겠죠?)"
-				" 그 다음, 건축사무소를 우클릭하고 일꾼 관리에서 건축가를 고용한 뒤에(보통은 자동으로 고용됩니다)"
-				" 건물 설정을 누르고 요구 재료를 확인한 다음에 건물 건설을 선택해 건축가에게 건축 명령을 내립니다."
+				" Set up the architect's office in the same way as the town hall (it should be built in the same style, right?)."
+				" Next, right-click on the architectural office, go to Worker Management, and hire an architect (they are usually hired automatically)."
+				" Hit Building Settings, check the required materials, and select Build Building to give the architect a construction order."
 				""
-				" 그럼 건축가는 명령을 수락한 뒤에 필요한 것들을 여러분에게 요구할 겁니다."
-				" 대학에서 연구를 하지 않는한, 이들은 금(Minecraft) 또는 나무 도구밖에 사용할 수 없습니다."
+				" The architect will then accept the order and ask you for what you need."
+				"Unless they are doing research at a university, they can only use gold (Minecraft) or wooden tools."
 				""
-				" 암튼, 이와같은 방식으로 다른 건물을 지을 수 있습니다."
+				"Anyway, you can build other buildings in this way."
 			]
 			dependencies: ["7A000EDDF58E8FAD"]
 			id: "59ACD70DFF2F2120"
@@ -309,14 +309,14 @@
 			]
 		}
 		{
-			title: "동료 모집"
+			title: "Recruiting colleagues"
 			x: -4.5d
 			y: 1.0d
-			subtitle: "여관"
+			subtitle: "Inn"
 			description: [
-				" 기본적으로 주민 4명을 재울 수 있으므로 집이 없는 주민들을 부양할 수 있습니다."
+				"Basically, you can sleep 4 residents, so you can provide for those who don't have a home."
 				""
-				" 뿐만 아니라, 타지에서 온 주민들을 자원을 줘서 고급 인력으로 데려올 수 있게 됩니다."
+				" Not only that, but you'll be able to bring in residents from out of town for resources, which is a nice touch."
 			]
 			dependencies: ["59ACD70DFF2F2120"]
 			id: "666386933003922E"
@@ -327,11 +327,11 @@
 			}]
 		}
 		{
-			title: "남집 마련"
+			title: "Buying a house"
 			x: -3.5d
 			y: 1.5d
-			subtitle: "주택"
-			description: [" 주민들의 집을 지을 수 있으며 업그레이드 마다 거주 가능 인원이 늘어납니다."]
+			subtitle: "Housing"
+			description: [" You can build houses for your residents, and each upgrade increases the number of people you can house."]
 			dependencies: ["59ACD70DFF2F2120"]
 			id: "7BF7520D287D4E1B"
 			tasks: [{
@@ -341,14 +341,14 @@
 			}]
 		}
 		{
-			title: "세월을 낚다"
+			title: "Catching the Years"
 			x: -4.5d
 			y: -1.0d
-			subtitle: "낚시터"
+			subtitle: "Fishing spot"
 			description: [
-				" 낚시터를 짓고 낚시꾼에게 Minecraft의 낚싯대를 쥐어주면 근처 7*7이상의 물 웅덩이에서 물고기를 낚습니다."
+				"Build a fishing pond and give an angler a fishing pole in Minecraft to catch fish from a nearby 7*7 or larger pool of water."
 				""
-				" 물론, 쓰레기를 낚을 수도 있습니다."
+				" Of course, you can also fish for trash."
 			]
 			dependencies: ["59ACD70DFF2F2120"]
 			id: "39C3C1BC34E05C27"
@@ -370,15 +370,15 @@
 			}]
 		}
 		{
-			title: "주민 자동 농장"
+			title: "Resident Auto Farm"
 			icon: "minecolonies:blockhutfarmer"
 			x: -3.5d
 			y: -1.5d
-			subtitle: "농장"
+			subtitle: "Farm"
 			description: [
-				" 농장을 짓고 밭(Field)를 설치하여 밭의 영역을 설치해줘야 합니다."
+				"You need to build a farm and install Fields to set up areas of the farm."
 				""
-				" Minecraft의 식물만 키울 수 있기 때문에 Minecraft의 흙과 괭이, 작물 씨앗이 필요합니다."
+				" You can only grow plants in Minecraft, so you'll need soil, a hoe, and crop seeds from Minecraft."
 			]
 			dependencies: ["59ACD70DFF2F2120"]
 			id: "075314659852DFCE"
@@ -407,15 +407,15 @@
 			}]
 		}
 		{
-			title: "무료 급식소"
+			title: "Soup Kitchen"
 			x: -4.5d
 			y: -2.0d
-			subtitle: "식당"
+			subtitle: "Restaurant"
 			description: [
-				" 주민도 밥을 먹기 때문에 직접 인벤토리에 음식을 넣어줬어야 했습니다."
-				" 심지어 여러분이 섭취하는 Terrafirmacraft의 음식이 아닌 Minecraft의 음식을 줘야하죠."
+				"They should have put food in their own inventory because they eat too."
+				"They should even give them food from Minecraft, not the Terrafirmacraft food you consume."
 				""
-				" 식당을 짓고 요리사를 고용하여 음식 조리법과 사용 재료 및 연료를 골라주고 재료만 공급해준다면 이제 주민들이 식당으로 찾아와 음식을 배급 받을 겁니다."
+				" If you build a restaurant, hire a chef, let him choose the food recipes and the ingredients and fuel to use, and supply him with the ingredients, the residents will now come to the restaurant to get their food rations."
 			]
 			dependencies: ["59ACD70DFF2F2120"]
 			id: "17ED2F664FD95FE6"
@@ -426,14 +426,14 @@
 			}]
 		}
 		{
-			title: "공밀레"
+			title: "Gongmile"
 			x: -7.5d
 			y: 0.0d
-			subtitle: "대학교"
+			subtitle: "University"
 			description: [
-				" 더 나은 문명을 만들기 위해서는 대학에서의 연구가 필요합니다."
-				" 건물을 짓고 고용을 한 뒤에 연구탭에서 원하는 연구를 하면 됩니다."
-				" 물론, 원하는 연구의 조건을 만족한다면요."
+				"To create a better civilization, you need research at your university."
+				"You can build buildings, hire people, and do whatever research you want in the Research tab."
+				" That is, of course, if you fulfill the conditions of the research you want."
 			]
 			dependencies: ["59ACD70DFF2F2120"]
 			id: "3E96FC63754A6EC5"
@@ -444,16 +444,16 @@
 			}]
 		}
 		{
-			title: "무릎에 화살을 맞았지"
+			title: "I took an arrow in the knee"
 			x: -4.5d
 			y: 2.0d
-			subtitle: "경비탑"
+			subtitle: "Guard Tower"
 			description: [
-				" 어느정도 규모가 되는 문명은 외부 세력의 침공을 받을 수 있습니다."
-				" 그럼 주민들의 불안감도 커지게 되죠."
+				"When a civilization reaches a certain size, it can be invaded by outside forces."
+				"This can lead to a sense of insecurity among the inhabitants."
 				""
-				" 경비탑을 세우고 기사를 고용하세요."
-				" 제대로 됐다면 외부 세력의 침공을 미리 포착하여 위협을 미리 제거할 기회를 만들 수 있습니다."
+				" Build a guard tower and hire a knight."
+				" If done correctly, this can give you a chance to spot an invasion in advance and eliminate the threat before it happens."
 			]
 			dependencies: ["59ACD70DFF2F2120"]
 			id: "5A2D1B34256F4413"
@@ -464,15 +464,15 @@
 			}]
 		}
 		{
-			title: "배달의 민족"
+			title: "Peoples of Delivery"
 			x: -5.0d
 			y: 0.0d
-			subtitle: "배달업소"
+			subtitle: "Delivery Business"
 			description: [
-				" 건물을 짓고 인부를 고용하면, 한 건물에서 다른 건물로 자원을 옮기는 역할을 수행합니다."
-				" 별도의 설정없이, 요구되는 건물이 있으면 그곳에 알맞는 자원을 옮깁니다."
+				"Once you've constructed a building and hired a laborer, the job is to move resources from one building to another."
+				" Without any setup, if a building is needed, it will move the appropriate resources to it."
 				""
-				" 보통, 창고와 같이 이용됩니다."
+				" Usually, they are used in conjunction with warehouses."
 			]
 			dependencies: ["59ACD70DFF2F2120"]
 			id: "510B6612FB555FD2"
@@ -483,11 +483,11 @@
 			}]
 		}
 		{
-			title: "제 2의 창고"
+			title: "Second Warehouse"
 			x: -6.0d
 			y: 0.0d
-			subtitle: "창고"
-			description: [" 배달업소가 있다면 다른 건물의 잉여 자원을 이곳에 보관하여 보관공간을 절약할 수 있습니다."]
+			subtitle: "Warehouse"
+			description: [" If you have a delivery shop, you can save storage space by storing surplus resources from other buildings here."]
 			dependencies: ["510B6612FB555FD2"]
 			id: "15D095734A7F6A64"
 			tasks: [{
@@ -500,35 +500,35 @@
 			title: "MineColonies"
 			x: -1.0d
 			y: 0.0d
-			subtitle: "보급"
+			subtitle: "Dissemination"
 			description: [
-				" 여러분은 맨땅에서 돌맹이와 나뭇가지를 시작으로 우주도 다녀오는 수준까지 발전하였습니다. 하지만 이 세상에 일반적인 사람은 여러분 밖에 없다는 것도 알아버렸죠."
-				" 하지만, 차원을 창조하는 수준까지 도달한 여러분들이라면 문명을 구축하는 것은 일도 아닐 수 있습니다."
-				" 사람들이 어디서 생기냐고요? 글쎄요."
-				" 일단은 뭐라도 해봐야겠죠."
+				"You've come a long way from the bare earth, from rocks and twigs, to traveling through space, but you've also discovered that you're not the only people in the world."
+				" However, if you've reached the level of creating dimensions, building a civilization may be a trivial task."
+				"Where do people come from? I don't know."
+				"We'll just have to do something."
 				""
-				" 문명을 세우기 전에 지형에 대한 대비를 해야 합니다."
-				" 지형이 평평해야 건물을 짓기 편할테니까요."
+				"Before you build a civilization, you need to prepare the terrain."
+				" Because it's easier to build if the terrain is flat."
 				""
-				" 보급 캠프(또는 보급선)을 제작하고 바닥에 우클릭하면 설치 UI가 표시 됩니다."
-				" 위에서 세번째 칸에서 보급 캠프(또는 보급선)의 건축 양식을 정하고 위치를 조정하고 체크를 눌러 설치하려고 하면.."
-				" 대부분은 실패합니다."
+				" Create a supply camp (or supply ship) and right-click on the bottom to display the setup UI."
+				"In the third slot from the top, you can choose the architecture of your supply camp (or supply ship), adjust its location, and click the checkbox to install it..."
+				" it will fail most of the time."
 				""
-				" 보급 캠프(또는 보급선)은 바로 설치되는 구조물이기 때문에 제작하려는 양식의 크기 정도의 공간이 마련되어야 합니다."
-				" 설치 UI에서 위치를 조정하고 ESC를 누르면 미리보기가 가능하니 그 상태에서 그정도의 칸을 비워놓고 다시 시도를 하면.."
-				" 일부분은 실패합니다."
+				" Supply camps (or supply ships) are structures that are installed on the fly, so you need to make sure you have a space that is about the size of the form you want to build."
+				" You can preview it in the setup UI by adjusting the position and pressing ESC, so if you leave that much space blank and try again..."
+				" Some of it will fail."
 				""
-				" 그래도 거의 다 온 겁니다 바닥면에 [고체가 아님] 표시가 도배가 될 텐데, 해당 영역에만 기반이 될 블록(흙)을 채워 놓으면 되기 때문이죠."
-				" 기반 블록까지 채워놓고 다시 설치를 시도하면 드디어 성공하게 될 겁니다."
+				"But you're almost there, you'll see the [not solid] marking on the floor, because you only need to fill in those areas with the foundation blocks (soil)."
+				"Once you've filled in the foundation blocks and tried to install it again, you'll finally succeed."
 				""
-				" 설명이 너무 길어지니 다음 퀘스트에서 이어서 설명하겠습니다."
+				" This is getting too long, so I'll continue this in the next quest."
 			]
 			dependencies: ["1321462A488AAA99"]
 			id: "176FAEB96DB809D1"
 			tasks: [{
 				id: "089C8DF3F4AC2346"
 				type: "item"
-				title: "보급 캠프 또는 보급선"
+				title: "Supply camp or supply ship"
 				item: "minecolonies:supplycampdeployer"
 			}]
 		}

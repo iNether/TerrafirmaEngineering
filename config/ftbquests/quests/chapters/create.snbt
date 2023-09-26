@@ -5,7 +5,7 @@
 	filename: "create"
 	title: "Create"
 	icon: "create:cogwheel"
-	subtitle: ["간단하면서도 역동적인 기계들을 다룹니다"]
+	subtitle: ["Simple yet dynamic machines"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -14,15 +14,15 @@
 			x: -0.5d
 			y: 0.0d
 			shape: "square"
-			subtitle: "안산암 케이스"
+			subtitle: "Andesite Case"
 			description: [
-				" Create의 여러 부품과 장치의 기반이 되는 재료입니다."
-				" 단순한 블록으로 보이지만 추후에 매우 많이 볼 톱니나 축 등을 덮어서 미관상 보기 이쁘게 만듭니다."
+				"The material that many parts and devices in Create are based on."
+				" It looks like a simple block, but it covers things like cogs and shafts that you'll see a lot of later, making it aesthetically pleasing."
 				""
-				" 그리고 안산암일 경우, 아무 돌맹이를 구우면 됩니다."
+				" And if it's andesite, you can just bake a bunch of rocks."
 				""
-				" 그리고 이 모드의 가장 큰 특징이라면 아이템에 커서를 대고 W를 누르면 영상을 포함한 튜토리얼이 나온다는 겁니다."
-				" 그러니 이 파트도 제가 설명할 필요가 그닥 없다는 것이죠."
+				" And the best part about this mode is that if you hover over an item and press W, you'll get a tutorial with a video."
+				" So I don't have to explain that part too much."
 			]
 			dependencies: ["3E0B36ABD434AAB1"]
 			id: "5F2D4BE524C7ED1B"
@@ -38,17 +38,17 @@
 			}]
 		}
 		{
-			title: "동력 전달"
+			title: "Power Transmission"
 			x: 0.5d
 			y: 0.0d
 			shape: "square"
-			subtitle: "축과 톱니바퀴"
+			subtitle: "Axes and cogs"
 			description: [
-				" Create의 특징은 동력이 회전력이라는 것입니다."
-				" 전선같은 거 없이 톱니바퀴나 축의 회전만 연결되면 된다는 것입니다."
+				"The thing about Create is that the power is rotational."
+				" No wires or anything, just the rotation of a cog or axis."
 				""
-				" 축은 수직으로 동력을 전달해줄 수 있고 톱니바퀴는 수평으로 회전력을 전달합니다."
-				" 말이 어렵지, 직접 설치해보면 감이 올 겁니다."
+				" The axis can transmit power vertically, and the cogs transmit rotation horizontally."
+				" It's easier said than done, but you'll see when you build one."
 			]
 			dependencies: ["5F2D4BE524C7ED1B"]
 			id: "3B063A0D44795864"
@@ -85,14 +85,14 @@
 			]
 		}
 		{
-			title: "기계(수동)"
+			title: "Machine (manual)"
 			x: 1.5d
 			y: 0.0d
 			shape: "square"
-			subtitle: "핸드 크랭크"
+			subtitle: "Hand Crank"
 			description: [
-				" 핸드 크랭크는 플레이어가 직접 동력을 만들 수 있는 장치입니다."
-				" 축 부분에 설치하여 우클릭 또는 쉬프트 우클릭으로 돌릴 수 있습니다."
+				"The hand crank is a device that allows the player to generate their own power."
+				" It can be placed on an axis and turned with right-click or shift-right-click."
 			]
 			dependencies: ["3B063A0D44795864"]
 			id: "52122FCEBF2963EC"
@@ -108,13 +108,13 @@
 			x: 2.5d
 			y: 0.0d
 			shape: "square"
-			subtitle: "압착기"
+			subtitle: "Squeezer"
 			description: [
-				" 압축기는 아래에 있는 아이템을 압축시킵니다."
-				" 예를 들어 아이템 거치대에 올려진 합괴를 압축해서 판으로 만들어주죠."
-				" 그렇습니다. 특별한 작업이 아닌, 주괴 등을 압축할 때는 모루를 안 써도 되는것이죠. (용접은 안 됩니다)"
+				"The compressor compresses the item below it."
+				" For example, it compresses an ingot on an item rack into a plate."
+				" Yes, you don't need to use an anvil to compress ingots and the like, unless you're doing something special (like welding)."
 				""
-				" 게다가 철도 손쉽게 제련할 수 있죠."
+				"And it's easy to smelt by rail."
 			]
 			dependencies: ["52122FCEBF2963EC"]
 			id: "1C82307F2C14B5F8"
@@ -132,17 +132,17 @@
 			]
 		}
 		{
-			title: "수동력"
+			title: "Passive Force"
 			x: 1.5d
 			y: 1.5d
-			subtitle: "물레바퀴"
+			subtitle: "Water Wheel"
 			description: [
-				" 물레바퀴는 물의 흐름으로 동력의 방향이 결정되는 동력원입니다."
-				" 예전에는 물에 닿는 면적에 따라 속도가 결정되었지만 현재는 한 부분에 물이 닿아도 똑같은 속도를 내게 됩니다."
+				"A waterwheel is a power source where the direction of the power is determined by the flow of water."
+				" In the past, the speed was determined by the area that touched the water, but nowadays, any area that touches the water will have the same speed."
 				""
-				" 재밌게도 용암같은 고온의 액체로도 작동되며 불타지 않습니다. 그래서 방부목을 요구하죠."
+				"Interestingly, it works with hot liquids like lava, and it doesn't burn, which is why we need preservative wood."
 				""
-				" 더 큰 물레바퀴는 일반 물레바퀴 보다 속도가 느리지만 보다 높은 힘(피로도)를 제공합니다."
+				" Larger waterwheels produce slower speeds than regular waterwheels, but provide more power (and fatigue)."
 			]
 			dependencies: ["3B063A0D44795864"]
 			id: "526B3755261BF527"
@@ -160,15 +160,15 @@
 			]
 		}
 		{
-			title: "쓰까무라"
+			title: "Tsukamura"
 			icon: "create:mechanical_mixer"
 			x: 3.5d
 			y: 0.0d
 			shape: "square"
-			subtitle: "믹서"
+			subtitle: "Mixer"
 			description: [
-				" 대야에 있는 아이템들을 섞어줍니다."
-				" 그리고 아래에 특수한 가열장치가 있으면 합금도 만들 수 있습니다."
+				" Mixes the items in the basin."
+				" And if you have a special heating device underneath, you can even make alloys."
 			]
 			dependencies: ["1C82307F2C14B5F8"]
 			id: "41280B608791BF89"
@@ -186,18 +186,18 @@
 			]
 		}
 		{
-			title: "노예 계약"
+			title: "Slave Contract"
 			x: 3.5d
 			y: 1.0d
 			shape: "square"
-			subtitle: "블레이즈 버너"
+			subtitle: "Blaze Burner"
 			description: [
-				" 가연성 물질을 섭취하면 위에 있는 대야에 열을 공급해 줍니다."
+				" Consume combustible materials to provide heat to the basin above."
 				""
-				" 블레이즈는 어떻게 넣냐고요?"
-				" 빈 버너를 들고 블레이즈를 우클릭하면 됩니다."
+				" How do I load the blaze?"
+				"Simply hold up an empty burner and right-click on the blaze."
 				""
-				" 그게 무섭다면 블레이즈 인형으로 버너에 넣은 채로 소환할 수도 있습니다."
+				"If that's too scary, you can also summon Blaze as a puppet in a burner."
 			]
 			dependencies: ["41280B608791BF89"]
 			id: "37F3B16CD8DD04F4"
@@ -214,17 +214,17 @@
 			}]
 		}
 		{
-			title: "자돌돌돌돌"
+			title: "Millstone"
 			icon: "create:millstone"
 			x: 2.5d
 			y: -1.0d
 			shape: "square"
-			subtitle: "맷돌"
+			subtitle: "millstone"
 			description: [
-				" 옆 면으로 동력을 전달받아 회전하여 아이템을 갈아버립니다."
-				" 윗면에 아이템을 넣어주고 다 갈리면 우클릭으로 결과물을 꺼낼 수 있습니다."
+				"Power is transferred to the sides to rotate and grind items."
+				" Add items to the top and right-click to remove the result when it's finished grinding."
 				""
-				" 그리고 나무를 갈아 톱밥으로 만들고 물에 적셔 종이를 만들 수 있습니다."
+				" And you can grind wood into sawdust and wet it with water to make paper."
 			]
 			dependencies: ["52122FCEBF2963EC"]
 			id: "245FBFB772A9DCCF"
@@ -243,7 +243,7 @@
 			]
 		}
 		{
-			title: "까칠한 것은 부드럽게 만든다"
+			title: "Tough things are made soft"
 			icon: {
 				id: "create:sand_paper"
 				Count: 1b
@@ -254,8 +254,8 @@
 			x: 3.5d
 			y: -1.0d
 			shape: "square"
-			subtitle: "사포"
-			description: [" 한 손에 사포, 다른 손에 사포질할 아이템을 들고 우클릭을 하고 있으면 사포질이 됩니다."]
+			subtitle: "Sandpaper"
+			description: [" Hold a sandpaper in one hand, the item to be sanded in the other, and right-click to sand."]
 			dependencies: ["245FBFB772A9DCCF"]
 			id: "451B74F804169176"
 			tasks: [
@@ -290,19 +290,19 @@
 			}]
 		}
 		{
-			title: "자동조합"
+			title: "AutoCombination"
 			x: 5.0d
 			y: 0.0d
 			shape: "square"
-			subtitle: "조합기"
+			subtitle: "Combiner"
 			description: [
-				" 대형 조합대를 생각하고 설치하면 됩니다."
-				" 렌치로 조합기의 경로를 수정하며 최종적으로 한 곳에 모여 나가는 방향으로 연결해야합니다."
-				" 직접 조합기에 아이템을 넣을 수 있으며 레드스톤 신호를 주어 작동시킬 수 있습니다."
-				" 당연히, 동력이 전달되고 있다면요."
+				" Think of it as a large combiner and set it up."
+				" You modify the path of the combiners with a wrench, and they should eventually converge in one place and connect in an outgoing direction."
+				" You can put items directly into the combiners and give them a redstone signal to activate them."
+				" Assuming, of course, that it's powered."
 				""
-				" 그리고 이 기계의 진가는 일반 조합대 보다 큰 공간을 요구하는 것들을 만들기 위해 있습니다."
-				" 뭐, 자동조합도 분명히 좋은 기능이기는 하죠."
+				" And the real use of this machine is to make things that require more space than a normal combiner."
+				" Well, auto-combining is definitely a nice feature."
 			]
 			dependencies: [
 				"451B74F804169176"
@@ -318,13 +318,13 @@
 			}]
 		}
 		{
-			title: "Create 만능 도구"
+			title: "Create Universal Tool"
 			x: 2.5d
 			y: 3.5d
-			subtitle: "렌치"
+			subtitle: "Wrench"
 			description: [
-				" 크리에이트의 모든 기계들을 다룰 수 있습니다."
-				" 사용법은 아이템에 커서를 대고 보세요."
+				"Allows you to work with all of the machinery in Create."
+				" Hover over the item to see how to use it."
 			]
 			dependencies: ["1C82307F2C14B5F8"]
 			id: "4F215690756722AA"
@@ -340,11 +340,11 @@
 			}]
 		}
 		{
-			title: "회전력 측정기"
+			title: "Rotational Force Meter"
 			x: 2.5d
 			y: 4.5d
-			subtitle: "엔지니어의 고글"
-			description: [" 착용하면 보고 있는 기계의 속도,피로도 등을 볼 수 있습니다."]
+			subtitle: "Engineer's Goggles"
+			description: [" Wear them to see the speed, fatigue, etc. of the machine you're looking at."]
 			dependencies: ["1C82307F2C14B5F8"]
 			id: "3CB7A627FA3C31A2"
 			tasks: [{
@@ -359,17 +359,17 @@
 			}]
 		}
 		{
-			title: "갈갈갈갈갈갈"
+			title: "Gal Gal Gal Gal Gal"
 			x: 6.0d
 			y: 0.0d
 			shape: "square"
-			subtitle: "분쇄 휠"
+			subtitle: "Grinding Wheel"
 			description: [
-				" 분쇄휠은 강력한 위력으로 아이템(또는 생명체)를 갈아버립니다."
+				"The Shredding Wheel shreds items (or creatures) with great force."
 				""
-				" 두 분쇄힐이 붙어있어야하며 다른 방향으로 돌아야합니다."
+				"Two crushing wheels should be attached and spin in different directions."
 				""
-				" 광물을 분쇄하여 매우 손쉽게 광물제련을 가능케 합니다."
+				" Crushes minerals to make smelting them very easy."
 			]
 			dependencies: ["525D93E8CFA42287"]
 			id: "64BDEE98AB029294"
@@ -396,16 +396,16 @@
 			}]
 		}
 		{
-			title: "클릭 머신"
+			title: "Click Machine"
 			x: 5.0d
 			y: 1.0d
 			shape: "square"
-			subtitle: "기계 손"
+			subtitle: "Machine hand"
 			description: [
-				" 동력을 받으면 손은 당신이 마우스로 하는 일을 할 수 있게됩니다."
+				"When energized, the hand will be able to do what you do with a mouse."
 				""
-				" 공격(제거), 사용(설치)를 할 수 있으며 손에 든 것을 들려줘서 작업을 시킬 수 있습니다."
-				" 렌치로 이 모드를 변경할 수 있습니다."
+				" It can attack (remove), use (install), and you can make it do things by holding it up."
+				" You can change this mode with a wrench."
 			]
 			dependencies: [
 				"37F3B16CD8DD04F4"
@@ -419,16 +419,16 @@
 			}]
 		}
 		{
-			title: "안 세요!"
+			title: "I'm not counting!"
 			x: 1.5d
 			y: -2.5d
 			shape: "square"
-			subtitle: "안전한 액체 보관"
+			subtitle: "Safe Liquid Storage"
 			description: [
-				" 이제 나무 통을 대신할 액체 보관소가 생겼습니다. (가죽 가공 등은 아직 멀었습니다)"
-				" 액체 탱크는 액체를 보관하는 역할을 하며 여러개를 설치하여 용량을 늘릴 수 있습니다."
-				" 펌프는 동력을 이용하여 파이프에 흐르는 액체의 흐름을 제어합니다."
-				" 주입기는 아이템에 액체를 주입하는 역할을 합니다."
+				" You now have liquid storage to replace your wooden barrels (leatherworking, etc. is still a long way off)."
+				" Liquid tanks serve to store liquids and can be installed in multiples to increase capacity."
+				" Pumps use power to control the flow of liquid through pipes."
+				" Injectors are responsible for injecting liquid into items."
 			]
 			dependencies: ["52122FCEBF2963EC"]
 			id: "3C437F3459CCCE22"
@@ -451,16 +451,16 @@
 			]
 		}
 		{
-			title: "고-급 부품"
+			title: "High-end parts"
 			x: 8.0d
 			y: 0.5d
 			shape: "square"
-			subtitle: "정밀 기계장치"
+			subtitle: "Precision machinery"
 			description: [
-				" 금 판에 톱니바퀴들과 철 조각을 조립하여 만들어지게 됩니다."
-				" 복잡한 작업인 만큼, 불량품도 생산될 수 있습니다."
+				"Made by assembling cogs and pieces of iron on a gold plate."
+				" It's a complicated process, so it's possible to produce defective products."
 				""
-				" 주로 고급 장치를 만들때 이용됩니다."
+				" It is used primarily to make high-end devices."
 			]
 			dependencies: [
 				"7C31947A3B2A7E1F"
@@ -479,15 +479,15 @@
 			}]
 		}
 		{
-			title: "용암 주입"
+			title: "Lava Injection"
 			x: 8.0d
 			y: -0.5d
 			shape: "square"
-			subtitle: "강판"
+			subtitle: "Grater"
 			description: [
-				" 흑요석 가루에 용암을 주입하고 압축하여 만들 수 있습니다."
+				"Made by injecting lava into obsidian powder and compressing it."
 				""
-				" 주로 기차를 만들때 이용됩니다."
+				" Mainly used to make trains."
 			]
 			dependencies: [
 				"3C437F3459CCCE22"
@@ -502,15 +502,15 @@
 			}]
 		}
 		{
-			title: "산업 혁명"
+			title: "Industrial Revolution"
 			x: 7.0d
 			y: 0.0d
 			shape: "square"
-			subtitle: "벨트"
+			subtitle: "Belt"
 			description: [
-				" 축과 축에 우클릭하여 벨트를 놓을 수 있습니다."
+				"You can drop a belt by right-clicking on the axis and on the axis."
 				""
-				" 벨트 위에 있는 아이템을 운송시키며 여러 자동화 시설에 핵심요소가 될 겁니다."
+				" It will transport items on the belt and will be a key element in many automated facilities."
 			]
 			dependencies: ["52122FCEBF2963EC"]
 			id: "76123B6C3D389405"
@@ -527,21 +527,21 @@
 			}]
 		}
 		{
-			title: "응용 에너지 (초급)"
+			title: "Applied Energy (Beginner)"
 			icon: "storagenetwork:inventory"
 			x: 9.0d
 			y: 1.5d
-			subtitle: "간단한 저장고 체계"
+			subtitle: "A Simple Storage System"
 			description: [
-				" 제목과는 다르게, 전력을 소모하지 않습니다."
+				"Despite the title, it doesn't consume any power."
 				""
-				" 지금 상황이라면 무언가를 만들 때, 창고에 있는 아이템을 찾기 위해 여러 상자를 뒤졌을 겁니다. 번거롭겠죠."
-				" 한 화면에 모든 아이템을 보고 넣고 뺄 수 있다면 행복하겠죠?"
+				" Right now, when you're building something, you're probably digging through boxes to find the item in your stash. It's a hassle."
+				" If you could see all your items on one screen and be able to add and remove them, you'd be happy."
 				""
-				" Storage Network Root은 저장고 시스템의 코어같은 역할 입니다. 한 체계에 하나만 있어야하며 우클릭으로 연결된 기기들을 확인할 수 있습니다."
-				" Sotage Inventory는 연결된 저장고에 있는 모든 아이템들을 볼 수 있습니다."
-				" Link Cable은 저장고에 연결시켜 저장고 시스템에 해당 저장고를 인식시킬 수 있습니다."
-				" Network Cable은 그냥 다른 캐이블이나 기기를 연결시킬 수 있습니다."
+				" The Storage Network Root is like the core of your storage system. You should only have one in your system, and you can right-click to see what devices are connected to it."
+				" Sotage Inventory allows you to see all the items in your connected sotage."
+				" Link Cable can connect to a cache and make the cache system recognize it."
+				"Network Cable can just connect other cables or devices."
 			]
 			dependencies: ["7392483B857D5B78"]
 			id: "6A0F9E2E53C3189D"
@@ -577,18 +577,18 @@
 			}]
 		}
 		{
-			title: "쪼옥"
+			Title: "Squad"
 			x: 2.5d
 			y: -2.5d
-			subtitle: "호스 도르래"
+			subtitle: "Hose Pulley"
 			description: [
-				" 액체를 자동으로 뽑아내고 싶으신가요?"
-				" 호스 도르래가 적합할 겁니다."
+				" Want to siphon off liquid automatically?"
+				" A hose pulley might be for you."
 				""
-				" 축 부분에 동력을 전달해 호스의 길이를 조절할 수 있습니다."
-				" 그리고 파이프를 연결하고 펌프로 액체를 입출력시킬 수 있습니다."
+				" You can adjust the length of the hose by powering the shaft part."
+				" You can then connect pipes and pump liquid in and out."
 				""
-				" 만약, 호스에 아주 많은 액체에 닿았다면 무한히 그 액체를 뽑아낼 수 있습니다."
+				" If you have a lot of liquid in the hose, you can pull it out indefinitely."
 			]
 			dependencies: [
 				"3C437F3459CCCE22"
@@ -602,19 +602,19 @@
 			}]
 		}
 		{
-			title: "여름 필수품"
+			title: "Summer Essentials"
 			x: 6.0d
 			y: -1.0d
-			subtitle: "선풍기"
+			subtitle: "Fan"
 			description: [
-				" 뒤에 동력의 방향에 따라 앞의 물체를 밀수도 당길 수도 있습니다."
-				" 그리고 동력의 빠르기에 따라 위력이 달라지죠."
+				"Depending on the direction of the power behind it, it can also push or pull objects in front of it."
+				" And depending on the speed of the power source, the force varies."
 				""
-				" 만약, 선풍기 앞에 용암이 있다면 뜨거운 바람이 나가 아이템을 구울 수 있습니다."
-				" 물이 있다면 새로운 방식의 가공이 됩니다."
-				" 이때, 선풍기의 세기는 가공속도와 연관이 없게됩니다."
+				" If there's lava in front of the fan, a hot blast of air can bake items."
+				" If there's water, it's a new kind of machining."
+				" In this case, the power of the fan is not related to the processing speed."
 				""
-				" 흠, 광물을 정제할 때 유용하지 않을까요?"
+				" Hmm, wouldn't this be useful for refining minerals?"
 			]
 			dependencies: ["1C82307F2C14B5F8"]
 			id: "69A54230D14A5B5C"
@@ -625,15 +625,15 @@
 			}]
 		}
 		{
-			title: "딱풀"
+			title: "Crabgrass"
 			x: 4.0d
 			y: -2.0d
-			subtitle: "강력 접착제"
+			subtitle: "Strong Glue"
 			description: [
-				" 강력 접착제는 우클릭으로 영역을 설정하여 블럭을 붙게 만듭니다."
-				" 이에 붙어진 블록들은 움직일때, 함께 움직입니다."
+				"Strong Glue makes blocks stick together by setting an area with the right click."
+				"Blocks that are glued together will move together when you move them."
 				""
-				" 꽤 쓸모가 많으니 만들어보세요."
+				" It's pretty useful, so make it."
 			]
 			dependencies: ["1C82307F2C14B5F8"]
 			id: "71EAAAC7D6DD8394"
@@ -656,23 +656,23 @@
 			}]
 		}
 		{
-			title: "칙칙폭폭"
+			title: "Chick-fil-A"
 			x: 9.0d
 			y: -1.5d
-			subtitle: "기차"
+			subtitle: "Train"
 			description: [
-				" 장거리로 무언가를 옮기거나 이동할때, 기차 같은 이동수단이 좋을 겁니다."
+				"If you want to move or transport something over a long distance, a train is a good way to do it."
 				""
-				" 우선, 다닐 경로에 선로를 깝니다."
-				" 그 다음에 선로에 기차 정거장을 우클릭하고 근처에 설치합니다."
-				" 기차 정거장에서 기차를 만들도록 설정하고 기차 케이스를 표시된 선로에 설치하여 기차 틀을 만듭니다."
-				" 마지막으로 가차 틀에 원하는 디자인으로 꾸미고 기차 조종기를 달아줍니다. 강력 접착제로 붙히는 거 잊지마세요."
-				" 진짜 마지막으로 기차 정거장으로 기차를 완성시키면 됩니다."
+				" First, draw tracks along your route."
+				" Next, right-click a train stop on the tracks and place it nearby."
+				" Set the train stop to create a train and place the train case on the marked tracks to create a train frame."
+				" Finally, decorate the gacha frame with the desired design and attach the train controls. Don't forget to attach it with strong glue."
+				" The real finishing touch is to complete your train with train stops."
 				""
-				" 기차 조종기를 우클릭하여 W,S로 조종할 수 있습니다."
-				" 기차에서 안 떨어지게 의자도 달아주는 것이 좋겠죠?"
+				" Right-click on the train controls to steer with W and S."
+				"You might want to add a chair so he doesn't fall off the train."
 				""
-				" 자세한 설명은 아이템에 W를 눌러 보세요."
+				" Press W on an item for a detailed description."
 			]
 			dependencies: [
 				"6C319B8139BC1FE6"
@@ -709,18 +709,18 @@
 			}]
 		}
 		{
-			title: "채집 도구들"
+			title: "Foraging Tools"
 			x: 4.5d
 			y: 2.0d
-			subtitle: "드릴과 톱, 수확기 그리고 쟁기"
+			subtitle: "Drills and saws, harvesters and plows"
 			description: [
-				" 드릴을 앞에 달면 흙과 돌류를 효율적으로 파낼 수 있습니다."
+				" With a drill in front, you can dig through dirt and rocks efficiently."
 				""
-				" 톱은 나무를 한꺼번에 벨수 있으며 추가적으로 여러 블록들을 가공할 수 있습니다."
+				" A saw can cut down a tree at once, and can further process multiple blocks."
 				""
-				" 수확기는 농작물을 제거하며 붙어있는 상자에 씨앗이 있다면 수확한 작물의 씨앗을 다시 심습니다."
+				" The harvester removes crops and replants the seeds of the harvested crops if there are any in the attached box."
 				""
-				" 쟁기는 완전한 블록이 아닌 것들을 부수며 흙을 경작할 수도, 아이템을 줍기도 하며 생명체를 날려버릴 수도 있습니다."
+				" The plow breaks things that aren't complete blocks and can till the soil, pick up items, or blow up creatures."
 			]
 			dependencies: [
 				"1C82307F2C14B5F8"
@@ -751,16 +751,16 @@
 			]
 		}
 		{
-			title: "역동적인 것들"
+			title: "Dynamic Things"
 			x: 0.5d
 			y: -1.0d
-			subtitle: "피스톤과 갠트리 운반대 그리고 베어링"
+			subtitle: "Piston and gantry carriers and bearings"
 			description: [
-				" 피스톤은 뒤에 붙은 피스톤 연장 축의 길이에 따라 물체를 밀고 당길 수 있습니다."
+				" A piston can push and pull objects along the length of the piston extension shaft attached behind it."
 				""
-				" 갠트리 운반대는 갠트리에 붙어서 움직이며 갠트리의 회전에 따라 움직임이 다릅니다."
+				" A gantry carrier moves by being attached to a gantry, and its movement depends on the rotation of the gantry."
 				""
-				" 베어링은 회전시킬 수 있습니다."
+				" Bearings can be rotated."
 			]
 			dependencies: ["3B063A0D44795864"]
 			id: "6FE3D06902B65F4F"
@@ -795,15 +795,15 @@
 			]
 		}
 		{
-			title: "산업 혁명"
+			title: "Industrial Revolution"
 			x: 3.5d
 			y: -3.0d
-			subtitle: "증기 엔지 "
+			subtitle: "Steam Engines "
 			description: [
-				" 2*2 이상의 물이 담긴 탱크에 증기 엔진을 연결해 줍니다."
-				" 그리고 탱크 아래에 블레이즈 버너 등으로 열을 공급하면 물이 끓으면서 증기 엔진이 작동됩니다."
+				"Connect a steam engine to a tank that holds at least 2*2 water."
+				" And when you provide heat, such as with a blaze burner under the tank, the water boils and the steam engine runs."
 				""
-				" 불의 화력과 많은 물이 엔진의 성능을 결정합니다."
+				" The firepower of the fire and the amount of water will determine the performance of the engine."
 			]
 			dependencies: [
 				"3C437F3459CCCE22"
@@ -823,13 +823,13 @@
 			}]
 		}
 		{
-			title: "속도 제어"
+			title: "Speed Control"
 			x: 9.0d
 			y: 0.5d
-			subtitle: "회전 속도 컨트롤러"
+			subtitle: "Rotation Speed Controller"
 			description: [
-				" 가운데 축에 동력을 주고 속도를 설정하면 위에 연결된 톱니의 속도를 변경할 수 있습니다."
-				" 물론, 그정도 피로도가 된다면요."
+				"By powering the center axis and setting its speed, you can change the speed of the teeth connected above it."
+				" That is, if you're willing to get that tired."
 			]
 			dependencies: ["7392483B857D5B78"]
 			id: "1C9AC4FEE6D0161B"
@@ -840,16 +840,16 @@
 			}]
 		}
 		{
-			title: "전기 생산"
+			title: "Electricity Production"
 			x: 10.0d
 			y: 0.5d
 			shape: "square"
-			subtitle: "교류발전기"
+			subtitle: "Alternator"
 			description: [
-				" 동력을 받아 전기 에너지로 변환시킵니다."
-				" 발전량은 동력의 속도에 비례합니다."
+				" Takes power and converts it into electrical energy."
+				" The amount of power generated is proportional to the speed of the power source."
 				""
-				" 초중반에 전기를 얻어야 한다면 이 방법이 좋을겁니다."
+				" If you need electricity in the early to mid-morning hours, this is a good choice."
 			]
 			dependencies: ["525D93E8CFA42287"]
 			id: "01D1D4DA323F3756"
@@ -866,11 +866,11 @@
 			}]
 		}
 		{
-			title: "입출력"
+			title: "I/O"
 			x: 7.0d
 			y: -1.5d
-			subtitle: "안산암 퍼널과 안산암 터널"
-			description: [" 저장 기능이 있는 블록에 아이템을 넣고 빼는 것을 도와줍니다."]
+			subtitle: "Andesite Funnel and Andesite Tunnel"
+			description: [" Helps put items in and out of blocks with storage."]
 			dependencies: ["76123B6C3D389405"]
 			id: "2ED3185748942866"
 			tasks: [
@@ -892,15 +892,15 @@
 			}]
 		}
 		{
-			title: "입출력 (고급)"
+			title: "I/O (Advanced)"
 			x: 7.0d
 			y: 1.5d
-			subtitle: "황동 퍼널과 황동 터널"
+			subtitle: "Brass Funnels and Brass Tunnels"
 			description: [
-				" 안산암 퍼널과 터널보다 나은점이라면 바로 운송 수량과 필터 기능이 추가되었다는 겁니다."
+				"The only thing better than the andesite funnel and tunnel is the addition of transport quantities and filters."
 				""
-				" 아이템을 등록시켜 해당 아이템만 받아드리게 할 수 있습니다."
-				" 만약, 블랙리스트나 여러 종류의 아이템을 등록하고 싶다면 아래 퀘스트를 참고하세요."
+				" You can register items to only accept those items."
+				" If you're looking to blacklist items or add multiple types of items, see the quest below."
 			]
 			dependencies: [
 				"76123B6C3D389405"
@@ -921,13 +921,13 @@
 			]
 		}
 		{
-			title: "들어가시면 안 됩니다"
+			title: "You may not enter"
 			x: 7.0d
 			y: 2.5d
-			subtitle: "필터 틀"
+			subtitle: "Filter frame"
 			description: [
-				" 우클릭으로 아이템의 화이트/블랙 리스트 여부를 결정할 수 있습니다."
-				" 그 상태로 필터 적용 가능한 블록에 등록시킬 수 있습니다."
+				"Right-click to determine whether an item is white or blacklisted."
+				" You can add it to a filterable block with that status."
 			]
 			dependencies: ["738EAFDD4EAA1358"]
 			id: "1F82CE38B51D625E"
@@ -954,11 +954,11 @@
 			}]
 		}
 		{
-			title: "더미"
+			title: "Dummy"
 			x: 8.0d
 			y: 2.0d
-			subtitle: "기계 팔"
-			description: [" 우클릭으로 블록에 대한 입출력을 결정하고 설치하면 동력이 전달되는 한, 아이템을 입력부분에서 출력부분으로 물리적으로 운송시킵니다."]
+			subtitle: "Mechanical Arm"
+			description: [" Right-click to determine the input and output for the block, and once installed, it will physically transport items from the input to the output as long as power is transferred."]
 			dependencies: ["7392483B857D5B78"]
 			id: "29526ACCB5611B79"
 			tasks: [{
@@ -968,16 +968,16 @@
 			}]
 		}
 		{
-			title: "이동중 상호작용"
+			title: "On-the-Go Interaction"
 			x: 0.5d
 			y: 1.0d
-			subtitle: "인터페이스와 동형 감지기"
+			subtitle: "Interface and Isomorphism Detector"
 			description: [
-				" 움직이는 블록은 상자를 여는 것 같은 상호작용이 안됩니다."
-				" 아이템 인터페이스를 통해 움직이는 구조물의 인벤토리의 아이템을 관리할 수 있습니다."
+				"Moving blocks should not have interactions like opening a chest."
+				" The item interface allows you to manage items in a moving structure's inventory."
 				""
-				" 동형 감지기로 움직이는 구조물의 동작을 감지할 수 있습니다."
-				" 어쩌면 타이머를 만들수도.."
+				" Isomorphic detectors to detect the behavior of moving structures."
+				" Maybe a timer..."
 			]
 			dependencies: ["6FE3D06902B65F4F"]
 			id: "26D9B935CA162D9E"
@@ -1003,17 +1003,17 @@
 			]
 		}
 		{
-			title: "회전 관리"
+			title: "Rotation Management"
 			x: 1.5d
 			y: -1.0d
-			subtitle: "기어 박스와 클러치, 기어쉬프트 그리고 체인 드라이브"
+			subtitle: "Gearboxes, clutches, gearshaft and chain drives"
 			description: [
-				" 기어 박스로 동력의 방향을 바꿀 수 있으며"
-				" 클러치로 동력을 끄고 켤 수도"
-				" 기어쉬프트로 동력의 회전 방향을 반전 시키거나"
-				" 체인 드라이브로 동력의 방향을 정리할 수 있습니다."
+				"Gearboxes allow you to change the direction of power"
+				"a clutch can turn power off and on"
+				"Reverse the direction of rotation with a gearshift, or organize the direction of motion with a chain drive. "
+				" organize the direction of power with a chain drive."
 				""
-				" 이것들을 잘 활용하는 것은 Create의 숙련도의 척도일 것입니다."
+				" Utilizing these well will be a measure of your proficiency in Create."
 			]
 			dependencies: ["3B063A0D44795864"]
 			id: "72585D7A6B8C7ECA"
@@ -1052,7 +1052,7 @@
 			}]
 		}
 		{
-			title: "띠요요용"
+			title: "For the band"
 			icon: {
 				id: "create:extendo_grip"
 				Count: 1b
@@ -1062,13 +1062,13 @@
 			}
 			x: 8.0d
 			y: 3.0d
-			subtitle: "외장형 연장 팔"
+			subtitle: "External Extension Arm"
 			description: [
-				" 반대손에 착용한 채로 이용하면 팔 사거리가 늘어납니다."
+				"Increases arm range when worn on the opposite hand."
 				""
-				" 이용시 내구도가 닳며 구리 산소통을 착용시, 내구도 대신 산소통의 산소를 이용합니다."
+				" Endurance depletes with use, and when wearing a copper oxygen cylinder, oxygen from the cylinder is used instead of endurance."
 				""
-				" 구리 산소통은 설치하고 위에 동력을 공급하면 산소가 채워집니다."
+				" Copper oxygen cylinders are filled with oxygen once they are set up and powered up."
 			]
 			dependencies: ["7392483B857D5B78"]
 			id: "4F41D0574A241842"
@@ -1101,18 +1101,18 @@
 			}]
 		}
 		{
-			title: "부품 저장"
+			title: "Save Parts"
 			x: 1.5d
 			y: 2.5d
-			subtitle: "공구상자"
+			subtitle: "Toolbox"
 			description: [
-				" 어느 아이템이건 128개를 한 칸에 저장하여 최대 8칸을 저장할 수 있습니다."
+				" You can store 128 of any item in a compartment, with a maximum of 8 compartments."
 				""
-				" 근처에 공구상자가 설치되면 Alt로 원격으로 열 수 있습니다."
+				" When a Toolbox is set up nearby, you can open it remotely with Alt."
 				""
-				" 그리고 부숴도 안에 내용물이 보존되고요."
+				" And if you smash it, the contents are preserved."
 				""
-				" 마지막으로 다양한 색상의 염색까지."
+				" Finally, it can be dyed a variety of colors."
 			]
 			dependencies: ["1C82307F2C14B5F8"]
 			id: "72DA0A3D002401D4"
@@ -1133,17 +1133,17 @@
 			}]
 		}
 		{
-			title: "더 많은 가죽"
+			title: "More Leather"
 			icon: "minecraft:leather"
 			x: 6.0d
 			y: -2.5d
-			subtitle: "가죽 가공"
+			subtitle: "Leather Processing"
 			description: [
-				" 가죽 가공은 귀찮고 번거롭습니다. 이럴때 기계를 이용하는 것이죠."
+				"Working with leather is cumbersome and tedious, which is why we use machines."
 				""
-				" 생가죽을 선풍기로 세척한 뒤에 탄닌을 주입기로 주입하면 2배의 가죽을 얻을 수 있습니다."
+				"You can get twice as much leather by cleaning the raw hides with a fan and then injecting the tannin with an injector."
 				""
-				" 탄닌은 대야에 물을 가열한 채로 나무를 넣어 빠르게 만들 수 있습니다."
+				"Tannin can be made quickly by putting wood in a basin of heated water."
 			]
 			dependencies: [
 				"3C437F3459CCCE22"
@@ -1161,7 +1161,7 @@
 				{
 					id: "26A2078A294D418B"
 					type: "checkmark"
-					title: "설명 읽어보셨죠?"
+					title: "Did you read the description?"
 				}
 			]
 			rewards: [{
@@ -1171,18 +1171,18 @@
 			}]
 		}
 		{
-			title: "더 많은 양털"
+			title: "More Wool"
 			icon: "minecraft:white_wool"
 			x: 4.5d
 			y: 3.5d
-			subtitle: "양털 가공"
+			subtitle: "Wool Processing"
 			description: [
-				" 양털 가공은 귀찮고 번거롭습니다. 이럴때 기계를 이용하는 것이죠."
+				"Processing wool is tedious and cumbersome, which is why we use machines."
 				""
-				" 양가죽을 시작으로 하면, 톱으로 양털과 생가죽으로 분리한 뒤에 양털을 갈아버려(Create) 털실로 만듭니다."
-				" 그 다음에 가열된 대야로 압축하여 양털천을 만들 수 있으며 또 한 번 압축하여 양털(Minecraft)로 만들 수 있습니다."
+				" We start with the sheepskin, which is separated into wool and rawhide with a saw, and then the wool is ground into yarn (Create)."
+				"It can then be compressed in a heated basin to make fleece cloth, which can then be compressed again to make fleece (Minecraft)."
 				""
-				" 이러면 조금 더 높은 효율을 낼 수 있습니다."
+				" This is a little more efficient."
 			]
 			dependencies: [
 				"0840FC1501E6A546"
@@ -1202,22 +1202,22 @@
 				{
 					id: "4E153C3E116CAEB4"
 					type: "checkmark"
-					title: "설명 읽어보셨죠?"
+					title: "Did you read the description?"
 				}
 			]
 		}
 		{
-			title: "더 많은 삼베"
+			title: "More Burlap"
 			icon: "tfc:burlap_cloth"
 			x: 6.0d
 			y: 3.5d
-			subtitle: "삼베 가공"
+			subtitle: "Burlap Processing"
 			description: [
-				" 삼베 가공은 귀찮고 번거롭습니다. 이럴때 기계를 이용하는 것이죠."
+				"Burlap processing is tedious and cumbersome, that's why we use machines."
 				""
-				" 황마를 선풍기로 세척하여 황마 섬유로 만든 뒤에 가열된 대야에 압축하여 삼베 천을 만들 수 있습니다."
+				"Burlap cloth can be made by washing jute with a fan to turn it into jute fibers, which are then compressed in a heated basin."
 				""
-				" 이렇게하면 빠르고 두 배로 생산됩니다."
+				" This is fast and produces twice as much."
 			]
 			dependencies: [
 				"69A54230D14A5B5C"
@@ -1236,19 +1236,19 @@
 				{
 					id: "3D29904FCEB80F47"
 					type: "checkmark"
-					title: "설명 읽어보셨죠?"
+					title: "Did you read the description?"
 				}
 			]
 		}
 		{
-			title: "풍동력"
+			title: "Wind Power"
 			x: 2.5d
 			y: 1.0d
-			subtitle: "풍차"
+			subtitle: "Windmill"
 			description: [
-				" 물레바퀴 보단 느린 속도를 제공하지만 높은 힘(피로도)를 제공합니다."
+				"Provides slower speed than a water wheel, but more force (and fatigue)."
 				""
-				" 풍차 베어링을 중심으로 8개 이상의 날개를 달아주시면 됩니다."
+				" Attach 8 or more wings centered on a windmill bearing."
 			]
 			dependencies: [
 				"3B063A0D44795864"
@@ -1276,13 +1276,13 @@
 			}]
 		}
 		{
-			title: "도핑"
+			title: "Doping"
 			x: 6.0d
 			y: 1.0d
-			subtitle: "블레이즈 케이크"
+			subtitle: "Blaze Cake"
 			description: [
-				" 블레이즈가 좋아하는 음식입니다."
-				" 먹일 경우 블레이즈는 더 높은 화력을 냅니다."
+				" This is Blaze's favorite food."
+				" When fed, Blaze has higher firepower."
 			]
 			dependencies: [
 				"3C437F3459CCCE22"
@@ -1301,11 +1301,11 @@
 			}]
 		}
 		{
-			title: "유연성"
+			title: "Flexibility"
 			x: 2.5d
 			y: 2.0d
-			subtitle: "압연기"
-			description: [" 주괴를 봉으로 판을 전선으로 가공하는 기계입니다."]
+			subtitle: "Rolling Mill"
+			description: [" A machine that processes ingots into rods and plates into wires."]
 			dependencies: ["1C82307F2C14B5F8"]
 			id: "41CD8DBBDFD66732"
 			tasks: [{
@@ -1315,14 +1315,14 @@
 			}]
 		}
 		{
-			title: "너도 한 모금 할래?"
+			title: "Do you want a sip?"
 			x: 3.5d
 			y: 2.0d
-			subtitle: "빨대"
+			subtitle: "Straw"
 			description: [
-				" 블레이즈 버너에 장착하면 블레이즈 버너는 액체 연료를 받아들일 수 있게 됩니다."
+				"When attached to a blaze burner, the blaze burner will be able to accept liquid fuel."
 				""
-				" 액체 파이프도 연결할 수 있게되죠."
+				" You will also be able to connect liquid pipes."
 			]
 			dependencies: [
 				"41CD8DBBDFD66732"
@@ -1336,7 +1336,7 @@
 			}]
 		}
 		{
-			title: "스티브 더 다이버"
+			title: "Steve the Diver"
 			icon: {
 				id: "create:copper_diving_helmet"
 				Count: 1b
@@ -1346,13 +1346,13 @@
 			}
 			x: 1.5d
 			y: 4.5d
-			subtitle: "다이빙 세트"
+			subtitle: "Diving Set"
 			description: [
-				" 물속에서 작업을 할 때에 숨이 차거나 이동속도가 느려 불편함을 느꼈을 겁니다."
+				"You've probably experienced the discomfort of being out of breath or slow to move when working underwater."
 				""
-				" 다이빙 헬멧은 산소통과 함께 착용하면 산소통의 산소를 소모하여 숨이 차지 않게 해줍니다."
-				" 산소통은 설치를 하여 윗면 축을 회전시켜 산소를 압축시킬 수 있습니다. 압축이 끝났다면 착용하여 산소를 필요로 하는 것들에 산소를 보충시킬 수 있습니다."
-				" 다이빙 부츠는 착용시 무거운 추 역할을 하여 물속에 빠르게 가라앉고 물속에서 걸을 수 있게 해 줍니다. 이건 호불호가 갈리겠네요."
+				" A diving helmet, when worn with an oxygen tank, uses up oxygen from the tank to keep you from getting out of breath."
+				" Oxygen cylinders can be set up to compress oxygen by rotating the top shaft. Once compressed, it can be worn to replenish oxygen to things that need it."
+				"Diving boots act as heavy weights when worn, allowing you to sink quickly and walk underwater. This is going to be a love/hate thing."
 			]
 			dependencies: ["52122FCEBF2963EC"]
 			id: "7C17F67A18B4E1E8"
@@ -1399,7 +1399,7 @@
 			}]
 		}
 		{
-			title: "스티브 더 핫 다이버"
+			title: "Steve the Hot Diver"
 			icon: {
 				id: "create:netherite_diving_helmet"
 				Count: 1b
@@ -1409,13 +1409,13 @@
 			}
 			x: 1.5d
 			y: 5.5d
-			subtitle: "네더라이트 다이빙 세트"
+			subtitle: "Netherlight Diving Set"
 			description: [
-				" 기존의 다이빙 세트를 네더라이트로 강화시킨 것들입니다. 가장 큰 특징으로는 용암에서도 활동하는 것을 가능케 한다는 겁니다."
+				"This is a netherlight enhancement to the existing dive set. The main feature is that it allows you to operate in lava."
 				""
-				" 헬멧은 용암속에서도 시야 제약이 줄어들며 부츠는 용암에서도 무게추 역할을 해줍니다."
+				"The helmet reduces visibility restrictions in lava, and the boots act as weights in lava."
 				""
-				" 그리고 더 큰 장점은 모든 네더라이트 세트(레깅스 포함)를 착용하면 용암을 포함한 화염 데미지에 면역이 됩니다."
+				" And even better, wearing the full Netherlight set (including the leggings) makes you immune to fire damage, including lava."
 			]
 			dependencies: ["7C17F67A18B4E1E8"]
 			id: "69BA25D19737B03C"
@@ -1463,15 +1463,15 @@
 			}]
 		}
 		{
-			title: "대량 저장"
+			title: "Bulk Storage"
 			x: 7.0d
 			y: -2.5d
-			subtitle: "아이템 금고"
+			subtitle: "Item Vault"
 			description: [
-				" 아이템 금고는 일반 상자들보다 많은 아이템을 보관할 수 있습니다."
-				" 다만, 플레이어가 직접 금고에 아이템을 넣고 뺄 수 없습니다."
+				"An item safe can hold more items than a normal chest."
+				" However, players cannot place items in and out of the safe themselves."
 				""
-				" 퍼널 같은 기계적으로 아이템을 운송할 수단을 이용해야 합니다."
+				" You must use a mechanical means of transporting items, such as a funnel."
 			]
 			dependencies: ["2ED3185748942866"]
 			dependency_requirement: "all_started"

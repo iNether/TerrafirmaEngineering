@@ -5,7 +5,7 @@
 	filename: "immersive_engineering"
 	title: "Immersive Engineering"
 	icon: "immersiveengineering:rs_engineering"
-	subtitle: ["큼직하면서 역동적인 기계들을 다룹니다"]
+	subtitle: ["Dealing with large, dynamic machines"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -14,16 +14,16 @@
 			x: 0.0d
 			y: 0.0d
 			shape: "square"
-			subtitle: "레드스톤 엔지니어링 블록"
+			subtitle: "Redstone Engineering Block"
 			description: [
-				" Immersive Engineering의 대부분의 기계들은 멀티블록 형태를 띄고 있습니다."
-				" 즉, 여러 블록을 쌓아야 하나의 기계의 형태를 가지게 된다는 것입니다."
-				" 코크스 오븐과 용광로도 그중 하나라 볼 수 있습니다."
+				"Most machines in Immersive Engineering are multi-block."
+				"This means that multiple blocks must be stacked to form a single machine."
+				" Coke ovens and furnaces are examples of this."
 				""
-				" 위 레드스톤 엔지니어링 블록이 이 모드의 멀티블록 기계들에 대부분들어가는 블록이며 제가 손수 조합법을 '재밌게' 변경하였습니다."
+				" The Redstone Engineering block above is the block that most of the multiblock machines in this mode are made of, and I've made some 'fun' changes to the combination."
 				""
-				" 이 모드에 대한 설명은 보상으로 드릴 책에 잘 적혀있습니다."
-				" 그리고 멀티블록의 설치 방법은 보상으로 드릴 투영기로 홀로그램 형태로 볼 수 있습니다.(문제는 버그로 인해 보이지 않는다는거죠)"
+				" The description of this mod is well documented in the book you'll receive as a reward."
+				"And the instructions for setting up the multiblock can be seen in holographic form in the drill projector as a reward (the problem is that it's buggy)."
 			]
 			dependencies: [
 				"6C319B8139BC1FE6"
@@ -55,15 +55,15 @@
 			]
 		}
 		{
-			title: "공돌이의 책상"
+			title: "Desk of the Brawler"
 			x: 1.0d
 			y: -2.0d
 			shape: "square"
-			subtitle: "엔지니어의 워크벤치"
+			subtitle: "The Engineer's Workbench"
 			description: [
-				" Immersive Engineering의 각종 기계들이나 부품들을 효율적으로 만들 수 있게 해주는 작업대입니다."
+				"A workbench that allows you to efficiently build various machines and parts for Immersive Engineering."
 				""
-				" 청사진을 이용하여 부품을 적은 재료로 만들 수 있으며 여기서만 만들 수 있는 것들을 만들 수 있게됩니다."
+				"You can use blueprints to make parts with less material, and you can make things that can only be made here."
 			]
 			dependencies: ["1B47EBDB6A332E04"]
 			id: "41F7568DE328AB02"
@@ -85,12 +85,12 @@
 			}]
 		}
 		{
-			title: "산업 혁명 v2"
+			title: "Industrial Revolution v2"
 			x: 1.0d
 			y: -1.0d
 			shape: "square"
-			subtitle: "컨베이어 벨트"
-			description: [" Create의 벨트와는 다르게 동력을 필요로하지 않고 여러 종류가 있어 좀더 다채로운 벨트 연결이 가능해집니다."]
+			subtitle: "Conveyor Belt"
+			description: [" Unlike Create's belts, these don't require power and come in several different types, allowing for more colorful belt connections."]
 			dependencies: ["1B47EBDB6A332E04"]
 			id: "24FF7F6C2AF0C4C1"
 			tasks: [{
@@ -101,16 +101,16 @@
 			}]
 		}
 		{
-			title: "꿍"
+			title: "Kung"
 			icon: "immersiveengineering:plate_steel"
 			x: 2.0d
 			y: -1.5d
 			shape: "square"
-			subtitle: "금속 압축기"
+			subtitle: "Metal Compressor"
 			description: [
-				" 기계적인 힘으로 물건을 압축하는 것은 Create의 그것과 다를 것이 없지만 이 기계만의 특징이라면 무슨 틀로 찍었냐에 따라 결과물이 다르다는 것입니다."
+				"The idea of compressing things with mechanical force is not unlike that of Create, but what makes this machine unique is that the results are different depending on what mold you use."
 				""
-				" 보상으로 드릴 청사진으로 엔지니어 작업대에서 여러 틀들을 만들어보세요."
+				" As a reward, create several molds at the engineer's workbench with the drill blueprint."
 			]
 			dependencies: [
 				"24FF7F6C2AF0C4C1"
@@ -176,17 +176,17 @@
 			]
 		}
 		{
-			title: "갈갈갈갈갈갈갈갈갈"
+			title: "Grinding, grinding, grinding, grinding"
 			icon: "immersiveengineering:dust_iron"
 			x: 3.0d
 			y: -1.0d
 			shape: "square"
-			subtitle: "분쇄기"
+			subtitle: "Pulverizer"
 			description: [
-				" 여러 물건들을 갈아버릴 수 있습니다."
-				" Create의 분쇄 휠 보다 더 발전된 형태이기에 광물을 갈았을 때의 효율도 더욱 좋아졌죠."
+				"Can be used to grind a variety of things."
+				"This is a more advanced version of Create's grinding wheel, making it more efficient at grinding minerals."
 				""
-				" 그리고 이제 바로 철을 갈아버려 철괴로 만들 수 있게 됩니다."
+				" And now you can grind iron directly into bars."
 			]
 			dependencies: ["1B47EBDB6A332E04"]
 			id: "527DFC1333E3D2AC"
@@ -238,18 +238,18 @@
 			}]
 		}
 		{
-			title: "용광로 업그레이드"
+			title: "Furnace Upgrade"
 			icon: "immersiveengineering:blastbrick_reinforced"
 			x: 0.5d
 			y: 1.0d
-			subtitle: "강화 용광로"
+			subtitle: "Reinforced Furnace"
 			description: [
-				" 강철은 좀더 빠르게 만들기 위해 용광로를 강화할 필요가 있어보입니다. 자동화에 좀더 유리하게 말이죠."
+				" Looks like we need to reinforce the furnace to make steel faster. More favorable to automation."
 				""
-				" 용광로 블록에 강철판으로 보강을 해주고 위에 깔때기를 설치하여 자동화에 용의하게 만들어줍시다."
-				" 그러면 강화 용광로가 완성이 될텐데.. 자동화를 제외하면 아직은 성능 차이는 없습니다."
+				" Let's reinforce the furnace blocks with steel plates and put a funnel on top to make it more automation friendly."
+				" Then we'll have a hardened furnace, but there's no performance difference yet, except for automation."
 				""
-				" 좌우에 용광로 예열기를 달고 전력을 공급해주면 화력을 증가시켜 강철 생산 속도를 증가하게 됩니다."
+				"If you add a furnace preheater to the left and right and power it up, you'll increase the firepower, which will increase the rate of steel production."
 			]
 			dependencies: ["1B47EBDB6A332E04"]
 			id: "5A2A1FD477750F06"
@@ -274,20 +274,20 @@
 			]
 		}
 		{
-			title: "금속 전선"
+			title: "Metal Wire"
 			x: -1.0d
 			y: 0.0d
-			subtitle: "전선"
+			subtitle: "Wire"
 			description: [
-				" 이제 전기를 전달하기 위한 수단이 필요할 겁니다."
+				" Now we'll need a way to carry the electricity."
 				""
-				" 연결기는 설치된 곳에 전력을 입출력할 수 있지만 한 곳 밖에 전선 연결이 안 됩니다."
-				" 중계기는 여러 곳에 전선을 연결할 수 있지만 직접 전력을 입출력할 수는 없습니다."
-				" 이정도 설명이면 감이 오시겠죠?"
+				" Connectors can bring power in and out of where they are installed, but they only have one wire connection."
+				" A repeater can be wired to multiple locations, but it can't directly input or output power."
+				" I think that explains it, right?"
 				""
-				" 그리고 전선으로 이들을 연결해주면 끝납니다."
+				" And you connect them with wires, and that's it."
 				""
-				" 아, 전기가 통하고 있는 전선에 닿으면 여러분 목숨도 끝나겠죠."
+				" Oh, and if you touch an energized wire, you're dead."
 			]
 			dependencies: ["1B47EBDB6A332E04"]
 			id: "28E6BC2304C8DA7F"
@@ -318,13 +318,13 @@
 			}]
 		}
 		{
-			title: "안전제일"
+			title: "Safety First"
 			x: -2.0d
 			y: 0.0d
-			subtitle: "절연 전선"
+			subtitle: "Insulated Wires"
 			description: [
-				" 전선에 안 닿는것도 한계가 있고 되게 불편할 겁니다."
-				" 그러니까 절연처리가 필요하겠죠."
+				"You can only go so far without touching the wire, and it's going to be uncomfortable."
+				"That's why they need to be insulated."
 			]
 			dependencies: [
 				"28E6BC2304C8DA7F"
@@ -345,13 +345,13 @@
 			}]
 		}
 		{
-			title: "즙 짜기"
+			title: "Squeeze the Juice"
 			icon: "minecraft:piston"
 			x: 3.0d
 			y: 0.0d
 			shape: "square"
-			subtitle: "압착기"
-			description: [" 주로 씨앗을 짜내어 기름을 만드는 것이 주 목적이지만 여기서 중요한 것은 코크스 가루를 HOP 흑연 가루로 압축시켜준다는 것입니다."]
+			subtitle: "Squeezer"
+			description: [" Its main purpose is to squeeze out seeds to make oil, but the important thing here is that it compresses coke powder into HOP graphite powder."]
 			dependencies: ["1B47EBDB6A332E04"]
 			id: "6DDAF933F595A870"
 			tasks: [
@@ -398,7 +398,7 @@
 			]
 		}
 		{
-			title: "초고열 용광로"
+			title: "Superheated Furnace"
 			icon: {
 				id: "immersiveengineering:graphite_electrode"
 				Count: 1b
@@ -409,15 +409,15 @@
 			x: 3.0d
 			y: 1.0d
 			shape: "square"
-			subtitle: "아크 화로"
+			subtitle: "Arc Brazier"
 			description: [
-				" 안쓰는 금속 물품들을 녹여 재활용하거나 광물을 쉽게 제련 또는 합금화할 수 있게 합니다. 그리고 아주 높은 온도에서 제작되는 합금을 만들때도 쓰이죠."
+				"Used to melt down unwanted metal items for recycling, to make minerals easier to smelt or alloy, and to create alloys that are made at very high temperatures."
 				""
-				" 그리고 HOP 흑연괴를 제련할 때도 이용되죠."
+				" It is also used to smelt HOP graphite ingots."
 				""
-				" 아크 화로를 사용하기 위해선 흑연 전극이 필요합니다. 강철 막대에 열을 가한채로 흑연과 HOP 흑연 가루와 섞어 총 3개를 만들어 장착하세요."
+				" To use an arc furnace, you need a graphite electrode. Make a total of three by heating a steel rod and mixing it with graphite and HOP graphite powder."
 				""
-				" 아크화로의 구조적 문제가 있으므로 결과물은 상자로 빼내길 바랍니다."
+				" There are structural issues with the arc furnace, so you'll want to get the results out of the box."
 			]
 			dependencies: [
 				"41F7568DE328AB02"
@@ -511,7 +511,7 @@
 			]
 		}
 		{
-			title: "빵야빵야"
+			title: "Bam Bam Bam"
 			icon: {
 				id: "additionalguns:m16a2"
 				Count: 1b
@@ -521,13 +521,13 @@
 			}
 			x: 7.5d
 			y: 3.0d
-			subtitle: "총기 작업대"
+			subtitle: "Firearms Workbench"
 			description: [
-				" 기존의 총기보다 더 높은 성능을 발휘하는 총을 제작해 봅시다."
+				"Let's build a gun that performs better than existing firearms."
 				""
-				" 기존과 똑같이 작업대에서 원하는 것을 고르고 재료를 소모하면 얻을 수 있습니다. 그리고 이번엔 한 작업대로 통합이 되었죠."
+				" Just like before, you pick what you want from the workbench and spend materials to get it, but this time it's all in one workbench."
 				""
-				" 총은 R로 장전할 수 있으며 좌클릭으로 발사, 우클릭으로 조준을 할 수 있으며 Z로 부착물을 달 수 있습니다."
+				"The gun can be loaded with R, fired with the left mouse button, aimed with the right mouse button, and attached with Z."
 			]
 			dependencies: [
 				"75573D576C813433"
@@ -548,7 +548,7 @@
 			}]
 		}
 		{
-			title: "실직된 공돌이"
+			title: "The Unemployed Geek"
 			icon: {
 				id: "immersiveengineering:blueprint"
 				Count: 1b
@@ -558,11 +558,11 @@
 			}
 			x: 2.0d
 			y: -2.5d
-			subtitle: "자동화 엔지니어의 워크벤치"
+			subtitle: "The Automation Engineer's Workbench"
 			description: [
-				" 기존의 엔지니어의 워크벤치에서만 만들 수 있는 것들을 대량생산하기 위해 고안되었습니다."
+				"Designed for mass production of things that can only be made on a traditional engineer's workbench."
 				""
-				" 청사진과 재료, 전력을 공급하면 생산하죠."
+				" Give it blueprints, materials, and power, and it will produce."
 			]
 			dependencies: [
 				"24FF7F6C2AF0C4C1"
@@ -608,13 +608,13 @@
 			]
 		}
 		{
-			title: "충전기"
+			title: "Charger"
 			x: 4.5d
 			y: -2.0d
-			subtitle: "충전소"
+			subtitle: "Charging Station"
 			description: [
-				" 전력을 요구하는 아이템에 전력을 공급해 줍니다."
-				" 모두 충전되면 초록색 불빛이 빠르게 점멸할 것입니다."
+				"Provides power to items that require power."
+				" When fully charged, the green light will flash rapidly."
 			]
 			dependencies: ["41F7568DE328AB02"]
 			id: "679D28704C84B80A"
@@ -625,19 +625,19 @@
 			}]
 		}
 		{
-			title: "가득이요"
+			title: "Full"
 			icon: "immersiveengineering:fluid_pump"
 			x: 4.0d
 			y: 1.5d
 			shape: "square"
-			subtitle: "병조림기"
+			subtitle: "Canner"
 			description: [
-				" 사실 Create의 주입기가 있다면 그닥 메리트가 없습니다."
-				" 그냥 Immersive Engineering 특유의 감성을 느끼고 싶다면 쓰세요."
+				"Actually, there's not much point in having an injector in Create."
+				" Use it if you just want to feel like Immersive Engineering."
 				""
-				" 설명이요? 아이템에 액체를 주입해줍니다."
+				" Description. Injects liquid into an item."
 				""
-				" 아, 그런데 Mekanism 기계들을 만들 때 필요한 듀로플라스트를 만들때는 필수적입니다."
+				" Oh, and by the way, it's essential for making the duroplast we need to make Mekanism machines."
 			]
 			dependencies: ["24FF7F6C2AF0C4C1"]
 			id: "0DA969FE4AC764BA"
@@ -684,13 +684,13 @@
 			}]
 		}
 		{
-			title: "숙성"
+			title: "Ripening"
 			icon: "minecraft:cauldron"
 			x: 5.0d
 			y: 1.5d
 			shape: "square"
-			subtitle: "발효기"
-			description: [" 식물들을 발효시켜 에탄올을 얻을 수 있습니다."]
+			subtitle: "Fermenter"
+			description: [" You can ferment plants to get ethanol."]
 			dependencies: ["1B47EBDB6A332E04"]
 			id: "53DAC0E3A8B08F25"
 			tasks: [
@@ -732,15 +732,15 @@
 			]
 		}
 		{
-			title: "액체 혼합"
+			title: "Mixing Liquids"
 			icon: "immersiveengineering:biodiesel_bucket"
 			x: 6.0d
 			y: 1.5d
 			shape: "square"
-			subtitle: "정제기"
+			subtitle: "Refiner"
 			description: [
-				" 두 액체 또는 고체를 혼합시켜 줍니다."
-				" 대표적으로 식물성 기름과 에탄올을 질산염 가루를 매질로 하여 혼합하여 바이오 디젤을 만들 수 있습니다."
+				" Mixes two liquids or solids."
+				" For example, vegetable oil and ethanol can be mixed with powdered nitrate as a medium to make biodiesel."
 			]
 			dependencies: [
 				"6DDAF933F595A870"
@@ -786,15 +786,15 @@
 			]
 		}
 		{
-			title: "환경 오염"
+			title: "Environmental Pollution"
 			icon: "immersiveengineering:radiator"
 			x: 6.0d
 			y: 0.0d
-			subtitle: "디젤 발전기"
+			subtitle: "Diesel Generator"
 			description: [
-				" 액체 연료를 연소하여 막대한 양의 전력을 생산합니다."
-				" 하지만 막대한 소음을 발생합니다."
-				" 보상으로 귀마개를 드리죠."
+				" Burns liquid fuel to generate huge amounts of electricity."
+				" But it makes a lot of noise."
+				" We'll give you some earplugs as compensation."
 			]
 			dependencies: [
 				"1C3A878FD7DDEF65"
@@ -854,23 +854,23 @@
 			]
 		}
 		{
-			title: "구성 성분"
+			title: "Components"
 			x: 0.0d
 			y: 2.0d
-			subtitle: "코어 샘플링 드릴"
+			subtitle: "Core Sampling Drill"
 			description: [
-				" 전력을 주고 작동시키면 해당 좌표의 지층 표본을 채취할 겁니다."
-				" 설정상, 우리가 보지 못한 광맥,수맥을 찾는거라네요."
+				"Power it up and it will take a sample of the formation at these coordinates."
+				" The setup is supposed to look for mineralization and water veins that we haven't seen."
 				""
-				" 광맥에 대한 내용은 엔지니어 책에서 개요 및 자원의 Mineral Deposits에서 6번째 페이지 부터 보면 됩니다."
+				" You can read about lodes in the engineer's book, starting on page 6 under Mineral Deposits in the Overview and Resources section."
 				""
-				" 채취된 코어 샘플은 바닥에 쉬프트 우클릭으로 설치할 수 있습니다."
+				" Core samples can be placed on the floor with a shift right click."
 				""
-				" 이곳의 일반 광맥처럼 광물 분포도를 잘 따져서 위치를 파악해야합니다. 그래야 돌 같은 것들보다 광물을 많이 얻을 수 있으니까요."
+				" Just like the normal veins here, you have to be careful to look at the mineralization map to figure out where you are, because you're going to get more minerals than stones and stuff like that."
 				""
-				" 하지만 아무것도 모르는데, 전력까지 써가면서 조사를 하기엔 무리가 있겠죠?"
-				" 보상으로 드릴 광물 조사 도구로 바닥에 우클릭을 길게 눌러서 해당 위치에 무슨 광맥이 있는지 대충은 파악할 수 있습니다."
-				" 그 결과를 토대로 코어 샘플링 드릴로 자세한 정보를 파악하는 거죠."
+				" But I don't want to spend all my energy researching if I don't know anything about it, do you?"
+				" As a reward, you can use the Drill Mineral Survey tool to right-click and hold on the ground to get a rough idea of what mineralization is present at that location."
+				"From there, you can use the core sampling drill to get more information."
 			]
 			dependencies: ["1B47EBDB6A332E04"]
 			id: "08EF60C62F6C97CA"
@@ -892,7 +892,7 @@
 			}]
 		}
 		{
-			title: "미지의 광물"
+			title: "Unknown Mineral"
 			icon: {
 				id: "immersiveengineering:coresample"
 				Count: 1b
@@ -911,11 +911,11 @@
 			}
 			x: 0.0d
 			y: 3.0d
-			subtitle: "굴착기"
+			subtitle: "Excavator"
 			description: [
-				" 코어 샘플에서 원하는 광맥의 위치를 찾았다면 그 위치에 굴착기를 설치해야합니다."
+				"Once you have found the location of the desired lode in your core sample, you need to set up an excavator at that location."
 				""
-				" 막대한 자원, 전력과 저장고를 준비하여 작동시키면 무한한 양의 자원을 얻을 수 있을 겁니다."
+				" Once you've got it up and running, with tons of resources, power, and storage, you'll be able to get an infinite amount of resources."
 			]
 			dependencies: ["08EF60C62F6C97CA"]
 			id: "58F2488B1DFCEDC5"
@@ -970,28 +970,28 @@
 			}]
 		}
 		{
-			title: "더 진보된 도구들"
+			title: "More Advanced Tools"
 			x: 6.0d
 			y: -2.0d
-			subtitle: "채굴 드릴과 원형 톱"
+			subtitle: "Mining Drills and Circular Saws"
 			description: [
-				" 바이오 디젤등의 연료를 소모하여 작동하는 도구 둘을 소개합니다."
+				" Here are two tools that run on fuels such as biodiesel."
 				""
-				" 채굴 드릴은 3*3범위의 굴을 팔 수 있습니다."
+				" The mining drill can dig burrows with a range of 3*3."
 				""
-				" 원형 톱은 나무를 한꺼번에 벨 수 있는데, 나뭇잎까지 캐는 판정이라 나뭇가지와 묘목을 얻기에 수월해 집니다."
-				" 아니면 날을 바꾸어 다른 용도로 쓸 수 있습니다."
+				" A circular saw can cut down a tree at once, and it even cuts through the leaves, making it easier to get branches and saplings."
+				" Or you can change the blade and use it for something else."
 				""
-				" 두 도구 모두, 엔지니어의 작업대에서 머리를 장착 및 교체할 수 있으며 추가적인 업그레이드 모듈을 부착할 수 있습니다."
+				"For both tools, the heads can be mounted and replaced at the engineer's workbench, and additional upgrade modules can be attached."
 				""
-				" 연료 충전은 주입기나 병조림기를 사용하시면 됩니다."
+				"To refuel, you can use either an injector or a bottler."
 				""
-				" 음, 사실 원형 톱은 성능이 기존 도끼보다 떨어진다는 것을 느낄 겁니다."
-				" 사실 이 도구의 진가는 바로 석재절단 톱날로 갈아꼈을 때 알 수 있습니다."
+				" Well, you'll notice that the circular saw is actually less powerful than a traditional axe."
+				" The real test of this tool is when you sharpen it with a stone-cutting saw blade."
 				""
-				" 바로 섬세한 손길이 적용된다는 것입니다."
-				" 보상으로 드릴테니, 한 번 써보세요."
-				" 그런데.. 돌에는 영향이 없는거 같더군요."
+				"It's a delicate touch."
+				" As a reward, I'll give you one to try."
+				" But... it doesn't seem to affect the stone."
 			]
 			dependencies: [
 				"1C3A878FD7DDEF65"
@@ -1064,17 +1064,17 @@
 			]
 		}
 		{
-			title: "복합 열경화성 플라스틱"
+			title: "Composite thermosetting plastics"
 			x: 7.5d
 			y: 1.5d
 			shape: "square"
-			subtitle: "듀로플라스트"
+			subtitle: "Duroplast"
 			description: [
-				" 발효기에서 감자 또는 사탕수수 등을 넣어 에탄올을 얻었다면 정제기에서 은 판으로 결정화를 시켜 아세트알데하이드를 만듭니다."
-				" 이를 또 정제기에 넣고 크레오소트유와 섞는다면 페놀포름알데히드 수지가 만들어집니다."
-				" 그리고 그걸 병조림기에 채우고 금속 압축틀: 판으로 담는다면 듀로플라스트가 완성됩니다."
+				"If you put potatoes or sugar cane or whatever in a fermenter and get ethanol, you can crystallize it with silver plates in a refiner to make acetaldehyde."
+				"If you put that in another refiner and mix it with creosote oil, you get phenol-formaldehyde resin."
+				"And then you fill it into a jar and put it into a metal compression mold: a plate, and you have duroplast."
 				""
-				" 듀로플라스트는 복합 회로의 재료가 됩니다."
+				"Duroplast is a material for composite circuits."
 			]
 			dependencies: [
 				"1C3A878FD7DDEF65"
@@ -1096,20 +1096,20 @@
 			}]
 		}
 		{
-			title: "하늘을 날다"
+			title: "Flying in the Sky"
 			x: 4.0d
 			y: -1.0d
-			subtitle: "접이식 글라이더"
+			subtitle: "Foldable Glider"
 			description: [
-				" 겉날개는 얻기 힘들니 직접 비슷한 걸 만들어보죠."
-				" 바로 접이식 글라이더 입니다."
+				"Wings are hard to come by, so let's make something similar."
+				" This is a folding glider."
 				""
-				" 상체에 착용하면 평상시엔 접은 상태로 다닐 수 있으며 공중에서 스페이스바를 눌러 펼칠 수 있습니다."
-				" 겉날개와 같이 폭죽으로 가속을 할 수 있습니다."
+				" It can be worn on your torso, folded for normal use, and unfolded by pressing the spacebar in midair."
+				" You can accelerate it with firecrackers, like wings."
 				""
-				" 다만, 너무 빠른 속도로 난다면 글라이더의 내구도 소모는 더욱 빨라집니다."
+				"However, flying too fast will deplete your glider's durability more quickly."
 				""
-				" 수리는 모루(Minecraft)에서 강력 천으로 할 수 있습니다."
+				" Repairs can be made with a strong cloth from the anvil in Minecraft."
 			]
 			dependencies: [
 				"527DFC1333E3D2AC"
@@ -1135,11 +1135,11 @@
 			}]
 		}
 		{
-			title: "찜질"
+			title: "Poultice"
 			x: -2.0d
 			y: -1.0d
-			subtitle: "합금 가마"
-			description: [" 비교적 낮은 온도에서 녹는 금속들을 녹여 합금으로 만듭니다."]
+			subtitle: "Alloy Kiln"
+			description: [" Melts metals that melt at relatively low temperatures to form an alloy."]
 			dependencies: [
 				"3C39E3C5B1F649CE"
 				"245FBFB772A9DCCF"
@@ -1154,14 +1154,14 @@
 			}]
 		}
 		{
-			title: "열공학"
+			title: "Thermal Engineering"
 			x: -1.0d
 			y: -1.0d
-			subtitle: "열전기 발전기"
+			subtitle: "Thermoelectric Generator"
 			description: [
-				" 닿은 면의 액체간 온도차로 발전 합니다."
-				" 온도차가 클 수록 발전량도 늘어납니다."
-				" 예를 들어 물과 용암을 곁에 두면 된다는 겁니다."
+				"Generates power from the temperature difference between the liquids on the touching surface."
+				" The larger the temperature difference, the more power is generated."
+				" For example, you can put water and lava next to each other."
 			]
 			dependencies: ["130433213992EEE9"]
 			id: "512920CD6AF5302B"
@@ -1172,18 +1172,18 @@
 			}]
 		}
 		{
-			title: "온실 속 화초"
+			title: "Plants in a Greenhouse"
 			x: 1.0d
 			y: -3.5d
 			shape: "square"
-			subtitle: "원예기"
+			subtitle: "Gardening Machine"
 			description: [
-				" 일반적인 환경에서 키우지 못했던 작물들을 키울 수 있습니다."
-				" 전기, 물만 공급된다면요."
+				" You can grow things you wouldn't be able to grow in a normal environment."
+				" As long as you have electricity and water."
 				""
-				" 작물에 따라 요구하는 토양이 다릅니다."
+				" Different crops have different soil requirements."
 				""
-				" 한 번 키워보실래요?"
+				" Want to give it a try?"
 			]
 			dependencies: ["41F7568DE328AB02"]
 			id: "0DFB210599478E6B"
@@ -1206,17 +1206,17 @@
 			]
 		}
 		{
-			title: "우린 이걸 개밥이라 부릅니다"
+			title: "We call it dog food"
 			icon: "immersiveengineering:concrete_bucket"
 			x: 1.0d
 			y: 2.0d
 			shape: "square"
-			subtitle: "혼합기"
+			subtitle: "Mixer"
 			description: [
-				" 혼합기는 고체인 아이템과 액체를 섞어주는 역할을 합니다."
+				"Mixers are responsible for mixing solid items with liquids."
 				""
-				" 예를 들어 모래, 자갈 그리고 점토와 물을 혼합하면 액체 콘크리트가 되며 이는 굳혀서 건축용으로 사용하거나"
-				" 석유를 퍼낼 때 이용됩니다."
+				" For example, mixing sand, gravel, and clay with water creates liquid concrete, which can be hardened and used for construction"
+				" or used to pump out oil."
 			]
 			dependencies: ["1B47EBDB6A332E04"]
 			id: "1FAFFF256B9AE19D"
@@ -1258,28 +1258,28 @@
 			]
 		}
 		{
-			title: "검은 금을 찾아라"
+			title: "Search for Black Gold"
 			icon: "immersivepetroleum:seismic_survey"
 			x: 1.0d
 			y: 4.0d
 			shape: "square"
-			subtitle: "지진파 조사 도구"
+			subtitle: "Seismic Survey Tool"
 			description: [
-				" 석유는 기반암 아래 깊숙한 곳에 존재하며 이는 일반적인 방법으로는 찾을 수 없습니다."
+				" Oil exists deep beneath bedrock and cannot be found by conventional methods."
 				""
-				" 지진파를 통해 진동이 다른 곳을 찾아 유추를 해야하며 이 지진파 조사 도구가 필요할 겁니다."
+				" You'll need to use seismic waves to look for other sources of vibration and make inferences, which is where this seismic survey tool comes in."
 				""
 				""
-				" 적당한 청크에 설치하고 산탄 카트리지를 넣어 땅에 발사시켜 진동을 일으키고 우클릭으로 조사 결과를 획득하세요."
-				" 빈 쉘을 빼는거 잊지 말고요."
+				" Set it up in a suitable chunk, load it with a shotgun cartridge and fire it into the ground to create vibrations, and right-click to get your survey results."
+				" Don't forget to take out the empty shells."
 				""
-				" 조사 결과를 들면 아무것도 안 뜨거나 지도 형태로 표시가 될 것입니다."
-				" 사각형 하나가 한 청크를 의미하며 윗 화살표는 동쪽을 의미합니다."
-				" 가운데를 중심으로 검은 점들이 모여있을텐데, 비정상적으로 흰 부분이 보인다면 그곳이 수맥이 있는 곳입니다."
-				" 그럼 그 청크로 조사 도구를 이동하여 다시 조사를 하고, 그곳의 조사 결과를 들어서 지도가 표시되지 않는 곳을 찾는다면 마우스 커서로 보면 해당 수맥의 정보를 알 수 있습니다."
+				" You'll either see nothing or a map of your findings."
+				" One square represents a chunk, and an up arrow means east."
+				"There should be a cluster of black dots around the center, and if you see an unusually white area, that's where the water vein is."
+				"Then you can move the survey tool to that chunk and survey it again, and listen to the survey results there, and if you find a place that doesn't show up on the map, you can hover over it and get information about that water vein."
 				""
-				" 수맥이라고 원유(석유)만 있는 것이 아니라 물, 용암 수맥일 수 있습니다."
-				" 우리가 찾는게 물이나 용암이 아니므로 다른 수맥을 찾으러가면 됩니다. 뭐.. 굳이 물이랑 용암이 필요하다면 그 수맥이 있는 청크에 대기해서 다음 퀘스트를 확인하세요."
+				"It doesn't have to be just crude oil, it could be water, it could be lava."
+				" Since we're not looking for water or lava, we can go find another vein. Well, if we really need water and lava, we can wait in the chunk where the vein is and check the next quest."
 			]
 			dependencies: [
 				"1FAFFF256B9AE19D"
@@ -1306,24 +1306,24 @@
 			}]
 		}
 		{
-			title: "샘솟는 검은 금"
+			title: "Gushing Black Gold"
 			icon: "immersivepetroleum:crudeoil_bucket"
 			x: 3.5d
 			y: 4.0d
 			shape: "square"
-			subtitle: "유정탑(Derrick)"
+			subtitle: "Oil Tower (Derrick)"
 			description: [
-				" 원하는 수맥(대부분 원유 수맥)이 있는 청크를 찾았다면 이제 그 청크에 유정탑을 설치해야합니다."
-				" 기반암까지 파이프를 뚫어야하기에 몇가지 부가 재료도 필요합니다."
+				" Once you have found a chunk with the desired water vein (most likely a crude oil vein), you now need to install a wellhead on that chunk."
+				" You'll also need some additional materials, as you'll need to drill a pipe down to the bedrock."
 				""
-				" 유체 파이프로 수맥의 액체를 끌어 와야하며 단단한 지반을 견딜수 있게 액체 콘크리트로 파이프를 보호해야 합니다."
-				" 그리고 물을 넣어 수압으로 수맥의 액체를 올려내는 것이죠."
-				" 뭐, 그냥 기계에서 요구하는 것만 그때그때 주면 됩니다."
+				" You'll need to draw the liquid from the water vein with a fluid pipe, and you'll need to protect the pipe with liquid concrete to withstand the hard ground."
+				" And then we'll need to add water to raise the liquid in the aquifer with hydraulic pressure."
+				" Well, you just give the machine what it asks for."
 				""
-				" 해당 과정이 끝났고 충분한 수압을 가진 수맥이라면 아무런 자원 없이(심지어 전력도) 배출 파이프에서 수맥의 액체가 나올 겁니다."
+				"Once that's done, and you have enough water pressure, the liquid in the vein will come out of the outlet pipe without any resources (not even power)."
 				""
-				" 큰 수맥을 찾았다면 충분히 많은 액체가 나오겠지만 그래도 수맥의 모든 액체가 나온 것은 아닙니다."
-				" 남은 액체도 퍼내고 싶다면 오른쪽에 있는 퀘스트를 확인하세요."
+				" If you've found a large well, there should be plenty of liquid coming out, but not all of it."
+				" If you want to scoop out the remaining liquid, check out the quests on the right."
 			]
 			dependencies: ["23AE382AA2F79B48"]
 			id: "77391F962577E404"
@@ -1372,19 +1372,19 @@
 			]
 		}
 		{
-			title: "마지막 한 방울 까지"
+			title: "Down to the Last Drop"
 			icon: "immersivepetroleum:crudeoil_bucket"
 			x: 3.5d
 			y: 5.0d
 			shape: "square"
-			subtitle: "시추기"
+			subtitle: "Driller"
 			description: [
-				" 유정탑에서 수맥에 액체가 더 이상 나오지 않는다면 나머지는 시추기로 퍼낼 수 있습니다."
+				"When there is no more liquid in the water vein at the wellhead, the rest can be scooped out with the driller."
 				""
-				" 유정탑은 이제 필요 없으니 철거하고 유정탑 중앙 아래에 생성된 파이프로 시추기가 수맥의 액체를 퍼낼 겁니다."
-				" (이때 시추기의 위치가 중요합니다. 대략 예상이 가듯이 시추기의 끝자락에 위치하면 됩니다)"
+				" The wellhead is no longer needed, so we'll remove it, and the driller will pump the liquid from the well into the pipe created down the center of the wellhead."
+				" (The location of the driller is important here - as you can probably guess, it should be at the end of the pipe)"
 				""
-				" 그럼 전력만 준다면 유정탑보단 느리지만 남은 수맥의 액체를 마지막까지 퍼낼 수 있게 됩니다."
+				" Then, if you power it up, you'll be able to pump out the last of the fluid in the wellbore, albeit at a slower rate than the welltop."
 			]
 			dependencies: ["77391F962577E404"]
 			id: "23E80D89D5D03B7B"
@@ -1439,27 +1439,27 @@
 			]
 		}
 		{
-			title: "석유 정제"
+			title: "Petroleum Refining"
 			icon: "immersivepetroleum:diesel_sulfur_bucket"
 			x: 6.0d
 			y: 4.0d
 			shape: "square"
-			subtitle: "증류탑(Distillation Tower)"
+			subtitle: "Distillation Tower"
 			description: [
-				" 석유(원유)는 그대로 쓸수는 없고 정제가 필요합니다."
-				" 정유탑에서 그 역할을 할 수 있죠."
+				"Petroleum (crude oil) can't be used as is, it needs to be refined."
+				" A distillation tower can do that."
 				""
-				" 원유를 정제하면 총 4가지의 액체로 분류가 됩니다."
+				"Once crude oil is refined, it can be categorized into four different liquids."
 				""
-				" 윤활유는 자동 윤활기를 통해 몇가지 기계들의 속도를 높힐 수 있고"
-				" Kerosene는 또 다시 정제하여 황화 경유, Naphtha 그리고 Gasoline Additives로 정제할 수 있고"
-				" Naphtha는 Gasoline Additives와 함께 정제기에서 휴대용 발전기에 쓸 수 있는 휘발유로 만들 수 있으며"
-				" 황화 경유는 디젤 발전기에서 압도적인 전력을 뽑아낼 수 있습니다."
+				" Lubricants can be used to speed up some machines through automatic lubricators."
+				"Kerosene can be further refined into sulfurized diesel fuel, naphtha, and gasoline additives."
+				"Naphtha can be made into gasoline for portable generators in a refinery with gasoline additives."
+				"Sulfurized diesel fuel is capable of extracting overwhelming power from a diesel generator."
 				""
-				" 참고로 정유탑의 액체 배출구는 하나지만 출력되는 액체는 4가지이므로 Immersive Engineering의 유체 파이프로 뽑아내길 바랍니다."
-				" 유체 파이프는 타 파이프들과는 다르게 파이프에 동시에 여러 액체가 존재할 수 있기 때문입니다."
+				" Note that the refinery tower has only one liquid outlet, but four liquids output, so you'll want to use Immersive Engineering's Fluid Pipes to get them out."
+				" Fluid pipes are different from other pipes because they allow multiple liquids to exist in the pipe at the same time."
 				""
-				" 정제를 하다보면 부산물로 역청이 나올겁니다. 이걸로 좋은 도로 블록인 아스팔트를 만들 수 있죠."
+				"When we refine it, we'll get bitumen as a byproduct, which is a good road block, asphalt."
 			]
 			dependencies: ["77391F962577E404"]
 			id: "05CD6B92B31E139D"
@@ -1513,16 +1513,16 @@
 			}]
 		}
 		{
-			title: "작고 소중한 발전기"
+			title: "A small and precious generator"
 			x: 5.5d
 			y: 5.0d
-			subtitle: "휴대용 발전기"
+			subtitle: "Portable Generator"
 			description: [
-				" 휘발유를 이용해 발전하는 이 휴대용 발전기는 Mekanism전 까지는 한 블록으로 발전이 되는 쓸만한 발전기일 겁니다."
+				"This gasoline-powered portable generator will be useful until Mekanism, when it will generate a block of power."
 				""
-				" 쉬프트 우클릭으로 내용물(전력, 휘발유)가 보존된 채로 보관할 수 있으니 더욱 휴대성이 강조가 되죠."
+				" Shift-right-click to store the contents (power, gasoline), emphasizing its portability."
 				""
-				" 참고로 이 발전기는 별도의 전선 연결기 없이 바로 전선을 연결할 수 있습니다."
+				" By the way, this generator can be plugged directly into the wires without the need for a separate wire connector."
 			]
 			dependencies: ["05CD6B92B31E139D"]
 			id: "4D0067050FB092E4"
@@ -1533,15 +1533,15 @@
 			}]
 		}
 		{
-			title: "개조 보트"
+			title: "Modified Boat"
 			x: 6.5d
 			y: 5.0d
-			subtitle: "모터보트"
+			subtitle: "Motorboat"
 			description: [
-				" 휘발유를 소모하여 모터를 돌려 작동하는 이 보트는 개조를 통해 더욱 흥미롭게 쓸 수 있습니다."
+				" This boat runs on gasoline to turn its motor, but modifications can make it more interesting."
 				""
-				" 예를 들어 강화된 선체 업그레이드를 통해 용암 위로도 다닐 수 있고"
-				" 쇄빙 선수(?) 업그레이드로 추운 지역의 얼은 강을 부수며 나아갈 수도 있는거죠."
+				" For example, a reinforced hull upgrade can allow it to travel over lava, and"
+				" and with the icebreaker (?) upgrade, you can break through frozen rivers in cold regions."
 			]
 			dependencies: ["05CD6B92B31E139D"]
 			id: "370707AB987DFB20"
@@ -1567,16 +1567,16 @@
 			}]
 		}
 		{
-			title: "미끌미끌"
+			title: "Slippery"
 			x: 7.0d
 			y: 4.0d
-			subtitle: "자동 윤활기"
+			subtitle: "Automatic Lubricator"
 			description: [
-				" 윤활유는 회전을 하는 몇몇 기계(시추기, 분쇄기 등등)에 도포를 하면 기계의 속도가 일시적으로 증가하게 됩니다."
-				" 윤활유 캔으로 수동으로 윤활유를 공급해 줄 수 있지만 우리는 자동화를 원하죠."
+				" Lubricant can be applied to some machines that rotate (drillers, crushers, etc.) and it will temporarily increase the speed of the machine."
+				" You can manually lubricate them with a can of lubricant, but we want to automate it."
 				""
-				" 자동 윤활기를 들면 장착 가능한 기계는 어느 위치에 설치해야하는지 표시가 되며 알맞은 방향으로 배치되면 해당 기계에 윤활기의 파이프가 추가된 것을 확인할 수 있습니다."
-				" 그럼 이제 자동 윤활기에 윤활유만 공급해주면 되는거죠."
+				" When you pick up the automatic lubricator, you'll see an indication of where the machine should be mounted, and once it's positioned in the right direction, you'll see a pipe from the lubricator added to that machine."
+				"So now all we have to do is feed the automatic lubricator."
 			]
 			dependencies: ["05CD6B92B31E139D"]
 			id: "238AC580114B4582"
@@ -1592,15 +1592,15 @@
 			}]
 		}
 		{
-			title: "전기로 구워볼까?"
+			title: "Should We Bake with Electricity?"
 			x: 0.0d
 			y: -1.0d
-			subtitle: "전기로"
+			subtitle: "Electric Furnace"
 			description: [
-				" 간단합니다."
-				" 화로는 고체 연료를 쓰지만 얘는 전기를 씁니다."
+				" It's simple."
+				" Furnaces use solid fuel, but this one uses electricity."
 				""
-				" 입출력 면도 존재하므로 자동화에도 유리하죠."
+				" There's also an input and output side, which is good for automation."
 			]
 			dependencies: ["1B47EBDB6A332E04"]
 			id: "0F5B33828B81ECCB"
@@ -1616,20 +1616,20 @@
 			}]
 		}
 		{
-			title: "완벽한 마무리"
+			title: "The Perfect Finish"
 			icon: "immersivepetroleum:diesel_bucket"
 			x: 6.0d
 			y: 3.0d
 			shape: "square"
-			subtitle: "황 추출기"
+			subtitle: "Sulfur Extractor"
 			description: [
-				" 사실 황화 경유를 한 번 더 정제해야 좋습니다."
-				" 뭐.. 효율은 똑같지만 황을 얻을 수 있거든요. 그 황은 추후에 광물을 5배까지 불릴 수 있는 수단이 되고요."
+				" Actually, the sulfurized diesel needs to be refined one more time before it's good."
+				" Well. The efficiency is the same, but you get sulfur, which you can later use to increase the mineralization by a factor of five."
 				""
-				" 황 추출기의 윗부분에 물을 공급하고 측면에 황화 경유를 공급해주면 됩니다."
-				" 그럼 황을 얻을 수 있죠."
+				"All you need to do is feed the top of the sulfur extractor with water and the sides with sulfurized diesel fuel."
+				"And then you get the sulfur."
 				""
-				" 사실 이 외에도 다른 용도로 황 추출기를 쓸 수 있기는한데, 그건 여러분이 알아보는게 좋겠습니다."
+				"Actually, there are other uses for sulfur extractors besides this, but I'll leave that to you to explore."
 			]
 			dependencies: ["05CD6B92B31E139D"]
 			id: "6DF21646B4263C04"
@@ -1672,20 +1672,20 @@
 			}]
 		}
 		{
-			title: "전력 봉쇄"
+			title: "Power Lockdown"
 			x: -1.0d
 			y: 1.0d
-			subtitle: "저압 축전기"
+			subtitle: "Low Voltage Capacitor"
 			description: [
-				" 크리에이트 동력에 익숙해졌다면 이번엔 전력에 익숙해질 차례입니다."
-				" 물론, 이미 이런류의 모드팩에 익숙하다면 무시해도 될 설명이죠."
+				"Now that you've gotten used to the power of creation, it's time to get used to power."
+				"Of course, if you're already familiar with this type of modpack, you can ignore this description."
 				""
-				" 암튼, 제가 추천하는 설비는 발전실과 기계실을 나누고 그 사이를 축전지로 연결하는 겁니다."
-				" 그렇게 된다면 발전실에서 남는 전력은 축전지에 저장이 되고 혹여나 발전실에 문제가 생겨도 축전지의 전력으로 기계들을 잠시 돌릴 수 있으니까 말이죠."
+				"Anyway, the setup I recommend is to have a power room and a mechanical room, with a storage battery in between."
+				"That way, any excess power from the generator room can be stored in the storage battery, and if something happens to the generator room, you can run the machines for a while on the power from the storage battery."
 				""
-				" 엔지니어의 망치로 입출력 부분을 정할 수 있습니다."
-				" 이쯤되서 외우세요."
-				" 파란 계열은 입력 , 붉은 계열은 출력"
+				"You can use an engineer's hammer to determine the inputs and outputs."
+				" Memorize this by now."
+				"Blue is input, red is output."
 			]
 			dependencies: ["1B47EBDB6A332E04"]
 			id: "33E754267C4CEAB1"
@@ -1696,11 +1696,11 @@
 			}]
 		}
 		{
-			title: "산업 혁명 v2.5"
+			title: "Industrial Revolution v2.5"
 			x: 2.0d
 			y: -0.5d
-			subtitle: "많은 컨베이어 벨트"
-			description: [" 뭐, 다양한 벨트들 입니다."]
+			subtitle: "Lots of conveyor belts"
+			description: [" Well, a lot of different belts."]
 			dependencies: [
 				"24FF7F6C2AF0C4C1"
 				"707060893C44D0F8"
@@ -1742,23 +1742,23 @@
 			}]
 		}
 		{
-			title: "비행수단"
+			title: "Means of Flight"
 			x: 5.5d
 			y: 6.5d
-			subtitle: "엔진"
+			subtitle: "Engine"
 			description: [
-				" 기차를 만들었어도 정해진 트랙으로만 안정적으로 갈 수 있습니다. 그러니까 탐험해보지 못한 곳은 직접 걷거나 말을 탔어야했죠."
-				" 하늘은 나는 수단도 글라이더 정도 밖에 없었지만 이젠 아닙니다."
+				"Even if you built a train, it could only reliably travel on a set track, so you had to walk or ride a horse to get to the unexplored places."
+				" The only way to fly was by glider, but not anymore."
 				""
-				" 블레이즈 버너를 이용한 엔진을 기반으로 하늘을 날 수 있는 수단을 만들 수 있습니다."
-				" 엔진을 만들고 커서를 대서 U를 눌러보면 제작할 수 있는 것들이 표시될 겁니다."
+				" You can create a vehicle that can fly based on an engine using a blaze burner."
+				"If you create an engine and press U with your cursor, you'll see what you can build."
 				""
-				" 스페이스,쉬프트와 WASD로 조작할 수 있으며 R로 내릴 수 있습니다."
+				"You can maneuver with space, shift, and WASD, and you can eject with R."
 				""
-				" 탑승한채로 인벤토리를 열면 비행체의 인벤토리를 열 수 있게되며 거기서 비행체에 연료와 업그레이드 부품을 부착할 수 있습니다."
-				" 업그레드 부품은 비행체의 연료 효율성, 속도 등을 증가시킬 수 있습니다."
+				"Opening your inventory while seated will allow you to open the inventory of your airplane, where you can attach fuel and upgrade parts to your airplane."
+				"Upgrade parts can increase the fuel efficiency, speed, etc. of your plane."
 				""
-				" 연료는 숯, 석탄(Minecraft)등을 이용할 수 있습니다."
+				" Fuel is available in the form of charcoal, coal (Minecraft), etc."
 			]
 			dependencies: ["4D0067050FB092E4"]
 			id: "4BF260D296037614"
@@ -1774,7 +1774,7 @@
 			}]
 		}
 		{
-			title: "터어어어어얼렸구나!!!"
+			title: "You froze!!!"
 			icon: {
 				id: "tfc:food/wheat_grain"
 				Count: 1b
@@ -1787,12 +1787,12 @@
 			}
 			x: 0.0d
 			y: -2.5d
-			subtitle: "탈곡기(Thresher)"
+			subtitle: "Thresher"
 			description: [
-				" 탈곡기는 밀 등의 곡류를 아주 효율적으로 가공해주는 기계입니다."
-				" Create는 1개에서 2개의 생산량만 가지고 있지만이 탈곡기는 상시 3배 효율을 냅니다."
+				"A thresher is a machine that processes wheat and other grains very efficiently."
+				" Create only has one or two yields, but this thresher is always 3x as efficient."
 				""
-				" 짚은 따로 기계 측면에서 배출됩니다."
+				" Straw is ejected from the side of the machine separately."
 			]
 			dependencies: ["1B47EBDB6A332E04"]
 			id: "45F0FC954C29F86F"
@@ -1827,7 +1827,7 @@
 			}]
 		}
 		{
-			title: "가루로 드셔보겠습니까?"
+			title: "Would you like to try it powdered?"
 			icon: {
 				id: "tfc:food/wheat_flour"
 				Count: 1b
@@ -1840,10 +1840,10 @@
 			}
 			x: -1.0d
 			y: -2.5d
-			subtitle: "제분기(Grist Mill)"
+			subtitle: "Grist Mill"
 			description: [
-				" 제분기는 밀 등의 곡물을 아주 효율적으로 가공해주는 기계입니다."
-				" Create는 1개에서 2개의 생산량만 가지고 있지만이 제분기는 상시 3배 효율을 냅니다."
+				"A grist mill is a machine that processes wheat and other grains very efficiently."
+				" Create only has one or two outputs, but this mill is 3x as efficient at all times."
 			]
 			dependencies: ["1B47EBDB6A332E04"]
 			id: "7AC046DCDA512814"
@@ -1895,26 +1895,26 @@
 			}]
 		}
 		{
-			title: "산업 혁명"
+			title: "Industrial Revolution"
 			icon: "tfc:wool_cloth"
 			x: -2.0d
 			y: -2.5d
-			subtitle: "역직기(Power Loom)"
+			subtitle: "Power Loom"
 			description: [
-				" 역직기는 양털 등의 직물을 효율적으로 가공해주는 기계입니다."
-				" Create는 자동화만 가능했지만 역직기는 비교적 적은 직물로 천을 생산할 수 있습니다."
-				" 대신에 작동 방법이 좀 복잡합니다."
+				"A power loom is a machine that efficiently processes fabrics such as wool."
+				" Unlike Create, which can only be automated, a power loom can produce cloth from relatively little fabric."
+				" Instead, it's a bit more complicated to operate."
 				""
-				" 역직기는 앞뒤가 거의 유사하게 생겼지만 파란색, 주황색 포인트로 입력, 출력면이 나뉩니다."
+				" A reverse loom looks much the same from front to back, but the input and output sides are divided by blue and orange points."
 				""
-				" 그 사이에는 빗 처럼 생긴 막이 있는데, 거기에 직조를 원하는 직물 16가닥을 걸어 놔야합니다."
-				" 그 다음에는 입력부분에 있는 가로로 이어진 봉에 직조할 직물 32가닥을 걸어놉니다."
-				" 마지막으로 핀(Pirn)에 직조할 직물 8개를 감겨진 핀을 기계 옆면(출력이 좌측, 입력이 우측)에 있는 봉에 설치하면 준비는 끝납니다."
+				"In between is a membrane that looks like a comb, on which you hang the 16 strands of fabric you want to weave."
+				" Next, hang 32 strands of the fabric you want to weave on the horizontal rods on the input side."
+				"Finally, you put the 8 strands of fabric you want to weave on the pirn, which is wound around the pole on the side of the machine (output is on the left, input is on the right), and you're ready to go."
 				""
-				" 전력이 공급되면 역직기는 직조를 하게되고 직조가 끝나면 출력 부분에 웅크린채로 우클릭을 하면 천 4개를 얻게 됩니다."
-				" 핀은 입력 부분에 있는 또 다른 출력부위에 배출됩니다."
+				" Once powered up, the reverse loom will weave, and when it's done, you can crouch down on the output part and right-click to get 4 pieces of fabric."
+				" The pins are ejected into another output on the input part."
 				""
-				" 좀 까다로운 과정이었지만 원래는 직물 64개를 사용해 천 4개를 얻을 수 있지만 역직기를 통해 만들면 중앙에 걸어 놓은 직물을 제외한 직물 40(입력 부분에 32개, 핀에 8개)개만을 이용해 천 4개를 얻게 됩니다."
+				"It's a bit of a tricky process, but originally you can use 64 fabrics to get 4 cloths, but when you make it through the reverse loom, you get 4 cloths using only 40 fabrics (32 on the input part and 8 on the pin), not including the fabric hanging in the center."
 			]
 			dependencies: ["1B47EBDB6A332E04"]
 			id: "6197B43C01D1A619"
@@ -1972,16 +1972,16 @@
 			}]
 		}
 		{
-			title: "전기로 작동함"
+			title: "Powered by electricity"
 			x: 0.0d
 			y: -3.5d
-			subtitle: "전기로"
+			subtitle: "Electric Furnace"
 			description: [
-				" 더 이상 숯불로에서 펌프질하고 연료를 갈아주고 주괴가 녹을 걱정은 하지 않아도 됩니다."
+				" No more pumping, changing fuel, and worrying about melting ingots in a charcoal furnace."
 				""
-				" 전기로는 전력만 충분하다면 상시 원하는 온도만큼만 가열할 수 있으며 원한다면 끌 수도 있습니다."
+				" With an electric furnace, as long as you have enough power, you can heat it to whatever temperature you want at any time, and you can turn it off if you want."
 				""
-				" 가열된 전기로 위에는 올라가지 마세요. 아픕니다."
+				" Don't stand on top of a heated furnace. It hurts."
 			]
 			dependencies: ["1B47EBDB6A332E04"]
 			id: "0B9CCCD6E4EFCFE9"
@@ -2001,13 +2001,13 @@
 			icon: "rosia:rolling_machine"
 			x: -1.0d
 			y: -3.5d
-			subtitle: "압연기"
+			subtitle: "Rolling Mill"
 			description: [
-				" 합괴를 판으로 바로 만들어 줍니다. 모루에서 망치질을 할 필요가 없죠."
+				"Turns an ingot directly into a plate. No need to hammer on an anvil."
 				""
-				" 물론, 가공 가능한 온도까지는 가열해야 가능한 일입니다."
+				" Of course, you have to heat it up to a workable temperature."
 				""
-				" 강철 롤러를 장착시켜야 기계가 작동됩니다."
+				"You have to put steel rollers on it to make the machine work."
 			]
 			dependencies: ["1B47EBDB6A332E04"]
 			id: "19657F3AFD5669F8"
@@ -2036,17 +2036,17 @@
 			}]
 		}
 		{
-			title: "성형외과"
+			title: "Plastic Surgery"
 			icon: "rosia:extruding_machine"
 			x: -2.0d
 			y: -3.5d
-			subtitle: "압출기"
+			subtitle: "Extruder"
 			description: [
-				" 주괴를 막대로 만들고 막대를 선으로 만드는 과정을 자동화해 줍니다."
+				" Automates the process of turning ingots into bars and bars into lines."
 				""
-				" 물론, 가공 가능한 온도까지 가열을 해줘야 됩니다."
+				" Of course, you'll need to heat it up to a workable temperature."
 				""
-				" 강철 성형틀이 있어야 기계가 작동됩니다."
+				" You need a steel molding frame to run the machine."
 			]
 			dependencies: ["1B47EBDB6A332E04"]
 			id: "040D38F784BF740C"
@@ -2075,15 +2075,15 @@
 			}]
 		}
 		{
-			title: "자돌돌돌"
+			title: "Jadol Dol Dol"
 			icon: "rosia:auto_quern"
 			x: -3.0d
 			y: -3.5d
-			subtitle: "자동 맷돌"
+			subtitle: "Auto millstone"
 			description: [
-				" 맷돌(TFC)의 기능을 자동화 합니다."
+				"Automates the function of the millstone (TFC)."
 				""
-				" 강철 맷돌이 있어야 기계가 작동합니다."
+				" The machine requires a steel millstone to function."
 			]
 			dependencies: [
 				"1B47EBDB6A332E04"
@@ -2115,18 +2115,18 @@
 			}]
 		}
 		{
-			title: "[깡]"
+			Title: "[Can]"
 			icon: "rosia:canning_press"
 			x: 0.0d
 			y: -4.5d
-			subtitle: "통조림기"
+			subtitle: "Canner"
 			description: [
-				" 음식을 장기 보관하는 방법 중 하나는 통조림으로 만드는 것입니다."
-				" 빵, 육류, 치즈, 수프, 야채, 과일 등을 캔에 넣고 밀봉하면 신선도를 오래 유지시킬 수 있습니다."
+				" One way to store food for the long term is to can it."
+				" Bread, meats, cheeses, soups, vegetables, fruits, and more can be canned and sealed to keep them fresh longer."
 				""
-				" 주석을 캔으로 가공하고 넣을 수 있는 음식을 넣은 뒤에 병조림기(Canning Press)에 넣어 밀봉시키면 완성 입니다."
+				"You can can tin and fill it with whatever you can fit, then put it in a canning press and seal it."
 				""
-				" 배고플 때, 섭취함면 되며 섭취한 뒤에는 캔을 다시 회수할 수 있습니다."
+				"When you're hungry, you eat it, and when you're done, you can retrieve the can."
 			]
 			dependencies: ["1B47EBDB6A332E04"]
 			id: "0A31E983A69C9314"
@@ -2149,11 +2149,11 @@
 			}]
 		}
 		{
-			title: "지이이"
+			title: "Jiayi"
 			x: -1.0d
 			y: -4.5d
-			subtitle: "전기 그릴"
-			description: [" 모닥불 석쇠에 음식을 구워서 얻는 효과인 석쇠구이 속성을 기계에서도 누릴 수 있게 되었습니다. 무려 많은 음식을 한꺼번에요."]
+			subtitle: "Electric Grill"
+			description: ["The grilling effect you get from roasting food over a campfire grill is now available to machines - and a lot of food at once."]
 			dependencies: [
 				"1B47EBDB6A332E04"
 				"20A2918A0D84C7B6"
@@ -2171,13 +2171,13 @@
 			}]
 		}
 		{
-			title: "코끼리는 어떻게 들어간거야?"
+			title: "How did the elephant get in?"
 			x: -2.0d
 			y: -4.5d
-			subtitle: "냉장고"
+			subtitle: "Refrigerator"
 			description: [
-				" 음식을 냉장시켜 보관을 오해하게 할 수 있는 기계입니다."
-				" 영구는 아니니까 방심하지 마세요."
+				"A machine that refrigerates food to give you a false sense of security."
+				" It doesn't last forever, so don't let your guard down."
 			]
 			dependencies: ["1B47EBDB6A332E04"]
 			id: "26ED66FEDD706C52"
@@ -2193,11 +2193,11 @@
 			}]
 		}
 		{
-			title: "빛이 있으라"
+			title: "Let There Be Light"
 			x: -3.0d
 			y: -4.5d
-			subtitle: "전기 랜턴"
-			description: [" 전기를 소모하여 빛을 냅니다. 그게 답니다."]
+			subtitle: "Electric Lantern"
+			description: [" Consumes electricity to produce light, that's all."]
 			dependencies: ["1B47EBDB6A332E04"]
 			id: "3732A6FD83A7D033"
 			tasks: [{
@@ -2212,15 +2212,15 @@
 			}]
 		}
 		{
-			title: "전기 크루저"
+			title: "Electric Cruiser"
 			icon: "rosia:electric_loom"
 			x: -4.0d
 			y: -3.5d
-			subtitle: "전기 베틀"
+			subtitle: "Electric Loom"
 			description: [
-				" 베틀의 기능을 자동화 합니다."
+				"Automates the functions of a loom."
 				""
-				" 강철 베틀 부품이 있어야 기계가 작동합니다."
+				" The machine requires steel loom parts to function."
 			]
 			dependencies: [
 				"1B47EBDB6A332E04"

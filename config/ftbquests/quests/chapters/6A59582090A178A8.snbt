@@ -3,23 +3,23 @@
 	group: "243E5F39EA4B9B78"
 	order_index: 0
 	filename: "6A59582090A178A8"
-	title: "요리왕"
-	subtitle: ["생존을 위한 음식 말고, 삶의 질을 높이는 음식을 만들어보세요."]
+	title: "Cooking King"
+	subtitle: ["Don't make food to survive, make food to live."]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "영구화력"
+			title: "Persistence"
 			x: 0.0d
 			y: 0.0d
-			subtitle: "스토브"
+			subtitle: "Stove"
 			description: [
-				" 난로는 이 뒤에서 다룰 요리 도구들을 이용하기 위해 필요한 구성요소 입니다."
-				" 뭐, 그냥 얘 혼자 써도 문제는 없죠."
+				"The stove is a necessary component to utilize the cooking tools discussed later in this chapter."
+				"Well, you could just use this one by itself."
 				""
-				" 구울 식재료를 위에 올려두면 구워집니다."
+				" You place the ingredients you want to bake on it, and it bakes."
 				""
-				" 연료가 필요 없다는게 큰 장점이죠."
+				" You don't need any fuel, which is a big plus."
 			]
 			dependencies: ["20A2918A0D84C7B6"]
 			id: "2B01B6775E5F77B5"
@@ -30,13 +30,13 @@
 			}]
 		}
 		{
-			title: "짬통"
+			Title: "Tongtong"
 			x: 1.0d
 			y: -1.0d
-			subtitle: "조리용 냄비"
+			subtitle: "Cooking pot"
 			description: [
-				" 스토브(난로) 위에 설치하고 레시피에 맞는 재료를 넣으면 완성이 되며 그릇으로 퍼낼 수 있습니다."
-				" 음식을 찌거나 삶는 것도 가능하죠."
+				"Place it on the stove (hearth), add the ingredients for your recipe, and it's ready to cook and can be scooped into a bowl."
+				" You can also steam or boil food."
 			]
 			dependencies: [
 				"2B01B6775E5F77B5"
@@ -63,13 +63,13 @@
 			]
 		}
 		{
-			title: "방탄은 아닙니다."
+			title: "Not Bulletproof"
 			x: 1.0d
 			y: 1.0d
-			subtitle: "프라이팬"
+			subtitle: "Frying Pan"
 			description: [
-				" 프라이팬을 들고 다른 손에 다른 식재료를 든 상태에서 스토브(난로)의 위쪽을 바라보며 우클릭을 누르고 있으면 조리가 됩니다."
-				" 아니면 프라이팬을 바로 위에 설치하고 식재료를 넣어주면 조리가 되죠."
+				"Hold the frying pan, hold the other ingredient in your other hand, look up at the stove and hold right-click to cook."
+				"Or you can set the frying pan directly above the stove, add the ingredients, and it will cook."
 			]
 			dependencies: [
 				"2B01B6775E5F77B5"
@@ -94,14 +94,14 @@
 			}]
 		}
 		{
-			title: "잘라내기"
+			title: "Cut"
 			x: 3.5d
 			y: -3.0d
-			subtitle: "도마와 식칼"
+			subtitle: "Cutting board and knife"
 			description: [
-				" 식재료를 도마 위에 올려놓고 식칼로 손질을 하면 보기에도 이쁘고 더 다양한 요리가 가능해 집니다."
+				"Putting your ingredients on a cutting board and trimming them with a knife looks pretty and allows for more variety in your cooking."
 				""
-				" .. 저기요. 도마에 나무 올리고 도끼로 썰지 말아줄래요?"
+				" ... excuse me, can you put the wood on the cutting board and not chop it with the axe?"
 			]
 			dependencies: ["3871F77A91354476"]
 			id: "3074B781011E4C7A"
@@ -130,11 +130,11 @@
 			}]
 		}
 		{
-			title: "장미칼"
+			title: "Rose Knife"
 			x: 3.5d
 			y: -4.0d
-			subtitle: "네더라이트 식칼"
-			description: [" .. 그만큼 요리에 진심인거죠?"]
+			subtitle: "Netherlight Knife"
+			description: [" ... that's how serious you are about cooking, right?"]
 			dependencies: [
 				"3074B781011E4C7A"
 				"74497A5479811838"

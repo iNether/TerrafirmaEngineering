@@ -1,7 +1,7 @@
 {
 	chapter_groups: [
 		{ id: "07D6747737955014", title: "Quest Lines" }
-		{ id: "1680B254E676264C", title: "Economic activity" }
-		{ id: "243E5F39EA4B9B78", title: "'Challenges" }
+		{ id: "1680B254E676264C", title: "Economy" }
+		{ id: "243E5F39EA4B9B78", title: "Challenges" }
 	]
 }

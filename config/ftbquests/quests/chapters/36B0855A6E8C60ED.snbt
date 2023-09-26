@@ -1,18 +1,18 @@
 {
 	id: "36B0855A6E8C60ED"
 	group: "243E5F39EA4B9B78"
-	order_index: 2
+	order_index: 1
 	filename: "36B0855A6E8C60ED"
-	title: "집념"
-	subtitle: ["다 수집할 필요는 없겠지만 재미를 위해선 자원낭비는 상관 없죠"]
+	title: "Tenacity"
+	subtitle: ["You don't have to collect them all, but you don't mind wasting resources for the fun of it"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "금속에 진심인 사람들"
+			title: "People who are serious about metal"
 			x: -0.5d
 			y: -1.0d
-			subtitle: "적청강 모루"
+			subtitle: "Anvil of red-blue steel"
 			dependencies: ["7C6CEB63C2DBD32C"]
 			id: "4F880C6F6759F090"
 			tasks: [
@@ -47,10 +47,10 @@
 			]
 		}
 		{
-			title: "방어에 진심인 사람들"
+			title: "People who are serious about defense"
 			x: 0.5d
 			y: 0.0d
-			subtitle: "적청강 갑옷"
+			subtitle: "Red-Blue Steel Armor"
 			dependencies: ["4F880C6F6759F090"]
 			id: "5FB0E402938B4A02"
 			tasks: [
@@ -227,10 +227,10 @@
 			]
 		}
 		{
-			title: "무기에 진심인 사람들"
+			title: "People who are serious about their weapons"
 			x: -0.5d
 			y: 1.0d
-			subtitle: "적청강 무기"
+			subtitle: "Red-Blue Steel Weapons"
 			dependencies: ["4F880C6F6759F090"]
 			id: "092D5C9CCA6F97D5"
 			tasks: [
@@ -339,10 +339,10 @@
 			]
 		}
 		{
-			title: "도구에 진심인 사람들"
+			title: "People who are serious about their tools"
 			x: -1.5d
 			y: 0.0d
-			subtitle: "적청강 도구"
+			subtitle: "The red-blue steel tool"
 			dependencies: ["4F880C6F6759F090"]
 			id: "7D87DA350050C5CE"
 			tasks: [
@@ -451,10 +451,10 @@
 			]
 		}
 		{
-			title: "바지에 싸도 괜찮지 않을까?"
+			title: "Wouldn't it be okay if I wrapped it in my pants?"
 			x: 3.5d
 			y: 0.0d
-			subtitle: "모든 내복"
+			subtitle: "All underwear"
 			dependencies: ["71F614C0C9437CC9"]
 			id: "3DBC3D2518A3C6A4"
 			tasks: [
@@ -725,10 +725,10 @@
 			]
 		}
 		{
-			title: "ㄴㄷㅆ"
+			title: "???"
 			x: -4.0d
 			y: 0.0d
-			subtitle: "피규어 수집가"
+			subtitle: "Figure Collector"
 			dependencies: ["5170747970651E71"]
 			id: "468881189436FDA5"
 			tasks: [

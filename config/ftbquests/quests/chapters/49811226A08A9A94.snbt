@@ -3,19 +3,19 @@
 	group: "1680B254E676264C"
 	order_index: 0
 	filename: "49811226A08A9A94"
-	title: "상점"
+	title: "Shop"
 	disable_toast: true
-	subtitle: ["열심히 번 돈으로 좋은 것들을 구매해보세요"]
+	subtitle: ["Buy good things with your hard-earned money"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "그렇소"
+			title: "Yes"
 			icon: "tfc:spawn_egg/cow"
 			x: -2.5d
 			y: 0.0d
-			subtitle: "소"
-			description: ["나이,성별은 랜덤입니다."]
+			subtitle: "Cows"
+			description: ["Age and gender are randomized."]
 			optional: true
 			can_repeat: true
 			id: "4B430BED9A25ADE5"
@@ -32,12 +32,12 @@
 			}]
 		}
 		{
-			title: "당연히 돼지"
+			title: "Naturally Piggy"
 			icon: "tfc:spawn_egg/pig"
 			x: -1.5d
 			y: 0.0d
-			subtitle: "돼지"
-			description: ["나이,성별은 랜덤입니다."]
+			subtitle: "Pig"
+			description: ["Age and gender are randomized."]
 			optional: true
 			can_repeat: true
 			id: "1EAB4EADC3E62F62"
@@ -58,8 +58,8 @@
 			icon: "tfc:spawn_egg/sheep"
 			x: -0.5d
 			y: 0.0d
-			subtitle: "양"
-			description: ["나이,성별은 랜덤입니다."]
+			subtitle: "Sheep"
+			description: ["Age and gender are randomized."]
 			optional: true
 			can_repeat: true
 			id: "0FB341A3CAC7FB4A"
@@ -76,12 +76,12 @@
 			}]
 		}
 		{
-			title: "오늘 저녁은 치킨 사먹을 돈이 없닭"
+			title: "I can't afford chicken for dinner tonight"
 			icon: "tfc:spawn_egg/chicken"
 			x: 0.5d
 			y: 0.0d
-			subtitle: "닭"
-			description: ["나이,성별은 랜덤입니다."]
+			subtitle: "Chickens"
+			description: ["Age and gender are randomized."]
 			optional: true
 			can_repeat: true
 			id: "309064DD38172479"
@@ -98,12 +98,12 @@
 			}]
 		}
 		{
-			title: "당연히 말이 됩니다"
+			title: "Of course it makes sense"
 			icon: "tfc:spawn_egg/horse"
 			x: 1.5d
 			y: 0.0d
-			subtitle: "말"
-			description: ["나이,성별은 랜덤입니다."]
+			subtitle: "Horse"
+			description: ["Age and gender are randomized."]
 			optional: true
 			can_repeat: true
 			id: "69F49712616F32EF"
@@ -121,11 +121,11 @@
 			}]
 		}
 		{
-			title: "자라는 천"
+			title: "Growing Cloth"
 			icon: "tfc:seeds/jute"
 			x: -1.0d
 			y: 1.5d
-			subtitle: "황마 씨앗"
+			subtitle: "Jute Seeds"
 			optional: true
 			can_repeat: true
 			id: "0887E164EB628E0D"
@@ -142,7 +142,7 @@
 			}]
 		}
 		{
-			title: "염기"
+			title: "Bases"
 			icon: {
 				id: "minecraft:enchanted_book"
 				Count: 1b
@@ -155,7 +155,7 @@
 			}
 			x: 1.5d
 			y: 3.0d
-			subtitle: "우주 내산성 마법이 부여된 책"
+			subtitle: "Book Enchanted with Cosmic Acid Resistance"
 			dependencies: ["483F57D9D846C89F"]
 			optional: true
 			can_repeat: true
@@ -183,12 +183,12 @@
 			}]
 		}
 		{
-			title: "귀신! 악마! 섬광탄!"
+			title: "Ghosts! Demons! Flashbangs!"
 			icon: "cgm:stun_grenade"
 			x: -2.5d
 			y: 3.0d
-			subtitle: "섬광탄"
-			description: ["술 한 바가지로 섬광탄 하나를 구매할 수 있다니, 매력적이죠?"]
+			subtitle: "Flashbang"
+			description: ["A single bar of alcohol can buy you a flashbang, isn't it?"]
 			optional: true
 			can_repeat: true
 			id: "53AACAB295C2447B"
@@ -205,7 +205,7 @@
 			}]
 		}
 		{
-			title: "구리지 않습니다"
+			title: "It doesn't suck"
 			icon: {
 				id: "tfc:ore/poor_native_copper"
 				Count: 1b
@@ -218,7 +218,7 @@
 			}
 			x: -2.5d
 			y: -2.5d
-			subtitle: "구리"
+			subtitle: "Copper"
 			optional: true
 			can_repeat: true
 			id: "4CA2E833EB3CE7A6"
@@ -244,7 +244,7 @@
 			}]
 		}
 		{
-			title: "금으로 금을 사는 경지"
+			title: "How to buy gold with gold"
 			icon: {
 				id: "tfc:ore/poor_native_gold"
 				Count: 1b
@@ -257,7 +257,7 @@
 			}
 			x: -1.5d
 			y: -2.5d
-			subtitle: "금"
+			Subtitle: "Gold"
 			optional: true
 			can_repeat: true
 			id: "4E372BA5330FA1AA"
@@ -283,7 +283,7 @@
 			}]
 		}
 		{
-			title: "그래서 님 티어가?"
+			title: "So what's your tier?"
 			icon: {
 				id: "tfc:ore/poor_native_silver"
 				Count: 1b
@@ -296,7 +296,7 @@
 			}
 			x: -0.5d
 			y: -2.5d
-			subtitle: "은"
+			subtitle: "Silver"
 			optional: true
 			can_repeat: true
 			id: "6BF81482183A2E3D"
@@ -322,7 +322,7 @@
 			}]
 		}
 		{
-			title: "김○○ 주석"
+			Title: "KimOO comment"
 			icon: {
 				id: "tfc:ore/poor_cassiterite"
 				Count: 1b
@@ -335,7 +335,7 @@
 			}
 			x: 0.5d
 			y: -2.5d
-			subtitle: "주석"
+			subtitle: "Annotations"
 			optional: true
 			can_repeat: true
 			id: "20BC680DCA3A9615"
@@ -361,7 +361,7 @@
 			}]
 		}
 		{
-			title: "청록색 납"
+			title: "Turquoise Lead"
 			icon: {
 				id: "tfc:ore/poor_bismuthinite"
 				Count: 1b
@@ -374,7 +374,7 @@
 			}
 			x: 1.5d
 			y: -2.5d
-			subtitle: "비스무트"
+			subtitle: "Bismuth"
 			optional: true
 			can_repeat: true
 			id: "14F3C44A0E15ACF6"
@@ -400,7 +400,7 @@
 			}]
 		}
 		{
-			title: "페리우스"
+			title: "Perius"
 			icon: {
 				id: "tfc:ore/poor_garnierite"
 				Count: 1b
@@ -413,7 +413,7 @@
 			}
 			x: -2.0d
 			y: -1.5d
-			subtitle: "니켈"
+			subtitle: "Nickel"
 			optional: true
 			can_repeat: true
 			id: "4D44CBEFDEEE76A0"
@@ -439,7 +439,7 @@
 			}]
 		}
 		{
-			title: "돈이 철철 넘처"
+			title: "Flush with money"
 			icon: {
 				id: "tfc:ore/poor_magnetite"
 				Count: 1b
@@ -452,7 +452,7 @@
 			}
 			x: -1.0d
 			y: -1.5d
-			subtitle: "주철"
+			subtitle: "Cast Iron"
 			optional: true
 			can_repeat: true
 			id: "4329C868F57EF62C"
@@ -491,7 +491,7 @@
 			}
 			x: 0.0d
 			y: -1.5d
-			subtitle: "아연"
+			subtitle: "Zinc"
 			optional: true
 			can_repeat: true
 			id: "3E6BC1D3D83DCC11"
@@ -517,7 +517,7 @@
 			}]
 		}
 		{
-			title: "Polski(폴란드어)"
+			title: "Polski"
 			icon: {
 				id: "firmalife:ore/poor_chromite"
 				Count: 1b
@@ -530,7 +530,7 @@
 			}
 			x: 1.0d
 			y: -1.5d
-			subtitle: "크로뮴"
+			subtitle: "Chromium"
 			optional: true
 			can_repeat: true
 			id: "578801D11B4F67F4"
@@ -556,7 +556,7 @@
 			}]
 		}
 		{
-			title: "어른이 되면 알거야 치즈가 비싸다는 걸"
+			title: "When you grow up, you'll know cheese is expensive"
 			icon: {
 				id: "tfc:food/cheese"
 				Count: 1b
@@ -569,7 +569,7 @@
 			}
 			x: 3.5d
 			y: -0.5d
-			subtitle: "치즈"
+			subtitle: "Cheese"
 			optional: true
 			can_repeat: true
 			id: "3E38CE98D5232F90"
@@ -596,11 +596,11 @@
 			}]
 		}
 		{
-			title: "랜덤 뽑기"
+			title: "Draw Random"
 			icon: "roberts_collection:mario_bros"
 			x: -4.5d
 			y: -0.5d
-			subtitle: "피규어"
+			subtitle: "Figures"
 			optional: true
 			can_repeat: true
 			id: "5170747970651E71"
@@ -619,14 +619,14 @@
 			}]
 		}
 		{
-			title: "나무도 아닌 것이 풀도 아닌 것"
+			title: "What is neither tree nor grass"
 			icon: "minecraft:bamboo"
 			x: 0.0d
 			y: 1.5d
-			subtitle: "대나무"
+			subtitle: "Bamboo"
 			description: [
-				"왜 이렇게 비싸냐고요?"
-				"흙에 심어두기만 하면 복사가 되니까요?"
+				"Why is it so expensive?"
+				"Because all you have to do is plant it in the dirt and it becomes radiant?"
 			]
 			optional: true
 			can_repeat: true
@@ -645,11 +645,11 @@
 			}]
 		}
 		{
-			title: "좋은 경험"
+			title: "Good experience"
 			icon: "minecraft:experience_bottle"
 			x: -0.5d
 			y: 3.0d
-			subtitle: "레벨"
+			subtitle: "Levels"
 			optional: true
 			can_repeat: true
 			id: "3E8777D83636E8A8"
@@ -666,11 +666,11 @@
 			}]
 		}
 		{
-			title: "의료품"
+			title: "Medical Supplies"
 			icon: "firstaid:bandage"
 			x: -0.5d
 			y: -4.0d
-			subtitle: "붕대"
+			Subtitle: "Bandage"
 			dependencies: ["14ED62BE181D2C22"]
 			optional: true
 			can_repeat: true
@@ -690,7 +690,7 @@
 			}]
 		}
 		{
-			title: "조류독감"
+			title: "Avian Flu"
 			icon: {
 				id: "minecraft:egg"
 				Count: 1b
@@ -705,8 +705,8 @@
 			}
 			x: 1.0d
 			y: 1.5d
-			subtitle: "달걀"
-			description: ["예전에는 계란이 비쌌던 때가 있었습니다. 물론, 지금도 비싸죠."]
+			subtitle: "Eggs"
+			description: ["There was a time when eggs were expensive. Of course, they still are."]
 			optional: true
 			can_repeat: true
 			id: "4C539735611EA821"
@@ -734,7 +734,7 @@
 			}]
 		}
 		{
-			title: "광물이 더 많이 복사가 된다고?"
+			title: "Do minerals radiate more?"
 			icon: {
 				id: "exnihilosequentia:iron_mesh"
 				Count: 1b
@@ -744,7 +744,7 @@
 			}
 			x: -1.5d
 			y: 3.0d
-			subtitle: "철 채"
+			subtitle: "Iron Chariot"
 			dependencies: ["47671AD48F4B48FF"]
 			optional: true
 			can_repeat: true
@@ -769,11 +769,11 @@
 			}]
 		}
 		{
-			title: "진짜 모래"
+			title: "Real Sand"
 			icon: "tfc:ore/cinnabar"
 			x: 2.0d
 			y: -1.5d
-			subtitle: "진사"
+			subtitle: "Truth"
 			optional: true
 			can_repeat: true
 			id: "30132CA212EA404F"
