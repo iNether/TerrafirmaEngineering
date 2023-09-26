@@ -1,0 +1,326 @@
+{
+	id: "0EACCC08A49D21BE"
+	group: "1680B254E676264C"
+	order_index: 1
+	filename: "0EACCC08A49D21BE"
+	title: "Money earnings"
+	disable_toast: true
+	subtitle: ["Sell things that need hand -working manual work that cannot be made with machines"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Where is the sausage"
+			x: -4.0d
+			y: 0.0d
+			subtitle: "Beer"
+			description: [
+				"Alcohol can be used for drinking, but you can sell it. "
+				"The tree bucket is ... don't run out of the way."
+				"" ""
+				"Beer is made by soaking barley powder in water."
+				"" ""
+				"I ask for 1000MB."
+			]
+			dependencies: ["5CA64D293AFAB145"]
+			optional: true
+			can_repeat: true
+			id: "6135A8EA35F5ED00"
+			tasks: [{
+				id: "6B1A24943CC35312"
+				type: "item"
+				item: {
+					id: "tfc:wooden_bucket"
+					Count: 1b
+					tag: {
+						fluid: {
+							Amount: 1000
+							FluidName: "tfc:beer"
+						}
+					}
+				}
+				consume_items: true
+				match_nbt: true
+			}]
+			rewards: [{
+				id: "0C941124416C6AE8"
+				type: "item"
+				item: "createdeco:gold_coin"
+			}]
+		}
+		{
+			Title: "It seems to break through the chest"
+X: -3.0d
+Y: 0.0d
+Subtitle: "Apple"
+Description: [
+"Alcohol can be used for drinking, but it can be sold."
+"The tree bucket is ... don't run out of the way."
+"" ""
+"Apple is made by soaking apple in water."
+"" ""
+"I ask for 1000MB."
+			]
+			dependencies: ["5CA64D293AFAB145"]
+			optional: true
+			can_repeat: true
+			id: "5AD019D5368E8737"
+			tasks: [{
+				id: "2D9765EA9281ADDD"
+				type: "item"
+				item: {
+					id: "tfc:wooden_bucket"
+					Count: 1b
+					tag: {
+						fluid: {
+							Amount: 1000
+							FluidName: "tfc:cider"
+						}
+					}
+				}
+				consume_items: true
+				match_nbt: true
+			}]
+			rewards: [{
+				id: "7A83DAB9C2584BCD"
+				type: "item"
+				item: "createdeco:gold_coin"
+			}]
+		}
+		{
+			Title: "I put sugar but not sweet"
+X: -2.0d
+Y: 0.0d
+Subtitle: "Rumju"
+Description: [
+"Alcohol can be used for drinking, but it can be sold."
+"The tree bucket is ... don't run out of the way."
+"" ""
+"Rumju is made by soaking sugar in water."
+"" ""
+"I ask for 1000MB."
+			]
+			dependencies: ["5CA64D293AFAB145"]
+			optional: true
+			can_repeat: true
+			id: "569424E1B8C4543E"
+			tasks: [{
+				id: "013C30E1DC5E1A84"
+				type: "item"
+				item: {
+					id: "tfc:wooden_bucket"
+					Count: 1b
+					tag: {
+						fluid: {
+							Amount: 1000
+							FluidName: "tfc:rum"
+						}
+					}
+				}
+				consume_items: true
+				match_nbt: true
+			}]
+			rewards: [{
+				id: "06679C102D3D93EF"
+				type: "item"
+				item: "createdeco:gold_coin"
+			}]
+		}
+		{
+			Title: "Press X to express the decision"
+X: -1.0d
+Y: 0.0d
+Subtitle: "Cheongju"
+Description: [
+"Alcohol can be used for drinking, but it can be sold."
+"The tree bucket is ... don't run out of the way."
+"" ""
+"Cheongju is made by soaking rice flour in water."
+"" ""
+"I ask for 1000MB."
+			]
+			dependencies: ["5CA64D293AFAB145"]
+			optional: true
+			can_repeat: true
+			id: "4CB73F8A2248834F"
+			tasks: [{
+				id: "56AF9F5C93A79763"
+				type: "item"
+				item: {
+					id: "tfc:wooden_bucket"
+					Count: 1b
+					tag: {
+						fluid: {
+							Amount: 1000
+							FluidName: "tfc:sake"
+						}
+					}
+				}
+				consume_items: true
+				match_nbt: true
+			}]
+			rewards: [{
+				id: "198D824BA9D4AE77"
+				type: "item"
+				item: "createdeco:gold_coin"
+			}]
+		}
+		{
+			Title: "Vodka"
+X: 0.0d
+Y: 0.0d
+Subtitle: "Vodka"
+Description: [
+"Alcohol can be used for drinking, but it can be sold."
+"The tree bucket is ... don't run out of the way."
+"" ""
+"Vodka is made by soaking potatoes in water."
+"" ""
+"I ask for 1000MB."
+			]
+			dependencies: ["5CA64D293AFAB145"]
+			optional: true
+			can_repeat: true
+			id: "20EDBFCEDC655175"
+			tasks: [{
+				id: "43740575C3138CC8"
+				type: "item"
+				item: {
+					id: "tfc:wooden_bucket"
+					Count: 1b
+					tag: {
+						fluid: {
+							Amount: 1000
+							FluidName: "tfc:vodka"
+						}
+					}
+				}
+				consume_items: true
+				match_nbt: true
+			}]
+			rewards: [{
+				id: "11757E6CA6B5DFA9"
+				type: "item"
+				item: "createdeco:gold_coin"
+			}]
+		}
+		{
+			Title: "Floating (not)"
+x: 1.0d
+Y: 0.0d
+Subtitle: "Whiskey"
+Description: [
+"Alcohol can be used for drinking, but it can be sold."
+"The tree bucket is ... don't run out of the way."
+"" ""
+"Whiskey is made by soaking flour in water."
+"" ""
+"I ask for 1000MB."
+			]
+			dependencies: ["5CA64D293AFAB145"]
+			optional: true
+			can_repeat: true
+			id: "1BE6596B2DD1F7CF"
+			tasks: [{
+				id: "377C1A9B967DC1ED"
+				type: "item"
+				item: {
+					id: "tfc:wooden_bucket"
+					Count: 1b
+					tag: {
+						fluid: {
+							Amount: 1000
+							FluidName: "tfc:whiskey"
+						}
+					}
+				}
+				consume_items: true
+				match_nbt: true
+			}]
+			rewards: [{
+				id: "5D498F945AC63634"
+				type: "item"
+				item: "createdeco:gold_coin"
+			}]
+		}
+		{
+			Title: "Corn"
+X: 2.0d
+Y: 0.0d
+Subtitle: "Corn whiskey"
+Description: [
+"Alcohol can be used for drinking, but it can be sold."
+"The tree bucket is ... don't run out of the way."
+"" ""
+"Corn whiskey is made by soaking corn powder in water."
+"" ""
+"I ask for 1000MB."
+			]
+			dependencies: ["5CA64D293AFAB145"]
+			optional: true
+			can_repeat: true
+			id: "6532E31AD33CBC81"
+			tasks: [{
+				id: "5715E7BADFC06A4C"
+				type: "item"
+				item: {
+					id: "tfc:wooden_bucket"
+					Count: 1b
+					tag: {
+						fluid: {
+							Amount: 1000
+							FluidName: "tfc:corn_whiskey"
+						}
+					}
+				}
+				consume_items: true
+				match_nbt: true
+			}]
+			rewards: [{
+				id: "01A2A537B5A4A09C"
+				type: "item"
+				item: "createdeco:gold_coin"
+			}]
+		}
+		{
+			Title: "Hosky"
+x: 3.0d
+Y: 0.0d
+Subtitle: "Rye whiskey"
+Description: [
+"Alcohol can be used for drinking, but it can be sold."
+"The tree bucket is ... don't run out of the way."
+"" ""
+"Rye whiskey is made by soaking rye flour in water."
+"" ""
+"I ask for 1000MB."
+			]
+			dependencies: ["5CA64D293AFAB145"]
+			optional: true
+			can_repeat: true
+			id: "73C1B134C335577C"
+			tasks: [{
+				id: "59DDDC4C3F087E53"
+				type: "item"
+				item: {
+					id: "tfc:wooden_bucket"
+					Count: 1b
+					tag: {
+						fluid: {
+							Amount: 1000
+							FluidName: "tfc:rye_whiskey"
+						}
+					}
+				}
+				consume_items: true
+				match_nbt: true
+			}]
+			rewards: [{
+				id: "08DC7D8146295E4B"
+				type: "item"
+				item: "createdeco:gold_coin"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

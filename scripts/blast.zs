@@ -1,0 +1,1 @@
+<recipetype:immersiveengineering:blast_furnace>.addRecipe("gun_steel", <item:tfc:metal/double_sheet/steel>, 10000, <item:oldguns:steel_ingot>, <item:immersiveengineering:nugget_steel>);

@@ -1,0 +1,2884 @@
+{
+	id: "5E1295C89D23B64F"
+	group: "07D6747737955014"
+	order_index: 0
+	filename: "5E1295C89D23B64F"
+	title: "TerraFirmaCraft"
+	icon: {
+		id: "tfc:stone/axe/igneous_extrusive"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	subtitle: ["It deals with basic survival"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Terra FirmaCraft"
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Stone and twigs"
+			description: [
+				"If you are a minecraft, you'll get a tree with a bare hand to make a tool. "
+				" If you look around, you can see that the stones and branches have fallen on the ground.."
+				"You can right click on them."
+			]
+			dependencies: ["33C262AEF798DBA3"]
+			id: "0EBBDE17832A1D88"
+			tasks: [
+				{
+					id: "2787F5FF1D59BDE8"
+					type: "item"
+					Title: "No stone"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tfc:rock_knapping"
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "339079C261D66543"
+					type: "item"
+					Title: "Stick or any cup"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tfc:firepit_sticks"
+						}
+					}
+				}
+			]
+		}
+		{
+			Title: "Stone Age"
+			x: 1.0d
+			y: 0.0d
+			shape: "square"
+			Subtitle: "Equipment Production"
+			description: [
+				"If you right -click with more than two stones, the removal interface will open, where you can cut the stones here to create the head of the necessary tools."
+				"And if you combine the head with a branch (or stick), the stone tool is completed."
+			]
+			dependencies: ["0EBBDE17832A1D88"]
+			id: "22687477051BFBED"
+			tasks: [
+				{
+					id: "4EB9ABC9581BC273"
+					type: "item"
+					Title: "Stone Axe"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tfc:inefficient_logging_axes"
+						}
+					}
+				}
+				{
+					id: "64985D46BEB27CF2"
+					type: "item"
+					Title: "Stone shovel"
+					icon: {
+						id: "tfc:stone/shovel/metamorphic"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tfc:extinguisher"
+						}
+					}
+				}
+				{
+					id: "6EEB2A4C8F278CBE"
+					type: "item"
+					Title: "Stone Knife"
+					icon: {
+						id: "tfc:stone/knife/igneous_extrusive"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tfc:knives"
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "4996F8F83AC71E25"
+					type: "item"
+					item: "tfc:rock/loose/chalk"
+					count: 8
+				}
+				{
+					id: "16AF7319147CF951"
+					type: "item"
+					item: {
+						id: "minecraft:stick"
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+					}
+					count: 10
+				}
+			]
+		}
+		{
+			title: "Terrafirma Engineering"
+			x: -1.5d
+			y: 0.0d
+			shape: "square"
+			Subtitle: "Welcome"
+			description: [
+				"In fact, it's better to see the mode itself than I explain."
+				""
+				"Well, let's talk about the quests of this mode pack."
+				"This mode pack is aimed at starting with bare hands and heading to the universe."
+				"This mode pack is a feature that develops tiering things to develop difficult things in early survival to improve the quality of life."
+				""
+				"To go to the next tech, it is recommended to go out with the main quests as a guide."
+				"The main quest is like this quest, and the icon is rectangular, and the subquest has a circular icon."
+			]
+			dependencies: ["5D069B520CCB834A"]
+			id: "33C262AEF798DBA3"
+			tasks: [{
+				id: "783167BD53571717"
+				type: "checkmark"
+				Title: "Press to check"
+			}]
+			rewards: [
+				{
+					id: "357B89A097303C79"
+					type: "item"
+					item: {
+						id: "patchouli:guide_book"
+						Count: 1b
+						tag: {
+							"patchouli:book": "tfc:field_guide"
+						}
+					}
+				}
+				{
+					id: "271EF367894E4460"
+					type: "item"
+					item: {
+						id: "minecraft:torch"
+						Count: 1b
+						tag: {
+							display: {
+								Lore: ["{\"text\":\"Light it when it is dark at night.\"}"]
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "A Tree That Gives Generously"
+			x: 2.0d
+			y: -1.0d
+			shape: "square"
+			subtitle: "Wood Logs"
+			description: [
+				"If you've made a stone axe, you can chop down a tree with it."
+				"Chopping wood with an axe is... very slow."
+				"That's because your axe is of a lower level, but most importantly, if you chop down a block of wood, you chop down the whole tree."
+				""
+				"You can right-click on a single tree to set it up as a single tree, or shift-right to set it up as a stack, which allows you to store a lot of wood in one block."
+			]
+			dependencies: ["22687477051BFBED"]
+			id: "26291413D2BED58E"
+			tasks: [{
+				id: "2AA3DF9F3E142E84"
+				type: "item"
+				title: "Any wood log"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tfc:log_pile_logs"
+					}
+				}
+				count: 8L
+			}]
+		}
+		{
+			title: "Grasping at straws"
+			x: 2.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Straw"
+			description: [
+				"If you made a stone knife, you would be able to cut most grass with it and turn it into straw."
+				""
+				"Straw is used to make multiple fires, and you can combine four of them into a straw bale to make your initial home."
+			]
+			dependencies: ["22687477051BFBED"]
+			id: "4CBF86B808F60A38"
+			tasks: [{
+				id: "640F1E20714EE750"
+				type: "item"
+				item: "tfc:straw"
+				count: 8L
+			}]
+		}
+		{
+			title: "Adult Clay"
+			x: 2.0d
+			y: 1.0d
+			shape: "square"
+			subtitle: "Clay"
+			description: [
+				" Clay is now more often found on the ground in areas of high precipitation than in rivers."
+				" But it's hard to tell because grass grows on top of it."
+				" So the presence or absence of clay can be identified by plants that only grow on top of it (more on this in the pottery part of the guidebook)."
+				""
+				" Once you've scooped it up with a shovel, you can hold five lumps of clay in your hand and right-click to shape the clay into something, like a stone."
+				" Like a tool head mold or something made of ceramic."
+				" But in order to use it properly, you have to bake it with heat. A campfire doesn't have enough firepower."
+			]
+			dependencies: ["22687477051BFBED"]
+			id: "6F9AB3E3122781E8"
+			tasks: [{
+				id: "6FE9C55E0E3A00FC"
+				type: "item"
+				item: "minecraft:clay_ball"
+				count: 5L
+			}]
+		}
+		{
+			title: "Single Bungle Clay Play"
+			x: 3.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Unbaked Molds"
+			description: [
+				"To make a metal tool, you must first melt the metal and mold it to harden it."
+				" So we need to make a vat and a mold to melt the metal in."
+				""
+				" You need to mold the jar and the tool head out of clay."
+				"Then you have to fire them."
+			]
+			dependencies: [
+				"1002051595414601"
+				"26291413D2BED58E"
+				"4CBF86B808F60A38"
+				"6F9AB3E3122781E8"
+			]
+			id: "507ED1B67D1F598B"
+			tasks: [
+				{
+					id: "6075169839FD8D78"
+					type: "item"
+					item: {
+						id: "tfc:ceramic/unfired_pickaxe_head_mold"
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+					}
+				}
+				{
+					id: "7575F2D64F85B3A5"
+					type: "item"
+					item: {
+						id: "tfc:ceramic/unfired_propick_head_mold"
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+					}
+				}
+				{
+					id: "397CB89D3E2AA3F3"
+					type: "item"
+					item: {
+						id: "tfc:ceramic/unfired_saw_blade_mold"
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+					}
+				}
+				{
+					id: "0ED25BD95D438C39"
+					type: "item"
+					item: {
+						id: "tfc:ceramic/unfired_vessel"
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "2CC59E8A30C61E9F"
+				type: "item"
+				item: "quark:oak_chest"
+			}]
+		}
+		{
+			title: "Ignition Light"
+			x: 2.5d
+			y: 2.0d
+			shape: "square"
+			subtitle: "Fire Umbrella"
+			description: [
+				"It's a truism that mankind began with tools and fire."
+				"To start a fire, you need a firestarter."
+				""
+				" Once you've made one, hold it on the ground, right-click, and it will smoke and start a fire. If it doesn't work, you're done."
+				""
+				" And you need to know how to build a campfire to utilize the fire efficiently."
+				" Throw one log and three twigs (or sticks) on the ground, light them with a kindling, and you have a campfire."
+				" As an aside, you can increase the odds of having a bonfire by throwing three more pieces of paper or straw."
+				""
+				" Once you've built a bonfire, you can add wood for fuel to keep it going."
+			]
+			dependencies: ["26291413D2BED58E"]
+			id: "1002051595414601"
+			tasks: [{
+				id: "595C440EEB3091A6"
+				type: "item"
+				item: {
+					id: "tfc:firestarter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "A coin on the ground"
+			x: 2.5d
+			y: -2.0d
+			shape: "square"
+			subtitle: "Mineral Sculpture"
+			description: [
+				"If you pick up sticks and stones, you might be lucky enough to find a piece of mineral."
+				"At this point, it's probably the only way to make metal tools."
+				""
+				" This piece of mineral serves two purposes."
+				" One is that it can be melted down to make metal tools."
+				"The other is to let us know that there's a large vein of that mineral underground at that location."
+				" So it's a good idea to mark what mineral is where with waypoints."
+			]
+			dependencies: ["0EBBDE17832A1D88"]
+			id: "736CB52F0336A7EE"
+			tasks: [{
+				id: "1CC13437B63F112D"
+				type: "item"
+				title: "Random small piece of mineral"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tfc:small_ore_pieces"
+					}
+				}
+			}]
+			rewards: [{
+				id: "4B7EA1308768AD6B"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+				count: 6
+			}]
+		}
+		{
+			title: "Live Burial"
+			x: 4.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Pit Kiln"
+			description: [
+				"To bake things made of clay, you need a pit kiln."
+				"In a nutshell, you bury things to be baked in the ground, fill them with things that burn, and then set them on fire to bake."
+				""
+				" Dig a space in the ground and place the items you want to bake with the V key there (you can place up to 4 items per space)."
+				" Then right-click to cover 8 straws."
+				" Then right-click to cover the 8 pieces of wood completely and you're ready to go."
+				""
+				" You can then light the fire with the firestarter."
+				"Don't let the fire go out halfway through."
+				""
+				" After a total of 8 hours (8 minutes), the wood and straw will be burned out and the baked ceramics will be ready."
+			]
+			dependencies: ["507ED1B67D1F598B"]
+			id: "783E88B15A7F4F96"
+			tasks: [
+				{
+					id: "704C2818ACE46185"
+					type: "item"
+					item: {
+						id: "tfc:ceramic/pickaxe_head_mold"
+						Count: 1b
+						tag: { }
+						ForgeCaps: {
+							Parent: { }
+						}
+					}
+				}
+				{
+					id: "38A9D3A9DEB8A1C1"
+					type: "item"
+					item: {
+						id: "tfc:ceramic/propick_head_mold"
+						Count: 1b
+						tag: { }
+						ForgeCaps: {
+							Parent: { }
+						}
+					}
+				}
+				{
+					id: "00DA5D9DD8299845"
+					type: "item"
+					item: {
+						id: "tfc:ceramic/saw_blade_mold"
+						Count: 1b
+						tag: { }
+						ForgeCaps: {
+							Parent: { }
+						}
+					}
+				}
+				{
+					id: "16BE41BD6A58E859"
+					type: "item"
+					item: {
+						id: "tfc:ceramic/vessel"
+						Count: 1b
+						tag: { }
+						ForgeCaps: {
+							Parent: { }
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "7D3764BD243B23F6"
+				type: "item"
+				item: {
+					id: "tfc:ore/small_native_copper"
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+				}
+				count: 20
+			}]
+		}
+		{
+			title: "Casting"
+			x: 5.5d
+			y: -0.5d
+			shape: "square"
+			subtitle: "Metal Tools"
+			description: [
+				" To melt minerals, you need to put a certain amount of minerals in a small jar and put it in a pit kiln."
+				" The caveat here is that the melted mineral will cool at room temperature, so after a while it will become solid and you won't be able to get it out of the jar. And if you have molten minerals together, you shouldn't melt them together unless you have a specific purpose for mixing them."
+				"And most minerals are only used in 100 mB increments, so you have to do your math."
+				""
+				"Anyway, once you've melted the minerals, you can open the jar and put in the mold you made, and the mold will contain the melted minerals, and it will cool down and become a tool head or something."
+				"And then you combine that head with a rod, and you have a metal tool."
+				""
+				"At this point, it's best to use copper or an alloy that contains copper."
+				""
+				" If you can't make all three at once, we recommend starting with a saw."
+				"It's an all-purpose tool that can be used to make a lot of different things out of wood."
+			]
+			dependencies: [
+				"736CB52F0336A7EE"
+				"783E88B15A7F4F96"
+			]
+			id: "3871F77A91354476"
+			tasks: [
+				{
+					id: "391529441A35F339"
+					type: "item"
+					title: "Any Pickaxe"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tfc:pickaxes"
+						}
+					}
+				}
+				{
+					id: "279D0671420FC87D"
+					type: "item"
+					title: "Any Saw"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tfc:saws"
+						}
+					}
+				}
+				{
+					id: "13DCB223BC7413F2"
+					type: "item"
+					title: "Any Prospector"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tfc:propicks"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Craftsmen cover their equipment"
+			x: 5.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "Basic Anvil"
+			description: [
+				"Hammers have many uses."
+				"It can be used to simply smash items into powder or to transform metal on an anvil."
+				""
+				" and flux is used to weld metals together or dissolve them in water to work leather."
+				""
+				" You need an anvil to forge metal with a hammer."
+				"At this point, we need a primitive anvil."
+				""
+				"You can make an anvil by right-clicking on a volcanic rock (rhyolite, basalt, andesite, quartzite) or a mafic rock (granite, diorite, petrified rock) with a hammer."
+				""
+				" Each anvil has a tier, and different metals require different tiers."
+			]
+			dependencies: [
+				"22687477051BFBED"
+				"736CB52F0336A7EE"
+			]
+			id: "16F55F1854C5BD25"
+			tasks: [
+				{
+					id: "186B7E41C626C6EE"
+					type: "item"
+					title: "Any hammer"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tfc:hammers"
+						}
+					}
+				}
+				{
+					id: "594F012ABB3DD68E"
+					type: "item"
+					item: "tfc:powder/flux"
+				}
+			]
+			rewards: [{
+				id: "6C2C685DE881F853"
+				type: "item"
+				item: "tfc:powder/flux"
+				count: 16
+			}]
+		}
+		{
+			title: "A Proper Anvil"
+			icon: {
+				id: "tfc:metal/anvil/copper"
+				Count: 1b
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+			}
+			x: 6.0d
+			y: 1.5d
+			shape: "square"
+			subtitle: "Copper Anvil"
+			description: [
+				"To forge copper, you need a copper anvil, and a copper anvil requires two pieces of copper welded together in a primitive anvil."
+				""
+				" Note that if you are welding the metal, the temperature of the metal must be higher than the forgeable temperature. Almost to the point of melting."
+				" "Then you put the two metals on an anvil, you put some flux on it, and you say, 'Shift right on the anvil with a hammer,' and it becomes an alloy.""
+				"And the anvil demands more than the previous tier of that metal."
+			]
+			dependencies: [
+				"16F55F1854C5BD25"
+				"3F0BFDAC29F0B5E2"
+			]
+			id: "4DF193C15122B294"
+			tasks: [
+				{
+					id: "69087D04D97C02E8"
+					type: "item"
+					item: {
+						id: "tfc:metal/double_ingot/copper"
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+					}
+				}
+				{
+					id: "61E8EC079AB47E3C"
+					type: "item"
+					item: {
+						id: "tfc:metal/anvil/copper"
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4F1ABF98B42E64A1"
+				type: "item"
+				item: {
+					id: "tfc:metal/ingot/copper"
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+				}
+				count: 6
+			}]
+		}
+		{
+			title: "A Proper Anvil II"
+			x: 7.0d
+			y: 1.5d
+			shape: "square"
+			subtitle: "Copper Anvil"
+			description: [
+				"You've got a lot of bronze, right? So does your anvil."
+				" Don't worry, they're the same tier."
+			]
+			dependencies: ["4DF193C15122B294"]
+			id: "69C2DFD32D995500"
+			tasks: [{
+				id: "182CA4E91874F8A2"
+				type: "item"
+				title: "Amu Dong Anvil"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tfc:bronze_anvils"
+					}
+				}
+			}]
+			rewards: [{
+				id: "51D0BC03840F7801"
+				type: "item"
+				item: {
+					id: "tfc:metal/ingot/bronze"
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+				}
+				count: 6
+			}]
+		}
+		{
+			title: "The moment iron can be forged"
+			x: 8.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Götterdämmerung"
+			description: [
+				"You can get iron (wrought iron) only after you reach this level."
+				"First, you can spend a large amount of copper to make a wrought iron furnace (gate) and bricks to make a wrought iron furnace (see the Wrought Iron Furnace section of the guidebook for details)."
+			]
+			dependencies: [
+				"69C2DFD32D995500"
+				"5D0186CFE5FBB3B6"
+				"595129C7EB0CCA3D"
+			]
+			id: "5F712E93B10E75AC"
+			tasks: [{
+				id: "249AFBA74302865C"
+				type: "item"
+				item: "tfc:bloomery"
+			}]
+			rewards: [{
+				id: "3B13BEC69DC33EA8"
+				type: "item"
+				item: {
+					id: "tfc:ore/normal_hematite"
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+				}
+				count: 20
+			}]
+		}
+		{
+			title: "Burial and Cremation"
+			x: 5.0d
+			y: 2.0d
+			shape: "square"
+			subtitle: "Charcoal Pit"
+			description: [
+				"Charcoal is a good solid fuel for the early to mid game."
+				""
+				"Charcoal is made by burying wood in the ground and burning it."
+				""
+				"To elaborate,"
+				" Set up a pile of raw wood, cover the perimeter with unburned blocks of dirt, etc., light the center pile of wood, quickly cover it again, and you should see smoke rising above the pile (if it went well)."
+				""
+				" When you're done, the smoke will stop and you can remove the covering and you'll have a pile of charcoal and you can shovel it out to get charcoal."
+				" You'll get more charcoal if you put as much wood in the pile as you can."
+				""
+				" And you'll be able to make additional charcoal briquettes."
+				" Once you have seven or eight sheets of charcoal, you can surround the sides and bottom with stone blocks and light the charcoal."
+				"From there, you can feed it with solid fuel, whether it's charcoal or wood, and light it to heat whatever you're putting in there."
+				"It would be used a lot for welding and forging."
+			]
+			dependencies: [
+				"1002051595414601"
+				"22687477051BFBED"
+			]
+			id: "3F0BFDAC29F0B5E2"
+			tasks: [{
+				id: "103636849FD6BB1E"
+				type: "item"
+				item: "minecraft:charcoal"
+				count: 8L
+			}]
+		}
+		{
+			title: "The Beginning of Everything"
+			x: 9.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Wrought Iron"
+			description: [
+				"If you put iron minerals and charcoal together in the chimney of a wrought iron furnace, it will build up, then close the door of the furnace and light it, and after about a day (15 minutes) it will become a block of wrought iron."
+				"You can take the lump iron blocks and smelt them twice on an anvil, when there is enough heat, to get wrought iron bars."
+				""
+				" If you've made it this far, congratulations."
+				" You're just getting started."
+			]
+			dependencies: ["5F712E93B10E75AC"]
+			id: "559407BE6D3ABA77"
+			tasks: [
+				{
+					id: "6EA96A619BA339CD"
+					type: "item"
+					item: {
+						id: "tfc:metal/ingot/wrought_iron"
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+					}
+				}
+				{
+					id: "04BF516147FD48D9"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "A Proper Anvil III"
+			x: 9.5d
+			y: 1.0d
+			shape: "square"
+			subtitle: "Wrought Iron Anvil"
+			description: [" Now you're ready to master the iron."]
+			dependencies: ["559407BE6D3ABA77"]
+			id: "5A45B3E91970621A"
+			tasks: [{
+				id: "2BDE5E00F838E2C0"
+				type: "item"
+				item: {
+					id: "tfc:metal/anvil/wrought_iron"
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "65FDDCF613FA804C"
+				type: "item"
+				item: {
+					id: "tfc:metal/ingot/wrought_iron"
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+				}
+				count: 6
+			}]
+		}
+		{
+			title: "Dolly Dolly"
+			x: 6.5d
+			y: 2.5d
+			subtitle: "Millstone"
+			description: [
+				"Place the top stone on the base and the millstone is complete."
+				""
+				" The millstone can grind a variety of materials."
+				" You can add ingredients to the millstone and turn the top stone with the handle."
+			]
+			dependencies: [
+				"3871F77A91354476"
+				"016E9D68530AE592"
+			]
+			id: "3C39E3C5B1F649CE"
+			tasks: [
+				{
+					id: "36A677928B73936E"
+					type: "item"
+					item: {
+						id: "tfc:handstone"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "308143FF54C2E237"
+					type: "item"
+					item: "tfc:quern"
+				}
+			]
+		}
+		{
+			title: "Light in the Darkness"
+			icon: "tfc:torch"
+			x: 2.5d
+			y: 3.0d
+			subtitle: "Torch"
+			description: [
+				"If it's nighttime or you're in a cave, the darkness will make many things uncomfortable."
+				" You'll need to light a stick to make some light."
+				""
+				" You can get a torch by heating a stick or twig over a campfire."
+				""
+				" Once set up, torches can go out after a period of time or in the rain."
+				" If this happens, you'll need to light it with a firestarter or transfer the flame from another torch."
+				""
+				" You can also create a torch by holding a stick over a lit torch and right-clicking."
+			]
+			dependencies: ["1002051595414601"]
+			id: "771507D703C166C7"
+			tasks: [{
+				id: "381B258FBCF5D5DE"
+				type: "item"
+				item: "tfc:torch"
+				count: 6L
+			}]
+		}
+		{
+			title: "Outer lumen"
+			x: 11.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Coke Oven"
+			description: [
+				" Did you think charcoal was tricky to make?"
+				" I thought so too."
+				" All you need to do is set up a 3*3*3 coke brick, right-click the center with an engineer's hammer, and you're done."
+				" With this coke oven, it's easy to make charcoal."
+				" You just need to put the wood in and it will make charcoal over time."
+				""
+				"And that's not all this oven does."
+				"It's the creosote oil that comes out with the charcoal that's important. This oil coats the wood and means you can make a higher quality machine."
+				""
+				" As an aside, you'll be able to make coke, which is a useful solid fuel from which you can make steel."
+			]
+			dependencies: [
+				"5A45B3E91970621A"
+				"26911D25B80B8844"
+			]
+			id: "3E0B36ABD434AAB1"
+			tasks: [
+				{
+					id: "1635D482EB6088E1"
+					type: "item"
+					item: "immersiveengineering:cokebrick"
+					count: 27L
+				}
+				{
+					id: "5EA21BB24FF455F8"
+					type: "item"
+					item: {
+						id: "immersiveengineering:hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "652CABF895FFC2A9"
+					type: "item"
+					item: "minecraft:bucket"
+				}
+			]
+			rewards: [{
+				id: "70B7288C908D3B6B"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 6512215439762885638L
+			}]
+		}
+		{
+			title: "Liquid Storage"
+			x: 6.0d
+			y: -1.5d
+			shape: "square"
+			subtitle: "Passing Bucket"
+			description: [
+				"A barrel is a storage container for items and liquids."
+				" Its primary function is to hold water or to immerse items in liquid."
+				" And if you leave the bucket lid open and let it rain, it will hold water that you can drink."
+				" It's useful to have a lot of them, right?"
+				""
+				" And then there are buckets for transporting liquids."
+				" They're made of wood and can only hold so much liquid."
+			]
+			dependencies: ["3871F77A91354476"]
+			id: "5CA64D293AFAB145"
+			tasks: [
+				{
+					id: "3B03E843F0722B0B"
+					type: "item"
+					title: "Any bucket"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tfc:barrels"
+						}
+					}
+				}
+				{
+					id: "721F0EB6BF38FFE8"
+					type: "item"
+					item: {
+						id: "tfc:wooden_bucket"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			title: "Machining"
+			x: 7.0d
+			y: -1.5d
+			shape: "square"
+			subtitle: "Leather"
+			description: [
+				"To make leather goods, you need to make leather."
+				" When you kill an animal, you get a raw hide. You need to process it."
+				""
+				" The hides are soaked for 8 hours (8 minutes) in a vat of lime water, which is fluxed water."
+				"After soaking, a log is set up horizontally and the soaked hide is placed on top of it so that the hairs can be removed with a knife."
+				"After that, it is cleaned by soaking in a vat of water for 8 hours (8 minutes)."
+				" Finally, the leather is finished by soaking the cleaned hides in water for 8 hours (8 minutes) to develop tannins, which is achieved by soaking the raw wood in water for 8 hours (8 minutes)."
+				""
+				" The quantity of leather depends on the size of the hide and the processing."
+				""
+				" And if you have a knife, you can right-click on the leather to cut it to make a leather product."
+			]
+			dependencies: [
+				"5CA64D293AFAB145"
+				"16F55F1854C5BD25"
+			]
+			id: "595129C7EB0CCA3D"
+			tasks: [{
+				id: "7599666AA9DC0075"
+				type: "item"
+				item: "minecraft:leather"
+			}]
+			rewards: [{
+				id: "3446C2A847435DE4"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+				count: 3
+			}]
+		}
+		{
+			title: "Combing"
+			x: 4.0d
+			y: -3.0d
+			shape: "square"
+			subtitle: "Spinning wheel"
+			description: [
+				"A spinning wheel is a tool for weaving."
+				"Weaving is the process of weaving threads into cloth."
+				""
+				" Usually, you'll be spinning sheep's wool into yarn to make woolen cloth."
+				""
+				" The spinning wheel turns the fleece into wool, and the loom turns the wool into woolen cloth."
+				" And then the fleece cloth can be made into fleece blocks."
+			]
+			dependencies: ["783E88B15A7F4F96"]
+			id: "26911D25B80B8844"
+			tasks: [{
+				id: "78F031F8087D83A7"
+				type: "item"
+				item: {
+					id: "tfc:spindle"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Musical Instruments"
+			x: 4.0d
+			y: -1.0d
+			subtitle: "Kettle"
+			description: [
+				"To drink water, you have to right-click on a lake or river."
+				"But if there's no lake or river, you can't drink water (well, maybe when it's raining, if you look up)."
+				""
+				" There are things that can hold water and give you a drink when you need it."
+				" That's a kettle."
+				""
+				" Kettles can hold other liquids, including water."
+				"However, they are most often used as water bottles."
+				""
+				"Unfortunately, there is a probability that a kettle will break after many uses."
+				""
+				" As a side note, you can hold an empty kettle and right-click to blow on it to make a sound..."
+			]
+			dependencies: ["783E88B15A7F4F96"]
+			id: "020CBA1A89AF67E7"
+			tasks: [{
+				id: "66C7CECC491F82E2"
+				type: "item"
+				item: {
+					id: "tfc:ceramic/jug"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "645B57EDD712A3BC"
+				type: "item"
+				item: "createdeco:gold_coin"
+			}]
+		}
+		{
+			title: "Uh... are you okay?"
+			x: 7.0d
+			y: -3.0d
+			subtitle: "Leather Water Bottle"
+			description: [
+				"Traditional jugs don't hold much water and aren't very durable."
+				"It seems like we need to make something better."
+				""
+				" We could make a leather-based water bottle, but... Leather is not waterproof, so we need an organization to make sure..."
+				" That... You know, if you kill a big enough animal, you can get... There's a gut, and it's, um..."
+				"We call it the bladder."
+				""
+				"If your leather water bottle breaks, you can fix it by replacing it with a new bladder."
+			]
+			dependencies: [
+				"595129C7EB0CCA3D"
+				"26911D25B80B8844"
+			]
+			id: "7862CCFCF3CB406C"
+			tasks: [{
+				id: "34369DF86EB96F7F"
+				type: "item"
+				item: {
+					id: "waterflasks:leather_flask"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "66E500A72579AE5B"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "Steel Bladder"
+			x: 9.5d
+			y: -3.0d
+			subtitle: "Iron Water Bottle"
+			description: [
+				"If you're not satisfied with the durability of a leather water bottle, why not try iron?"
+				""
+				" A wrought iron plate is molded into the shape of an iron water bottle... and then lined with a bladder, leather, and burlap cloth."
+				" If it breaks, it can be repaired with another bladder and burlap cloth."
+			]
+			dependencies: [
+				"5A45B3E91970621A"
+				"7862CCFCF3CB406C"
+				"65A1B6A14987D1C6"
+			]
+			id: "091325F9F43288E4"
+			tasks: [{
+				id: "7BB495A40FC3B86B"
+				type: "item"
+				item: {
+					id: "waterflasks:iron_flask"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "71303CD0D38B564A"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+				count: 3
+			}]
+		}
+		{
+			title: "Finding minerals in a gravel beach"
+			x: 4.5d
+			y: 1.0d
+			subtitle: "Plate of Gold"
+			description: [
+				" Placer mining is another way to get pieces of minerals."
+				""
+				"By right-clicking on mineralized pebbles in a river or lake and panning for them in the water, you'll get a chance to get natural copper, natural silver, natural gold, and tin."
+			]
+			dependencies: ["783E88B15A7F4F96"]
+			id: "36FD95784CF61C37"
+			tasks: [{
+				id: "169F11F9F8F4F6EB"
+				type: "item"
+				item: "tfc:pan/empty"
+			}]
+			rewards: [{
+				id: "5F3828C4C302905B"
+				type: "item"
+				item: "minecraft:gold_nugget"
+				count: 7
+			}]
+		}
+		{
+			title: "Cruiser"
+			x: 5.0d
+			y: -3.0d
+			subtitle: "Loom"
+			description: [" I explained it to you when you made the spinning wheel, so I don't need to explain it to you, right?"]
+			dependencies: [
+				"26911D25B80B8844"
+				"3871F77A91354476"
+			]
+			id: "17C4238F1844014D"
+			tasks: [{
+				id: "7C0044AE5AD98047"
+				type: "item"
+				title: "Any Loom"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tfc:looms"
+					}
+				}
+			}]
+			rewards: [{
+				id: "1DE5B0596E55DA25"
+				type: "item"
+				item: "tfc:wool"
+				count: 6
+			}]
+		}
+		{
+			title: "A Flame That Burns Forever"
+			x: 11.0d
+			y: 1.0d
+			subtitle: "Torch (Permanent)"
+			description: [
+				"You will now be able to create permanent torches."
+				""
+				" Creosote oil and three sticks (twigs)."
+				""
+				" It doesn't go out."
+				" The only downside is that you can't make a fire in a pit kiln or charcoal pit."
+			]
+			dependencies: ["3E0B36ABD434AAB1"]
+			id: "2C299AEDE2D7F3CB"
+			tasks: [{
+				id: "0B7CD723F44B9D4E"
+				type: "item"
+				item: "minecraft:torch"
+				count: 12L
+			}]
+			rewards: [{
+				id: "79BFA82EA44CADF9"
+				type: "item"
+				item: "minecraft:torch"
+				count: 16
+			}]
+		}
+		{
+			title: "Baked goods are delicious"
+			x: 3.5d
+			y: 2.0d
+			subtitle: "Grilled Meat"
+			description: [
+				"You'd probably prefer meat to grass for food, right?"
+				" You could eat the meat you get from killing animals right away, but it's not very efficient, you'll get sick if you do it wrong, and it doesn't keep for long."
+				""
+				"If you roast it over an open fire, it will last longer, and you'll be more satisfied."
+			]
+			dependencies: ["1002051595414601"]
+			id: "5387258B62B231C7"
+			tasks: [{
+				id: "555678646907093E"
+				type: "item"
+				title: "Any grilled meat"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tfc:foods/cooked_meats"
+					}
+				}
+			}]
+			rewards: [{
+				id: "44C5A08528FDEFC9"
+				type: "item"
+				item: "tfc:ore/bituminous_coal"
+				count: 8
+			}]
+		}
+		{
+			title: "Unshakable Science"
+			x: 5.5d
+			y: -4.0d
+			subtitle: "Bed"
+			description: [
+				"In order to sleep in the early game (to get the correct spawn point), you have to put animal skins on straw, but it's so uncomfortable."
+				" It's time to make our own nostalgic bed."
+				""
+				" Note that when you go to sleep and wake up, it's not just night and day, it's the passage of time."
+			]
+			dependencies: ["17C4238F1844014D"]
+			id: "5B9242A128DC4503"
+			tasks: [{
+				id: "498A9659A64BA766"
+				type: "item"
+				title: "Any bed"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:beds"
+					}
+				}
+			}]
+		}
+		{
+			title: "To the One Who Hates Walking"
+			icon: "minecraft:ender_pearl"
+			x: -1.5d
+			y: 1.0d
+			subtitle: "FTB Essential"
+			description: [
+				"You can specify a place with /sethome and teleport to that location with /home."
+				""
+				" /rtp allows you to go to random coordinates and travel far away."
+				""
+				" /tpa (the player at the location you want to move to) is a command that asks the player for permission to go to their location, and if they accept, you will be teleported to them."
+				""
+				" /back Teleports you back to where you died."
+				""
+				""
+				" All teleportation commands have a cooldown."
+			]
+			dependencies: ["33C262AEF798DBA3"]
+			id: "4726EAC6692E0014"
+			tasks: [{
+				id: "5BD6FC7099C8CE2E"
+				type: "checkmark"
+				title: "Please read the description and press"
+			}]
+			rewards: [{
+				id: "2DAFE482ED9E742F"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "Panacea"
+			x: 1.5d
+			y: -2.0d
+			subtitle: "Cure Tool"
+			description: [
+				" When you get hurt, you're less efficient depending on where you're injured."
+				" Luckily, if you stay still, you'll recover, but slowly."
+				""
+				" The two healing tools above fix that."
+				" Right-click and use them on an injured area to heal it accordingly."
+				""
+				"Band-aids are short-lived and slow to heal."
+				" Bandages have a long duration but heal quickly."
+			]
+			dependencies: [
+				"4CBF86B808F60A38"
+				"17C4238F1844014D"
+			]
+			dependency_requirement: "one_completed"
+			id: "14ED62BE181D2C22"
+			tasks: [
+				{
+					id: "56D644AFD0C3B167"
+					type: "item"
+					title: "Band-Aid"
+					item: "firstaid:plaster"
+				}
+				{
+					id: "432F02FFED1A38EF"
+					type: "item"
+					title: "Bandages"
+					item: "firstaid:bandage"
+				}
+			]
+		}
+		{
+			title: "Boiling water"
+			x: 6.0d
+			y: -3.0d
+			subtitle: "Pot"
+			description: [
+				"If you want to eat vegetables, fruits, and meat all at once, a good way to do it is to make a pot of soup."
+				""
+				" Place the pot over a campfire, reserve the water, add the ingredients you want to add to the soup, and bring it to a boil."
+				" The finished soup can be put into bowls and eaten when needed."
+			]
+			dependencies: ["5CA64D293AFAB145"]
+			id: "22578E771ADEFFDC"
+			tasks: [
+				{
+					id: "662BA9B34BA1F9AE"
+					type: "item"
+					item: "tfc:ceramic/pot"
+				}
+				{
+					id: "38C1BB9198229E6E"
+					type: "item"
+					item: "tfc:ceramic/bowl"
+				}
+			]
+		}
+		{
+			title: "Breakthrough Maneuverability"
+			x: 8.5d
+			y: 1.5d
+			subtitle: "Grappling Hook"
+			description: [
+				" Sometimes when you're on a mountain or in a cave, you don't want to stack blocks, or you don't want to go down slowly."
+				" So I present to you, the grappling hook."
+				""
+				" A combination of string and a wrought iron pickaxe, this tool lets you throw a grapple with a right click to lock onto it, and move it by controlling the string with W and S while crouched."
+				"Other controls can be found by hovering over the grapple hook and pressing shift."
+			]
+			dependencies: [
+				"5A45B3E91970621A"
+				"65A1B6A14987D1C6"
+			]
+			id: "0D531D28F096EFF8"
+			tasks: [{
+				id: "1B319632AB392A61"
+				type: "item"
+				item: {
+					id: "grapplemod:grapplinghook"
+					Count: 1b
+					tag: {
+						Damage: 0
+						custom: {
+							smartmotor: 0b
+							detachonkeyrelease: 0b
+							rocket_force: 1.0d
+							doublehook: 0b
+							angle: 20.0d
+							playermovementmult: 1.0d
+							motorwhennotcrouching: 1b
+							throwspeed: 2.0d
+							motordampener: 0b
+							sticky: 0b
+							rocket_vertical_angle: 0.0d
+							attractradius: 3.0d
+							repelforce: 1.0d
+							reelin: 1b
+							phaserope: 0b
+							attract: 0b
+							motoracceleration: 0.2d
+							verticalthrowangle: 0.0d
+							hookgravity: 1.0d
+							crc32: 2252267022L
+							maxlen: 30.0d
+							motormaxspeed: 4.0d
+							sneakingangle: 10.0d
+							repel: 0b
+							motorwhencrouching: 0b
+							sneakingverticalthrowangle: 0.0d
+							smartdoublemotor: 1b
+							pullbackwards: 1b
+							rocket_refuel_ratio: 15.0d
+							rocket_active_time: 0.5d
+							oneropepull: 0b
+							enderstaff: 0b
+							motor: 0b
+							rocket: 0b
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "70616EAE112801C5"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "Dietary Fiber"
+			icon: "tfc:jute_fiber"
+			x: 8.5d
+			y: -3.0d
+			shape: "square"
+			subtitle: "Jute"
+			description: [
+				"Let's start with farming, not jute."
+				"You till the soil with a scythe and look at the ground to get information about what you're looking at."
+				" Moisture and three nutrients."
+				"Different plants have different temperature, moisture, and nutrient preferences. You have to match them to save time."
+				""
+				"Okay, so let's talk about jute."
+				" Unlike other crops, jute is not eaten, but is used as a tool."
+				"You can soak jute in water for 8 hours (8 minutes) to make jute fiber, which, when woven on a loom, becomes burlap cloth, which can be used to make clothes."
+			]
+			dependencies: [
+				"5CA64D293AFAB145"
+				"17C4238F1844014D"
+			]
+			id: "65A1B6A14987D1C6"
+			tasks: [
+				{
+					id: "6632A63C5C9980D5"
+					type: "item"
+					title: "Sickle"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tfc:hoes"
+						}
+					}
+				}
+				{
+					id: "7E5E71C1AEFDE100"
+					type: "item"
+					item: "tfc:seeds/jute"
+				}
+				{
+					id: "3C596D28A870C66F"
+					type: "item"
+					item: "tfc:jute"
+				}
+				{
+					id: "5CD1DC6FBD97FFE5"
+					type: "item"
+					item: "tfc:jute_fiber"
+				}
+				{
+					id: "5C878B4C270B358A"
+					type: "item"
+					item: "tfc:burlap_cloth"
+				}
+			]
+		}
+		{
+			title: "It's a matter of mood when plants are different"
+			x: 11.0d
+			y: -3.0d
+			shape: "square"
+			subtitle: "Industrial Hemp Fiber"
+			description: [
+				" When jute fibers are soaked in creosote oil, they become industrial hemp fiber."
+				" Isn't that a different plant?"
+				" Never mind. The important thing is that it's industrialized."
+				""
+				"Industrial hemp fiber can be spun into yarn by weaving three strands together, and it can also be used to make cloth to make giant windmills."
+			]
+			dependencies: [
+				"3E0B36ABD434AAB1"
+				"65A1B6A14987D1C6"
+			]
+			id: "707060893C44D0F8"
+			tasks: [{
+				id: "72853F4C4A6B4656"
+				type: "item"
+				item: "immersiveengineering:hemp_fiber"
+				count: 8L
+			}]
+		}
+		{
+			title: "Old Man Chiseling Stone"
+			x: 6.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "Chisel"
+			description: [
+				" You can chisel blocks to make half-blocks or steps, or smooth stones."
+				" With a hammer in your left hand."
+				""
+				" You can change modes with N."
+			]
+			dependencies: ["16F55F1854C5BD25"]
+			id: "016E9D68530AE592"
+			tasks: [{
+				id: "3BF372BBD33787A7"
+				type: "item"
+				title: "Any Chisel"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tfc:chisels"
+					}
+				}
+			}]
+		}
+		{
+			title: "Peace on Earth"
+			x: 7.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Bricks"
+			description: [
+				"The combination of plaster and brick creates a brick block."
+				" These blocks have a high heat tolerance, making them ideal for making blast furnaces."
+			]
+			dependencies: [
+				"5CA64D293AFAB145"
+				"016E9D68530AE592"
+			]
+			id: "5D0186CFE5FBB3B6"
+			tasks: [
+				{
+					id: "17CB7441607C15A9"
+					type: "item"
+					item: "minecraft:bricks"
+					count: 2L
+				}
+				{
+					id: "5B47BC951D17F832"
+					type: "item"
+					title: "Random Stone Brick"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:stone_bricks"
+						}
+					}
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "54B845D7A36DF6C8"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+				count: 7
+			}]
+		}
+		{
+			title: "Otherworldly Things"
+			x: 12.0d
+			y: 0.0d
+			subtitle: "Furnace"
+			description: [
+				" For a harder material than iron, let's make steel."
+				" Let's make coke bricks with a layer of nether bricks."
+				""
+				" Where do we get nether bricks?"
+				" You go to hell, get a nether rack, and bake it."
+				" Do I have to tell you how to get to hell?"
+				""
+				" Set up the furnace bricks 3*3*3 and right-click the center with the engineer's hammer."
+				""
+				" You can turn iron into steel with coke or charcoal."
+				" As an aside, we recommend using coke, as one piece of coke can smelt one piece of iron."
+				""
+				" Still trying to figure out how to make the gates of hell, I can't help it."
+				" Well, since you can't be bothered to make steel, you can just use an iron bucket to brew lava or water and stack obsidian with it. Got it?"
+			]
+			dependencies: ["3E0B36ABD434AAB1"]
+			id: "4F1BD30C9654D4E6"
+			tasks: [{
+				id: "25D39ABA60B98F8C"
+				type: "item"
+				item: "immersiveengineering:blastbrick"
+				count: 27L
+			}]
+			rewards: [{
+				id: "0D9E9FD75F32D7EB"
+				type: "item"
+				item: "immersiveengineering:coal_coke"
+				count: 16
+			}]
+		}
+		{
+			title: "Where to go"
+			x: 4.5d
+			y: -4.0d
+			subtitle: "Nature's Compass"
+			description: [
+				"The biomes here are quite large, and if you need to go somewhere new, you'll have to venture out for a long time,"
+				"With this compass, you can at least quickly find the biome you want."
+			]
+			dependencies: ["3871F77A91354476"]
+			id: "4C0FF448F87B42D3"
+			tasks: [{
+				id: "44A5D70F8E4191EE"
+				type: "item"
+				item: {
+					id: "naturescompass:naturescompass"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Light the Ship on Fire"
+			x: 12.0d
+			y: 1.0d
+			subtitle: "Flint and Bush"
+			description: [" Finally, you'll be able to light a fire with ease."]
+			dependencies: [
+				"4F1BD30C9654D4E6"
+				"7C6CEB63C2DBD32C"
+			]
+			dependency_requirement: "one_completed"
+			id: "0787F63C539AE507"
+			tasks: [{
+				id: "7184686CB856D2E8"
+				type: "item"
+				item: {
+					id: "minecraft:flint_and_steel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Mining Right"
+			icon: "tfc:wood/support/oak"
+			x: 6.5d
+			y: -0.5d
+			subtitle: "Lode Exploration and Support"
+			description: [
+				" Wait, you were just going to dig a hole with a pickaxe and a torch and dig for minerals?"
+				" You might want to look at this quest before you do that."
+				""
+				" First of all, the minerals aren't just anywhere underground, they're concentrated in specific places."
+				"What you need is an explorer to find those concentrations, the lodes. Right-clicking on the ground will give you a rough idea of the size of the surrounding lodes, and if you're lucky enough to be in a location with a lode, there will be a piece of mineral on the ground. Navigate around it, settle in, head down the ladder, and the lode will be waiting for you."
+				""
+				" Most natural blocks are gravity fed."
+				"So if you're in a cave and you dig into a block, the ceiling will collapse and that will be your grave."
+				""
+				" You need to support the ceiling with supports."
+				"You only need to install 7 supports, like you would make a pair of pants, and a 9*9 area around the supports is safe, so that if you dig a block, it won't collapse."
+				""
+				" I'll give you one, you can make more."
+			]
+			dependencies: ["3871F77A91354476"]
+			id: "14324FF5A33AD66E"
+			tasks: [{
+				id: "78387190BCEA11A8"
+				type: "checkmark"
+				title: "Please check if you understand all the explanations"
+			}]
+			rewards: [
+				{
+					id: "4C2B9670C06D71C8"
+					type: "item"
+					item: "tfc:wood/support/oak"
+					count: 7
+				}
+				{
+					id: "74F9A7BF091C395D"
+					type: "item"
+					item: "minecraft:ladder"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Hours and Minutes"
+			x: 4.5d
+			y: 3.5d
+			subtitle: "Clock"
+			description: [
+				"Just a simple clock."
+				" Right-click to tell the exact time?"
+			]
+			dependencies: ["4DF193C15122B294"]
+			id: "0E82E4A70F09A176"
+			tasks: [{
+				id: "43BFEABA8BEA5189"
+				type: "item"
+				item: {
+					id: "minecraft:clock"
+					Count: 1b
+					tag: {
+						"quark:clock_calculated": 1b
+					}
+				}
+			}]
+		}
+		{
+			title: "Fusion"
+			x: 7.5d
+			y: 2.5d
+			subtitle: "Crucible and Tongue"
+			description: [
+				"You're going to need to mix metals that aren't molten in a pit kiln to make an alloy."
+				" You'll want to melt them in a charcoal furnace, but you won't have a vessel to hold the hot molten metal."
+				""
+				"Make a crucible out of heat-resistant fireclay, set it on top of the charcoal brazier, set the tongs next to it, and you're ready to go."
+				""
+				"Light the charcoal brazier, add the mineral to be melted in the crucible, and use the tongs next to it to give it a momentary boost if needed."
+				""
+				"When it's time to pull it out, just pour it into the mold."
+			]
+			dependencies: [
+				"3C39E3C5B1F649CE"
+				"595129C7EB0CCA3D"
+			]
+			id: "48642D1158EB99D3"
+			tasks: [
+				{
+					id: "1E69CD573BA9F122"
+					type: "item"
+					item: "tfc:crucible"
+				}
+				{
+					id: "7B2281FBAA3FC8C0"
+					type: "item"
+					item: "tfc:bellows"
+				}
+			]
+		}
+		{
+			title: "Blazing Passion"
+			icon: "tfc:blast_furnace"
+			x: 9.5d
+			y: 2.5d
+			subtitle: "Furnace"
+			description: [
+				" Here's what you need to do to make smelting steel 'fun'."
+				" Build a furnace by surrounding a crucible with a sheet of wrought iron, place it on top of the crucible, build a chimney out of firebricks over the furnace, and surround it with a sheet of iron. (For more information, see the Furnace part of the guidebook.)"
+				""
+				" You'll need to put a blower behind it, and then raise the temperature with a bellows."
+				" Then you're really ready to go."
+				""
+				" Light a fire in the furnace and throw some charcoal and iron ore down the chimney. Just like we did in the blast furnace."
+				" Then you raise the temperature with a tongs to melt the iron, and you have pig iron."
+				""
+				"And then you process the pig iron into high-carbon steel, and you process the high-carbon steel into steel, and you're done."
+			]
+			dependencies: [
+				"48642D1158EB99D3"
+				"5A45B3E91970621A"
+			]
+			id: "7C6CEB63C2DBD32C"
+			tasks: [
+				{
+					id: "53DE441EE7763C70"
+					type: "item"
+					item: "tfc:blast_furnace"
+				}
+				{
+					id: "06041D140242CFCE"
+					type: "item"
+					title: "No Vents"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tfc:tuyeres"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "397EFA9AEA96D544"
+				type: "item"
+				item: {
+					id: "tfc:metal/ingot/wrought_iron"
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+				}
+				count: 16
+			}]
+		}
+		{
+			title: "Denoise"
+			x: 10.5d
+			y: -1.5d
+			subtitle: "Earplugs"
+			description: [" When worn on the head, they muffle loud machine noises."]
+			dependencies: [
+				"559407BE6D3ABA77"
+				"17C4238F1844014D"
+			]
+			id: "07C8B2E48FC5970B"
+			tasks: [{
+				id: "2F9EC4F60506494C"
+				type: "item"
+				item: "immersiveengineering:earmuffs"
+			}]
+			rewards: [{
+				id: "006E6FBF21209675"
+				type: "item"
+				item: "createdeco:gold_coin"
+			}]
+		}
+		{
+			title: "Evangelism"
+			x: 6.5d
+			y: 3.5d
+			subtitle: "Redstone Powder"
+			description: [
+				"Redstone is canonically obtained from Jinsha or Cryolite, but since this is a modpack, I don't think it's necessary to enforce canon."
+				""
+				" You can convert any spare Malachite, Goethite, or Hematite into Redstone Powder."
+				" How? ... Conducting electricity?"
+			]
+			dependencies: ["3C39E3C5B1F649CE"]
+			id: "33344DD4D2ACF190"
+			tasks: [{
+				id: "6FF687744AF2ADEB"
+				type: "item"
+				item: "minecraft:redstone"
+			}]
+			rewards: [{
+				id: "4EB5A50274D9A005"
+				type: "item"
+				item: "createdeco:gold_coin"
+				count: 3
+			}]
+		}
+		{
+			title: "There was"
+			x: 11.5d
+			y: -1.5d
+			subtitle: "Trash Can"
+			description: [
+				"You may ask why the trash can topic is so expensive. There's a reason."
+				"Items aside, liquids can't be thrown away right away, and these bins are even filterable."
+				"If you're going to use these later, they'll be cheaper."
+			]
+			dependencies: ["559407BE6D3ABA77"]
+			id: "0982FA817E1039C9"
+			tasks: [
+				{
+					id: "3DEA22DA1DF5E047"
+					type: "item"
+					item: "trashcans:item_trash_can"
+				}
+				{
+					id: "72BE346464830334"
+					type: "item"
+					item: "trashcans:liquid_trash_can"
+				}
+				{
+					id: "0BD0F8968621C11B"
+					type: "item"
+					item: "trashcans:energy_trash_can"
+				}
+			]
+		}
+		{
+			title: "Chiiyi"
+			x: 8.5d
+			y: -1.5d
+			subtitle: "Wrought Iron Grill"
+			description: [
+				" Can be used over a campfire."
+				""
+				" Allows you to cook up to five pieces of food at once, and gives the cooked food a grilled attribute to make it last longer."
+			]
+			dependencies: ["5A45B3E91970621A"]
+			id: "20A2918A0D84C7B6"
+			tasks: [{
+				id: "48E0816A01E4B935"
+				type: "item"
+				item: {
+					id: "tfc:wrought_iron_grill"
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "How to forget the pain"
+			x: 1.5d
+			y: -3.0d
+			subtitle: "Morphine"
+			description: [
+				"Taking morphine allows you to ignore debuffs caused by low localized health for a period of time."
+				" For example, your legs would normally be cramped and slow you down, but if you take morphine, you won't be slowed down."
+				""
+				" Can be crafted from poppies."
+			]
+			dependencies: ["14ED62BE181D2C22"]
+			id: "7C5BC8D9D5DD6E28"
+			tasks: [{
+				id: "6D032CB8D61EE0DF"
+				type: "item"
+				item: "firstaid:morphine"
+			}]
+			rewards: [{
+				id: "006F62C197961C98"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "Buying a house"
+			x: 5.0d
+			y: -1.5d
+			shape: "square"
+			subtitle: "Nest"
+			description: [
+				"A means of obtaining eggs from ducks, quail, and chickens."
+				""
+				" They have a home... do you have a home?"
+				""
+				" On a side note, unfortunately, due to an unknown bug, the birds will not lay eggs..."
+			]
+			dependencies: ["3871F77A91354476"]
+			id: "4942CFB7E9B018AD"
+			tasks: [{
+				id: "48B8FD27141AC407"
+				type: "item"
+				item: "tfc:nest_box"
+			}]
+		}
+		{
+			title: "Age of Sail"
+			x: 8.5d
+			y: -4.5d
+			subtitle: "Ships"
+			description: [
+				"If you're going to be traveling on a river or crossing an ocean, I recommend using a boat."
+				""
+				" Thanks to its large size and weight, it is not affected by water currents, only by its sails."
+				""
+				""
+				"While on board, you can raise and lower the sails directly with R, and adjust the direction of travel with A and D."
+				"Additionally, you can open the ship's internal storage with E, which allows you to carry a lot of supplies."
+				""
+				" W and S can be used to make fine adjustments to the sails."
+			]
+			dependencies: ["65A1B6A14987D1C6"]
+			id: "50A85D7DC31AD691"
+			tasks: [{
+				id: "14F2F95EB25298C4"
+				type: "item"
+				title: "Any ship"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tfships:ship"
+					}
+				}
+			}]
+			rewards: [{
+				id: "2106154D96C5683D"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "Show Area"
+			icon: {
+				id: "minecraft:filled_map"
+				Count: 1b
+				tag: {
+					map: 4
+				}
+			}
+			x: -1.5d
+			y: -1.0d
+			subtitle: "FTB Chunk"
+			description: [
+				"If you are chunk loading or have multiple people playing on your server, you will need to set up zones."
+				""
+				" To set up a territory, open your inventory and click the FTB Chunks icon in the top left, then click the Occupied Chunks icon in the top left again, and the territory settings window will pop up."
+				"One space is one chunk, and you can add areas by clicking, cancel by right-clicking, and shift-click to load chunks."
+				" You can set a limited number of zones and chunks."
+				""
+				" If you want to create a team, you can manage it by opening your inventory and pressing the My Team icon on the top left."
+			]
+			dependencies: ["33C262AEF798DBA3"]
+			id: "751D29D3E278EED5"
+			tasks: [{
+				id: "17786A74DA58DBF1"
+				type: "checkmark"
+				title: "Please read the description and press"
+			}]
+			rewards: [{
+				id: "3973185D75ED9CA9"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "To You Who Didn't Know the Quest Window Existed"
+			icon: "ftbquests:book"
+			x: -2.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Quest Book"
+			description: [
+				"Actually, you can press L to bring up this window from the top-left corner of your inventory, but... But just know that it's there."
+				""
+				" Besides, it seems like quite a few people don't know about it if I don't tell them."
+				""
+				" Okay, let's move on to the next quest."
+			]
+			id: "5D069B520CCB834A"
+			tasks: [{
+				id: "32DCC2B91BBA21B6"
+				type: "dimension"
+				title: "Start the game"
+				icon: "minecraft:player_head"
+				dimension: "minecraft:overworld"
+			}]
+			rewards: [{
+				id: "2C63AC844C95D1EC"
+				type: "item"
+				auto: "enabled"
+				item: "ftbquests:book"
+			}]
+		}
+		{
+			title: "Commemorative photo"
+			icon: {
+				id: "camera:camera"
+				Count: 1b
+				tag: {
+					active: 0b
+				}
+			}
+			x: 9.5d
+			y: -4.0d
+			subtitle: "Camera"
+			description: [
+				"When I have a moment worth remembering, I usually take a picture."
+				"In this game, you can take a screenshot by pressing F2."
+				"But it's hard to see that picture in-game and share it with the people you're playing with right away, unless you have this mod enabled."
+				""
+				"You can grab a piece of paper, hold up the camera, right-click to enter shooting mode, and then right-click again to take an image of the scene."
+				""
+				"You can right-click on the image to see a larger version, and you can keep it in an album or frame it."
+				""
+				" You can resize the image frame by installing it and shift-right-clicking, and the hanging image will resize with it."
+			]
+			dependencies: [
+				"559407BE6D3ABA77"
+				"26911D25B80B8844"
+			]
+			id: "28713A72E9E03E31"
+			tasks: [
+				{
+					id: "11163E12E834170C"
+					type: "item"
+					item: {
+						id: "camera:camera"
+						Count: 1b
+						tag: {
+							active: 0b
+						}
+					}
+				}
+				{
+					id: "482E21FFA781954A"
+					type: "item"
+					item: "camera:image_frame"
+				}
+			]
+			rewards: [
+				{
+					id: "389F02C6415FAB3A"
+					type: "item"
+					item: "minecraft:paper"
+					count: 16
+				}
+				{
+					id: "26B9D8388F1BE543"
+					type: "item"
+					item: "camera:album"
+				}
+			]
+		}
+		{
+			title: "Get some clothes on"
+			icon: {
+				id: "tfcambiental:burlap_cowl"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 3.5d
+			y: 1.0d
+			subtitle: "Underwear"
+			description: [
+				"Your body temperature changes depending on your surroundings. For example, the season, objects, or fever from running."
+				" If you stand still and crouch down, the thirst bar will show [current temperature] -> [ambient temperature], and your body temperature will get closer and closer to the ambient temperature."
+				"Naturally, if you don't stay at the right temperature, you will suffer debuffs and eventually die."
+				""
+				"If you're hot, you should be near water or ice," and
+				"If it's cold, you should be near a fire, such as a bonfire, or in the shade."
+				""
+				"If this is too much of a hassle, I recommend wearing clothes."
+				"These clothes I'm giving you are basic, and if you want higher performance, you'll need to get better materials."
+			]
+			dependencies: ["1002051595414601"]
+			id: "7EA657D2FF1B215D"
+			tasks: [{
+				id: "2E9F141D83BCDCC5"
+				type: "checkmark"
+				title: "Please check if you understand all the explanations"
+			}]
+			rewards: [
+				{
+					id: "4A4101E337C70657"
+					type: "item"
+					item: {
+						id: "tfcambiental:insulated_leather_hat"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4F583212DD2426F5"
+					type: "item"
+					item: {
+						id: "tfcambiental:insulated_leather_tunic"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2FA21C1BA6944ADB"
+					type: "item"
+					item: {
+						id: "tfcambiental:insulated_leather_pants"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "116613F31A072EE3"
+					type: "item"
+					item: {
+						id: "tfcambiental:insulated_leather_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5CB8E26E9D3B16C5"
+					type: "item"
+					item: {
+						id: "tfcambiental:burlap_cowl"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0EC997F27CC137B3"
+					type: "item"
+					item: {
+						id: "tfcambiental:burlap_shirt"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0F3E343A2747AE93"
+					type: "item"
+					item: {
+						id: "tfcambiental:burlap_pants"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6A65AF17EA058FC5"
+					type: "item"
+					item: {
+						id: "tfcambiental:burlap_shoes"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Combat Strength Meter"
+			x: 7.5d
+			y: 3.5d
+			subtitle: "Target Dummy"
+			description: [
+				"A tool to gauge your offense."
+				" If you want to take them out, just crouch and attack."
+			]
+			dependencies: ["016E9D68530AE592"]
+			id: "23E0DE76F7EB118D"
+			tasks: [{
+				id: "0630C2A55568A4DA"
+				type: "item"
+				item: "dummmmmmy:target_dummy_placer"
+			}]
+		}
+		{
+			title: "Fasten the waistband"
+			icon: {
+				id: "toolbelt:belt"
+				Count: 1b
+				tag: { }
+			}
+			x: 7.0d
+			y: -4.0d
+			subtitle: "Tool Waistband"
+			description: [
+				"You can open the inventory of your belt by pressing C while wearing it."
+				" A normal belt can hold up to two tools, and you can increase this limit by using the belt pockets on your anvil."
+				""
+				" You can add up to seven belt pockets."
+			]
+			dependencies: [
+				"595129C7EB0CCA3D"
+				"26911D25B80B8844"
+			]
+			id: "1BE03F48F33A555F"
+			tasks: [
+				{
+					id: "79CEC734CCF37587"
+					type: "item"
+					item: {
+						id: "toolbelt:belt"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "68F3ECB8471BD79C"
+					type: "item"
+					item: "toolbelt:pouch"
+				}
+			]
+			rewards: [
+				{
+					id: "741EB1811042BDB2"
+					type: "item"
+					item: "minecraft:damaged_anvil"
+				}
+				{
+					id: "631ED41076632B2B"
+					type: "item"
+					item: "createdeco:gold_coin"
+				}
+			]
+		}
+		{
+			title: "Slides"
+			x: 4.0d
+			y: -2.0d
+			subtitle: "Light Barrel"
+			description: [
+				"You can do it yourself with a gold plate, but if you want to automate it, you can use this lightbox."
+				""
+				"Set up your washbasin at the end of a stream of running water, with some space in front of it, and get ready to pan for gold as the water flows through the washbasin."
+				"Get the sediment with a shovel and throw it over the basin, and it will be automatically filtered out as the water flows through the basin."
+				"(Please refer to the guidebook for a detailed explanation)"
+				""
+				"This method will make your gold panning more efficient."
+			]
+			dependencies: ["3871F77A91354476"]
+			id: "12EA9C14833D9AD1"
+			tasks: [{
+				id: "76C1E7E40DF61AE1"
+				type: "item"
+				title: "No light box"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tfc:sluices"
+					}
+				}
+			}]
+			rewards: [{
+				id: "22533ADCD9A6E489"
+				type: "item"
+				item: "createdeco:gold_coin"
+			}]
+		}
+		{
+			title: "To you who are familiar with Terraforma"
+			icon: {
+				id: "patchouli:guide_book"
+				Count: 1b
+				tag: {
+					"patchouli:book": "tfc:field_guide"
+				}
+			}
+			x: -3.5d
+			y: 0.0d
+			subtitle: "This modpack is a little different"
+			description: ["If you're familiar with Terraformcraft, you'll probably be trying to get graphite and kaolin here as well, but in this modpack you can forge steel without building a crucible, and graphite and kaolin are easy to come by if you can get to the nether."]
+			dependencies: ["5D069B520CCB834A"]
+			id: "2D87D6C8E07937B3"
+			tasks: [{
+				id: "3EA0C95F3E4D7F4F"
+				type: "checkmark"
+				title: "Press to confirm"
+			}]
+			rewards: [{
+				id: "07DB94D91E086C8B"
+				type: "item"
+				item: "createdeco:gold_coin"
+			}]
+		}
+		{
+			title: "Do minerals radiate?"
+			icon: "exnihilosequentia:oak_sieve"
+			x: 3.0d
+			y: -4.0d
+			subtitle: "Sieve"
+			description: [
+				"There are many minerals that can be hidden in pebbles. You can use a trough to find those hidden minerals."
+				""
+				" You can use the sifter by inserting the sifter, adding pebbles, and right-clicking, and it will gradually filter them out."
+				"And then there's a certain chance that you'll get a mineral piece, and if you put nine of them together, you'll get a mineral that's in a poorer stage."
+				""
+				"They have durability, so it's useful to have a few on hand."
+			]
+			dependencies: ["26911D25B80B8844"]
+			id: "3C7FB7E98BDF8029"
+			tasks: [
+				{
+					id: "39E4D3C918224757"
+					type: "item"
+					item: "exnihilosequentia:oak_sieve"
+				}
+				{
+					id: "42389A79DCD85B8A"
+					type: "item"
+					item: {
+						id: "exnihilosequentia:flint_mesh"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "217CB426CB581D18"
+				type: "item"
+				item: "minecraft:gravel"
+				count: 32
+			}]
+		}
+		{
+			title: "Add-ons"
+			x: 5.5d
+			y: 3.5d
+			subtitle: "Carriage"
+			description: [
+				"Horses are probably more useful than you think, and not just for their byproducts like normal livestock."
+				" You can tame a horse by feeding it daily and reaching an affinity of 15 or more, at which point you can ride it."
+				"And if you put a saddle on it, which is made from tanned leather, you'll have a fast and comfortable way to travel over any kind of terrain."
+				""
+				"Horses have other uses, too: they're strong."
+				"Horses can be used to pull carts to carry large amounts of goods or animals, or plows to work large fields."
+				""
+				"You can combine carts by placing a cart, riding your horse, and then riding up to the cart and pressing X."
+				""
+				" The Goods Wagon can be ridden behind a person and can be loaded with goods by crouching down and right-clicking."
+				" The plow can be ridden by crouching and right-clicking to equip a hoe and right-clicking to lower the plow to plow the ground into a field."
+				"The animal wagon can be loaded with animals (the wagon must be separated from the horse) and unloaded by crouching and right-clicking."
+			]
+			dependencies: [
+				"4DF193C15122B294"
+				"3871F77A91354476"
+			]
+			id: "79724E5C07B9718D"
+			tasks: [
+				{
+					id: "5C9EF31DFB3A9413"
+					type: "item"
+					title: "Any Goods Wagon"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "astikorcarts:supply_cart"
+						}
+					}
+				}
+				{
+					id: "48B09A00EEFB9848"
+					type: "item"
+					title: "No Plow"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "astikorcarts:plow"
+						}
+					}
+				}
+				{
+					id: "60D3BC60D2628F66"
+					type: "item"
+					title: "Any Animal Wagon"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "astikorcarts:animal_cart"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "The Man with the Bag"
+			x: 7.0d
+			y: -5.0d
+			subtitle: "Handbag"
+			description: [
+				"You probably need to carry a bag for the little things, if not the big things."
+				""
+				" Handbags are useful because they can only hold a small amount of stuff, but only require relatively inexpensive materials."
+			]
+			dependencies: [
+				"595129C7EB0CCA3D"
+				"26911D25B80B8844"
+			]
+			id: "35163A496B70B07B"
+			tasks: [{
+				id: "04B3AAB3601EF2FE"
+				type: "item"
+				item: {
+					id: "rosia:leather_satchel"
+					Count: 1b
+					tag: {
+						inventory: {
+							Size: 5
+							Items: [ ]
+						}
+						alloy: {
+							contents: { }
+							totalUnits: 0
+							maxUnits: 3000
+						}
+					}
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Bread"
+			icon: {
+				id: "oldguns:winchester"
+				Count: 1b
+				tag: {
+					ammo: 6
+					barrel: "oldguns:winchester_ba"
+					id: "c01d5535-f47d-454a-af6b-ad3efd1d5413"
+					stock: "oldguns:winchester_st"
+					body: "oldguns:winchester_bo"
+				}
+			}
+			x: 12.0d
+			y: 3.5d
+			subtitle: "Firearms Workbench"
+			description: [
+				"Guns can be simple or tricky to craft, as they can deliver powerful firepower to damage enemies at a distance."
+				""
+				" First, you'll need three different workbenches for your guns."
+				" The Gun Crafting Block is where you assemble the parts of a gun to create a finished gun, and the Gun Parts Block is where you craft the parts of that gun."
+				"The Gun Ammo Block is the block that builds the ammunition (or magazines) that those guns will consume."
+				""
+				"You can pick up a gun, R to load ammo (or magazines), right-click to aim, and left-click to fire."
+				" Different guns require different ammunition (or magazines), so make sure to check them carefully."
+			]
+			dependencies: ["627B84A29268394D"]
+			id: "4B6B94E03877CB91"
+			tasks: [
+				{
+					id: "2B7806946B07BB84"
+					type: "item"
+					item: "oldguns:gun_crafting_block"
+				}
+				{
+					id: "3070BAA37722E109"
+					type: "item"
+					item: "oldguns:gun_parts_block"
+				}
+				{
+					id: "1CAB03EC257FA500"
+					type: "item"
+					item: "oldguns:gun_ammo_block"
+				}
+			]
+		}
+		{
+			title: "How many guns?"
+			icon: "oldguns:steel_ingot"
+			x: 12.0d
+			y: 2.5d
+			subtitle: "Gun Materials"
+			description: [
+				"As technology advances, so must the weapons that can protect us. Let's take a look at the materials needed to make them."
+				""
+				" Steel is a metal that you might think is just like regular steel from the name, but it's made by processing steel plywood in a furnace for 500 seconds."
+				"Oak planks are also different from regular planks, as they require 9 pieces of wood to make."
+			]
+			dependencies: [
+				"7C6CEB63C2DBD32C"
+				"4F1BD30C9654D4E6"
+			]
+			dependency_requirement: "one_completed"
+			id: "627B84A29268394D"
+			tasks: [
+				{
+					id: "5669C18729A93D98"
+					type: "item"
+					item: "oldguns:steel_ingot"
+				}
+				{
+					id: "213EAC476FFDABFD"
+					type: "item"
+					item: "minecraft:oak_planks"
+				}
+			]
+		}
+		{
+			title: "Where to find emergency food"
+			icon: {
+				id: "travelersbackpack:standard"
+				Count: 1b
+				tag: {
+					RightTank: {
+						Amount: 0
+						FluidName: "minecraft:empty"
+					}
+					UnsortableSlots: [I; ]
+					LastTime: 0
+					Ability: 0b
+					CraftingSettings: [B;
+						1b
+						1b
+					]
+					LeftTank: {
+						Amount: 0
+						FluidName: "minecraft:empty"
+					}
+					CraftingInventory: {
+						Size: 9
+						Items: [ ]
+					}
+					MemorySlots: [ ]
+					Tier: 0
+					Inventory: {
+						Size: 21
+						Items: [
+							{
+								Slot: 0
+								Count: 37b
+								id: "firmalife:ice_shavings"
+							}
+							{
+								Slot: 1
+								Count: 64b
+								id: "tfc:straw"
+							}
+							{
+								Slot: 2
+								Count: 3b
+								id: "tfc:brass_mechanisms"
+							}
+							{
+								Slot: 3
+								Count: 1b
+								id: "oldguns:gun_crafting_block"
+							}
+							{
+								Slot: 4
+								Count: 1b
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "18446744073709551615.9999"
+										}]
+									}
+								}
+								id: "mekanism:creative_energy_cube"
+							}
+							{
+								Slot: 5
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "firmalife:metal/ingot/chromium"
+							}
+							{
+								Slot: 6
+								Count: 1b
+								id: "tfc:wood/lumber/blackwood"
+							}
+							{
+								Slot: 7
+								Count: 1b
+								id: "firstaid:bandage"
+							}
+							{
+								Slot: 8
+								Count: 1b
+								id: "tfc:wood/planks/birch"
+							}
+							{
+								Slot: 9
+								Count: 1b
+								id: "create:hand_crank"
+							}
+							{
+								Slot: 10
+								Count: 1b
+								id: "rosia:electric_forge"
+							}
+							{
+								Slot: 11
+								Count: 1b
+								tag: {
+									"patchouli:book": "tfc:field_guide"
+								}
+								id: "patchouli:guide_book"
+							}
+						]
+					}
+				}
+			}
+			x: 9.5d
+			y: -1.5d
+			subtitle: "Traveler's Backpack"
+			description: [
+				"Your current inventory may be overwhelmed with many items."
+				""
+				"In addition to item storage, the Traveler's Backpack provides liquid storage, 3*3 item combinations, and sleeping bag functionality."
+				""
+				" The Traveler's Backpack doesn't take up any inventory space and uses its own space, so you can sling it back by pressing the left icon while it's open. You can open it with Ctrl+E while it's open."
+				" The nine orange compartments are combination compartments and can be used to store items if needed."
+				""
+				" Liquid storage is done through a hose. You'll pick up the hose, designate the storage tank with K, hold down Z and rotate the mouse wheel to determine the mode."
+				" Suction mode will store the liquid in the tank with a right click, and release mode will discharge the liquid in the tank. Drink mode will make you drink the liquid in the tank. drink the liquid in the tank."
+				""
+				"Sleeping bag mode is set up by removing the bag (you can do this by opening the bag and pressing the left icon), picking up the bag and crouching on the ground and right-clicking to set it up. You can then open the bag and press the left icon to unfold the sleeping bag forward (the first two compartments should be empty at this point). After sleeping, you can right-click on the bag while crouching to walk and put on the sleeping bag."
+				""
+				" However, the bag you've created may run out of space. In that case, you can increase the capacity of your bag (and tank) by purchasing upgrades at the Blacksmith's Workbench."
+			]
+			dependencies: [
+				"17C4238F1844014D"
+				"559407BE6D3ABA77"
+			]
+			id: "57210F1BF71B5F8D"
+			tasks: [
+				{
+					id: "7AD72F8CFA7BBDEB"
+					type: "item"
+					item: {
+						id: "travelersbackpack:standard"
+						Count: 1b
+						tag: {
+							RightTank: {
+								Amount: 0
+								FluidName: "minecraft:empty"
+							}
+							UnsortableSlots: [I; ]
+							LastTime: 0
+							Ability: 0b
+							CraftingSettings: [B;
+								1b
+								1b
+							]
+							LeftTank: {
+								Amount: 0
+								FluidName: "minecraft:empty"
+							}
+							CraftingInventory: {
+								Size: 9
+								Items: [ ]
+							}
+							MemorySlots: [ ]
+							Tier: 0
+							Inventory: {
+								Size: 21
+								Items: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "4A76750053529DF6"
+					type: "item"
+					item: "travelersbackpack:hose"
+				}
+			]
+			rewards: [
+				{
+					id: "22CC43BB24992960"
+					type: "item"
+					item: "minecraft:smithing_table"
+				}
+				{
+					id: "18824500D6C04461"
+					type: "item"
+					item: "travelersbackpack:blank_upgrade"
+					count: 4
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}

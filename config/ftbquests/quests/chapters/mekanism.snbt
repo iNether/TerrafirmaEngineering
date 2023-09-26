@@ -1,0 +1,2838 @@
+{
+	id: "028F0D031AEC6F2A"
+	group: "07D6747737955014"
+	order_index: 3
+	filename: "mekanism"
+	title: "Mekanism"
+	icon: "mekanism:electrolytic_separator"
+	subtitle: ["비현실적으로 개쩌는 기계들을 다룹니다"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Mekanism"
+			x: 0.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "강철 케이싱"
+			description: [
+				" Mekanism의 기계들은 Immersive Engineering의 모드의 기계들과는 달리, 한 블록의 크기로도 작동이 됩니다."
+				" 정확히는 멀티 블록 형태가 아닌 화로처럼 블록 하나가 기계 하나의 역할을 하는 것이지요."
+				""
+				" 그리고 타 기계 모드들의 기계들보다 효율이 비교적 좋습니다."
+				""
+				" 어디 한 번 봅시다."
+			]
+			dependencies: [
+				"75573D576C813433"
+				"59846A609D61429B"
+			]
+			id: "06A823991F6978C2"
+			tasks: [{
+				id: "0279D43F131DB852"
+				type: "item"
+				item: "mekanism:steel_casing"
+			}]
+			rewards: [{
+				id: "56E33CF78FBFB986"
+				type: "item"
+				item: "createdeco:gold_coin"
+			}]
+		}
+		{
+			title: "금속 주입"
+			x: 1.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "금속공학 입력기"
+			description: [
+				" 금속공학 입력기는 고체에 고체를 주입하는 역할을 가졌습니다."
+				""
+				" 철 주괴에 레드스톤을 주입하여 주입 합금을 만들 수 있죠."
+				""
+				" 그리고 이는 Mekanism의 대부분의 기계, 도구들에 필수적인 요소죠."
+			]
+			dependencies: ["06A823991F6978C2"]
+			id: "2F1B95274A2DFB3C"
+			tasks: [{
+				id: "23EE5A800DE3D889"
+				type: "item"
+				item: "mekanism:metallurgic_infuser"
+			}]
+			rewards: [
+				{
+					id: "0ABDFC7BBE7FBED9"
+					type: "item"
+					item: "mekanism:enriched_carbon"
+					count: 3
+				}
+				{
+					id: "32F97F3D22FB74A9"
+					type: "item"
+					item: "mekanism:enriched_redstone"
+					count: 3
+				}
+				{
+					id: "60B9139821CFA1D4"
+					type: "item"
+					item: "mekanism:enriched_diamond"
+					count: 3
+				}
+			]
+		}
+		{
+			title: "자유로운 뜀박질"
+			x: 1.5d
+			y: 2.0d
+			subtitle: "프리 러너"
+			description: [
+				" 프리 러너는 훌륭한 신발입니다."
+				""
+				" 한 칸 블록을 바로 뛰어넘을 수 있으며 낙하 데미지도 막아줍니다."
+				""
+				" 물론, 충전된 상태에서요."
+				" 충전은 Immersive Engineering의 충전소를 쓰는 등 방법은 많을겁니다."
+				""
+				" 참고로 B로 키고 끌 수 있습니다."
+			]
+			dependencies: ["2F1B95274A2DFB3C"]
+			id: "3CBE18F05CEA945B"
+			tasks: [{
+				id: "0EF9C5BB4166BA59"
+				type: "item"
+				item: "mekanism:free_runners"
+			}]
+		}
+		{
+			title: "충격과 분해"
+			x: 2.5d
+			y: 1.0d
+			shape: "square"
+			subtitle: "전해 분리기"
+			description: [
+				" 전해 분리기는 액체에 전기를 가하여 액체를 분해하는 역할을 합니다."
+				""
+				" 예를 들어, 물을 분해하면 수소와 산소가 2:1 비율로 분해가 되죠."
+			]
+			dependencies: ["2F1B95274A2DFB3C"]
+			id: "6208F645447156A2"
+			tasks: [{
+				id: "291DDC8F3B94CCCA"
+				type: "item"
+				item: "mekanism:electrolytic_separator"
+			}]
+		}
+		{
+			title: "불가능은 없다"
+			x: 2.5d
+			y: 2.0d
+			subtitle: "제트팩"
+			description: [
+				" 접이식 글라이더의 단점은 자체적인 추진 기능이 없어서 지속적으로 날 수는 없었습니다."
+				""
+				" 그래서 이 제트팩을 추천하는 것이죠."
+				""
+				" 수소를 연료로하여 착용하고 스페이스바를 누르면 위로 상승합니다."
+				" G키로 비행 모드가 변경되어 일반, 비행 유지, 비활성화로 변경할 수 있습니다."
+				""
+				" 하지만 수직 이동에 유용하지 수평 이동에는 많이 느립니다."
+				" 그러니 접이식 글라이더로 빠르게 교체하여 나는 것도 추천드리는 방법입니다."
+			]
+			dependencies: ["6208F645447156A2"]
+			id: "61423A947181C352"
+			tasks: [{
+				id: "4D5FD7B4CE2E4199"
+				type: "item"
+				item: "mekanism:jetpack"
+			}]
+		}
+		{
+			title: "바람은 만물을 움직인다"
+			x: 1.5d
+			y: -2.0d
+			subtitle: "풍력 발전기"
+			description: [" 풍력 발전기는 설치하면 상시 가동중이며 높이(Y)에 따라 효율이 변합니다."]
+			dependencies: ["2F1B95274A2DFB3C"]
+			id: "2D71C35AF00ACE59"
+			tasks: [{
+				id: "6507DC0EA7A09629"
+				type: "item"
+				item: "mekanismgenerators:wind_generator"
+			}]
+			rewards: [{
+				id: "79E0CDA605D819DB"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "오스뮴 주입"
+			x: 2.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "오스뮴 압축기"
+			description: [" 이름 그대로 해당 물체에 오스뮴을 주입합니다."]
+			dependencies: ["2F1B95274A2DFB3C"]
+			id: "0C3254FE0D555408"
+			tasks: [{
+				id: "683707C8ABDBC58B"
+				type: "item"
+				item: "mekanism:osmium_compressor"
+			}]
+			rewards: [{
+				id: "3F6C82FAAEC768C7"
+				type: "item"
+				item: "mekanism:ingot_osmium"
+				count: 10
+			}]
+		}
+		{
+			title: "원자(였던것)"
+			x: 2.5d
+			y: -1.0d
+			subtitle: "원자 분해기"
+			description: [
+				" 원자 분해기는 유용한 채집 도구 입니다."
+				""
+				" 전력을 충전하고 이용하며 나무, 돌, 흙 등 웬만한 것들을 채집할 수 있습니다."
+				""
+				" 손에 들고 N을 눌러 모드를 변경할 수 있습니다."
+				" 그 모드중 광맥 모드는 나무, 광물 같이 붙어 있는 블록들을 한꺼번에 다 채집할 수 있는 모드입니다."
+				""
+				" 쨋든, 유용한 도구니 만드는 것을 권장합니다."
+			]
+			dependencies: ["0C3254FE0D555408"]
+			id: "3AA993DE024EE7FB"
+			tasks: [{
+				id: "038D19810DE1BB1F"
+				type: "item"
+				item: "mekanism:atomic_disassembler"
+			}]
+		}
+		{
+			title: "반도체"
+			x: 6.5d
+			y: 6.0d
+			shape: "square"
+			subtitle: "회로 인쇄기"
+			description: [
+				" Applied Energistics 2 모드를 이용하기 위해선 이 모드의 주 부품이 될 프로세서를 만들 수 있는 회로 인쇄기가 필요합니다."
+				""
+				" 천령석은 초고온 가열 상태에서 정제된 흑요석 가루와 HOP 흑연 가루를 혼합한 천령석 가루를 가열하면 얻을 수 있습니다."
+				""
+				" 주 목적은 프로세서 인쇄지만 압축기를 2개나 달았기에 몇가지 물체들을 빻을 수 있습니다."
+				""
+				""
+				" 자동화 팁을 드리자면 입력 부분의 3곳인 위, 아래, 중간이 있는데, 입력 부분을 이에 맞춰서 윗면, 아랫면, 옆면으로 맞추면 됩니다."
+				" 인쇄기엔 하나 밖에 재료를 넣지 못하기에 어짜피 하게 될 것입니다."
+			]
+			dependencies: ["481EBCE903F4A9D7"]
+			id: "7A9A891AA501BBE3"
+			tasks: [{
+				id: "38F1D1344265A01E"
+				type: "item"
+				item: "ae2:inscriber"
+			}]
+		}
+		{
+			title: "응용 에너지 (고급)"
+			x: 7.5d
+			y: 6.0d
+			shape: "square"
+			subtitle: "ME 제어기"
+			description: [
+				" Applied Energistics 2 모드가 뭐하는 모드인지 아시는 분들은 아무말 없이 퀘스트를 진행하시겠지만 모르시는 분들은 의문을 가지실 수 있을 것 같습니다."
+				" 아주 간단하게 말하자면 마개조 가능한 Simple Storage Network라고 보시면 됩니다."
+				""
+				" 창고라는 저장장치의 틀에서 벗어나 하나의 아이템에 엄청난 양의 아이템 또는 액체 등을 담을 수도 있고, 자동 조합 기능으로 원하는 아이템을 선택하면 그 아이템을 자동으로 제작해주는 기능 등등 엄청난 것들이 가능할 것입니다."
+				" 더 나아가 차원을 넘어로도 시스템을 직접 이용할 수 있으며 공간까지 아이템에 저장할 수 있습니다."
+				""
+				" 반대로 말하자면, 이들을 제대로 쓸 수 없다면 Simple Storage Network보다 못하다는 것입니다."
+				" 제작법도 까다롭고 이용법도 까다로우니 말이죠."
+				""
+				" 이 모드의 저장장치 시스템을 ME로 부르며 이를 이용하기 위해 최소한의 준비가 필요합니다."
+				" ME 장치들을 통제할 수 있는 제어기."
+				" 저장 아이템을 보관 및 관리할 수 있는 드라이브."
+				" 저장된 것들을 이용할 수 있는 터미널."
+				" 이렇게 나눌 수 있습니다."
+				""
+				" 우선, 제어기 부터 만들죠."
+				" 제어기를 설치하고 전력을 공급한 뒤에 다른 것들을 이어 붙히면 됩니다."
+			]
+			dependencies: ["7A9A891AA501BBE3"]
+			id: "6732409E6B8CEC70"
+			tasks: [{
+				id: "43E2D330B47678D6"
+				type: "item"
+				item: "ae2:controller"
+			}]
+		}
+		{
+			title: "데이터 케이블"
+			x: 8.5d
+			y: 6.0d
+			shape: "square"
+			subtitle: "ME 유리 케이블"
+			description: [
+				" ME 케이블은 제어기로 부터 나온 전력을 연결된 다른 ME 기기들에 공급해주고 연결해주는 역할을 가지고 있습니다."
+				""
+				" 터미널을 이용하기 위해선 필수적으로 필요합니다."
+			]
+			dependencies: ["6732409E6B8CEC70"]
+			id: "64F8A3230FEF0B65"
+			tasks: [{
+				id: "01716E0464C0D1E4"
+				type: "item"
+				item: "ae2:fluix_glass_cable"
+				count: 4L
+			}]
+		}
+		{
+			title: "저장장치"
+			x: 11.0d
+			y: 5.5d
+			subtitle: "ME 드라이브와 저장 셀"
+			description: [
+				" 우선 보관이 가장 쉬운 아이템부터 저장해 보도록 합시다."
+				""
+				" ME 저장 셀이 데이터화 된 아이템들을 보관하며 드라이브는 이들을 보관 및 관리하는 기능을 가졌습니다."
+				" 저장 셀을 효율적으로 이용하기 위해선 드라이브가 필수적입니다."
+				""
+				" 저장 셀의 특징이라면, 저장할 것을 데이터로 만들어 보관하는 것이기에 저장할 수 있는 단위가 좀 다릅니다."
+				" 대략 8개의 아이템이 1바이트이며 제일 적은 용량을 가진 1k ME 저장 셀의 용량이 1024바이트 이니 8192의 아이템을 보관할 수 있다는 것입니다."
+				""
+				" 하지만 주의할 점이 있는데, 그것은 바로 유형입니다. 아이템의 종류에 따라 유형이 갈리며 이는 용량이 큰 셀이라도 63가지로 한정되어 있습니다."
+				" 이는 어떤 수량의 아이템이던, 종류가 63가지가 넘어가면 보관을 못한다는 것이지만, 여러 계산에 의하면(똑똑한 분들이라면 알겠지만) 한 종류의 아이템 보관하는 것보다 여러 종류의 아이템들을 보관하는 것이 보다 많은 양을 저장할 수 있습니다."
+				""
+				" 뭐, 셀을 많이 만들면 신경을 안써도 되는 문제기는 합니다."
+			]
+			dependencies: ["64F8A3230FEF0B65"]
+			id: "7C2A239A7E74AE5C"
+			tasks: [
+				{
+					id: "14EA67E49C5DFE8E"
+					type: "item"
+					item: "ae2:drive"
+				}
+				{
+					id: "71E05B6C0244274C"
+					type: "item"
+					item: {
+						id: "ae2:item_storage_cell_1k"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			title: "모니터"
+			x: 11.0d
+			y: 6.5d
+			shape: "square"
+			subtitle: "ME 터미널"
+			description: [
+				" ME 시스템에 보관된 모든 것들을 표시해줍니다."
+				""
+				" 저장된 것이 아이템이라면 손쉽게 넣고 빼는 것이 가능합니다."
+			]
+			dependencies: ["64F8A3230FEF0B65"]
+			id: "64356F3C991819D5"
+			tasks: [{
+				id: "4F12EF2CF1369DE7"
+				type: "item"
+				item: "ae2:terminal"
+			}]
+		}
+		{
+			title: "+"
+			x: 11.5d
+			y: 7.5d
+			shape: "square"
+			subtitle: "ME 조합 터미널"
+			description: [
+				" 간단합니다."
+				" 기존의 터미널에서 바로 조합이 가능하도록 개조한 것이죠."
+				""
+				" ME시스템에 아이템이 충분히 저장되어있다면 대량의 조합도 가능해 집니다."
+			]
+			dependencies: ["64356F3C991819D5"]
+			id: "2AEDC58E3543E437"
+			tasks: [{
+				id: "0AB63192D20DA7BD"
+				type: "item"
+				item: "ae2:crafting_terminal"
+			}]
+		}
+		{
+			title: "키 크는 방법"
+			x: 8.5d
+			y: 7.5d
+			subtitle: "결정 성장 촉진기"
+			description: [
+				" 결정 씨앗이 담고있는 물 옆에 이 기기가 AE전력을 받고 작동중이라면 결정 성장 속도를 증가시킵니다."
+				""
+				" 물에 닿은 기기의 개수에 따라 성장 속도가 비례합니다."
+				""
+				" 그런데.. Mekanism의 농축기가 있다면 쓸모없는 기계일 수도 있겠군요."
+			]
+			dependencies: ["64F8A3230FEF0B65"]
+			id: "4CF5D7039D2DC1DB"
+			tasks: [{
+				id: "297E854CC9445E78"
+				type: "item"
+				item: "ae2:quartz_growth_accelerator"
+			}]
+		}
+		{
+			title: "방화벽"
+			x: 12.0d
+			y: 5.5d
+			subtitle: "ME 보안 단말기"
+			description: [
+				" ME 시스템을 타인으로부터 보호할 수 있습니다."
+				" 그리고 원격 시스템을 이용하기 위해 필수적이고요."
+				""
+				" ME시스템에 연결하면 설치자를 제외한 이들은 ME시스템에 접근을 하지 못합니다."
+				""
+				" 타인을 ME시스템에 접근시키기 위해선 생체 카드에 해당 사람을 등록하고 보안 터미널에 권한을 설정하고 등록하면 됩니다."
+			]
+			dependencies: ["7C2A239A7E74AE5C"]
+			id: "19261E9F5664831D"
+			tasks: [{
+				id: "726714BAB370D205"
+				type: "item"
+				item: "ae2:security_station"
+			}]
+			rewards: [{
+				id: "7C59B40F30E735FD"
+				type: "item"
+				item: "ae2:biometric_card"
+			}]
+		}
+		{
+			title: "원거리 송수신"
+			x: 12.0d
+			y: 6.5d
+			subtitle: "ME 무선 액세스"
+			description: [
+				" 원거리에서 ME 시스템을 이용하고 싶다면 무선 액세스 포인트가 필요합니다."
+				""
+				" ME 시스템에 연결하면 일정 범위 내에서 무선 터미널을 이용할 수 있습니다."
+				""
+				" 무선 터미널은 해당 ME 시스템의 보안 터미널에 등록하고 충전하면 이용할 수 있습니다."
+				""
+				""
+				" 액세스 범위를 늘리기 위해 액세스 포인트를 업그레이드할 수 있지만 무선 터미널에 부스터 카드를 꽂는 것도 방법중 하나입니다."
+			]
+			dependencies: [
+				"19261E9F5664831D"
+				"2AEDC58E3543E437"
+			]
+			id: "5992C0C8B83E5875"
+			tasks: [
+				{
+					id: "77844A79ED0E4A5F"
+					type: "item"
+					item: "ae2:wireless_access_point"
+				}
+				{
+					id: "12467684CACC9615"
+					type: "item"
+					item: {
+						id: "ae2:wireless_crafting_terminal"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "29D1A82149DC7723"
+					type: "item"
+					item: "ae2wtlib:infinity_booster_card"
+				}
+			]
+		}
+		{
+			title: "자동 조합 #1"
+			x: 12.5d
+			y: 8.0d
+			shape: "square"
+			subtitle: "조합 패턴"
+			description: [
+				" AE의 자동 조합은 간단히 말하자면"
+				" 지정한 조합법을 기계에 설치하고 조합 요청을 하면 ME시스템은 필요한 재료와 결과물 양을 계산한 다음, 조합 기계에 재료를 넣고 기계에서 결과물을 ME시스템에 다시 넣어 완료됩니다."
+				""
+				" 우선 조합법을 지정해 봅시다."
+				" 많이 조합하는 것들 위주로 지정해 보세요."
+				""
+				" ME 패턴 터미널에 빈 패턴을 보관한 다음에 조합대에서 조합한다면 조합 패턴, 타 기계를 이용한다면 패턴 제작하기를 고르세요."
+				" 그 다음 제작될 아이템의 조합법을 입력합니다. 패턴 제작하기일 경우, 넣을 재료의 수량과 배출될 재료의 수량을 정확히 입력해야 합니다."
+			]
+			dependencies: ["2AEDC58E3543E437"]
+			id: "04C6DDE359BDC8CB"
+			tasks: [
+				{
+					id: "007B2DFF4D2CCBEE"
+					type: "item"
+					item: "ae2:pattern_encoding_terminal"
+				}
+				{
+					id: "4F00171B6D50C86A"
+					type: "item"
+					item: "ae2:blank_pattern"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "05C04DCB636D4D05"
+				type: "item"
+				item: "ae2:blank_pattern"
+				count: 10
+			}]
+		}
+		{
+			title: "자동 조합 #2"
+			x: 13.5d
+			y: 8.0d
+			shape: "square"
+			subtitle: "조합 연산"
+			description: [
+				" 가끔, 아이템을 제작하다 보면은 필요한 재료의 수량과 나올 결과품의 수량을 계산하느라 고생한 적이 있을 겁니다."
+				" 이 시스템도 그렇습니다."
+				""
+				" 정확히는 요청된 조합법을 조합법 저장고에 저장하고 연결된 조합 보조처리 유닛이 연산을 돕습니다."
+				""
+				" 이 둘은 연결되어야하며 연결된 구조물은 2개 이상의 블록이 붙어있어야하며 사각형의 형태를 지녀야 합니다."
+				""
+				" 마지막으로 조합법 저장고의 용량이 커질 수록, 복잡한 조합법을 수행할 수 있습니다."
+			]
+			dependencies: ["04C6DDE359BDC8CB"]
+			id: "2A79BC4AB7AE6A33"
+			tasks: [
+				{
+					id: "15AA4C5A04F2BCE1"
+					type: "item"
+					item: "ae2:crafting_accelerator"
+				}
+				{
+					id: "774A87F79C164C68"
+					type: "item"
+					item: "ae2:1k_crafting_storage"
+				}
+			]
+		}
+		{
+			title: "자동 조합 #3"
+			x: 14.5d
+			y: 8.0d
+			shape: "square"
+			subtitle: "조합 입출력"
+			description: [
+				" 이제 조합을 직접해줄 기계가 필요합니다."
+				""
+				" 작업대에서의 조합을 원한다면 분자 조합기 이용을 추천합니다."
+				""
+				" 분자 조합기에 ME 패턴 제공기(ME Pattern Provider)를 설치하고 제공기에 패턴 터미널에서 제작한 패턴을 입력합니다."
+				" 그 다음, 분자 조합기에 다른 케이블로 전력을 공급한다면 준비는 끝났습니다."
+				""
+				" 그럼 터미널에서 설정한 아이템을 제작할 수 있게 됩니다. (이미 있는 아이템을 조합하려면 마우스 휠 클릭으로 선택하시면 됩니다)"
+				" 여기까지가 작업대의 자동 조합이었고, 그 다음엔 다른 기계들에 적용시켜 봅시다."
+				""
+				""
+				" 사실, AE의 자동조합은 단순합니다."
+				" 명령이 내려지면 '얘가 뭘 하는 애인지는 모르겠고, 이걸 주면 이걸 내뱉더라' 라는 생각으로 명령을 이해합니다."
+				" 그래서 패턴 터미널에서 패턴 제작하기는 입출력 설정을 잘 해야하는 거구요."
+				""
+				" 기계의 입력구(대부분 파란색으로 표시되어 있습니다)에 패턴 제공기를 설치하고 패턴을 입력한 뒤에"
+				" 기계의 출력구(대부분 주황색으로 표시되어 있습니다)에 ME 인터페이스를 설치해주고 당연히 ME 시스템에 연결합니다."
+				""
+				" 대부분의 기계는 입출력 부분이 동일하지 않아 패턴 제공기로 재료를 공급하고 인터페이스로 다시 ME 시스템에 결과물을 넣기 때문입니다."
+				" 분자 조합기는 AE 자체 기계이므로 이 과정이 필요치 않았죠."
+				""
+				" 뭐, 어쨌든. 자동 조합에 대해 배워보셨으니 더욱 편리한 발전을 기원합니다."
+			]
+			dependencies: ["2A79BC4AB7AE6A33"]
+			id: "4AC78AC84FDAAF0B"
+			tasks: [
+				{
+					id: "56274F7F100F9329"
+					type: "item"
+					item: "ae2:molecular_assembler"
+				}
+				{
+					id: "754E9C3168781D9E"
+					type: "item"
+					item: "ae2:cable_pattern_provider"
+				}
+				{
+					id: "27045917EAA6150A"
+					type: "item"
+					item: "ae2:cable_interface"
+				}
+			]
+		}
+		{
+			title: "파이프는 만물을 움직인다"
+			x: 2.0d
+			y: -4.0d
+			subtitle: "Mekanism 수송 장치"
+			description: [
+				" Mekanism 파이프는 전력, 액체, 아이템, 기체 그리고 열까지 전달할 수 있습니다."
+				""
+				" 설정장치로 입출력을 변경할 수 있습니다."
+			]
+			dependencies: ["68C149943E5C6BBE"]
+			id: "30040789C0A7F37C"
+			tasks: [
+				{
+					id: "19C140C4800919CA"
+					type: "item"
+					item: "mekanism:basic_universal_cable"
+					count: 3L
+				}
+				{
+					id: "704C5458F1BC2056"
+					type: "item"
+					item: "mekanism:basic_mechanical_pipe"
+					count: 3L
+				}
+				{
+					id: "367BAAA35E1821CD"
+					type: "item"
+					item: "mekanism:basic_pressurized_tube"
+					count: 8L
+				}
+				{
+					id: "5C5B26486BCA31A6"
+					type: "item"
+					item: "mekanism:basic_logistical_transporter"
+					count: 8L
+				}
+				{
+					id: "5E1FAAE110AE3C14"
+					type: "item"
+					item: "mekanism:basic_thermodynamic_conductor"
+					count: 8L
+				}
+			]
+		}
+		{
+			title: "작고 소중한 저장고"
+			x: 1.0d
+			y: -4.0d
+			subtitle: "Mekanism 저장 장치"
+			description: [
+				" 많은 액체를 한 탱크에 담을 수 있으며 가스는 화학 탱크에 보관할 수 있습니다. 전기 보관도 당연히 되죠."
+				""
+				" 설정장치로 입출력을 변경할 수 있습니다."
+			]
+			dependencies: ["68C149943E5C6BBE"]
+			id: "58CB41D64F93C41F"
+			tasks: [
+				{
+					id: "1C061C72908B307A"
+					type: "item"
+					item: "mekanism:basic_fluid_tank"
+				}
+				{
+					id: "13D2384C8501F228"
+					type: "item"
+					item: "mekanism:basic_chemical_tank"
+				}
+				{
+					id: "51990EC747BBD3FB"
+					type: "item"
+					item: "mekanism:basic_energy_cube"
+					match_nbt: false
+				}
+			]
+		}
+		{
+			title: "설정 노름"
+			x: 1.5d
+			y: -3.0d
+			subtitle: "설정 장치"
+			description: [
+				" Mekanism 장치들의 레드스톤 신호에 대한 전원 여부, 입출력을 설정할 수 있게 합니다."
+				""
+				" 웅크린채로 마우스 휠을 돌려 모드를 변경할 수 있습니다."
+			]
+			dependencies: ["2F1B95274A2DFB3C"]
+			id: "68C149943E5C6BBE"
+			tasks: [{
+				id: "18AB1F8F6F2B1196"
+				type: "item"
+				item: "mekanism:configurator"
+			}]
+			rewards: [{
+				id: "743DB889931F62D3"
+				type: "item"
+				item: "createdeco:gold_coin"
+			}]
+		}
+		{
+			title: "ME 입출력"
+			x: 9.0d
+			y: 5.0d
+			subtitle: "입출력 버스"
+			description: [
+				" 다른 저장고에서 ME시스템으로 아이템을 전송하려면 또는 ME시스템에서 다른 저장고로 전송하려면 입출력 버스가 필요합니다."
+				""
+				" ME 유입 버스는 ME 시스템으로 아이템을 전송합니다. 타 저장고에서 아이템을 빼내어 ME 시스템으로 전송한다는 겁니다."
+				""
+				" ME 유출 버스는 ME 시스템에서 아이템을 빼냅니다. 타 저장고에 ME 시스템 아이템을 빼낸다는 것입니다."
+				" 단, 유출 버스는 필터로 무슨 아이템을 빼낼지 정해야합니다."
+			]
+			dependencies: ["64F8A3230FEF0B65"]
+			id: "76ED3EA76CB1EF32"
+			tasks: [
+				{
+					id: "1063E2B08F0C89B9"
+					type: "item"
+					item: "ae2:import_bus"
+				}
+				{
+					id: "1D94EECD93C30F29"
+					type: "item"
+					item: "ae2:export_bus"
+				}
+			]
+		}
+		{
+			title: "수리 기사"
+			x: 6.5d
+			y: 5.0d
+			subtitle: "네트워크 도구"
+			description: [
+				" AE 기기들의 상세정보 및 해체를 할 때 이용됩니다."
+				""
+				" 케이블에 연결된 패널, 버스 등을 손 쉽게 제거할 때 이용되죠."
+				""
+				" 제거는 쉬프트 우클릭으로 할 수 있습니다."
+			]
+			dependencies: ["7A9A891AA501BBE3"]
+			id: "4B84DDC03030DB41"
+			tasks: [{
+				id: "65CEBA731B13C0B5"
+				type: "item"
+				item: "ae2:network_tool"
+			}]
+		}
+		{
+			title: "의미 있는 쓰레기통"
+			icon: "ae2:condenser"
+			x: 7.5d
+			y: 5.0d
+			shape: "square"
+			subtitle: "물질 응축기"
+			description: [
+				" 불 필요한 아이템이나 액체를 그냥 버렸다면 손해보신 겁니다."
+				""
+				" 추후에 차원을 원거리로 연결하는 양자 터널 또는 양자 전송기 등에 이용되는 재료인 특이점을 얻지 못하기 때문입니다."
+				""
+				" 물질 응축기의 출력 설정을 특이점으로 설정하고 64k ME 저장 요소를 장착한 뒤에 아이템 또는 액체를 공급하여 256000의 양을 채우면 특이점이 생성됩니다."
+				""
+				" 당연히 전송 파이프 등을 받아드리므로 무한 물 펌프 등을 이용하는 것을 권장합니다."
+			]
+			dependencies: ["6732409E6B8CEC70"]
+			id: "032381E3030AB769"
+			tasks: [
+				{
+					id: "300C183362E85E31"
+					type: "item"
+					item: "ae2:condenser"
+				}
+				{
+					id: "49DB2324A4460DCC"
+					type: "item"
+					item: "ae2:cell_component_64k"
+				}
+				{
+					id: "6685C2D0F01F1594"
+					type: "item"
+					item: "ae2:singularity"
+				}
+			]
+		}
+		{
+			title: "만물은 폭발에서 시작된다"
+			x: 7.5d
+			y: 2.5d
+			subtitle: "양자얽힘 특이점"
+			description: [
+				" 특이점을 제대로 이용하기 위해선 엔더 가루와 함께 폭발을 일으켜야 합니다."
+				""
+				" 어떤 폭발이던 괜찮습니다. TNT, 크리퍼 등등 말이죠. 그저 특이점과 엔더 가루가 함께 폭발에 휘말리면 됩니다."
+				" (영역 설정을 했다면 해당 지역은 폭발로 인해 블록은 파괴되지 않을 겁니다)"
+				""
+				" 폭발과 함께, 양자얽힘 특이점이 한 쌍이 나오며 양자 네트워크 연결 시스템을 이용하기 위해선 이 한 쌍을 잘 보관해야합니다."
+			]
+			dependencies: ["032381E3030AB769"]
+			id: "6A85734EDDD95D59"
+			tasks: [{
+				id: "2F6F1D2278EA11F2"
+				type: "item"
+				item: "ae2:quantum_entangled_singularity"
+				count: 2L
+			}]
+		}
+		{
+			title: "원거리 통신"
+			x: 7.5d
+			y: 3.5d
+			subtitle: "양자 네트워크 연결 시스템"
+			description: [
+				" 다른 차원 혹은 아주 멀리 있는 곳에서 ME 시스템을 직접 이용해야 한다면 양자 네트워크 연결 시스템을 이용해야 합니다."
+				""
+				" 양자 네트워크 연결 시스템은 한 구조물에 8개의 ME 양자 고리와 1개의 ME 양자 연결기가 필요하며 제대로 이용하려면 두 구조물이 있어야하며 한 쌍의 양자 얽힘 특이점이 필요합니다."
+				""
+				" 설치법은 중앙에 ME 양자 연결기에 ME 양자 고리를 둘러주면 됩니다. 그리고 ME 양자 연결기에 양자 얽힘 특이점을 넣으면 되죠. 당연히 반대쪽도 말입니다."
+				""
+				" 케이블 연결은 ME 양저 연결기에 직접 붙어있는 ME 양자 고리에 연결하면 됩니다."
+				""
+				" 그리고 약간의 전력만 공급하면 나머지 전력은 반대쪽 양자 네트워크 연결 시스템에 공급되는 전력을 받아오게 됩니다."
+				" 아, 청크로드도 해두세요."
+			]
+			dependencies: ["6A85734EDDD95D59"]
+			id: "7B3635DC8D886645"
+			tasks: [
+				{
+					id: "37ABF24FC0A770EB"
+					type: "item"
+					item: "ae2:quantum_ring"
+					count: 16L
+				}
+				{
+					id: "07779707FA705A58"
+					type: "item"
+					item: "ae2:quantum_link"
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "테서랙트"
+			x: 5.0d
+			y: 1.0d
+			subtitle: "양자 전송기"
+			description: [
+				" 차원 또는 먼 거리에서 아이템, 액체, 기체 그리고 열까지 등등을 전달하고 싶다면 양자 전송기가 해답일 겁니다."
+				""
+				" 물론, 청크로드가 되어 있어야 제대로 사용할 수 있죠."
+			]
+			dependencies: ["6A85734EDDD95D59"]
+			id: "0142AA3516BF6032"
+			tasks: [{
+				id: "3F29479CDE5A74AB"
+				type: "item"
+				item: "mekanism:quantum_entangloporter"
+				count: 2L
+			}]
+		}
+		{
+			title: "과한 압력"
+			x: 3.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "농축기"
+			description: [
+				" 가루를 원래의 아이템으로 복구하거나 구리의 녹을 제거하거나.. 뭐, 암튼 많은 것들을 할 수 있습니다."
+				""
+				" 예를 들어 다이아몬드 가루를 다이아몬드로 제련할 수 있거나 말이죠."
+				""
+				" 아니면.. 석영 씨앗을 자라게할 수 있습니다."
+				""
+				" 또 다른 쓰임새는 광물을 2배에서 최대 5배까지 정제할 수 있는 과정에 요구됩니다."
+			]
+			dependencies: ["2F1B95274A2DFB3C"]
+			id: "233131520045871B"
+			tasks: [{
+				id: "35F46835B2186F1A"
+				type: "item"
+				item: "mekanism:enrichment_chamber"
+			}]
+		}
+		{
+			title: "금강석"
+			icon: "minecraft:diamond"
+			x: 3.5d
+			y: -2.0d
+			shape: "square"
+			subtitle: "다이아몬드 제작"
+			description: [
+				" 다이아몬드는 탄소에 높은 압력과 열을 가하면 만들어진다고 합니다."
+				""
+				" HOP 흑연 가루 16개를 초고온 상태에서 압축을 하면 다이아몬드 그릿 하나가 나오죠."
+				" 이걸 농축기에 넣으면 다이아몬드가 제작됩니다."
+				""
+				" 참고로 다이아몬드는 이 외의 방법으로도 얻을 수는 있습니다."
+			]
+			dependencies: [
+				"233131520045871B"
+				"22702C30A006D557"
+			]
+			id: "74497A5479811838"
+			tasks: [
+				{
+					id: "1C211735DB5D8185"
+					type: "item"
+					item: "createaddition:diamond_grit"
+				}
+				{
+					id: "427217B75CB317C7"
+					type: "item"
+					item: "minecraft:diamond"
+				}
+			]
+		}
+		{
+			title: "이세계"
+			icon: "minecraft:black_bed"
+			x: 4.5d
+			y: -2.0d
+			shape: "square"
+			subtitle: "로스트 시티"
+			description: [
+				" 이세계라고 해서 여기와 크게 다를건 없습니다. 오히려 여기보다 발전이 빨라 빌딩과 지하철 같은 시스템도 있으니 말이죠."
+				" 하지만 무슨 이유인지는 몰라도 지금은 괴물들이 들끓고 있을 뿐입니다."
+				""
+				" 그곳에 가려면 침대 아래에 두 개의 다이아블록을 깔고 침대 바로 옆에 6개의 아무 머리를 놓으면 준비는 끝납니다."
+				" 침대를 우클릭하면 로스트 시티에 입장하게 됩니다."
+				""
+				" 그 잃어버린 도시에는 강력하고 무장한 괴물들이 있지만 그럼에도 가봐야할 이유는"
+				" 바닐라 기반 세계기 때문에 자원, 일반적으로 구할 수 없었던 것들도 구할 수 있을 겁니다."
+				""
+				" 그곳에서 형석이라는 자원을 얻었다면 모아두세요. 추후에 필요할겁니다."
+			]
+			dependencies: ["74497A5479811838"]
+			id: "1059916707420D2B"
+			tasks: [
+				{
+					id: "410FA4AA3CCE00AC"
+					type: "item"
+					title: "아무색의 침대"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:beds"
+						}
+					}
+				}
+				{
+					id: "45672D713D103327"
+					type: "item"
+					item: "minecraft:diamond_block"
+					count: 2L
+				}
+				{
+					id: "3E25B68239D77173"
+					type: "item"
+					title: "6x 아무 머리"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:heads"
+						}
+					}
+					count: 6L
+				}
+			]
+		}
+		{
+			title: "무선 충전"
+			x: 1.5d
+			y: 1.0d
+			subtitle: "충전 패드"
+			description: [" 위에 서 있으면 인벤토리에 있는 모든 아이템들의 전력을 충전시켜줍니다."]
+			dependencies: ["2F1B95274A2DFB3C"]
+			id: "029A90DC3F8402CC"
+			tasks: [{
+				id: "6289D2C8C8BA4B12"
+				type: "item"
+				item: {
+					id: "mekanism:chargepad"
+					Count: 1b
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "2048000"
+							}]
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "3배 정제"
+			x: 4.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "정화기와 분쇄기"
+			description: [
+				" 산소를 이용하여 정화기에서 광석을 덩어리로 정화한 다음"
+				" 분쇄기로 갈아 불순물이 섞인 가루를 농축기에서 걸러내면 해당 원석 가루가 됩니다."
+			]
+			dependencies: [
+				"233131520045871B"
+				"6208F645447156A2"
+			]
+			id: "6810B34119268E48"
+			tasks: [
+				{
+					id: "6DB2043C27F27087"
+					type: "item"
+					item: "mekanism:purification_chamber"
+				}
+				{
+					id: "433A659D43A0890A"
+					type: "item"
+					item: "mekanism:crusher"
+				}
+			]
+			rewards: [
+				{
+					id: "61D5ECF79221DA5E"
+					type: "item"
+					item: "mekanism:uranium_ore"
+					count: 3
+				}
+				{
+					id: "2935FBBAC75B3020"
+					type: "item"
+					item: "minecraft:gold_ore"
+					count: 3
+				}
+				{
+					id: "5C22A117DC25DE81"
+					type: "item"
+					item: "minecraft:iron_ore"
+					count: 3
+				}
+				{
+					id: "1B635647CD610EBF"
+					type: "item"
+					item: "mekanism:lead_ore"
+					count: 3
+				}
+				{
+					id: "4306F12B6667893B"
+					type: "item"
+					item: "minecraft:copper_ore"
+					count: 3
+				}
+				{
+					id: "6113CC8D502B7C8D"
+					type: "item"
+					item: "mekanism:tin_ore"
+					count: 3
+				}
+				{
+					id: "6815345FE848ECCC"
+					type: "item"
+					item: "mekanism:osmium_ore"
+					count: 3
+				}
+			]
+		}
+		{
+			title: "4배 정제"
+			x: 5.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "화학적 주입,반응 장치"
+			description: [
+				" 화학적 반응 장치에서 수소와 염소를 합성하여 염화 수소를 만든 뒤에"
+				" 화학적 주입 장치로 염화 수소를 소모하여 광석을 파편화시킬 수 있습니다."
+				""
+				" 그 파편을 정화하고 분쇄하고 농축하면 되죠."
+			]
+			dependencies: [
+				"6810B34119268E48"
+				"49BE88B30B745DA9"
+			]
+			id: "6C0ACB771CBD2E77"
+			tasks: [
+				{
+					id: "7480A73FC25D6D12"
+					type: "item"
+					item: "mekanism:chemical_injection_chamber"
+				}
+				{
+					id: "2415617AF9820198"
+					type: "item"
+					item: "mekanism:chemical_infuser"
+				}
+			]
+			rewards: [
+				{
+					id: "6C7394A25897398F"
+					type: "item"
+					item: "mekanism:uranium_ore"
+					count: 4
+				}
+				{
+					id: "6CD9AA19804B8E5F"
+					type: "item"
+					item: "minecraft:gold_ore"
+					count: 4
+				}
+				{
+					id: "046047FB7AA067BB"
+					type: "item"
+					item: "minecraft:iron_ore"
+					count: 4
+				}
+				{
+					id: "5B98669DD11669BF"
+					type: "item"
+					item: "mekanism:lead_ore"
+					count: 4
+				}
+				{
+					id: "3E585DF285BB4E6A"
+					type: "item"
+					item: "minecraft:copper_ore"
+					count: 4
+				}
+				{
+					id: "31D76770995B4484"
+					type: "item"
+					item: "mekanism:tin_ore"
+					count: 4
+				}
+				{
+					id: "0B72C5EFDDFA7AB5"
+					type: "item"
+					item: "mekanism:osmium_ore"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "5배 정제"
+			x: 6.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "화학적 용해,세척,결정화,산화 장치와 회전 콘덴서"
+			description: [
+				" 화학적 산화 장치로 황 가루를 이산화 황으로 만든 다음에 반응 장치에서 산소와 합성하여 삼산화 황을 만듭니다."
+				" 그 다음 삼산화 황을 회전 콘덴서에서 물을 기화시켜 만든 수증기와 결합하면 기체 황산이 되죠."
+				""
+				" 그렇게하여 기체 황산을 화학적 용해 장치으로 소모시켜 광석을 슬러리로 만들고"
+				" 화학적 세척 장치로 물과 함께 슬러리를 순수하게 만든 다음"
+				" 화학적 결정화 장치로 결정을 생성하면 준비는 끝났습니다."
+				" 그 뒤엔 파편화 시키고 정화한 다음 분쇄하고 농축시키면 광석 하나를 5개로 불릴 수 있는거죠."
+				" 간단하죠?"
+				""
+				" 황은 여러 경로로 얻을 수 있지만.. 제가 추천하는건 석유에서 얻는 겁니다."
+			]
+			dependencies: ["6C0ACB771CBD2E77"]
+			id: "3E709FC4D696913F"
+			tasks: [
+				{
+					id: "7834DB9934220C7A"
+					type: "item"
+					item: "mekanism:chemical_dissolution_chamber"
+				}
+				{
+					id: "5FCAE60832BD026D"
+					type: "item"
+					item: "mekanism:chemical_washer"
+				}
+				{
+					id: "143C814C1E672535"
+					type: "item"
+					item: "mekanism:chemical_crystallizer"
+				}
+				{
+					id: "1088C9FBD2467021"
+					type: "item"
+					item: "mekanism:chemical_oxidizer"
+				}
+				{
+					id: "19F6C9E6A67DA93D"
+					type: "item"
+					item: "mekanism:rotary_condensentrator"
+				}
+			]
+			rewards: [
+				{
+					id: "6B17EE915C817807"
+					type: "item"
+					item: "mekanism:uranium_ore"
+					count: 5
+				}
+				{
+					id: "60115A8A4D6A5A9B"
+					type: "item"
+					item: "minecraft:gold_ore"
+					count: 5
+				}
+				{
+					id: "7A5B0B54DDD4B231"
+					type: "item"
+					item: "minecraft:iron_ore"
+					count: 5
+				}
+				{
+					id: "2C2394F21615176E"
+					type: "item"
+					item: "mekanism:lead_ore"
+					count: 5
+				}
+				{
+					id: "56758DF61793F47C"
+					type: "item"
+					item: "minecraft:copper_ore"
+					count: 5
+				}
+				{
+					id: "00B73FBE8C4D8E20"
+					type: "item"
+					item: "mekanism:tin_ore"
+					count: 5
+				}
+				{
+					id: "459E9E9DF57B0892"
+					type: "item"
+					item: "mekanism:osmium_ore"
+					count: 5
+				}
+			]
+		}
+		{
+			title: "3분"
+			icon: "mekanism:thermal_evaporation_controller"
+			x: 5.5d
+			y: -3.0d
+			subtitle: "열적 증발"
+			description: [
+				" 물을 끓여 소금물을 얻어야하는 상황이 왔다면 이 퀘스트가 도움이 될겁니다."
+				" 열적 증발 시설을 만들어야하기 때문이죠."
+				""
+				" 인터넷에 검색해서 보시는게 빠르겠지만 일단 설명을 해보자면.."
+				" 4*4로 바닥을 쌓은 뒤에 벽면을 쌓아 올려야합니다. 이때, 무조건 제어기가 하나 설치되어야하죠."
+				" 그래서 넓이 4*4, 높이는 바닥포함 최소3 최대 18까지 쌓아올릴 수 있습니다."
+				" 조건을 충족했다면 구조물 전체에 레드스톤 입자가 반짝일겁니다."
+				""
+				" 하지만 제대로된 사용을 하려면 물을 넣고 결과물을 빼내어야하기에 모서리를 제외한 벽면에 밸브로 교체해야 합니다."
+				" 밸브는 액체를 주로 넣고 빼낼 수 있으며 필요에따라 열도 받아들일 수 있습니다."
+				""
+				" 그럼 이제 낮에 태양열로 물 등을 증발시킬 수 있습니다. ... 엄청 오래 걸리죠."
+				""
+				" 효율을 높히기 위해선 꼭대기 모서리 블록을 고급 태양열 발전기로 교체하는 방법이 있습니다. 이러면 전력도 생산할 수 있죠."
+				" 두 번째 방법은 밸브를 하나 더 설치해서 가열기로 열을 공급하는 겁니다. 윗 방법을 같이 써주면 좋겠죠?"
+			]
+			dependencies: [
+				"2ABF7BE61E4A31BF"
+				"30040789C0A7F37C"
+			]
+			id: "49BE88B30B745DA9"
+			tasks: [
+				{
+					id: "3EF94084BF1EEF58"
+					type: "item"
+					item: "mekanism:thermal_evaporation_controller"
+				}
+				{
+					id: "096F7FADD1A493C3"
+					type: "item"
+					item: "mekanism:thermal_evaporation_valve"
+					count: 3L
+				}
+				{
+					id: "39758DF88EEA16EC"
+					type: "item"
+					item: "mekanism:thermal_evaporation_block"
+					count: 28L
+				}
+				{
+					id: "16BB62CB087F15B7"
+					type: "item"
+					item: {
+						id: "mekanism:resistive_heater"
+						Count: 1b
+						tag: {
+							mekData: {
+								owner: [I;
+									-161489789
+									-1405401014
+									-1852104094
+									-640646490
+								]
+								controlType: 0
+								HeatCapacitors: [{
+									heatCapacity: 100.0d
+									stored: 30199.700306610976d
+									Container: 0b
+								}]
+								EnergyContainers: [{
+									Container: 0b
+									stored: "40000"
+								}]
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "6212EBE93A3262C8"
+				type: "item"
+				item: "mekanismgenerators:advanced_solar_generator"
+				count: 2
+			}]
+		}
+		{
+			title: "태양 만세"
+			x: 2.5d
+			y: -2.0d
+			subtitle: "고급 태양열 발전기"
+			description: [
+				" 간단합니다."
+				" 태양열을 이용해 전력을 생산하죠."
+				""
+				" 바로 고급부터 만드는게 부담스럽다고요? 지금까지 잘 해왔으면서 엄살은.."
+			]
+			dependencies: ["2F1B95274A2DFB3C"]
+			id: "2ABF7BE61E4A31BF"
+			tasks: [{
+				id: "3C9D2F356F706699"
+				type: "item"
+				item: "mekanismgenerators:advanced_solar_generator"
+			}]
+		}
+		{
+			title: "증기 발전"
+			icon: "mekanismgenerators:turbine_blade"
+			x: 9.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "공업 터빈"
+			description: [
+				" Create의 증기 발전과는 좀 많이 다릅니다."
+				" 요구되는 설치방법도 이쪽이 더 까다롭고"
+				" 제대로 작동되기 위한 조건도 이쪽이 더 까다로우며"
+				" 심지어 이쪽은 핵분열을 이용해야하기 때문이죠."
+				""
+				" 증기(Mekanism)을 공급하면 안쪽의 터빈이 돌아서 전기를 생산하고 부가적으로 물이 배출되는 구조입니다."
+				" 증기를 공급하는 곳은 터빈 밸브이며 전기를 뽑아내는 곳도 터빈 밸브입니다. 총 2개가 필요하죠. 그리고 물을 배출하는 곳은 증기 배출구 입니다."
+				""
+				" 설치방법은.. 도저히 글로만은 설명할 수 없는 것 같습니다."
+				" 링크를 드릴테니 참고하세요. (직접 타이핑해야 합니다..)"
+				""
+				" https://ftbwiki.org/Industrial_Turbine#Construction"
+				" 넓이 5*5, 높이 9인 형태로 재료를 요구했습니다."
+			]
+			dependencies: ["2F1B95274A2DFB3C"]
+			id: "5515737B96A03733"
+			tasks: [
+				{
+					id: "157C52AC580B9065"
+					type: "item"
+					item: "mekanismgenerators:turbine_rotor"
+					count: 4L
+				}
+				{
+					id: "605C673A40043E5F"
+					type: "item"
+					item: "mekanismgenerators:turbine_casing"
+					count: 79L
+				}
+				{
+					id: "57EAEED0BDDD833E"
+					type: "item"
+					item: "mekanismgenerators:turbine_vent"
+					count: 45L
+				}
+				{
+					id: "381A08633A1ECFE3"
+					type: "item"
+					item: "mekanism:pressure_disperser"
+					count: 8L
+				}
+				{
+					id: "5C512C776F7354BB"
+					type: "item"
+					item: "mekanismgenerators:saturating_condenser"
+					count: 16L
+				}
+				{
+					id: "111E9FD5EFDB8915"
+					type: "item"
+					item: "mekanismgenerators:electromagnetic_coil"
+					count: 2L
+				}
+				{
+					id: "0FF086ECD1A0C047"
+					type: "item"
+					item: "mekanismgenerators:turbine_blade"
+					count: 8L
+				}
+				{
+					id: "0F455879F05A07F1"
+					type: "item"
+					item: "mekanismgenerators:rotational_complex"
+				}
+				{
+					id: "2271FEEFCB2D67C3"
+					type: "item"
+					item: "mekanism:structural_glass"
+					count: 46L
+				}
+				{
+					id: "1E0F01E0A1AB293B"
+					type: "item"
+					item: "mekanismgenerators:turbine_valve"
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "만일을 위한 준비"
+			icon: "mekanism:hazmat_mask"
+			x: 10.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "방사능 대책"
+			description: [" 이 뒤의 퀘스트는 핵분열 반응로를 만드는 퀘스트이며 해당 작업을 위해선 방호복을 착용하고 수시로 가이거 계수기로 주변 방사능 농도를 측정하며 선량계로 자신의 피폭도를 측정하는 게 좋습니다."]
+			dependencies: ["5515737B96A03733"]
+			id: "3E7893E5E465AE14"
+			tasks: [
+				{
+					id: "61420D25C2CB35A5"
+					type: "item"
+					item: "mekanism:hazmat_mask"
+				}
+				{
+					id: "3E9E87B7B9052960"
+					type: "item"
+					item: "mekanism:hazmat_gown"
+				}
+				{
+					id: "6818FA909CF072DB"
+					type: "item"
+					item: "mekanism:hazmat_pants"
+				}
+				{
+					id: "232D2A60C6EC2685"
+					type: "item"
+					item: "mekanism:hazmat_boots"
+				}
+				{
+					id: "3322A24D264EF150"
+					type: "item"
+					item: "mekanism:geiger_counter"
+				}
+				{
+					id: "35F674739821327F"
+					type: "item"
+					item: "mekanism:dosimeter"
+				}
+			]
+			rewards: [{
+				id: "78AC9C0F97763F07"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "도박"
+			icon: "engineersdecor:sign_radioactive"
+			x: 11.0d
+			y: -0.5d
+			shape: "square"
+			subtitle: "핵분열 반응로"
+			description: [
+				" 전체적은 구조를 설명드리면 반응로에서 핵 연료와 냉각재를 소모하여 폐기물과 증기를 생산하고 생산된 증기가 공업 터빈에서 돌아 전기와 물을 생산하고 다시 이 물은 반응로에 들어가 돌고 도는 구조입니다."
+				""
+				" 일단, 무지막지한 전력만 보고 이걸 한다기보단, 폐기물로 만드는 폴로늄이 목적일테니 굳이 크게 만들지 맙시다."
+				" 딱 넓이 5*5, 높이 9인 크기로만 만들자고요."
+				""
+				" 원자로 케이싱로 틀을 잡아준 뒤에 융합로 유리로 바닥을 깔아줍니다."
+				" 그 다음에 핵분열 연료 구성기를 서로가 마주보지 않게 5개를 깔고 쌓아줍니다. 그리고 각 끝에 제어 축 구성기를 쌓아 마무리해주고요."
+				" 마지막으로 냉각재(물)이 들어갈 포트, 핵 연료가 들어갈 포트, 증기가 빠져나갈 포트, 핵폐기물이 빠져나갈 포트와 여유분의 포트를 원하는 위치에 설치하고 나머지 부분은 융합로 유리로 메워 완성해줍니다.(레드스톤 입자가 나오면 완성된겁니다.)"
+				""
+				" 설정 장치로 핵폐기물 방출, 냉각재(증기) 방출, 투입 전용 포트를 지정해주고 터빈과 핵 연료 기반 시설, 폐기물 처리 시설에 모두 연결이 되었다면 준비는 끝난겁니다."
+				" 연결할 때, 파이프와 튜브는 적어도 궁극 등급정도는 돼야합니다."
+				""
+				" 먼저 반응로에 냉각재(물)을 가득 채워주고 핵 연료까지 채운 뒤에 활성화시키면 약간의 물이 소모된 것 처럼 보이지만 (공업 터빈이 잘 작동한다면) 물은 더 이상 줄어들지 않을겁니다."
+				" 그리고 폐기물은 처리시설에서 잘 처리되겠죠."
+				" 참고로 반응로 통계탭에서 연료 소모 속도를 높일 수도 있습니다. 냉각재가 줄지 않는 선에서 잘 타협을 보세요."
+				""
+				" 이중 하나라도 설명과 일치하지 않다면 좆된겁니다."
+			]
+			dependencies: [
+				"3E7893E5E465AE14"
+				"1F743EDE81698E9E"
+			]
+			id: "5E58F18C75FE3534"
+			tasks: [
+				{
+					id: "144B8AA06E62FBC6"
+					type: "item"
+					item: "mekanismgenerators:fission_reactor_casing"
+					count: 60L
+				}
+				{
+					id: "6328E32FCC560BEA"
+					type: "item"
+					item: "mekanismgenerators:fission_fuel_assembly"
+					count: 30L
+				}
+				{
+					id: "7E1ADCA7717B8872"
+					type: "item"
+					item: "mekanismgenerators:control_rod_assembly"
+					count: 5L
+				}
+				{
+					id: "0DDF3107E2E48455"
+					type: "item"
+					item: "mekanismgenerators:fission_reactor_port"
+					count: 5L
+				}
+				{
+					id: "4AC180650A6A6A29"
+					type: "item"
+					item: "mekanismgenerators:reactor_glass"
+					count: 97L
+				}
+			]
+			rewards: [
+				{
+					id: "234DDF43DCCED09B"
+					type: "item"
+					item: "createdeco:gold_coinstack"
+					count: 10
+				}
+				{
+					id: "4E24186ED6606D45"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 6512215439762885638L
+				}
+			]
+		}
+		{
+			title: "근원"
+			x: 9.0d
+			y: -1.0d
+			shape: "square"
+			subtitle: "핵 연료"
+			description: [
+				" 핵 분열을 하기 위해선 핵 연료가 필요합니다."
+				" 화학적 반응 장치에서 불산과 산화 우라늄을 합성해야하죠."
+				""
+				" 불산은 형석 블록을 화학적 용해 장치에서 기체 황산으로 용해시키면 만들어집니다."
+				""
+				" 산화 우라늄은 농축기에서 우라늄괴를 우라늄염으로 만든뒤에 화학적 산화 장치에서 만들 수 있습니다."
+			]
+			dependencies: [
+				"6C0ACB771CBD2E77"
+				"1059916707420D2B"
+			]
+			id: "5A3FC596FEFBF5F4"
+			tasks: [
+				{
+					id: "23679F5706299F5C"
+					type: "item"
+					item: "mekanism:pressurized_reaction_chamber"
+				}
+				{
+					id: "4BCC5051A87B4ADE"
+					type: "item"
+					item: "mekanism:isotopic_centrifuge"
+				}
+			]
+		}
+		{
+			title: "폐기물 활용"
+			icon: "mekanism:pellet_polonium"
+			x: 10.0d
+			y: -1.0d
+			shape: "square"
+			subtitle: "폴로늄"
+			description: [
+				" 핵 분열을 하는 중엔 핵 연료를 소모한 만큼 핵폐기물이 발생하게 됩니다. 이게 가장 문제입니다."
+				" 핵 분열 반응로가 터지지 않아도 이 폐기물이 처리되지 않고 넘친다면 해당 주변은 똑같이 방사능으로 오염되며 이를 운송중인 고압 튜브를 제거해도 퍼지고 이를 함유하고 있는 기계를 제거해도 퍼집니다."
+				""
+				" 아주 간단하게 해결하는 방법은 유체 쓰레기 통(Fluid Trash Can)으로 아예 제거해버리거나 방사성 폐기물 통에 넣고 사라지길 비는겁니다."
+				" 하지만.. 정말로 끔찍하게도, 개쩔고 멋있는 슈트를 만들려면 이 폐기물을 한 번 이용해야합니다."
+				""
+				" 태양열 중성자 활성기로 폐기물을 폴로늄으로 변환한 뒤에 가압 반응 장치에서 물과 함께 형석 가루로 폴로늄 알갱이로 제작하거나 추후에 반물질로 제작할 수 있습니다."
+				" 그럴러면 HDPE 용지를 제작해야하는데, 이게 좀 귀찮습니다."
+				""
+				" HDPE 알갱이 3개를 농축기에서 변환할 수 있는데, 이 알갱이는 가압 반응 장치에서 액체 에틸렌과 산소와 함께 기질로 제작할 수 있습니다."
+				""
+				" 기질은 식물을 분쇄기에 갈아 얻을 수 있는 바이오 연료를 물과 수소와 함께 에틸렌과 동시에 제작이 됩니다."
+				" 액체 에틸렌은 회전 콘덴서에서 에틸렌을 응축시키면 되죠."
+				""
+				" 만약 이들이 작동될때, 초록색 입자(방사능 입자)가 생겨도 걱정마세요. 원래 그런겁니다."
+				" 물론, 주변 전체가 그렇다면 좆된겁니다."
+			]
+			dependencies: [
+				"5A3FC596FEFBF5F4"
+				"3E709FC4D696913F"
+			]
+			id: "1F743EDE81698E9E"
+			tasks: [{
+				id: "3101C86BC6896E1F"
+				type: "item"
+				item: "mekanism:solar_neutron_activator"
+			}]
+		}
+		{
+			title: "순간이동"
+			x: 6.0d
+			y: 1.0d
+			subtitle: "텔레포터"
+			description: [
+				" 원거리 또는 차원간의 이동을 원한다면 텔레포트가 필요합니다."
+				""
+				" 텔레포터에 주파수를 설정하고 전력만 공급하면 준비는 끝났습니다. 아, 청크로드도 잊지말고요."
+				""
+				" 텔레포터를 이용하는 방법은 두가지가 있습니다."
+				""
+				" 하나는 포탈형식으로 문을 만드는 방법입니다."
+				" 텔레포터 프레임을 텔레포터가 아래 중앙으로 가게하여 넓이 3, 높이 4형태로 포탈을 만들어, 포탈을 지나면 같은 주파수의 텔레포터로 이동하게 됩니다."
+				""
+				" 다른 방법은 휴대용 텔레포터입니다."
+				" 휴대용 텔레포터를 충전하고 원하는 텔레포터의 주파수를 맞춘 뒤에 바로 이동할 수 있게 하는 방법이죠."
+			]
+			dependencies: [
+				"6A85734EDDD95D59"
+				"0C3254FE0D555408"
+			]
+			id: "0DBE27E10CF86301"
+			tasks: [
+				{
+					id: "09957AAA0E83CCB5"
+					type: "item"
+					item: "mekanism:teleporter"
+					count: 2L
+				}
+				{
+					id: "2BE4E6CEC23AA330"
+					type: "item"
+					item: "mekanism:teleporter_frame"
+					count: 7L
+				}
+				{
+					id: "3AFE75E44AC460A3"
+					type: "item"
+					item: "mekanism:portable_teleporter"
+					match_nbt: false
+				}
+			]
+		}
+		{
+			title: "가상화폐"
+			x: 7.0d
+			y: 1.0d
+			subtitle: "디지털 채굴기"
+			description: [
+				" 설치를 하고 범위를 설정한 뒤에 채굴할 블록을 지정해주면 기적처럼 자원을 채굴합니다."
+				" 간단하죠?"
+				" .. 재료가 간단하진 않네요."
+			]
+			dependencies: [
+				"0C3254FE0D555408"
+				"6A85734EDDD95D59"
+			]
+			id: "1C9CAA119CD73CBA"
+			tasks: [{
+				id: "546E2769851582BA"
+				type: "item"
+				item: "mekanism:digital_miner"
+			}]
+		}
+		{
+			title: "모듈러 파워 슈트"
+			icon: "mekanism:mekasuit_helmet"
+			x: 12.5d
+			y: -0.5d
+			subtitle: "메카슈트"
+			description: [
+				" 재료가 재료다보니 기본적인 방어력도 상당하지만 이 슈트의 진가는 바로 업그레이드에 있습니다."
+				""
+				" 모듈 제어기에서 원하는 모듈을 장착하여 슈트의 성능을 올리는거죠."
+				""
+				" 제트팩을 달거나 야간 투시 기능을 넣거나 등등 말이죠."
+				""
+				" 일부 모듈들은 부착시, 슈트의 외형에도 영향을 줍니다."
+				""
+				" 아, 쉐이더를 이용중이라면 슈트를 착용하면 투명해보입니다. 이건 확실히 아쉬운 부분이네요."
+			]
+			dependencies: [
+				"5E58F18C75FE3534"
+				"3AA993DE024EE7FB"
+			]
+			id: "603710736EE242D4"
+			tasks: [
+				{
+					id: "06EB58C10DB14B04"
+					type: "item"
+					item: "mekanism:modification_station"
+				}
+				{
+					id: "282516701E2A343C"
+					type: "item"
+					item: "mekanism:meka_tool"
+					match_nbt: false
+				}
+				{
+					id: "1D14BE3EEF022564"
+					type: "item"
+					item: "mekanism:mekasuit_helmet"
+					match_nbt: false
+				}
+				{
+					id: "7B5D132DD68EA7BA"
+					type: "item"
+					item: "mekanism:mekasuit_bodyarmor"
+					match_nbt: false
+				}
+				{
+					id: "58AEB91F2541EF32"
+					type: "item"
+					item: "mekanism:mekasuit_pants"
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "3F62CAF3FD31A1EC"
+					type: "item"
+					item: "mekanism:mekasuit_boots"
+					match_nbt: false
+				}
+			]
+			rewards: [{
+				id: "157AFB15B7F990E4"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 6512215439762885638L
+			}]
+		}
+		{
+			title: "지구를 떠나"
+			x: 9.0d
+			y: 2.5d
+			shape: "square"
+			subtitle: "NASA 작업대"
+			description: [
+				" 지구에선 구할 수 없는 자원이 있습니다."
+				" 그렇다면 지구말고 다른 곳에는 있다는 것이죠."
+				""
+				" 일단 우주선을 만들 준비를 합시다."
+				""
+				" 재료요? 지구를 탈출하려면 이정도는 해야죠."
+			]
+			dependencies: [
+				"5E58F18C75FE3534"
+				"05CD6B92B31E139D"
+			]
+			id: "47F25DB906954BB4"
+			tasks: [{
+				id: "357713CC12B0641A"
+				type: "item"
+				item: "beyond_earth:nasa_workbench"
+			}]
+			rewards: [{
+				id: "46FC6A9BE837885A"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 6512215439762885638L
+			}]
+		}
+		{
+			title: "문화 교류"
+			x: 5.5d
+			y: 6.0d
+			shape: "square"
+			subtitle: "외계인"
+			description: [
+				" 달에 웬 지하로 가는 통로가 보였다면 그것은 Applied Energistics 2 모드를 플레이할 수 있는 시작점이 될 것입니다."
+				""
+				" 그곳의 건축양식과 거주 생명체들을 보며 당신은 한가지의 아이디어를 떠올리게 됩니다."
+			]
+			dependencies: ["20B4C2CEE1040B3B"]
+			id: "481EBCE903F4A9D7"
+			tasks: [{
+				id: "443E71C99D8EE67C"
+				type: "structure"
+				title: "외계 마을을 찾으십시오"
+				structure: "beyond_earth:alien_village"
+			}]
+			rewards: [
+				{
+					id: "06730A85CB50948C"
+					type: "item"
+					auto: "enabled"
+					item: "ae2:engineering_processor_press"
+				}
+				{
+					id: "6028CE9FECA9FC9C"
+					type: "item"
+					auto: "enabled"
+					item: "ae2:calculation_processor_press"
+				}
+				{
+					id: "4EDD95CC313B544E"
+					type: "item"
+					auto: "enabled"
+					item: "ae2:logic_processor_press"
+				}
+				{
+					id: "42F5AD2887BEDF3E"
+					type: "item"
+					auto: "enabled"
+					item: "ae2:silicon_press"
+				}
+				{
+					id: "3687ABA2F1DF3A98"
+					type: "item"
+					item: "minecraft:emerald"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "외부 요인"
+			icon: {
+				id: "beyond_earth:oxygen_mask"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 10.0d
+			y: 2.0d
+			shape: "square"
+			subtitle: "우주복"
+			description: [
+				" 지구만 특이하게 대기에 산소를 포함하고 있어 우리가 숨을 쉴 수 있는겁니다."
+				" 그러니까 다른 행성이나 외부에는 산소가 존재하지 않아 숨을 못 쉰다는거죠."
+				" 그리고 현실적으로 따지면 기압, 온도 그리고 방사능도 지구와 다르니 우리의 연약한 몸으론 버틸 수 없죠."
+				""
+				" 우주복을 모두 착용해야하며 상의에 산소를 저장해야지만 우주에서 생존할 수 있습니다."
+				""
+				" 메카슈트가 있다면 우주 호흡 모듈을 장착하면 됩니다. 산소 캔도 준비하면요."
+				""
+				" 우주복을 입어야하는 상황이라면 제트팩을 착용할 수 없는 상황이므로 그래플링 훅을 준비하시는 것도 좋을겁니다."
+			]
+			dependencies: ["47F25DB906954BB4"]
+			id: "2E0931CA6DB55335"
+			tasks: [
+				{
+					id: "21B67AC87F9B9A9D"
+					type: "item"
+					item: {
+						id: "beyond_earth:oxygen_mask"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7CA7FF865011AC10"
+					type: "item"
+					item: {
+						id: "beyond_earth:space_suit"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+				}
+				{
+					id: "371B925D022B5BB2"
+					type: "item"
+					item: {
+						id: "beyond_earth:space_pants"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6D199F3D7C9246D1"
+					type: "item"
+					item: {
+						id: "beyond_earth:space_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "우주선"
+			icon: {
+				id: "beyond_earth:rocket_t1"
+				Count: 1b
+				tag: { }
+			}
+			x: 11.0d
+			y: 3.0d
+			shape: "square"
+			subtitle: "1 티어 로켓"
+			description: [
+				" 지구의 중력을 이겨내고 대기권을 뚫어서 우주로 나갈려면 그만큼의 추진력을 가진 로켓이 필요합니다."
+				" 지구의 자원으로는 달까지 가는 것이 한계지만 그게 어딥니까."
+				""
+				" 로켓을 설치할 수 있는 로켓 발사대를 3*3으로 깔아야합니다."
+				""
+				" 그리고 우주선에 쉬프트 우클릭으로 연료창을 열어 연료를 공급할 수 있죠."
+				" 연료는 황화경유 또는 경유.. 뭐, 기타 등등을 쓸 수 있습니다."
+			]
+			dependencies: ["47F25DB906954BB4"]
+			id: "008488DA02DBB1EB"
+			tasks: [
+				{
+					id: "1AC23BE2D3BD2C60"
+					type: "item"
+					item: {
+						id: "beyond_earth:rocket_t1"
+						Count: 1b
+						tag: {
+							"beyond_earth:fuel": 0
+						}
+					}
+				}
+				{
+					id: "5EA1DA0F0F1E425F"
+					type: "item"
+					item: "beyond_earth:rocket_launch_pad"
+					count: 9L
+				}
+			]
+		}
+		{
+			title: "토끼는 어디에"
+			x: 12.0d
+			y: 2.5d
+			shape: "square"
+			subtitle: "달"
+			description: [
+				" 우주복에 산소를 채워서 모두 착용하고 우주선에 연료도 모두 적재하고 발사대 위에 놓았다면 준비는 진짜 끝났습니다."
+				" 우주선에 올라타서 스페이스바를 누르면 카운트다운이 시작되며 끝나면 로켓은 하늘로 오를겁니다. (천장에 부딪혔다면 폭★발하게 되죠)"
+				""
+				" 갈 곳은 달 밖에 없으니 달로 향합시다."
+				""
+				" 진입시, 스페이스바를 눌러 착륙선의 속도를 낮추어야합니다. 그렇지 않다면 폭발과 함께, 여러분이 만드신 로켓도 영영 못 보니까요."
+				" 무사히 착륙했다면 착륙선에서 내려 착륙선에 쉬프트 우클릭으로 우주선을 챙기세요. 다시 돌아올 생각해야죠."
+				""
+				" 설마 다시 로켓을 쏘기 위한 연료와 로켓 발사대를 챙기지 않은 건 아니죠?"
+				" 뭐, 괜찮습니다. 짜피 명령어로 돌아올 수는 있으니까요."
+				""
+				" 암튼, 축하합니다."
+			]
+			dependencies: [
+				"2E0931CA6DB55335"
+				"008488DA02DBB1EB"
+			]
+			id: "20B4C2CEE1040B3B"
+			tasks: [{
+				id: "50F3EE17B5EC7AA4"
+				type: "dimension"
+				title: "달에 도착하십시오"
+				icon: "beyond_earth:moon_globe"
+				dimension: "beyond_earth:moon"
+			}]
+			rewards: [
+				{
+					id: "1CA25ED8A9B8B53E"
+					type: "item"
+					item: "beyond_earth:flag_yellow"
+				}
+				{
+					id: "50DA43E93A29E90D"
+					type: "item"
+					item: "createdeco:gold_coinstack"
+					count: 5
+				}
+			]
+		}
+		{
+			title: "보존 식량"
+			x: 12.0d
+			y: 3.5d
+			subtitle: "치즈"
+			description: [
+				" 달에 치즈가 있습니다."
+				" 적절한 가공만 거치면 치즈(Beyond Earth)가 되지만 이 형태로는 영양소와 허기를 채울 수 없습니다."
+				" 다만, 유통기한은 영구적이죠."
+				""
+				" 먹고싶을 땐, 또 한 번 간단한 가공을 거쳐 먹을 수 있는 형태로 만들 수 있습니다."
+				""
+				" 유제품 영양소는 얻기 힘들니 개꿀이죠."
+			]
+			dependencies: ["20B4C2CEE1040B3B"]
+			id: "65A000CD786906B5"
+			tasks: [
+				{
+					id: "0030BAB5EA19897B"
+					type: "item"
+					item: "beyond_earth:cheese"
+				}
+				{
+					id: "09A1A3413CFB2C59"
+					type: "item"
+					item: {
+						id: "tfc:food/cheese"
+						Count: 1b
+						ForgeCaps: {
+							"tfc:food": {
+								traits: [ ]
+								creationDate: -1L
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "달 특산품"
+			x: 13.0d
+			y: 2.5d
+			shape: "square"
+			subtitle: "데쉬"
+			description: [
+				" 달에서만 얻을 수 있는 금속이며 다음 티어의 로켓을 만들 수 있는 재료가 됩니다."
+				""
+				" .. 찾기 좀 힘드니 힘내시길 바랍니다."
+			]
+			dependencies: ["20B4C2CEE1040B3B"]
+			id: "016C6B928E327AFE"
+			tasks: [{
+				id: "3383715160325538"
+				type: "item"
+				item: "beyond_earth:raw_desh"
+			}]
+		}
+		{
+			title: "화성을 향해서"
+			x: 14.5d
+			y: 2.5d
+			shape: "square"
+			subtitle: "2 티어 로켓"
+			description: [
+				" 더 높은 티어의 로켓을 만들 수 있습니다."
+				" 더 많은 연료로 더 멀리 갈 수 있다는 뜻이죠."
+				""
+				" 그나마 만만한 화성으로 향할 수 있을겁니다."
+			]
+			dependencies: ["016C6B928E327AFE"]
+			id: "67150B50C95B8D16"
+			tasks: [{
+				id: "27FD53D28C7FD826"
+				type: "item"
+				item: {
+					id: "beyond_earth:rocket_t2"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "갈거니까"
+			x: 15.5d
+			y: 2.5d
+			shape: "square"
+			subtitle: "화성"
+			description: [
+				" 화성에 도착했다면 초록색 이족보행에 못생긴 외계인이 여러분을 반길겁니다. 물론, 적대적으로요."
+				""
+				" 화성은 지구보다 좀 더울뿐이지 내복이 따로 필요하지는 않습니다."
+			]
+			dependencies: ["67150B50C95B8D16"]
+			id: "16DFAE34D8A31CC1"
+			tasks: [{
+				id: "4AA137FFFEE68615"
+				type: "dimension"
+				title: "화성에 도착하십시오"
+				icon: "beyond_earth:mars_globe"
+				dimension: "beyond_earth:mars"
+			}]
+			rewards: [{
+				id: "25014FD0F7CF8198"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+				count: 15
+			}]
+		}
+		{
+			title: "화성 특산품"
+			x: 16.5d
+			y: 2.5d
+			shape: "square"
+			subtitle: "오스트룸"
+			description: [
+				" 화성에서만 얻을 수 있는 금속이며 다음 티어의 로켓을 만들 수 있는 재료가 됩니다."
+				""
+				" 아, 얘도 당연히 찾기 좀 힘듭니다."
+			]
+			dependencies: ["16DFAE34D8A31CC1"]
+			id: "483F57D9D846C89F"
+			tasks: [{
+				id: "06A5F2DB9751C3EE"
+				type: "item"
+				item: "beyond_earth:raw_ostrum"
+			}]
+		}
+		{
+			title: "네더라이트 우주복으로 날 감싸리"
+			icon: {
+				id: "beyond_earth:netherite_oxygen_mask"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 18.0d
+			y: 2.0d
+			shape: "square"
+			subtitle: "네더라이트 우주복"
+			description: [
+				" 다음 목표는 금성이 될 텐데, 금성은 태양과 가까우며 산성비가 주기적으로 내리는 극악의 환경입니다."
+				""
+				" 그 온도를 버티기 위해선 네더라이트로 우주복을 감싸줄 필요가 있으며 마법 부여로 산성비로 부터 우주복을 보호해야합니다."
+				""
+				" 모든 부위에 마법 부여를 해야하며 안타깝게도 이 마법 부여책은 금성의 자원으로 제작할 수 있습니다."
+				" 그래서 상점에서 구매할 수 있게 해놨죠."
+				""
+				" 메카슈트는 모듈이 있지만 그또한 금성의 자원이 필요하죠."
+				""
+				" 아, 여담으로 온 몸을 감싸는 우주복 특성상, 네더라이트를 둘렀기에 용암 등으로 인해 불타지 않습니다."
+			]
+			dependencies: ["483F57D9D846C89F"]
+			id: "24662E573B426485"
+			tasks: [
+				{
+					id: "5561CC972C485100"
+					type: "item"
+					item: {
+						id: "beyond_earth:netherite_oxygen_mask"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6EDF3EE5D645AC03"
+					type: "item"
+					item: {
+						id: "beyond_earth:netherite_space_suit"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+				}
+				{
+					id: "19718C639348338D"
+					type: "item"
+					item: {
+						id: "beyond_earth:netherite_space_pants"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2920D1FBB04790E3"
+					type: "item"
+					item: {
+						id: "beyond_earth:netherite_space_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "6D951B48C53E60F5"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							id: "beyond_earth_giselle_addon:venus_acid_proof"
+							lvl: 1s
+						}]
+					}
+				}
+			}]
+		}
+		{
+			title: "금성을 향해서"
+			x: 19.0d
+			y: 3.0d
+			shape: "square"
+			subtitle: "3 티어 로켓"
+			description: [
+				" 더 높은 티어의 로켓을 만들 수 있습니다."
+				" 더 많은 연료로 더 멀리 갈 수 있다는 뜻이죠."
+				""
+				" 금성과 수성을 갈 수 있습니다."
+				" 필요한 자원은 금성에 있으니 그곳으로 향하죠."
+			]
+			dependencies: ["483F57D9D846C89F"]
+			id: "389E9F518BCDBB93"
+			tasks: [{
+				id: "32DF58090D815573"
+				type: "item"
+				item: {
+					id: "beyond_earth:rocket_t3"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "럭키"
+			x: 20.0d
+			y: 2.5d
+			shape: "square"
+			subtitle: "금성"
+			description: [
+				" 금성에 도착헀다면 매우 뜨거운 지형인 지옥 불모지가 대부분이라는 것을 알 수 있습니다."
+				""
+				" 그리고.. 그곳을 벗어나면 예상 외의 생명체들을 만날 수 있죠."
+			]
+			dependencies: [
+				"389E9F518BCDBB93"
+				"24662E573B426485"
+			]
+			id: "4B63FCCF52FFFCC0"
+			tasks: [{
+				id: "1232B87B0FAFB02A"
+				type: "dimension"
+				title: "금성에 도착하십시오"
+				icon: "beyond_earth:venus_globe"
+				dimension: "beyond_earth:venus"
+			}]
+			rewards: [
+				{
+					id: "5CC50FE4E8CE75B7"
+					type: "item"
+					item: "createdeco:gold_coinstack"
+					count: 25
+				}
+				{
+					id: "7C674E6C68195348"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 6512215439762885638L
+				}
+			]
+		}
+		{
+			title: "문화 침범"
+			x: 20.0d
+			y: 1.5d
+			subtitle: "외계인2"
+			description: [
+				" 지옥의 피글린처럼 바로 공격은 하지 않는 녀석들이지만 그곳의 상자를 연다면 얘기는 달라집니다."
+				""
+				" 딱히 유용한 거래 품목은 없을테니 그 죽여버리죠."
+			]
+			dependencies: ["4B63FCCF52FFFCC0"]
+			id: "36D60748FCC600A0"
+			tasks: [{
+				id: "1B67C63500CF62A6"
+				type: "kill"
+				title: "파이그로를 처치하십시오"
+				icon: {
+					id: "minecraft:golden_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "beyond_earth:pygro"
+				value: 1L
+			}]
+			rewards: [{
+				id: "2C420213B59981A9"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 6512215439762885638L
+			}]
+		}
+		{
+			title: "금성 특산품"
+			x: 21.0d
+			y: 2.5d
+			shape: "square"
+			subtitle: "칼로라이트"
+			description: [
+				" 금성에서만 얻을 수 있는 금속이며 다음 티어의 로켓을 만들 수 있는 재료가 됩니다."
+				""
+				" 아, 얘도 당연히 찾기 좀 힘듭니다."
+				""
+				" 하지만 Mekanism의 강철 케이싱 제작의 효율을 높힐 수 있을지도?"
+			]
+			dependencies: ["4B63FCCF52FFFCC0"]
+			id: "41E852745D27F461"
+			tasks: [{
+				id: "3D8D35EF45868E23"
+				type: "item"
+				item: "beyond_earth:raw_calorite"
+			}]
+		}
+		{
+			title: "더 많은 케이싱"
+			icon: { id: "mekanism:steel_casing", Count: 2b }
+			x: 21.0d
+			y: 6.0d
+			subtitle: "강철 케이싱 효율 제작"
+			description: [" 외계 기술과 자원이라면 지구의 강철 케이싱도 더 효율 좋게 만들 수도 있습니다."]
+			dependencies: [
+				"7A9A891AA501BBE3"
+				"41E852745D27F461"
+			]
+			id: "6E75460F79B02DC4"
+			tasks: [
+				{
+					id: "146CC2636D742136"
+					type: "item"
+					item: "mekanism:steel_casing"
+					count: 2L
+				}
+				{
+					id: "2E33A0655B1A6611"
+					type: "checkmark"
+					title: "설명 읽어보셨죠?"
+				}
+			]
+			rewards: [{
+				id: "618A19F7726F9E7A"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 6512215439762885638L
+			}]
+		}
+		{
+			title: "테라포밍"
+			x: 12.0d
+			y: 1.5d
+			subtitle: "산소 기포 분배기와 중력 정규화 장치"
+			description: [
+				" 다른 행성에서 관광용이나 자원 채굴이 목적이라면 딱히 필요없겠지만 거주가 목적이라면 두 기계가 필요할 겁니다."
+				""
+				" 산소 기포 분배기는 물을 공급해주면 이를 분해하여 산소로 만들고 설정한 범위만큼 영역을 만들어 그곳에서 숨을 쉴 수 있게 합니다."
+				" 산소를 바로 공급해주어도 작동 됩니다."
+				" 그런데.. 여전히 불을 지르지도 횃불(Minecraft)을 설치해도 꺼지게 됩니다. 왤까요?"
+				""
+				" 중력 정규화 장치는 설정한 범위만큼 영역을 만들어 해당 영역에선 지구와 같은 중력을 가지게 해줍니다."
+				" 뭐, 그 행성의 중력이 마음에 든다면 필요없겠죠."
+			]
+			dependencies: ["2E0931CA6DB55335"]
+			id: "683FAF055BE497E1"
+			tasks: [
+				{
+					id: "797AF8E332A11F22"
+					type: "item"
+					item: "beyond_earth:oxygen_bubble_distributor"
+				}
+				{
+					id: "0647F69BF34D7627"
+					type: "item"
+					item: "beyond_earth_giselle_addon:gravity_normalizer"
+				}
+			]
+			rewards: [
+				{
+					id: "419526F161152A91"
+					type: "item"
+					item: "tfc:seeds/potato"
+				}
+				{
+					id: "6DAED8DC399EB002"
+					type: "item"
+					item: "minecraft:potato"
+				}
+			]
+		}
+		{
+			title: "극저온 내복"
+			icon: {
+				id: "tfc_aerospace:aerospacehat"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 11.0d
+			y: 2.0d
+			shape: "square"
+			subtitle: "항공우주복(보온)"
+			description: [
+				" 달 같은 대기가 거의 없거나 태양과 멀리 떨어진 행성에선 기온이 극심히 낮아, 결국 얼어죽게 됩니다."
+				" 이를 해결하기 위해선 우주 환경에서도 체온을 유지시켜주는 재질의 내복이 필요하며 이 재질은 만들기 꽤 까다로울 것입니다."
+				""
+				" 석유로 제작한 섬유인 폴리에스터 섬유와 에어로젤, 탐소 섬유 강화 중합체, HDPE 용지와 알루미늄 코팅 섬유 그리고 실리콘이 요구됩니다."
+				""
+				" 뭐... 체온같은거 신경 안 쓰는 분들이라면 제작할 필요는 없겠지만 뒷일을 위해 만드는 것도 좋다고 생각합니다."
+				""
+				" 항공우주복은 제작에 사용된 섬유로 간단히 수선할 수 있습니다."
+			]
+			dependencies: ["2E0931CA6DB55335"]
+			id: "1F8E3AA0C4920DE1"
+			tasks: [
+				{
+					id: "761CFE690396EFCF"
+					type: "item"
+					item: {
+						id: "tfc_aerospace:aerospacehat"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "42781B0EC94E6435"
+					type: "item"
+					item: {
+						id: "tfc_aerospace:aerospaceshirt"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2AC05D3E74F41695"
+					type: "item"
+					item: {
+						id: "tfc_aerospace:aerospacepants"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "21B01EA3FA42CA76"
+					type: "item"
+					item: {
+						id: "tfc_aerospace:aerospacesocks"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "66E1730A3790BED9"
+				type: "item"
+				item: "tfc_aerospace:aerospacefiber"
+				count: 10
+			}]
+		}
+		{
+			title: "극고온 내복"
+			icon: {
+				id: "tfc_aerospace:aerospacechat"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 19.0d
+			y: 2.0d
+			shape: "square"
+			subtitle: "항공우주복(방열)"
+			description: [
+				" 금성 같은 대기가 두껍거나 태양과 가까운 행성에선 기온이 극심히 높아, 결국 불타죽게 됩니다."
+				" 이를 해결하기 위해선 우주 환경에서도 체온을 유지시켜주는 재질의 내복이 필요하며 이 재질은 만들기 꽤 까다로울 것입니다."
+				""
+				" 음, 원래 있던 항공우주복에 에어로젤로 보강해주면 해결할 수 있을 듯 하지만, 두 행성 모두 다닐 예정이라면 아예 보온 세트와 방열 세트를 구비하는 것이 좋을겁니다."
+			]
+			dependencies: [
+				"24662E573B426485"
+				"1F8E3AA0C4920DE1"
+			]
+			id: "71F614C0C9437CC9"
+			tasks: [
+				{
+					id: "6FACA40F6B4AF40D"
+					type: "item"
+					item: {
+						id: "tfc_aerospace:aerospacechat"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2581681ADCF69C09"
+					type: "item"
+					item: {
+						id: "tfc_aerospace:aerospacecshirt"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "251D59B3274B4443"
+					type: "item"
+					item: {
+						id: "tfc_aerospace:aerospacecpants"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5768F54DE085F1D5"
+					type: "item"
+					item: {
+						id: "tfc_aerospace:aerospacecsocks"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "7503D3D2F4BF75B7"
+				type: "item"
+				item: "tfc_aerospace:aerospacefiber"
+				count: 10
+			}]
+		}
+		{
+			title: "물체 주입"
+			x: 14.5d
+			y: 6.5d
+			shape: "square"
+			subtitle: "물체 주입기"
+			description: [" Mekanism의 금속공학 입력기는 만들지 못하는 것들을 주입해서 새로운 것을 제작할 수 있습니다."]
+			dependencies: [
+				"032381E3030AB769"
+				"4AC78AC84FDAAF0B"
+			]
+			id: "45CBF122D0C0156E"
+			tasks: [{
+				id: "10B69D84EE0AB50B"
+				type: "item"
+				item: "lazierae2:infuser"
+			}]
+		}
+		{
+			title: "더 나은 반도체"
+			x: 15.5d
+			y: 6.5d
+			subtitle: "회로 식각기"
+			description: [
+				" 기존 회로 인쇄기 보다 자동화에 특화되어 쓰기 간편해졌습니다."
+				""
+				" 통합 프레스를 이용하기 때문에 하나의 프로세서를 만들기 위해 미리 실리콘과 재료를 인쇄할 필요없이 바로 투입해도 프로세서로 인쇄됩니다."
+			]
+			dependencies: ["45CBF122D0C0156E"]
+			id: "2E39DDD8FC99F3F5"
+			tasks: [{
+				id: "760AA1A129D9841D"
+				type: "item"
+				item: "lazierae2:etcher"
+			}]
+		}
+		{
+			title: "안전한 성장"
+			x: 16.5d
+			y: 6.5d
+			subtitle: "플럭스 집계기"
+			description: [
+				" 액정 가루를 만들 때 물에 넣거나 씨앗을 성장시킬 때, 물속에 던져놓는거라 귀찮거나 걱정되는 일이 있었을 겁니다."
+				" 씨앗 성장일 경우엔 많은 시간이 소요되니 Mekanism의 농축기에 넣어 해결했지만 이보다 더욱 간단한 방법이 있습니다."
+				""
+				" 플럭스 집계기는 씨앗으로 가공할 필요없이 모래와 가루만 있어도 제작이 되며 더 나아가 세투스 석영 수정을 충전시킬 수도 있습니다."
+				""
+				" 그리고 새로운 물질의 성장 효율을 높힐 수도 있죠."
+			]
+			dependencies: [
+				"2E39DDD8FC99F3F5"
+				"4CF5D7039D2DC1DB"
+			]
+			id: "1FBA4FC4ED5D0B6B"
+			tasks: [{
+				id: "37D4CD9480EFB620"
+				type: "item"
+				item: "lazierae2:aggregator"
+			}]
+		}
+		{
+			title: "아 현기증 난다고요"
+			x: 15.5d
+			y: 8.0d
+			subtitle: "ME 요청기"
+			description: [" 지정된 아이템이 지정된 개수 이하가 되면 자동 조합을 스스로 실행시켜 개수를 채우는 역할을 합니다."]
+			dependencies: ["4AC78AC84FDAAF0B"]
+			id: "70EF3105DD482B2C"
+			tasks: [{
+				id: "2849C62D8E0B888E"
+				type: "item"
+				item: "lazierae2:requester"
+			}]
+		}
+		{
+			title: "이 물은 이제 다 제겁니다"
+			icon: "mekanism:electric_pump"
+			x: 5.5d
+			y: -4.0d
+			subtitle: "전동 펌프"
+			description: [
+				" 전기를 소모하여 주변 액체를 흡수합니다."
+				""
+				" 그리고 필터 업그레이드를 통하여 물에서 중수를 뽑아내게 할 수 있습니다."
+				" 중수는 미래에 핵융합에 필수적인 요소입니다."
+				""
+				" 하지만 그 과정은 매우 오래걸릴 것이기 때문에 속도 업그레이드를 좀 많이 붙혀야 볼만한 수준이 될 겁니다."
+			]
+			dependencies: ["2F1B95274A2DFB3C"]
+			id: "37D303F7C0B02719"
+			tasks: [
+				{
+					id: "489A7A590EF235B2"
+					type: "item"
+					item: "mekanism:electric_pump"
+				}
+				{
+					id: "632E54C9D001708F"
+					type: "item"
+					item: "mekanism:upgrade_filter"
+				}
+			]
+			rewards: [{
+				id: "497C1E2EE47727B2"
+				type: "item"
+				item: "mekanism:upgrade_speed"
+				count: 8
+			}]
+		}
+		{
+			title: "핵융합 연료"
+			x: 11.0d
+			y: -4.0d
+			subtitle: "홀로륨"
+			description: [
+				" 핵분열로 전력을 얻기엔 너무 위험할겁니다. 그러니 반대로 핵융합으로 전력을 얻어보죠."
+				" 융합은 분열과는 반대로 무언가가 잘못된다고 해서 큰일이 나지는 않습니다. 다만, 약간의 시간과 전력이 낭비될 뿐이죠."
+				""
+				" 우선, 핵융합에 쓰일 연료부터 준비해 봅시다."
+				" 연료는 중수소와 삼중 수소를 합친 D-T 연료를 이용하며 융합로에 두 기체를 넣어주면 바로 D-T 연료가 되므로 굳이 합성할 필요는 없습니다."
+				""
+				" 중수소는 필터 업그레이드를 한 전동 펌프로 물에서 중수를 뽑아내고 전해 분리기로 중수소를 얻을 수 있습니다."
+				""
+				" 삼중 수소는 좀 까다로울 수 있습니다."
+				" 열적 증발 시설에서 물을 소금물로 증발시킨 뒤에 이 소금물을 또 증발시켜 액체 리튬을 얻어야합니다."
+				" 그리고 회전 콘덴서에서 리튬으로 기화를 시키고 태양열 중성자 활성기에서 삼중 수소로 변환하면 됩니다."
+				""
+				" 아, 앞에서 굳이 이 둘을 합성할 필요는 없다고 하였지만 융합로를 한 번 작동시키기 위해선 10mB만큼의 D-T 연료가 필요하여 결국엔 화학적 반응 장치에서 조금은 생산해야 합니다."
+				""
+				" 연료를 생산할 준비가 되었다면 홀로륨에 D-T 연료를 담은 뒤에 다음 퀘스트에서 또 다른 준비를 하시면 됩니다."
+			]
+			dependencies: [
+				"37D303F7C0B02719"
+				"5E58F18C75FE3534"
+			]
+			id: "6F032AE2C4D931AE"
+			tasks: [{
+				id: "0F61AC75D3FA1FA8"
+				type: "item"
+				item: "mekanismgenerators:hohlraum"
+			}]
+		}
+		{
+			title: "집광"
+			icon: "engineersdecor:sign_laser"
+			x: 12.0d
+			y: -4.0d
+			subtitle: "레이저"
+			description: [
+				" 융합로를 작동시키기 위해선 약간의 연료와 엄청난 온도가 필요합니다."
+				" 연료는 미리 만들어 놓았으니 온도를 준비해야죠."
+				""
+				" 여러 방법을 생각해볼 수 있지만 정해진 답은 이미 있습니다."
+				" 바로 엄청난 세기의 레이저를 한 곳에 순간적으로 집중시켜 발사하는 것이죠."
+				""
+				" 레이저는 전력을 받으면 레이저 광선을 내보내지만 하나로는 융합로를 작동시킬 수는 없습니다."
+				" 레이저 증폭기에 여러 레이저를 집중시켜 한 방향으로 내보내야죠."
+				""
+				" 레이저 증폭기는 융합로의 레이저 초점 매트릭스를 향하도록 연결해야하며 순간적인 에너지가 필요하기에 레드스톤 인식을 설정하여 에너지를 저장해야합니다. (약 400MFE 정도 요구)"
+				""
+				" 여기까지 준비되었다면 이제 다음 퀘스트에서 융합로를 만들면 되겠습니다."
+			]
+			dependencies: ["6F032AE2C4D931AE"]
+			id: "3B3DAA72D17D922A"
+			tasks: [
+				{
+					id: "604A032EB0C385AC"
+					type: "item"
+					item: "mekanism:laser"
+				}
+				{
+					id: "5041788F14F4647D"
+					type: "item"
+					item: "mekanism:laser_amplifier"
+				}
+			]
+			rewards: [{
+				id: "3681B0B95BB7F3D5"
+				type: "item"
+				item: "mekanism:laser"
+				count: 3
+			}]
+		}
+		{
+			title: "물은 훌륭한 에너지원"
+			icon: "mekanismgenerators:fusion_reactor_controller"
+			x: 13.0d
+			y: -4.0d
+			subtitle: "핵융합로"
+			description: [
+				" 핵융합로 포트는 입력은 2개, 출력은 최소 1개로 설정해야합니다."
+				" 중,삼중 수소의 입력과 에너지와 열 출력을 위한 것이죠."
+				""
+				" 핵융합로 제어기를 열고 연료탭에서 연료 소모량을 적절히 설정하여 연료가 고갈되지 않을 정도로만 설정하세요."
+				""
+				" 레이저도 레이저 초점 매트릭스를 향하도록하고 연료들도 공급이 된다면, 핵융합로 제어기에 D-T 연료를 담은 홀로륨을 넣고 충전한 레이저를 순간적으로 발사시켜주면 융합이 시작됩니다."
+				" 융합로 유리를 이용해 융합로를 제작했다면 내부에서 괴랄한 이펙트가 보일겁니다."
+				""
+				" 쨋든, 출력 포트에서 바로 전력을 빼내도 충분한 전력을 얻을 수 있지만은 여기서 더 많은 전력을 뽑아낼 수 있습니다. 바로 물을 이용하는 것이죠."
+				" 융합로 특성덕에 내부가 엄청 뜨거울텐데, 이를 공업 터빈과 연결하는 겁니다."
+				" 융합로에 물을 입력하고 출력 포트에서 그 물을 공업 터빈으로, 터빈에서 사용된 물을 다시 융합로로 보내서 부가적인 전력을 더 얻어낼 수 있습니다."
+				" 정리하자면 융합로 자체 생산 전력과 공업 터빈의 생산 전력을 모두 얻을 수 있다는 겁니다."
+				""
+				" 그런데 신기하네요. 이 과정이 모두 물만 계속 공급되면 가능한 과정이군요."
+				""
+				" 아, 설치 방법은 아래 링크를 참고해 주세요. (융합로 유리는 테두리를 제외한 평면 부위에 최대 5개 설치할 수 있습니다.)"
+				" https://ftbwiki.org/Fusion_Reactor_(Mekanism)"
+			]
+			dependencies: ["3B3DAA72D17D922A"]
+			id: "654B7DB2A0299184"
+			tasks: [
+				{
+					id: "2E9C0DA5BC093115"
+					type: "item"
+					item: "mekanismgenerators:fusion_reactor_frame"
+					count: 36L
+				}
+				{
+					id: "3B9CAC3893B1B915"
+					type: "item"
+					item: "mekanismgenerators:reactor_glass"
+					count: 25L
+				}
+				{
+					id: "22C69EC23455678A"
+					type: "item"
+					item: "mekanismgenerators:fusion_reactor_port"
+					count: 3L
+				}
+				{
+					id: "625AAC5B75A1A73D"
+					type: "item"
+					item: "mekanismgenerators:fusion_reactor_controller"
+				}
+				{
+					id: "69F1AF93C6BE804A"
+					type: "item"
+					item: "mekanismgenerators:laser_focus_matrix"
+				}
+			]
+			rewards: [{
+				id: "5F980C020A1CD0CC"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 6512215439762885638L
+			}]
+		}
+		{
+			title: "양자 GPS"
+			x: 6.0d
+			y: 2.5d
+			subtitle: "구조물 나침반"
+			description: [
+				" 간단합니다. 원하는 구조물을 설정해주고 나침반이 표시하는 곳으로 따라가면 되죠. 아, Y좌표까지는 표시가 안 됩니다."
+				""
+				" 원리가 뭐냐고요? ... 양자?"
+			]
+			dependencies: ["6A85734EDDD95D59"]
+			id: "73F50A64B3A288A9"
+			tasks: [{
+				id: "38E1937AC14C28ED"
+				type: "item"
+				item: "structures_compass:structures_compass"
+			}]
+		}
+		{
+			title: "... 어떻게?"
+			x: 13.0d
+			y: 1.0d
+			subtitle: "액체 D-T 연료"
+			description: [
+				" 그.. 뭐.. 뉴스 같은거 보면 달에 헬륨-3가 있고 그걸로도 핵융합을 할 수 있다고 하잖아요."
+				" ... 비슷한 원리겠죠 뭐."
+				""
+				" 압축 데쉬를 발효기에 넣어서 액체 D-T 연료를 만들고 기화만 시키면 바로 쓸 수 있습니다."
+			]
+			dependencies: [
+				"016C6B928E327AFE"
+				"654B7DB2A0299184"
+			]
+			id: "6823A36DAEF1AF9F"
+			tasks: [{
+				id: "07D939C77E46109E"
+				type: "item"
+				item: "mekanismgenerators:fusion_fuel_bucket"
+			}]
+		}
+		{
+			title: "자동으로 광물이 복사가 된다고?"
+			x: 3.5d
+			y: 0.0d
+			subtitle: "전기 거름대"
+			description: [
+				" 일반 거름대는 자동화하기에는 그닥 친화적이지 않습니다. 거름질이야 Create의 기계손을 쓴다고 해도 무작위로 튀어나오는 결과물을 담기에는 무리가 있죠."
+				""
+				" 전기 거름망은 전기를 준다면 자동으로 거름질을 합니다. 그리고 인간이 아닌 기계가 채를 쓰기 때문에 채의 내구도도 소모되지 않습니다."
+				""
+				" 입력은 아랫면을 제외한 모든 면에서 가능하며 출력은 아랫면에 연결된 저장고에 알아서 보관됩니다."
+			]
+			dependencies: [
+				"3C7FB7E98BDF8029"
+				"2F1B95274A2DFB3C"
+			]
+			id: "47671AD48F4B48FF"
+			tasks: [{
+				id: "25948973CF205B04"
+				type: "item"
+				item: "exmachinis:flux_sieve"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

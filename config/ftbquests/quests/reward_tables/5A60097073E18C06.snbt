@@ -1,0 +1,43 @@
+{
+	id: "5A60097073E18C06"
+	order_index: 0
+	title: "피규어"
+	loot_size: 1
+	rewards: [
+		{ item: "roberts_collection:pong" }
+		{ item: "roberts_collection:pacman" }
+		{ item: "roberts_collection:mario_bros" }
+		{ item: "roberts_collection:link" }
+		{ item: "roberts_collection:sonic" }
+		{ item: "roberts_collection:crash" }
+		{ item: "roberts_collection:lara_croft" }
+		{ item: "roberts_collection:master_chief" }
+		{ item: "roberts_collection:kratos" }
+		{ item: "roberts_collection:vault_boy" }
+		{ item: "roberts_collection:aloy" }
+		{ item: "roberts_collection:chun_li" }
+		{ item: "roberts_collection:cloud_strife" }
+		{ item: "roberts_collection:joel_miller" }
+		{ item: "roberts_collection:ellie_williams" }
+		{ item: "roberts_collection:leon_s_kennedy" }
+		{ item: "roberts_collection:isaac_clarke" }
+		{ item: "roberts_collection:samus_aran" }
+		{ item: "roberts_collection:solid_snake" }
+		{ item: "roberts_collection:ezio_auditore" }
+		{ item: "roberts_collection:princeof_persia" }
+		{ item: "roberts_collection:ryu" }
+		{ item: "roberts_collection:mega_man" }
+		{ item: "roberts_collection:simon_ghost_riley" }
+		{ item: "roberts_collection:solairede_astora" }
+		{ item: "roberts_collection:makima" }
+		{ item: "roberts_collection:denji" }
+		{ item: "roberts_collection:power" }
+		{ item: "roberts_collection:aki_hayakawa" }
+		{ item: "roberts_collection:himeno" }
+		{ item: "roberts_collection:dipper_pines" }
+		{ item: "roberts_collection:mabel_pines" }
+		{ item: "roberts_collection:captain_jack_sparrow" }
+		{ item: "roberts_collection:the_mandalorian" }
+		{ item: "roberts_collection:john_wick" }
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"x": -100,
+	"y": -10,
+	"width": 200,
+	"height": 20,
+	"langKey": "Singleplayer",
+	"action": "OPEN_GUI",
+	"data": "SINGLEPLAYER"
+}

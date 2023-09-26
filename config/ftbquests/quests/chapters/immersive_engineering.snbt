@@ -1,0 +1,2251 @@
+{
+	id: "18368BBCF9B08AC1"
+	group: "07D6747737955014"
+	order_index: 2
+	filename: "immersive_engineering"
+	title: "Immersive Engineering"
+	icon: "immersiveengineering:rs_engineering"
+	subtitle: ["큼직하면서 역동적인 기계들을 다룹니다"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Immersive Engineering"
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "레드스톤 엔지니어링 블록"
+			description: [
+				" Immersive Engineering의 대부분의 기계들은 멀티블록 형태를 띄고 있습니다."
+				" 즉, 여러 블록을 쌓아야 하나의 기계의 형태를 가지게 된다는 것입니다."
+				" 코크스 오븐과 용광로도 그중 하나라 볼 수 있습니다."
+				""
+				" 위 레드스톤 엔지니어링 블록이 이 모드의 멀티블록 기계들에 대부분들어가는 블록이며 제가 손수 조합법을 '재밌게' 변경하였습니다."
+				""
+				" 이 모드에 대한 설명은 보상으로 드릴 책에 잘 적혀있습니다."
+				" 그리고 멀티블록의 설치 방법은 보상으로 드릴 투영기로 홀로그램 형태로 볼 수 있습니다.(문제는 버그로 인해 보이지 않는다는거죠)"
+			]
+			dependencies: [
+				"6C319B8139BC1FE6"
+				"7392483B857D5B78"
+				"01D1D4DA323F3756"
+			]
+			id: "1B47EBDB6A332E04"
+			tasks: [{
+				id: "26FC8FAB285AE3A4"
+				type: "item"
+				item: "immersiveengineering:rs_engineering"
+			}]
+			rewards: [
+				{
+					id: "2808AA8D85C4CEBF"
+					type: "item"
+					item: "immersiveengineering:manual"
+				}
+				{
+					id: "6020F475B3ABA195"
+					type: "item"
+					item: "immersivepetroleum:projector"
+				}
+				{
+					id: "6F3D768CF3DF79B6"
+					type: "item"
+					item: "createdeco:gold_coin"
+				}
+			]
+		}
+		{
+			title: "공돌이의 책상"
+			x: 1.0d
+			y: -2.0d
+			shape: "square"
+			subtitle: "엔지니어의 워크벤치"
+			description: [
+				" Immersive Engineering의 각종 기계들이나 부품들을 효율적으로 만들 수 있게 해주는 작업대입니다."
+				""
+				" 청사진을 이용하여 부품을 적은 재료로 만들 수 있으며 여기서만 만들 수 있는 것들을 만들 수 있게됩니다."
+			]
+			dependencies: ["1B47EBDB6A332E04"]
+			id: "41F7568DE328AB02"
+			tasks: [{
+				id: "261320EB97243E79"
+				type: "item"
+				item: "immersiveengineering:workbench"
+			}]
+			rewards: [{
+				id: "59655306D4C390F1"
+				type: "item"
+				item: {
+					id: "immersiveengineering:blueprint"
+					Count: 1b
+					tag: {
+						blueprint: "components"
+					}
+				}
+			}]
+		}
+		{
+			title: "산업 혁명 v2"
+			x: 1.0d
+			y: -1.0d
+			shape: "square"
+			subtitle: "컨베이어 벨트"
+			description: [" Create의 벨트와는 다르게 동력을 필요로하지 않고 여러 종류가 있어 좀더 다채로운 벨트 연결이 가능해집니다."]
+			dependencies: ["1B47EBDB6A332E04"]
+			id: "24FF7F6C2AF0C4C1"
+			tasks: [{
+				id: "2FC9CD55C1A45B7F"
+				type: "item"
+				item: "immersiveengineering:conveyor_basic"
+				count: 8L
+			}]
+		}
+		{
+			title: "꿍"
+			icon: "immersiveengineering:plate_steel"
+			x: 2.0d
+			y: -1.5d
+			shape: "square"
+			subtitle: "금속 압축기"
+			description: [
+				" 기계적인 힘으로 물건을 압축하는 것은 Create의 그것과 다를 것이 없지만 이 기계만의 특징이라면 무슨 틀로 찍었냐에 따라 결과물이 다르다는 것입니다."
+				""
+				" 보상으로 드릴 청사진으로 엔지니어 작업대에서 여러 틀들을 만들어보세요."
+			]
+			dependencies: [
+				"24FF7F6C2AF0C4C1"
+				"41F7568DE328AB02"
+			]
+			id: "3D3D6079D4033C0F"
+			tasks: [
+				{
+					id: "33B419BBE78CC710"
+					type: "item"
+					item: "minecraft:piston"
+				}
+				{
+					id: "2A7D3F2AE65B3268"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 2L
+				}
+				{
+					id: "008CD90EB294E5B5"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "2C3D87EE8003DDDF"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+				}
+				{
+					id: "64DBBB3D559040E6"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 2L
+				}
+			]
+			rewards: [
+				{
+					id: "3410B65A5C89FE75"
+					type: "item"
+					item: {
+						id: "immersiveengineering:blueprint"
+						Count: 1b
+						tag: {
+							blueprint: "molds"
+						}
+					}
+				}
+				{
+					id: "352E5C7CACA00DC6"
+					type: "item"
+					item: {
+						id: "tfc:metal/ingot/steel"
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+					}
+					count: 10
+				}
+			]
+		}
+		{
+			title: "갈갈갈갈갈갈갈갈갈"
+			icon: "immersiveengineering:dust_iron"
+			x: 3.0d
+			y: -1.0d
+			shape: "square"
+			subtitle: "분쇄기"
+			description: [
+				" 여러 물건들을 갈아버릴 수 있습니다."
+				" Create의 분쇄 휠 보다 더 발전된 형태이기에 광물을 갈았을 때의 효율도 더욱 좋아졌죠."
+				""
+				" 그리고 이제 바로 철을 갈아버려 철괴로 만들 수 있게 됩니다."
+			]
+			dependencies: ["1B47EBDB6A332E04"]
+			id: "527DFC1333E3D2AC"
+			tasks: [
+				{
+					id: "62032AEBECFBC9F8"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 10L
+				}
+				{
+					id: "4ABD7D8F473F030A"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 10L
+				}
+				{
+					id: "3CB581969122915E"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "47DCE2473FDDB887"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 8L
+				}
+				{
+					id: "5AAD8CF20BC9AD8D"
+					type: "item"
+					item: "minecraft:hopper"
+					count: 9L
+				}
+			]
+			rewards: [{
+				id: "734749A1FB1B4EE8"
+				type: "item"
+				item: {
+					id: "tfc:ore/rich_limonite"
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+				}
+				count: 10
+			}]
+		}
+		{
+			title: "용광로 업그레이드"
+			icon: "immersiveengineering:blastbrick_reinforced"
+			x: 0.5d
+			y: 1.0d
+			subtitle: "강화 용광로"
+			description: [
+				" 강철은 좀더 빠르게 만들기 위해 용광로를 강화할 필요가 있어보입니다. 자동화에 좀더 유리하게 말이죠."
+				""
+				" 용광로 블록에 강철판으로 보강을 해주고 위에 깔때기를 설치하여 자동화에 용의하게 만들어줍시다."
+				" 그러면 강화 용광로가 완성이 될텐데.. 자동화를 제외하면 아직은 성능 차이는 없습니다."
+				""
+				" 좌우에 용광로 예열기를 달고 전력을 공급해주면 화력을 증가시켜 강철 생산 속도를 증가하게 됩니다."
+			]
+			dependencies: ["1B47EBDB6A332E04"]
+			id: "5A2A1FD477750F06"
+			tasks: [
+				{
+					id: "5D9FBE03C3C3A02C"
+					type: "item"
+					item: "immersiveengineering:blastbrick_reinforced"
+					count: 9L
+				}
+				{
+					id: "2755ED7BDC86A489"
+					type: "item"
+					item: "minecraft:hopper"
+				}
+				{
+					id: "0258BE9080039757"
+					type: "item"
+					item: "immersiveengineering:blastfurnace_preheater"
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "금속 전선"
+			x: -1.0d
+			y: 0.0d
+			subtitle: "전선"
+			description: [
+				" 이제 전기를 전달하기 위한 수단이 필요할 겁니다."
+				""
+				" 연결기는 설치된 곳에 전력을 입출력할 수 있지만 한 곳 밖에 전선 연결이 안 됩니다."
+				" 중계기는 여러 곳에 전선을 연결할 수 있지만 직접 전력을 입출력할 수는 없습니다."
+				" 이정도 설명이면 감이 오시겠죠?"
+				""
+				" 그리고 전선으로 이들을 연결해주면 끝납니다."
+				""
+				" 아, 전기가 통하고 있는 전선에 닿으면 여러분 목숨도 끝나겠죠."
+			]
+			dependencies: ["1B47EBDB6A332E04"]
+			id: "28E6BC2304C8DA7F"
+			tasks: [
+				{
+					id: "1A4FB47AB5443182"
+					type: "item"
+					item: "immersiveengineering:connector_mv"
+					count: 4L
+				}
+				{
+					id: "09E09F003E64768E"
+					type: "item"
+					item: "immersiveengineering:connector_mv_relay"
+					count: 8L
+				}
+				{
+					id: "643AD2D33A8FC650"
+					type: "item"
+					item: "immersiveengineering:wirecoil_electrum"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "441BA9E6AC131286"
+				type: "item"
+				item: "createdeco:gold_coin"
+			}]
+		}
+		{
+			title: "안전제일"
+			x: -2.0d
+			y: 0.0d
+			subtitle: "절연 전선"
+			description: [
+				" 전선에 안 닿는것도 한계가 있고 되게 불편할 겁니다."
+				" 그러니까 절연처리가 필요하겠죠."
+			]
+			dependencies: [
+				"28E6BC2304C8DA7F"
+				"707060893C44D0F8"
+			]
+			id: "534F7E6EB56F0BF6"
+			tasks: [{
+				id: "2385B45551C131D6"
+				type: "item"
+				item: "immersiveengineering:wirecoil_electrum_ins"
+				count: 4L
+			}]
+			rewards: [{
+				id: "740AB76B029A4D16"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+				count: 5
+			}]
+		}
+		{
+			title: "즙 짜기"
+			icon: "minecraft:piston"
+			x: 3.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "압착기"
+			description: [" 주로 씨앗을 짜내어 기름을 만드는 것이 주 목적이지만 여기서 중요한 것은 코크스 가루를 HOP 흑연 가루로 압축시켜준다는 것입니다."]
+			dependencies: ["1B47EBDB6A332E04"]
+			id: "6DDAF933F595A870"
+			tasks: [
+				{
+					id: "2CDB5C181C0A8036"
+					type: "item"
+					item: "minecraft:piston"
+				}
+				{
+					id: "1562AD89E6070347"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "673B4805005F29A7"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "33EB5D92707214B7"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "1C50B1DDB6FA77BC"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 3L
+				}
+				{
+					id: "086A4F4C0AF96E5F"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 2L
+				}
+				{
+					id: "4EC7A309A240F98E"
+					type: "item"
+					item: "immersiveengineering:wooden_barrel"
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "초고열 용광로"
+			icon: {
+				id: "immersiveengineering:graphite_electrode"
+				Count: 1b
+				tag: {
+					graphDmg: 0
+				}
+			}
+			x: 3.0d
+			y: 1.0d
+			shape: "square"
+			subtitle: "아크 화로"
+			description: [
+				" 안쓰는 금속 물품들을 녹여 재활용하거나 광물을 쉽게 제련 또는 합금화할 수 있게 합니다. 그리고 아주 높은 온도에서 제작되는 합금을 만들때도 쓰이죠."
+				""
+				" 그리고 HOP 흑연괴를 제련할 때도 이용되죠."
+				""
+				" 아크 화로를 사용하기 위해선 흑연 전극이 필요합니다. 강철 막대에 열을 가한채로 흑연과 HOP 흑연 가루와 섞어 총 3개를 만들어 장착하세요."
+				""
+				" 아크화로의 구조적 문제가 있으므로 결과물은 상자로 빼내길 바랍니다."
+			]
+			dependencies: [
+				"41F7568DE328AB02"
+				"6DDAF933F595A870"
+			]
+			id: "59846A609D61429B"
+			tasks: [
+				{
+					id: "134C03B30581C9F8"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 8L
+				}
+				{
+					id: "262B507ADCC371CE"
+					type: "item"
+					item: "immersiveengineering:storage_steel"
+					count: 6L
+				}
+				{
+					id: "1B6A5F3B41C3DAC0"
+					type: "item"
+					item: "immersiveengineering:slab_sheetmetal_steel"
+					count: 14L
+				}
+				{
+					id: "41504B41BD3C070F"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 5L
+				}
+				{
+					id: "4E0B6FDC0F32A2B6"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 5L
+				}
+				{
+					id: "1C879D631AF6C1E3"
+					type: "item"
+					item: "minecraft:cauldron"
+				}
+				{
+					id: "222243CB43AC752B"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "2748CEB7D41008A2"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 10L
+				}
+				{
+					id: "4864083631703EDF"
+					type: "item"
+					item: "immersiveengineering:blastbrick_reinforced"
+					count: 27L
+				}
+				{
+					id: "358CB4E2A80A34DE"
+					type: "item"
+					item: {
+						id: "immersiveengineering:graphite_electrode"
+						Count: 1b
+						tag: {
+							graphDmg: 48000
+						}
+					}
+					count: 3L
+				}
+			]
+			rewards: [
+				{
+					id: "7A1A976D9ED1670F"
+					type: "item"
+					item: {
+						id: "immersiveengineering:blueprint"
+						Count: 1b
+						tag: {
+							blueprint: "electrode"
+						}
+					}
+				}
+				{
+					id: "160571D7F09F0D6E"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 6512215439762885638L
+				}
+			]
+		}
+		{
+			title: "빵야빵야"
+			icon: {
+				id: "additionalguns:m16a2"
+				Count: 1b
+				tag: {
+					AmmoCount: 30
+				}
+			}
+			x: 7.5d
+			y: 3.0d
+			subtitle: "총기 작업대"
+			description: [
+				" 기존의 총기보다 더 높은 성능을 발휘하는 총을 제작해 봅시다."
+				""
+				" 기존과 똑같이 작업대에서 원하는 것을 고르고 재료를 소모하면 얻을 수 있습니다. 그리고 이번엔 한 작업대로 통합이 되었죠."
+				""
+				" 총은 R로 장전할 수 있으며 좌클릭으로 발사, 우클릭으로 조준을 할 수 있으며 Z로 부착물을 달 수 있습니다."
+			]
+			dependencies: [
+				"75573D576C813433"
+				"05CD6B92B31E139D"
+				"4B6B94E03877CB91"
+			]
+			id: "601F39E017E95B52"
+			tasks: [{
+				id: "0D9D667FB26FC687"
+				type: "item"
+				item: "cgm:workbench"
+			}]
+			rewards: [{
+				id: "7B97AE90F829D712"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 6512215439762885638L
+			}]
+		}
+		{
+			title: "실직된 공돌이"
+			icon: {
+				id: "immersiveengineering:blueprint"
+				Count: 1b
+				tag: {
+					blueprint: "components"
+				}
+			}
+			x: 2.0d
+			y: -2.5d
+			subtitle: "자동화 엔지니어의 워크벤치"
+			description: [
+				" 기존의 엔지니어의 워크벤치에서만 만들 수 있는 것들을 대량생산하기 위해 고안되었습니다."
+				""
+				" 청사진과 재료, 전력을 공급하면 생산하죠."
+			]
+			dependencies: [
+				"24FF7F6C2AF0C4C1"
+				"41F7568DE328AB02"
+			]
+			id: "4AF7CEBAF076A957"
+			tasks: [
+				{
+					id: "223BBC8E8E4FE653"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 5L
+				}
+				{
+					id: "13C19111AE4F6B74"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 4L
+				}
+				{
+					id: "25A864F3B6A9C51C"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "0FF3A7E1BE1BCEBB"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 2L
+				}
+				{
+					id: "30D3E2BDA823FF00"
+					type: "item"
+					item: "immersiveengineering:slab_treated_wood_horizontal"
+					count: 2L
+				}
+				{
+					id: "4A07EA1E41D997B4"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "충전기"
+			x: 4.5d
+			y: -2.0d
+			subtitle: "충전소"
+			description: [
+				" 전력을 요구하는 아이템에 전력을 공급해 줍니다."
+				" 모두 충전되면 초록색 불빛이 빠르게 점멸할 것입니다."
+			]
+			dependencies: ["41F7568DE328AB02"]
+			id: "679D28704C84B80A"
+			tasks: [{
+				id: "61AC3FD925AA2D26"
+				type: "item"
+				item: "immersiveengineering:charging_station"
+			}]
+		}
+		{
+			title: "가득이요"
+			icon: "immersiveengineering:fluid_pump"
+			x: 4.0d
+			y: 1.5d
+			shape: "square"
+			subtitle: "병조림기"
+			description: [
+				" 사실 Create의 주입기가 있다면 그닥 메리트가 없습니다."
+				" 그냥 Immersive Engineering 특유의 감성을 느끼고 싶다면 쓰세요."
+				""
+				" 설명이요? 아이템에 액체를 주입해줍니다."
+				""
+				" 아, 그런데 Mekanism 기계들을 만들 때 필요한 듀로플라스트를 만들때는 필수적입니다."
+			]
+			dependencies: ["24FF7F6C2AF0C4C1"]
+			id: "0DA969FE4AC764BA"
+			tasks: [
+				{
+					id: "583773AC2A76C93B"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 2L
+				}
+				{
+					id: "448F916BB60F4A45"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 3L
+				}
+				{
+					id: "3B01F40D22C791EC"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "2EE6F1AC47A9F65F"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "5DF241E0C9B4FC9C"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 3L
+				}
+				{
+					id: "17F4F74250B4903F"
+					type: "item"
+					item: "immersiveengineering:fluid_pump"
+				}
+			]
+			rewards: [{
+				id: "0C6AFED316779B45"
+				type: "item"
+				item: "immersiveengineering:jerrycan"
+			}]
+		}
+		{
+			title: "숙성"
+			icon: "minecraft:cauldron"
+			x: 5.0d
+			y: 1.5d
+			shape: "square"
+			subtitle: "발효기"
+			description: [" 식물들을 발효시켜 에탄올을 얻을 수 있습니다."]
+			dependencies: ["1B47EBDB6A332E04"]
+			id: "53DAC0E3A8B08F25"
+			tasks: [
+				{
+					id: "1C07DCB47B41168E"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "1E864A67E50A2B8D"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "604F0187E29ADC30"
+					type: "item"
+					item: "minecraft:cauldron"
+					count: 4L
+				}
+				{
+					id: "401B2545176A5636"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "06D5CDBFB2E9022D"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 4L
+				}
+				{
+					id: "16556F980CA873F9"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "액체 혼합"
+			icon: "immersiveengineering:biodiesel_bucket"
+			x: 6.0d
+			y: 1.5d
+			shape: "square"
+			subtitle: "정제기"
+			description: [
+				" 두 액체 또는 고체를 혼합시켜 줍니다."
+				" 대표적으로 식물성 기름과 에탄올을 질산염 가루를 매질로 하여 혼합하여 바이오 디젤을 만들 수 있습니다."
+			]
+			dependencies: [
+				"6DDAF933F595A870"
+				"53DAC0E3A8B08F25"
+			]
+			id: "1C3A878FD7DDEF65"
+			tasks: [
+				{
+					id: "75D95776AE41DA75"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 8L
+				}
+				{
+					id: "4C9E2E0D6FF03B3E"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "589CD6539C6956E4"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 2L
+				}
+				{
+					id: "26A20CAAEE866081"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 16L
+				}
+				{
+					id: "6CF23D3A07EF1093"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "3C6C46760CAD1F2E"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 5L
+				}
+			]
+		}
+		{
+			title: "환경 오염"
+			icon: "immersiveengineering:radiator"
+			x: 6.0d
+			y: 0.0d
+			subtitle: "디젤 발전기"
+			description: [
+				" 액체 연료를 연소하여 막대한 양의 전력을 생산합니다."
+				" 하지만 막대한 소음을 발생합니다."
+				" 보상으로 귀마개를 드리죠."
+			]
+			dependencies: [
+				"1C3A878FD7DDEF65"
+				"05CD6B92B31E139D"
+			]
+			dependency_requirement: "one_completed"
+			id: "4A5F90367F0469B8"
+			tasks: [
+				{
+					id: "277A0BBED0F2434C"
+					type: "item"
+					item: "immersiveengineering:radiator"
+					count: 9L
+				}
+				{
+					id: "22DB309F5F6CAB69"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "791C9B49074C6970"
+					type: "item"
+					item: "immersiveengineering:generator"
+					count: 4L
+				}
+				{
+					id: "5986347975AA9D74"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 13L
+				}
+				{
+					id: "3BDE9C869ADE3BED"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "71139A4F4BBA1509"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 5L
+				}
+			]
+			rewards: [
+				{
+					id: "2576F24D39E14344"
+					type: "item"
+					item: "immersiveengineering:earmuffs"
+				}
+				{
+					id: "42CD5D12587BB185"
+					type: "item"
+					item: "createdeco:gold_coinstack"
+					count: 10
+				}
+			]
+		}
+		{
+			title: "구성 성분"
+			x: 0.0d
+			y: 2.0d
+			subtitle: "코어 샘플링 드릴"
+			description: [
+				" 전력을 주고 작동시키면 해당 좌표의 지층 표본을 채취할 겁니다."
+				" 설정상, 우리가 보지 못한 광맥,수맥을 찾는거라네요."
+				""
+				" 광맥에 대한 내용은 엔지니어 책에서 개요 및 자원의 Mineral Deposits에서 6번째 페이지 부터 보면 됩니다."
+				""
+				" 채취된 코어 샘플은 바닥에 쉬프트 우클릭으로 설치할 수 있습니다."
+				""
+				" 이곳의 일반 광맥처럼 광물 분포도를 잘 따져서 위치를 파악해야합니다. 그래야 돌 같은 것들보다 광물을 많이 얻을 수 있으니까요."
+				""
+				" 하지만 아무것도 모르는데, 전력까지 써가면서 조사를 하기엔 무리가 있겠죠?"
+				" 보상으로 드릴 광물 조사 도구로 바닥에 우클릭을 길게 눌러서 해당 위치에 무슨 광맥이 있는지 대충은 파악할 수 있습니다."
+				" 그 결과를 토대로 코어 샘플링 드릴로 자세한 정보를 파악하는 거죠."
+			]
+			dependencies: ["1B47EBDB6A332E04"]
+			id: "08EF60C62F6C97CA"
+			tasks: [{
+				id: "04DE3DD5952581E1"
+				type: "item"
+				item: "immersiveengineering:sample_drill"
+			}]
+			rewards: [{
+				id: "247FDB505A11E138"
+				type: "item"
+				item: {
+					id: "immersiveengineering:survey_tools"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "미지의 광물"
+			icon: {
+				id: "immersiveengineering:coresample"
+				Count: 1b
+				tag: {
+					dimension: "minecraft:overworld"
+					x: 4556
+					z: 7733
+					timestamp: 2836404L
+					mineralInfo: [{
+						percentage: 1.0d
+						saturation: 0.742475152015686d
+						mineral: "immersiveengineering:mineral/cinnabar"
+						depletion: 5071
+					}]
+				}
+			}
+			x: 0.0d
+			y: 3.0d
+			subtitle: "굴착기"
+			description: [
+				" 코어 샘플에서 원하는 광맥의 위치를 찾았다면 그 위치에 굴착기를 설치해야합니다."
+				""
+				" 막대한 자원, 전력과 저장고를 준비하여 작동시키면 무한한 양의 자원을 얻을 수 있을 겁니다."
+			]
+			dependencies: ["08EF60C62F6C97CA"]
+			id: "58F2488B1DFCEDC5"
+			tasks: [
+				{
+					id: "22CD1D7C2229A69E"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 26L
+				}
+				{
+					id: "2B7F8D78CE6ADF3E"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 16L
+				}
+				{
+					id: "4BE75CD7DECE1090"
+					type: "item"
+					item: "immersiveengineering:radiator"
+					count: 3L
+				}
+				{
+					id: "2A6A3CC2E9EB8186"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 9L
+				}
+				{
+					id: "75A12DCBBFDF1BE8"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "19FE583CB5B9BADB"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 4L
+				}
+				{
+					id: "4C1A6B4B5E5B9B38"
+					type: "item"
+					item: "immersiveengineering:storage_steel"
+					count: 9L
+				}
+			]
+			rewards: [{
+				id: "4F7356B33DE94721"
+				type: "item"
+				item: "immersiveengineering:reinforced_crate"
+				count: 8
+			}]
+		}
+		{
+			title: "더 진보된 도구들"
+			x: 6.0d
+			y: -2.0d
+			subtitle: "채굴 드릴과 원형 톱"
+			description: [
+				" 바이오 디젤등의 연료를 소모하여 작동하는 도구 둘을 소개합니다."
+				""
+				" 채굴 드릴은 3*3범위의 굴을 팔 수 있습니다."
+				""
+				" 원형 톱은 나무를 한꺼번에 벨 수 있는데, 나뭇잎까지 캐는 판정이라 나뭇가지와 묘목을 얻기에 수월해 집니다."
+				" 아니면 날을 바꾸어 다른 용도로 쓸 수 있습니다."
+				""
+				" 두 도구 모두, 엔지니어의 작업대에서 머리를 장착 및 교체할 수 있으며 추가적인 업그레이드 모듈을 부착할 수 있습니다."
+				""
+				" 연료 충전은 주입기나 병조림기를 사용하시면 됩니다."
+				""
+				" 음, 사실 원형 톱은 성능이 기존 도끼보다 떨어진다는 것을 느낄 겁니다."
+				" 사실 이 도구의 진가는 바로 석재절단 톱날로 갈아꼈을 때 알 수 있습니다."
+				""
+				" 바로 섬세한 손길이 적용된다는 것입니다."
+				" 보상으로 드릴테니, 한 번 써보세요."
+				" 그런데.. 돌에는 영향이 없는거 같더군요."
+			]
+			dependencies: [
+				"1C3A878FD7DDEF65"
+				"41F7568DE328AB02"
+			]
+			id: "5C37E2B4DDBD912C"
+			tasks: [
+				{
+					id: "7F141777A0CF5D22"
+					type: "item"
+					item: {
+						id: "immersiveengineering:drill"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								Size: 5
+								Items: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "24536A8FDAD703A3"
+					type: "item"
+					item: "immersiveengineering:drillhead_steel"
+				}
+				{
+					id: "402F511AF5536F4D"
+					type: "item"
+					item: {
+						id: "immersiveengineering:buzzsaw"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								Size: 5
+								Items: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "49FBFAC1DF5985D0"
+					type: "item"
+					item: {
+						id: "immersiveengineering:sawblade"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "64D7CD68C2D77E33"
+					type: "item"
+					item: {
+						id: "immersiveengineering:rockcutter"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "47A2986254681478"
+					type: "item"
+					item: "createdeco:gold_coin"
+				}
+			]
+		}
+		{
+			title: "복합 열경화성 플라스틱"
+			x: 7.5d
+			y: 1.5d
+			shape: "square"
+			subtitle: "듀로플라스트"
+			description: [
+				" 발효기에서 감자 또는 사탕수수 등을 넣어 에탄올을 얻었다면 정제기에서 은 판으로 결정화를 시켜 아세트알데하이드를 만듭니다."
+				" 이를 또 정제기에 넣고 크레오소트유와 섞는다면 페놀포름알데히드 수지가 만들어집니다."
+				" 그리고 그걸 병조림기에 채우고 금속 압축틀: 판으로 담는다면 듀로플라스트가 완성됩니다."
+				""
+				" 듀로플라스트는 복합 회로의 재료가 됩니다."
+			]
+			dependencies: [
+				"1C3A878FD7DDEF65"
+				"0DA969FE4AC764BA"
+				"53DAC0E3A8B08F25"
+				"3D3D6079D4033C0F"
+			]
+			id: "75573D576C813433"
+			tasks: [{
+				id: "208B97CB688CB6A7"
+				type: "item"
+				item: "immersiveengineering:plate_duroplast"
+			}]
+			rewards: [{
+				id: "04EB12A556A799E9"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 6512215439762885638L
+			}]
+		}
+		{
+			title: "하늘을 날다"
+			x: 4.0d
+			y: -1.0d
+			subtitle: "접이식 글라이더"
+			description: [
+				" 겉날개는 얻기 힘들니 직접 비슷한 걸 만들어보죠."
+				" 바로 접이식 글라이더 입니다."
+				""
+				" 상체에 착용하면 평상시엔 접은 상태로 다닐 수 있으며 공중에서 스페이스바를 눌러 펼칠 수 있습니다."
+				" 겉날개와 같이 폭죽으로 가속을 할 수 있습니다."
+				""
+				" 다만, 너무 빠른 속도로 난다면 글라이더의 내구도 소모는 더욱 빨라집니다."
+				""
+				" 수리는 모루(Minecraft)에서 강력 천으로 할 수 있습니다."
+			]
+			dependencies: [
+				"527DFC1333E3D2AC"
+				"65A1B6A14987D1C6"
+			]
+			id: "52A83F5AAA03F5EF"
+			tasks: [{
+				id: "52841E87ADE50E4E"
+				type: "item"
+				item: {
+					id: "immersiveengineering:glider"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "76AAB48D7B092F9A"
+				type: "item"
+				item: "createdeco:gold_coin"
+				count: 2
+			}]
+		}
+		{
+			title: "찜질"
+			x: -2.0d
+			y: -1.0d
+			subtitle: "합금 가마"
+			description: [" 비교적 낮은 온도에서 녹는 금속들을 녹여 합금으로 만듭니다."]
+			dependencies: [
+				"3C39E3C5B1F649CE"
+				"245FBFB772A9DCCF"
+			]
+			dependency_requirement: "one_completed"
+			id: "130433213992EEE9"
+			tasks: [{
+				id: "43D43CD41A42F904"
+				type: "item"
+				item: "immersiveengineering:alloybrick"
+				count: 8L
+			}]
+		}
+		{
+			title: "열공학"
+			x: -1.0d
+			y: -1.0d
+			subtitle: "열전기 발전기"
+			description: [
+				" 닿은 면의 액체간 온도차로 발전 합니다."
+				" 온도차가 클 수록 발전량도 늘어납니다."
+				" 예를 들어 물과 용암을 곁에 두면 된다는 겁니다."
+			]
+			dependencies: ["130433213992EEE9"]
+			id: "512920CD6AF5302B"
+			tasks: [{
+				id: "019AB89F8EBC9CAB"
+				type: "item"
+				item: "immersiveengineering:thermoelectric_generator"
+			}]
+		}
+		{
+			title: "온실 속 화초"
+			x: 1.0d
+			y: -3.5d
+			shape: "square"
+			subtitle: "원예기"
+			description: [
+				" 일반적인 환경에서 키우지 못했던 작물들을 키울 수 있습니다."
+				" 전기, 물만 공급된다면요."
+				""
+				" 작물에 따라 요구하는 토양이 다릅니다."
+				""
+				" 한 번 키워보실래요?"
+			]
+			dependencies: ["41F7568DE328AB02"]
+			id: "0DFB210599478E6B"
+			tasks: [{
+				id: "0FF46C2BE593E9B9"
+				type: "item"
+				item: "immersiveengineering:cloche"
+			}]
+			rewards: [
+				{
+					id: "523A27EA5694FFB8"
+					type: "item"
+					item: "minecraft:dirt"
+				}
+				{
+					id: "4FDD43B33990880A"
+					type: "item"
+					item: "immersiveengineering:seed"
+				}
+			]
+		}
+		{
+			title: "우린 이걸 개밥이라 부릅니다"
+			icon: "immersiveengineering:concrete_bucket"
+			x: 1.0d
+			y: 2.0d
+			shape: "square"
+			subtitle: "혼합기"
+			description: [
+				" 혼합기는 고체인 아이템과 액체를 섞어주는 역할을 합니다."
+				""
+				" 예를 들어 모래, 자갈 그리고 점토와 물을 혼합하면 액체 콘크리트가 되며 이는 굳혀서 건축용으로 사용하거나"
+				" 석유를 퍼낼 때 이용됩니다."
+			]
+			dependencies: ["1B47EBDB6A332E04"]
+			id: "1FAFFF256B9AE19D"
+			tasks: [
+				{
+					id: "234EA3DE80FD49A8"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 5L
+				}
+				{
+					id: "4A132ADE00CAB6EA"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 4L
+				}
+				{
+					id: "37D45BE27DFBECE8"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 4L
+				}
+				{
+					id: "2937DCD3ACDB01CB"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "22354224AAEC7502"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+				}
+				{
+					id: "14CD23F60B204FEC"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 3L
+				}
+			]
+		}
+		{
+			title: "검은 금을 찾아라"
+			icon: "immersivepetroleum:seismic_survey"
+			x: 1.0d
+			y: 4.0d
+			shape: "square"
+			subtitle: "지진파 조사 도구"
+			description: [
+				" 석유는 기반암 아래 깊숙한 곳에 존재하며 이는 일반적인 방법으로는 찾을 수 없습니다."
+				""
+				" 지진파를 통해 진동이 다른 곳을 찾아 유추를 해야하며 이 지진파 조사 도구가 필요할 겁니다."
+				""
+				""
+				" 적당한 청크에 설치하고 산탄 카트리지를 넣어 땅에 발사시켜 진동을 일으키고 우클릭으로 조사 결과를 획득하세요."
+				" 빈 쉘을 빼는거 잊지 말고요."
+				""
+				" 조사 결과를 들면 아무것도 안 뜨거나 지도 형태로 표시가 될 것입니다."
+				" 사각형 하나가 한 청크를 의미하며 윗 화살표는 동쪽을 의미합니다."
+				" 가운데를 중심으로 검은 점들이 모여있을텐데, 비정상적으로 흰 부분이 보인다면 그곳이 수맥이 있는 곳입니다."
+				" 그럼 그 청크로 조사 도구를 이동하여 다시 조사를 하고, 그곳의 조사 결과를 들어서 지도가 표시되지 않는 곳을 찾는다면 마우스 커서로 보면 해당 수맥의 정보를 알 수 있습니다."
+				""
+				" 수맥이라고 원유(석유)만 있는 것이 아니라 물, 용암 수맥일 수 있습니다."
+				" 우리가 찾는게 물이나 용암이 아니므로 다른 수맥을 찾으러가면 됩니다. 뭐.. 굳이 물이랑 용암이 필요하다면 그 수맥이 있는 청크에 대기해서 다음 퀘스트를 확인하세요."
+			]
+			dependencies: [
+				"1FAFFF256B9AE19D"
+				"41F7568DE328AB02"
+			]
+			id: "23AE382AA2F79B48"
+			tasks: [
+				{
+					id: "528E0D13F1120602"
+					type: "item"
+					item: "immersivepetroleum:seismic_survey"
+				}
+				{
+					id: "35B24E4AE13934D5"
+					type: "item"
+					item: "immersiveengineering:buckshot"
+				}
+			]
+			rewards: [{
+				id: "05C92C70ADFA2D33"
+				type: "item"
+				item: "immersiveengineering:buckshot"
+				count: 8
+			}]
+		}
+		{
+			title: "샘솟는 검은 금"
+			icon: "immersivepetroleum:crudeoil_bucket"
+			x: 3.5d
+			y: 4.0d
+			shape: "square"
+			subtitle: "유정탑(Derrick)"
+			description: [
+				" 원하는 수맥(대부분 원유 수맥)이 있는 청크를 찾았다면 이제 그 청크에 유정탑을 설치해야합니다."
+				" 기반암까지 파이프를 뚫어야하기에 몇가지 부가 재료도 필요합니다."
+				""
+				" 유체 파이프로 수맥의 액체를 끌어 와야하며 단단한 지반을 견딜수 있게 액체 콘크리트로 파이프를 보호해야 합니다."
+				" 그리고 물을 넣어 수압으로 수맥의 액체를 올려내는 것이죠."
+				" 뭐, 그냥 기계에서 요구하는 것만 그때그때 주면 됩니다."
+				""
+				" 해당 과정이 끝났고 충분한 수압을 가진 수맥이라면 아무런 자원 없이(심지어 전력도) 배출 파이프에서 수맥의 액체가 나올 겁니다."
+				""
+				" 큰 수맥을 찾았다면 충분히 많은 액체가 나오겠지만 그래도 수맥의 모든 액체가 나온 것은 아닙니다."
+				" 남은 액체도 퍼내고 싶다면 오른쪽에 있는 퀘스트를 확인하세요."
+			]
+			dependencies: ["23AE382AA2F79B48"]
+			id: "77391F962577E404"
+			tasks: [
+				{
+					id: "74B4842B3F64C81E"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 31L
+				}
+				{
+					id: "5C361780CAF61D4D"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 8L
+				}
+				{
+					id: "58BB40AA103CB33C"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 4L
+				}
+				{
+					id: "614BAE0D6BB62B1A"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 119L
+				}
+				{
+					id: "0411BB682156AF9A"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "2ED4B98AD77FB73C"
+					type: "item"
+					item: "immersiveengineering:slab_steel_scaffolding_standard"
+					count: 20L
+				}
+				{
+					id: "43E2EF889A98B373"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 15L
+				}
+			]
+		}
+		{
+			title: "마지막 한 방울 까지"
+			icon: "immersivepetroleum:crudeoil_bucket"
+			x: 3.5d
+			y: 5.0d
+			shape: "square"
+			subtitle: "시추기"
+			description: [
+				" 유정탑에서 수맥에 액체가 더 이상 나오지 않는다면 나머지는 시추기로 퍼낼 수 있습니다."
+				""
+				" 유정탑은 이제 필요 없으니 철거하고 유정탑 중앙 아래에 생성된 파이프로 시추기가 수맥의 액체를 퍼낼 겁니다."
+				" (이때 시추기의 위치가 중요합니다. 대략 예상이 가듯이 시추기의 끝자락에 위치하면 됩니다)"
+				""
+				" 그럼 전력만 준다면 유정탑보단 느리지만 남은 수맥의 액체를 마지막까지 퍼낼 수 있게 됩니다."
+			]
+			dependencies: ["77391F962577E404"]
+			id: "23E80D89D5D03B7B"
+			tasks: [
+				{
+					id: "030642FC26AB6BD0"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 11L
+				}
+				{
+					id: "5F083D7AF487EEF6"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "1593CC807C559275"
+					type: "item"
+					item: "immersiveengineering:treated_fence"
+					count: 6L
+				}
+				{
+					id: "1D6FA22CE7721C44"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "5ADC5C084609DDC8"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 2L
+				}
+				{
+					id: "2FBC61FF2B4F9432"
+					type: "item"
+					item: "immersiveengineering:storage_steel"
+					count: 2L
+				}
+				{
+					id: "192355B2D069B4E5"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 6L
+				}
+				{
+					id: "7F4F555D323C91FA"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "석유 정제"
+			icon: "immersivepetroleum:diesel_sulfur_bucket"
+			x: 6.0d
+			y: 4.0d
+			shape: "square"
+			subtitle: "증류탑(Distillation Tower)"
+			description: [
+				" 석유(원유)는 그대로 쓸수는 없고 정제가 필요합니다."
+				" 정유탑에서 그 역할을 할 수 있죠."
+				""
+				" 원유를 정제하면 총 4가지의 액체로 분류가 됩니다."
+				""
+				" 윤활유는 자동 윤활기를 통해 몇가지 기계들의 속도를 높힐 수 있고"
+				" Kerosene는 또 다시 정제하여 황화 경유, Naphtha 그리고 Gasoline Additives로 정제할 수 있고"
+				" Naphtha는 Gasoline Additives와 함께 정제기에서 휴대용 발전기에 쓸 수 있는 휘발유로 만들 수 있으며"
+				" 황화 경유는 디젤 발전기에서 압도적인 전력을 뽑아낼 수 있습니다."
+				""
+				" 참고로 정유탑의 액체 배출구는 하나지만 출력되는 액체는 4가지이므로 Immersive Engineering의 유체 파이프로 뽑아내길 바랍니다."
+				" 유체 파이프는 타 파이프들과는 다르게 파이프에 동시에 여러 액체가 존재할 수 있기 때문입니다."
+				""
+				" 정제를 하다보면 부산물로 역청이 나올겁니다. 이걸로 좋은 도로 블록인 아스팔트를 만들 수 있죠."
+			]
+			dependencies: ["77391F962577E404"]
+			id: "05CD6B92B31E139D"
+			tasks: [
+				{
+					id: "3CE9D07674EBD14C"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 25L
+				}
+				{
+					id: "48EE7F6986213B4D"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 4L
+				}
+				{
+					id: "5C371060D52CE7F4"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "77BFF459A200CD61"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 60L
+				}
+				{
+					id: "399EDDD300E27E34"
+					type: "item"
+					item: "immersiveengineering:slab_steel_scaffolding_standard"
+					count: 30L
+				}
+				{
+					id: "6895B2CE1095C3FE"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 17L
+				}
+				{
+					id: "427010EDE7B4F04A"
+					type: "item"
+					item: "immersivepetroleum:bitumen"
+				}
+			]
+			rewards: [{
+				id: "29871CD61DA09548"
+				type: "item"
+				item: "mekanism:basic_fluid_tank"
+				count: 4
+			}]
+		}
+		{
+			title: "작고 소중한 발전기"
+			x: 5.5d
+			y: 5.0d
+			subtitle: "휴대용 발전기"
+			description: [
+				" 휘발유를 이용해 발전하는 이 휴대용 발전기는 Mekanism전 까지는 한 블록으로 발전이 되는 쓸만한 발전기일 겁니다."
+				""
+				" 쉬프트 우클릭으로 내용물(전력, 휘발유)가 보존된 채로 보관할 수 있으니 더욱 휴대성이 강조가 되죠."
+				""
+				" 참고로 이 발전기는 별도의 전선 연결기 없이 바로 전선을 연결할 수 있습니다."
+			]
+			dependencies: ["05CD6B92B31E139D"]
+			id: "4D0067050FB092E4"
+			tasks: [{
+				id: "70634B3153170A31"
+				type: "item"
+				item: "immersivepetroleum:gas_generator"
+			}]
+		}
+		{
+			title: "개조 보트"
+			x: 6.5d
+			y: 5.0d
+			subtitle: "모터보트"
+			description: [
+				" 휘발유를 소모하여 모터를 돌려 작동하는 이 보트는 개조를 통해 더욱 흥미롭게 쓸 수 있습니다."
+				""
+				" 예를 들어 강화된 선체 업그레이드를 통해 용암 위로도 다닐 수 있고"
+				" 쇄빙 선수(?) 업그레이드로 추운 지역의 얼은 강을 부수며 나아갈 수도 있는거죠."
+			]
+			dependencies: ["05CD6B92B31E139D"]
+			id: "370707AB987DFB20"
+			tasks: [{
+				id: "0C1A186523976FC9"
+				type: "item"
+				item: {
+					id: "immersivepetroleum:speedboat"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 4
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "7B7BF3F62865B014"
+				type: "item"
+				item: "createdeco:gold_coin"
+				count: 3
+			}]
+		}
+		{
+			title: "미끌미끌"
+			x: 7.0d
+			y: 4.0d
+			subtitle: "자동 윤활기"
+			description: [
+				" 윤활유는 회전을 하는 몇몇 기계(시추기, 분쇄기 등등)에 도포를 하면 기계의 속도가 일시적으로 증가하게 됩니다."
+				" 윤활유 캔으로 수동으로 윤활유를 공급해 줄 수 있지만 우리는 자동화를 원하죠."
+				""
+				" 자동 윤활기를 들면 장착 가능한 기계는 어느 위치에 설치해야하는지 표시가 되며 알맞은 방향으로 배치되면 해당 기계에 윤활기의 파이프가 추가된 것을 확인할 수 있습니다."
+				" 그럼 이제 자동 윤활기에 윤활유만 공급해주면 되는거죠."
+			]
+			dependencies: ["05CD6B92B31E139D"]
+			id: "238AC580114B4582"
+			tasks: [{
+				id: "0C4A46D39977F41B"
+				type: "item"
+				item: "immersivepetroleum:auto_lubricator"
+			}]
+			rewards: [{
+				id: "0C51D95A90569E3E"
+				type: "item"
+				item: "createdeco:gold_coin"
+			}]
+		}
+		{
+			title: "전기로 구워볼까?"
+			x: 0.0d
+			y: -1.0d
+			subtitle: "전기로"
+			description: [
+				" 간단합니다."
+				" 화로는 고체 연료를 쓰지만 얘는 전기를 씁니다."
+				""
+				" 입출력 면도 존재하므로 자동화에도 유리하죠."
+			]
+			dependencies: ["1B47EBDB6A332E04"]
+			id: "0F5B33828B81ECCB"
+			tasks: [{
+				id: "6A4C52B6A1025253"
+				type: "item"
+				item: "engineersdecor:small_electrical_furnace"
+			}]
+			rewards: [{
+				id: "1ABBA2547338430F"
+				type: "item"
+				item: "createdeco:gold_coin"
+			}]
+		}
+		{
+			title: "완벽한 마무리"
+			icon: "immersivepetroleum:diesel_bucket"
+			x: 6.0d
+			y: 3.0d
+			shape: "square"
+			subtitle: "황 추출기"
+			description: [
+				" 사실 황화 경유를 한 번 더 정제해야 좋습니다."
+				" 뭐.. 효율은 똑같지만 황을 얻을 수 있거든요. 그 황은 추후에 광물을 5배까지 불릴 수 있는 수단이 되고요."
+				""
+				" 황 추출기의 윗부분에 물을 공급하고 측면에 황화 경유를 공급해주면 됩니다."
+				" 그럼 황을 얻을 수 있죠."
+				""
+				" 사실 이 외에도 다른 용도로 황 추출기를 쓸 수 있기는한데, 그건 여러분이 알아보는게 좋겠습니다."
+			]
+			dependencies: ["05CD6B92B31E139D"]
+			id: "6DF21646B4263C04"
+			tasks: [
+				{
+					id: "1E2FE1C4DFFD45B1"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 10L
+				}
+				{
+					id: "4B3E2E618DE409EB"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 4L
+				}
+				{
+					id: "31D78FF96647E702"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 15L
+				}
+				{
+					id: "3EB2B46BA88FA3AA"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "4C3933E7A27327F1"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "469518112AD0BFA2"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 6512215439762885638L
+			}]
+		}
+		{
+			title: "전력 봉쇄"
+			x: -1.0d
+			y: 1.0d
+			subtitle: "저압 축전기"
+			description: [
+				" 크리에이트 동력에 익숙해졌다면 이번엔 전력에 익숙해질 차례입니다."
+				" 물론, 이미 이런류의 모드팩에 익숙하다면 무시해도 될 설명이죠."
+				""
+				" 암튼, 제가 추천하는 설비는 발전실과 기계실을 나누고 그 사이를 축전지로 연결하는 겁니다."
+				" 그렇게 된다면 발전실에서 남는 전력은 축전지에 저장이 되고 혹여나 발전실에 문제가 생겨도 축전지의 전력으로 기계들을 잠시 돌릴 수 있으니까 말이죠."
+				""
+				" 엔지니어의 망치로 입출력 부분을 정할 수 있습니다."
+				" 이쯤되서 외우세요."
+				" 파란 계열은 입력 , 붉은 계열은 출력"
+			]
+			dependencies: ["1B47EBDB6A332E04"]
+			id: "33E754267C4CEAB1"
+			tasks: [{
+				id: "26C4135DA063E6CE"
+				type: "item"
+				item: "immersiveengineering:capacitor_lv"
+			}]
+		}
+		{
+			title: "산업 혁명 v2.5"
+			x: 2.0d
+			y: -0.5d
+			subtitle: "많은 컨베이어 벨트"
+			description: [" 뭐, 다양한 벨트들 입니다."]
+			dependencies: [
+				"24FF7F6C2AF0C4C1"
+				"707060893C44D0F8"
+			]
+			id: "72F05E7D1C086120"
+			tasks: [
+				{
+					id: "73FABA782D9F5996"
+					type: "item"
+					item: "immersiveengineering:conveyor_redstone"
+				}
+				{
+					id: "688216C01A5332AA"
+					type: "item"
+					item: "immersiveengineering:conveyor_dropper"
+				}
+				{
+					id: "1F5BB861F38A6A30"
+					type: "item"
+					item: "immersiveengineering:conveyor_vertical"
+					count: 3L
+				}
+				{
+					id: "5FC94276CED3BF4B"
+					type: "item"
+					item: "immersiveengineering:conveyor_splitter"
+					count: 3L
+				}
+				{
+					id: "7F7E601DEA2FA34C"
+					type: "item"
+					item: "immersiveengineering:conveyor_extract"
+				}
+			]
+			rewards: [{
+				id: "42E5816154695B5B"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "비행수단"
+			x: 5.5d
+			y: 6.5d
+			subtitle: "엔진"
+			description: [
+				" 기차를 만들었어도 정해진 트랙으로만 안정적으로 갈 수 있습니다. 그러니까 탐험해보지 못한 곳은 직접 걷거나 말을 탔어야했죠."
+				" 하늘은 나는 수단도 글라이더 정도 밖에 없었지만 이젠 아닙니다."
+				""
+				" 블레이즈 버너를 이용한 엔진을 기반으로 하늘을 날 수 있는 수단을 만들 수 있습니다."
+				" 엔진을 만들고 커서를 대서 U를 눌러보면 제작할 수 있는 것들이 표시될 겁니다."
+				""
+				" 스페이스,쉬프트와 WASD로 조작할 수 있으며 R로 내릴 수 있습니다."
+				""
+				" 탑승한채로 인벤토리를 열면 비행체의 인벤토리를 열 수 있게되며 거기서 비행체에 연료와 업그레이드 부품을 부착할 수 있습니다."
+				" 업그레드 부품은 비행체의 연료 효율성, 속도 등을 증가시킬 수 있습니다."
+				""
+				" 연료는 숯, 석탄(Minecraft)등을 이용할 수 있습니다."
+			]
+			dependencies: ["4D0067050FB092E4"]
+			id: "4BF260D296037614"
+			tasks: [{
+				id: "411C53481EE0CB6A"
+				type: "item"
+				item: "immersive_aircraft:engine"
+			}]
+			rewards: [{
+				id: "0D201CD0D0B9591C"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "터어어어어얼렸구나!!!"
+			icon: {
+				id: "tfc:food/wheat_grain"
+				Count: 1b
+				ForgeCaps: {
+					"tfc:food": {
+						traits: [ ]
+						creationDate: 768000L
+					}
+				}
+			}
+			x: 0.0d
+			y: -2.5d
+			subtitle: "탈곡기(Thresher)"
+			description: [
+				" 탈곡기는 밀 등의 곡류를 아주 효율적으로 가공해주는 기계입니다."
+				" Create는 1개에서 2개의 생산량만 가지고 있지만이 탈곡기는 상시 3배 효율을 냅니다."
+				""
+				" 짚은 따로 기계 측면에서 배출됩니다."
+			]
+			dependencies: ["1B47EBDB6A332E04"]
+			id: "45F0FC954C29F86F"
+			tasks: [
+				{
+					id: "38AEEEF5F78E738C"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 14L
+				}
+				{
+					id: "4B5FE7804845A63D"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 5L
+				}
+				{
+					id: "738B992429D482F7"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "1F5303826A353EB7"
+					type: "item"
+					item: "minecraft:hopper"
+				}
+			]
+			rewards: [{
+				id: "70BC1A569725F805"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "가루로 드셔보겠습니까?"
+			icon: {
+				id: "tfc:food/wheat_flour"
+				Count: 1b
+				ForgeCaps: {
+					"tfc:food": {
+						traits: [ ]
+						creationDate: 768000L
+					}
+				}
+			}
+			x: -1.0d
+			y: -2.5d
+			subtitle: "제분기(Grist Mill)"
+			description: [
+				" 제분기는 밀 등의 곡물을 아주 효율적으로 가공해주는 기계입니다."
+				" Create는 1개에서 2개의 생산량만 가지고 있지만이 제분기는 상시 3배 효율을 냅니다."
+			]
+			dependencies: ["1B47EBDB6A332E04"]
+			id: "7AC046DCDA512814"
+			tasks: [
+				{
+					id: "6D9922B425276828"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 9L
+				}
+				{
+					id: "3D3B439051FC8C99"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 3L
+				}
+				{
+					id: "7ED763437BA1A223"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 4L
+				}
+				{
+					id: "2396D4DD2D65C241"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "4B79E5C438A41AF0"
+					type: "item"
+					item: "immersiveengineering:slab_sheetmetal_steel"
+					count: 4L
+				}
+				{
+					id: "703403B6E6117FE3"
+					type: "item"
+					item: "immersiveengineering:storage_steel"
+				}
+				{
+					id: "689E437FE1E61C73"
+					type: "item"
+					item: "minecraft:hopper"
+				}
+			]
+			rewards: [{
+				id: "706D5E378EBF683C"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "산업 혁명"
+			icon: "tfc:wool_cloth"
+			x: -2.0d
+			y: -2.5d
+			subtitle: "역직기(Power Loom)"
+			description: [
+				" 역직기는 양털 등의 직물을 효율적으로 가공해주는 기계입니다."
+				" Create는 자동화만 가능했지만 역직기는 비교적 적은 직물로 천을 생산할 수 있습니다."
+				" 대신에 작동 방법이 좀 복잡합니다."
+				""
+				" 역직기는 앞뒤가 거의 유사하게 생겼지만 파란색, 주황색 포인트로 입력, 출력면이 나뉩니다."
+				""
+				" 그 사이에는 빗 처럼 생긴 막이 있는데, 거기에 직조를 원하는 직물 16가닥을 걸어 놔야합니다."
+				" 그 다음에는 입력부분에 있는 가로로 이어진 봉에 직조할 직물 32가닥을 걸어놉니다."
+				" 마지막으로 핀(Pirn)에 직조할 직물 8개를 감겨진 핀을 기계 옆면(출력이 좌측, 입력이 우측)에 있는 봉에 설치하면 준비는 끝납니다."
+				""
+				" 전력이 공급되면 역직기는 직조를 하게되고 직조가 끝나면 출력 부분에 웅크린채로 우클릭을 하면 천 4개를 얻게 됩니다."
+				" 핀은 입력 부분에 있는 또 다른 출력부위에 배출됩니다."
+				""
+				" 좀 까다로운 과정이었지만 원래는 직물 64개를 사용해 천 4개를 얻을 수 있지만 역직기를 통해 만들면 중앙에 걸어 놓은 직물을 제외한 직물 40(입력 부분에 32개, 핀에 8개)개만을 이용해 천 4개를 얻게 됩니다."
+			]
+			dependencies: ["1B47EBDB6A332E04"]
+			id: "6197B43C01D1A619"
+			tasks: [
+				{
+					id: "2892E27CFE043FEB"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 13L
+				}
+				{
+					id: "4593C6B548144218"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 3L
+				}
+				{
+					id: "053BA525CB1821FD"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 3L
+				}
+				{
+					id: "797C79263BCE03BC"
+					type: "item"
+					item: "immersiveengineering:storage_steel"
+				}
+				{
+					id: "71FFA90BD94D19C9"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "5037A7F978B98F4E"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 5L
+				}
+				{
+					id: "530526AC15B64972"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+				}
+				{
+					id: "3DD08B947330823A"
+					type: "item"
+					item: "advancedtfctech:pirn"
+				}
+			]
+			rewards: [{
+				id: "0F2715470E225DFD"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 6512215439762885638L
+			}]
+		}
+		{
+			title: "전기로 작동함"
+			x: 0.0d
+			y: -3.5d
+			subtitle: "전기로"
+			description: [
+				" 더 이상 숯불로에서 펌프질하고 연료를 갈아주고 주괴가 녹을 걱정은 하지 않아도 됩니다."
+				""
+				" 전기로는 전력만 충분하다면 상시 원하는 온도만큼만 가열할 수 있으며 원한다면 끌 수도 있습니다."
+				""
+				" 가열된 전기로 위에는 올라가지 마세요. 아픕니다."
+			]
+			dependencies: ["1B47EBDB6A332E04"]
+			id: "0B9CCCD6E4EFCFE9"
+			tasks: [{
+				id: "2C2145E879A430C0"
+				type: "item"
+				item: "rosia:electric_forge"
+			}]
+			rewards: [{
+				id: "7C8ED88F68BF5E3F"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "-"
+			icon: "rosia:rolling_machine"
+			x: -1.0d
+			y: -3.5d
+			subtitle: "압연기"
+			description: [
+				" 합괴를 판으로 바로 만들어 줍니다. 모루에서 망치질을 할 필요가 없죠."
+				""
+				" 물론, 가공 가능한 온도까지는 가열해야 가능한 일입니다."
+				""
+				" 강철 롤러를 장착시켜야 기계가 작동됩니다."
+			]
+			dependencies: ["1B47EBDB6A332E04"]
+			id: "19657F3AFD5669F8"
+			tasks: [
+				{
+					id: "127864B07EABCF0F"
+					type: "item"
+					item: "rosia:rolling_machine"
+				}
+				{
+					id: "3C0EC0BCFCCA4B16"
+					type: "item"
+					item: {
+						id: "rosia:steel_rollers"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "1045B14658BB83FF"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "성형외과"
+			icon: "rosia:extruding_machine"
+			x: -2.0d
+			y: -3.5d
+			subtitle: "압출기"
+			description: [
+				" 주괴를 막대로 만들고 막대를 선으로 만드는 과정을 자동화해 줍니다."
+				""
+				" 물론, 가공 가능한 온도까지 가열을 해줘야 됩니다."
+				""
+				" 강철 성형틀이 있어야 기계가 작동됩니다."
+			]
+			dependencies: ["1B47EBDB6A332E04"]
+			id: "040D38F784BF740C"
+			tasks: [
+				{
+					id: "1E23B57CA4CA8020"
+					type: "item"
+					item: "rosia:extruding_machine"
+				}
+				{
+					id: "7559952C596C844C"
+					type: "item"
+					item: {
+						id: "rosia:steel_machine_die"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "3D6C4C09DB94B594"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "자돌돌돌"
+			icon: "rosia:auto_quern"
+			x: -3.0d
+			y: -3.5d
+			subtitle: "자동 맷돌"
+			description: [
+				" 맷돌(TFC)의 기능을 자동화 합니다."
+				""
+				" 강철 맷돌이 있어야 기계가 작동합니다."
+			]
+			dependencies: [
+				"1B47EBDB6A332E04"
+				"3C39E3C5B1F649CE"
+			]
+			id: "5A79010246CB32F6"
+			tasks: [
+				{
+					id: "0E7B08EFEE86F553"
+					type: "item"
+					item: "rosia:auto_quern"
+				}
+				{
+					id: "35F1EAEC1684F35E"
+					type: "item"
+					item: {
+						id: "rosia:steel_grindstone"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "1FA1B285BF61CB14"
+				type: "item"
+				item: "createdeco:gold_coin"
+			}]
+		}
+		{
+			title: "[깡]"
+			icon: "rosia:canning_press"
+			x: 0.0d
+			y: -4.5d
+			subtitle: "통조림기"
+			description: [
+				" 음식을 장기 보관하는 방법 중 하나는 통조림으로 만드는 것입니다."
+				" 빵, 육류, 치즈, 수프, 야채, 과일 등을 캔에 넣고 밀봉하면 신선도를 오래 유지시킬 수 있습니다."
+				""
+				" 주석을 캔으로 가공하고 넣을 수 있는 음식을 넣은 뒤에 병조림기(Canning Press)에 넣어 밀봉시키면 완성 입니다."
+				""
+				" 배고플 때, 섭취함면 되며 섭취한 뒤에는 캔을 다시 회수할 수 있습니다."
+			]
+			dependencies: ["1B47EBDB6A332E04"]
+			id: "0A31E983A69C9314"
+			tasks: [
+				{
+					id: "6005F8125465DDBB"
+					type: "item"
+					item: "rosia:canning_press"
+				}
+				{
+					id: "145FEE7BE58B1AE3"
+					type: "item"
+					item: "rosia:tin_can"
+				}
+			]
+			rewards: [{
+				id: "073FAA4814DD40EE"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "지이이"
+			x: -1.0d
+			y: -4.5d
+			subtitle: "전기 그릴"
+			description: [" 모닥불 석쇠에 음식을 구워서 얻는 효과인 석쇠구이 속성을 기계에서도 누릴 수 있게 되었습니다. 무려 많은 음식을 한꺼번에요."]
+			dependencies: [
+				"1B47EBDB6A332E04"
+				"20A2918A0D84C7B6"
+			]
+			id: "7F70BDB300E70A96"
+			tasks: [{
+				id: "3121AC8487F30C56"
+				type: "item"
+				item: "rosia:electric_grill"
+			}]
+			rewards: [{
+				id: "27ADF8E809FE4B6B"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "코끼리는 어떻게 들어간거야?"
+			x: -2.0d
+			y: -4.5d
+			subtitle: "냉장고"
+			description: [
+				" 음식을 냉장시켜 보관을 오해하게 할 수 있는 기계입니다."
+				" 영구는 아니니까 방심하지 마세요."
+			]
+			dependencies: ["1B47EBDB6A332E04"]
+			id: "26ED66FEDD706C52"
+			tasks: [{
+				id: "2C0B70F1913C6250"
+				type: "item"
+				item: "rosia:fridge"
+			}]
+			rewards: [{
+				id: "26EF277F0EBC17AA"
+				type: "item"
+				item: "createdeco:gold_coin"
+			}]
+		}
+		{
+			title: "빛이 있으라"
+			x: -3.0d
+			y: -4.5d
+			subtitle: "전기 랜턴"
+			description: [" 전기를 소모하여 빛을 냅니다. 그게 답니다."]
+			dependencies: ["1B47EBDB6A332E04"]
+			id: "3732A6FD83A7D033"
+			tasks: [{
+				id: "69A9A885ABEC9075"
+				type: "item"
+				item: "rosia:electric_lantern"
+			}]
+			rewards: [{
+				id: "3816E6CEE8483821"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "전기 크루저"
+			icon: "rosia:electric_loom"
+			x: -4.0d
+			y: -3.5d
+			subtitle: "전기 베틀"
+			description: [
+				" 베틀의 기능을 자동화 합니다."
+				""
+				" 강철 베틀 부품이 있어야 기계가 작동합니다."
+			]
+			dependencies: [
+				"1B47EBDB6A332E04"
+				"17C4238F1844014D"
+			]
+			id: "5A59A7D244DFCA55"
+			tasks: [
+				{
+					id: "0A57E5F205997FFB"
+					type: "item"
+					item: "rosia:electric_loom"
+				}
+				{
+					id: "1B9DA236E2A0F56C"
+					type: "item"
+					item: {
+						id: "rosia:steel_loom_parts"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}

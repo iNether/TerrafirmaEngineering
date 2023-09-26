@@ -1,0 +1,1 @@
+<recipetype:immersiveengineering:fermenter>.addRecipe("moon_dt", <item:beyond_earth:compressed_desh>, 1000, <fluid:mekanismgenerators:fusion_fuel> * 100);

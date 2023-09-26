@@ -1,0 +1,1487 @@
+{
+	id: "7BA295D8ACFC5A91"
+	group: "07D6747737955014"
+	order_index: 1
+	filename: "create"
+	title: "Create"
+	icon: "create:cogwheel"
+	subtitle: ["간단하면서도 역동적인 기계들을 다룹니다"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Create"
+			x: -0.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "안산암 케이스"
+			description: [
+				" Create의 여러 부품과 장치의 기반이 되는 재료입니다."
+				" 단순한 블록으로 보이지만 추후에 매우 많이 볼 톱니나 축 등을 덮어서 미관상 보기 이쁘게 만듭니다."
+				""
+				" 그리고 안산암일 경우, 아무 돌맹이를 구우면 됩니다."
+				""
+				" 그리고 이 모드의 가장 큰 특징이라면 아이템에 커서를 대고 W를 누르면 영상을 포함한 튜토리얼이 나온다는 겁니다."
+				" 그러니 이 파트도 제가 설명할 필요가 그닥 없다는 것이죠."
+			]
+			dependencies: ["3E0B36ABD434AAB1"]
+			id: "5F2D4BE524C7ED1B"
+			tasks: [{
+				id: "70077774B21B6497"
+				type: "item"
+				item: "create:andesite_casing"
+			}]
+			rewards: [{
+				id: "14A709967125B735"
+				type: "item"
+				item: "createdeco:gold_coin"
+			}]
+		}
+		{
+			title: "동력 전달"
+			x: 0.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "축과 톱니바퀴"
+			description: [
+				" Create의 특징은 동력이 회전력이라는 것입니다."
+				" 전선같은 거 없이 톱니바퀴나 축의 회전만 연결되면 된다는 것입니다."
+				""
+				" 축은 수직으로 동력을 전달해줄 수 있고 톱니바퀴는 수평으로 회전력을 전달합니다."
+				" 말이 어렵지, 직접 설치해보면 감이 올 겁니다."
+			]
+			dependencies: ["5F2D4BE524C7ED1B"]
+			id: "3B063A0D44795864"
+			tasks: [
+				{
+					id: "5D9F05710F288D30"
+					type: "item"
+					item: "create:shaft"
+				}
+				{
+					id: "7C25AF498C6B7DAF"
+					type: "item"
+					item: "create:cogwheel"
+				}
+				{
+					id: "0C855E08FB276D1D"
+					type: "item"
+					item: "create:large_cogwheel"
+				}
+			]
+			rewards: [
+				{
+					id: "6FC0A7EF55DF609C"
+					type: "item"
+					item: "create:cogwheel"
+					count: 16
+				}
+				{
+					id: "37F1ABFCCCF99D8F"
+					type: "item"
+					item: "create:large_cogwheel"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "기계(수동)"
+			x: 1.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "핸드 크랭크"
+			description: [
+				" 핸드 크랭크는 플레이어가 직접 동력을 만들 수 있는 장치입니다."
+				" 축 부분에 설치하여 우클릭 또는 쉬프트 우클릭으로 돌릴 수 있습니다."
+			]
+			dependencies: ["3B063A0D44795864"]
+			id: "52122FCEBF2963EC"
+			tasks: [{
+				id: "0B8E3D0413F2415C"
+				type: "item"
+				item: "create:hand_crank"
+			}]
+		}
+		{
+			title: "= → -"
+			icon: "create:mechanical_press"
+			x: 2.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "압착기"
+			description: [
+				" 압축기는 아래에 있는 아이템을 압축시킵니다."
+				" 예를 들어 아이템 거치대에 올려진 합괴를 압축해서 판으로 만들어주죠."
+				" 그렇습니다. 특별한 작업이 아닌, 주괴 등을 압축할 때는 모루를 안 써도 되는것이죠. (용접은 안 됩니다)"
+				""
+				" 게다가 철도 손쉽게 제련할 수 있죠."
+			]
+			dependencies: ["52122FCEBF2963EC"]
+			id: "1C82307F2C14B5F8"
+			tasks: [
+				{
+					id: "7F7426FE8AACEB30"
+					type: "item"
+					item: "create:mechanical_press"
+				}
+				{
+					id: "49A35F81AA12FF56"
+					type: "item"
+					item: "create:depot"
+				}
+			]
+		}
+		{
+			title: "수동력"
+			x: 1.5d
+			y: 1.5d
+			subtitle: "물레바퀴"
+			description: [
+				" 물레바퀴는 물의 흐름으로 동력의 방향이 결정되는 동력원입니다."
+				" 예전에는 물에 닿는 면적에 따라 속도가 결정되었지만 현재는 한 부분에 물이 닿아도 똑같은 속도를 내게 됩니다."
+				""
+				" 재밌게도 용암같은 고온의 액체로도 작동되며 불타지 않습니다. 그래서 방부목을 요구하죠."
+				""
+				" 더 큰 물레바퀴는 일반 물레바퀴 보다 속도가 느리지만 보다 높은 힘(피로도)를 제공합니다."
+			]
+			dependencies: ["3B063A0D44795864"]
+			id: "526B3755261BF527"
+			tasks: [
+				{
+					id: "0F26F9182694DDF4"
+					type: "item"
+					item: "create:water_wheel"
+				}
+				{
+					id: "76036175174DBE12"
+					type: "item"
+					item: "create:large_water_wheel"
+				}
+			]
+		}
+		{
+			title: "쓰까무라"
+			icon: "create:mechanical_mixer"
+			x: 3.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "믹서"
+			description: [
+				" 대야에 있는 아이템들을 섞어줍니다."
+				" 그리고 아래에 특수한 가열장치가 있으면 합금도 만들 수 있습니다."
+			]
+			dependencies: ["1C82307F2C14B5F8"]
+			id: "41280B608791BF89"
+			tasks: [
+				{
+					id: "3578D192510F0109"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "55553645767E4F92"
+					type: "item"
+					item: "create:basin"
+				}
+			]
+		}
+		{
+			title: "노예 계약"
+			x: 3.5d
+			y: 1.0d
+			shape: "square"
+			subtitle: "블레이즈 버너"
+			description: [
+				" 가연성 물질을 섭취하면 위에 있는 대야에 열을 공급해 줍니다."
+				""
+				" 블레이즈는 어떻게 넣냐고요?"
+				" 빈 버너를 들고 블레이즈를 우클릭하면 됩니다."
+				""
+				" 그게 무섭다면 블레이즈 인형으로 버너에 넣은 채로 소환할 수도 있습니다."
+			]
+			dependencies: ["41280B608791BF89"]
+			id: "37F3B16CD8DD04F4"
+			tasks: [{
+				id: "0A57CE78F8BD6F5C"
+				type: "item"
+				item: "create:blaze_burner"
+			}]
+			rewards: [{
+				id: "3306DF1B03DEFA73"
+				type: "item"
+				item: "minecraft:blaze_spawn_egg"
+				count: 3
+			}]
+		}
+		{
+			title: "자돌돌돌돌"
+			icon: "create:millstone"
+			x: 2.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "맷돌"
+			description: [
+				" 옆 면으로 동력을 전달받아 회전하여 아이템을 갈아버립니다."
+				" 윗면에 아이템을 넣어주고 다 갈리면 우클릭으로 결과물을 꺼낼 수 있습니다."
+				""
+				" 그리고 나무를 갈아 톱밥으로 만들고 물에 적셔 종이를 만들 수 있습니다."
+			]
+			dependencies: ["52122FCEBF2963EC"]
+			id: "245FBFB772A9DCCF"
+			tasks: [
+				{
+					id: "29B6B28C8F24EE1A"
+					type: "item"
+					item: "create:millstone"
+				}
+				{
+					id: "5E9D639BDF7684D2"
+					type: "item"
+					item: "minecraft:paper"
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "까칠한 것은 부드럽게 만든다"
+			icon: {
+				id: "create:sand_paper"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 3.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "사포"
+			description: [" 한 손에 사포, 다른 손에 사포질할 아이템을 들고 우클릭을 하고 있으면 사포질이 됩니다."]
+			dependencies: ["245FBFB772A9DCCF"]
+			id: "451B74F804169176"
+			tasks: [
+				{
+					id: "43B938ADAB5CA46E"
+					type: "item"
+					item: {
+						id: "create:sand_paper"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3D2DAFEEC55A38BD"
+					type: "item"
+					item: "create:polished_rose_quartz"
+				}
+			]
+			rewards: [{
+				id: "3F6C38DB25062A4F"
+				type: "item"
+				item: {
+					id: "create:sand_paper"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				count: 3
+			}]
+		}
+		{
+			title: "자동조합"
+			x: 5.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "조합기"
+			description: [
+				" 대형 조합대를 생각하고 설치하면 됩니다."
+				" 렌치로 조합기의 경로를 수정하며 최종적으로 한 곳에 모여 나가는 방향으로 연결해야합니다."
+				" 직접 조합기에 아이템을 넣을 수 있으며 레드스톤 신호를 주어 작동시킬 수 있습니다."
+				" 당연히, 동력이 전달되고 있다면요."
+				""
+				" 그리고 이 기계의 진가는 일반 조합대 보다 큰 공간을 요구하는 것들을 만들기 위해 있습니다."
+				" 뭐, 자동조합도 분명히 좋은 기능이기는 하죠."
+			]
+			dependencies: [
+				"451B74F804169176"
+				"37F3B16CD8DD04F4"
+				"4F215690756722AA"
+			]
+			id: "525D93E8CFA42287"
+			tasks: [{
+				id: "7E64B6050CF509FF"
+				type: "item"
+				item: "create:mechanical_crafter"
+				count: 3L
+			}]
+		}
+		{
+			title: "Create 만능 도구"
+			x: 2.5d
+			y: 3.5d
+			subtitle: "렌치"
+			description: [
+				" 크리에이트의 모든 기계들을 다룰 수 있습니다."
+				" 사용법은 아이템에 커서를 대고 보세요."
+			]
+			dependencies: ["1C82307F2C14B5F8"]
+			id: "4F215690756722AA"
+			tasks: [{
+				id: "51CF7AF630BFED48"
+				type: "item"
+				item: "create:wrench"
+			}]
+			rewards: [{
+				id: "1A8AB681A5AF85AE"
+				type: "item"
+				item: "createdeco:gold_coin"
+			}]
+		}
+		{
+			title: "회전력 측정기"
+			x: 2.5d
+			y: 4.5d
+			subtitle: "엔지니어의 고글"
+			description: [" 착용하면 보고 있는 기계의 속도,피로도 등을 볼 수 있습니다."]
+			dependencies: ["1C82307F2C14B5F8"]
+			id: "3CB7A627FA3C31A2"
+			tasks: [{
+				id: "0050591B2913803F"
+				type: "item"
+				item: "create:goggles"
+			}]
+			rewards: [{
+				id: "2BFDC7DDF45FF0C2"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "갈갈갈갈갈갈"
+			x: 6.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "분쇄 휠"
+			description: [
+				" 분쇄휠은 강력한 위력으로 아이템(또는 생명체)를 갈아버립니다."
+				""
+				" 두 분쇄힐이 붙어있어야하며 다른 방향으로 돌아야합니다."
+				""
+				" 광물을 분쇄하여 매우 손쉽게 광물제련을 가능케 합니다."
+			]
+			dependencies: ["525D93E8CFA42287"]
+			id: "64BDEE98AB029294"
+			tasks: [{
+				id: "77E4DC17C62D60CE"
+				type: "item"
+				item: "create:crushing_wheel"
+				count: 2L
+			}]
+			rewards: [{
+				id: "374CA3062ADC7343"
+				type: "item"
+				item: {
+					id: "tfc:refined_iron_bloom"
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+				}
+				count: 8
+			}]
+		}
+		{
+			title: "클릭 머신"
+			x: 5.0d
+			y: 1.0d
+			shape: "square"
+			subtitle: "기계 손"
+			description: [
+				" 동력을 받으면 손은 당신이 마우스로 하는 일을 할 수 있게됩니다."
+				""
+				" 공격(제거), 사용(설치)를 할 수 있으며 손에 든 것을 들려줘서 작업을 시킬 수 있습니다."
+				" 렌치로 이 모드를 변경할 수 있습니다."
+			]
+			dependencies: [
+				"37F3B16CD8DD04F4"
+				"451B74F804169176"
+			]
+			id: "7C31947A3B2A7E1F"
+			tasks: [{
+				id: "69162EB9FB91760A"
+				type: "item"
+				item: "create:deployer"
+			}]
+		}
+		{
+			title: "안 세요!"
+			x: 1.5d
+			y: -2.5d
+			shape: "square"
+			subtitle: "안전한 액체 보관"
+			description: [
+				" 이제 나무 통을 대신할 액체 보관소가 생겼습니다. (가죽 가공 등은 아직 멀었습니다)"
+				" 액체 탱크는 액체를 보관하는 역할을 하며 여러개를 설치하여 용량을 늘릴 수 있습니다."
+				" 펌프는 동력을 이용하여 파이프에 흐르는 액체의 흐름을 제어합니다."
+				" 주입기는 아이템에 액체를 주입하는 역할을 합니다."
+			]
+			dependencies: ["52122FCEBF2963EC"]
+			id: "3C437F3459CCCE22"
+			tasks: [
+				{
+					id: "248101825DFA3C04"
+					type: "item"
+					item: "create:fluid_tank"
+				}
+				{
+					id: "3D0A1EF7E1F5F50B"
+					type: "item"
+					item: "create:mechanical_pump"
+				}
+				{
+					id: "7FA74BB9613326D0"
+					type: "item"
+					item: "create:spout"
+				}
+			]
+		}
+		{
+			title: "고-급 부품"
+			x: 8.0d
+			y: 0.5d
+			shape: "square"
+			subtitle: "정밀 기계장치"
+			description: [
+				" 금 판에 톱니바퀴들과 철 조각을 조립하여 만들어지게 됩니다."
+				" 복잡한 작업인 만큼, 불량품도 생산될 수 있습니다."
+				""
+				" 주로 고급 장치를 만들때 이용됩니다."
+			]
+			dependencies: [
+				"7C31947A3B2A7E1F"
+				"76123B6C3D389405"
+			]
+			id: "7392483B857D5B78"
+			tasks: [{
+				id: "7E8AFEF87403E6FE"
+				type: "item"
+				item: "create:precision_mechanism"
+			}]
+			rewards: [{
+				id: "09EE1A1D01820DF3"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "용암 주입"
+			x: 8.0d
+			y: -0.5d
+			shape: "square"
+			subtitle: "강판"
+			description: [
+				" 흑요석 가루에 용암을 주입하고 압축하여 만들 수 있습니다."
+				""
+				" 주로 기차를 만들때 이용됩니다."
+			]
+			dependencies: [
+				"3C437F3459CCCE22"
+				"64BDEE98AB029294"
+				"76123B6C3D389405"
+			]
+			id: "6C319B8139BC1FE6"
+			tasks: [{
+				id: "3FDFF756340EFF29"
+				type: "item"
+				item: "create:sturdy_sheet"
+			}]
+		}
+		{
+			title: "산업 혁명"
+			x: 7.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "벨트"
+			description: [
+				" 축과 축에 우클릭하여 벨트를 놓을 수 있습니다."
+				""
+				" 벨트 위에 있는 아이템을 운송시키며 여러 자동화 시설에 핵심요소가 될 겁니다."
+			]
+			dependencies: ["52122FCEBF2963EC"]
+			id: "76123B6C3D389405"
+			tasks: [{
+				id: "4FF3B27B17761E1F"
+				type: "item"
+				item: "create:belt_connector"
+			}]
+			rewards: [{
+				id: "6F2003F9D6CAAA1F"
+				type: "item"
+				item: "createdeco:gold_coin"
+				count: 3
+			}]
+		}
+		{
+			title: "응용 에너지 (초급)"
+			icon: "storagenetwork:inventory"
+			x: 9.0d
+			y: 1.5d
+			subtitle: "간단한 저장고 체계"
+			description: [
+				" 제목과는 다르게, 전력을 소모하지 않습니다."
+				""
+				" 지금 상황이라면 무언가를 만들 때, 창고에 있는 아이템을 찾기 위해 여러 상자를 뒤졌을 겁니다. 번거롭겠죠."
+				" 한 화면에 모든 아이템을 보고 넣고 뺄 수 있다면 행복하겠죠?"
+				""
+				" Storage Network Root은 저장고 시스템의 코어같은 역할 입니다. 한 체계에 하나만 있어야하며 우클릭으로 연결된 기기들을 확인할 수 있습니다."
+				" Sotage Inventory는 연결된 저장고에 있는 모든 아이템들을 볼 수 있습니다."
+				" Link Cable은 저장고에 연결시켜 저장고 시스템에 해당 저장고를 인식시킬 수 있습니다."
+				" Network Cable은 그냥 다른 캐이블이나 기기를 연결시킬 수 있습니다."
+			]
+			dependencies: ["7392483B857D5B78"]
+			id: "6A0F9E2E53C3189D"
+			tasks: [
+				{
+					id: "1001626CA0CE1269"
+					type: "item"
+					item: "storagenetwork:master"
+				}
+				{
+					id: "2732355D28DAEC3C"
+					type: "item"
+					item: "storagenetwork:storage_kabel"
+					count: 4L
+				}
+				{
+					id: "711D195BFCE9F074"
+					type: "item"
+					item: "storagenetwork:kabel"
+					count: 4L
+				}
+				{
+					id: "035630C55672BE13"
+					type: "item"
+					item: "storagenetwork:inventory"
+				}
+			]
+			rewards: [{
+				id: "3D339AEF6BCC1159"
+				type: "item"
+				item: "immersiveengineering:crate"
+				count: 8
+			}]
+		}
+		{
+			title: "쪼옥"
+			x: 2.5d
+			y: -2.5d
+			subtitle: "호스 도르래"
+			description: [
+				" 액체를 자동으로 뽑아내고 싶으신가요?"
+				" 호스 도르래가 적합할 겁니다."
+				""
+				" 축 부분에 동력을 전달해 호스의 길이를 조절할 수 있습니다."
+				" 그리고 파이프를 연결하고 펌프로 액체를 입출력시킬 수 있습니다."
+				""
+				" 만약, 호스에 아주 많은 액체에 닿았다면 무한히 그 액체를 뽑아낼 수 있습니다."
+			]
+			dependencies: [
+				"3C437F3459CCCE22"
+				"1C82307F2C14B5F8"
+			]
+			id: "434DA3B11602E35D"
+			tasks: [{
+				id: "3E59030D02FEB392"
+				type: "item"
+				item: "create:hose_pulley"
+			}]
+		}
+		{
+			title: "여름 필수품"
+			x: 6.0d
+			y: -1.0d
+			subtitle: "선풍기"
+			description: [
+				" 뒤에 동력의 방향에 따라 앞의 물체를 밀수도 당길 수도 있습니다."
+				" 그리고 동력의 빠르기에 따라 위력이 달라지죠."
+				""
+				" 만약, 선풍기 앞에 용암이 있다면 뜨거운 바람이 나가 아이템을 구울 수 있습니다."
+				" 물이 있다면 새로운 방식의 가공이 됩니다."
+				" 이때, 선풍기의 세기는 가공속도와 연관이 없게됩니다."
+				""
+				" 흠, 광물을 정제할 때 유용하지 않을까요?"
+			]
+			dependencies: ["1C82307F2C14B5F8"]
+			id: "69A54230D14A5B5C"
+			tasks: [{
+				id: "5CBEAA99B7E63830"
+				type: "item"
+				item: "create:encased_fan"
+			}]
+		}
+		{
+			title: "딱풀"
+			x: 4.0d
+			y: -2.0d
+			subtitle: "강력 접착제"
+			description: [
+				" 강력 접착제는 우클릭으로 영역을 설정하여 블럭을 붙게 만듭니다."
+				" 이에 붙어진 블록들은 움직일때, 함께 움직입니다."
+				""
+				" 꽤 쓸모가 많으니 만들어보세요."
+			]
+			dependencies: ["1C82307F2C14B5F8"]
+			id: "71EAAAC7D6DD8394"
+			tasks: [{
+				id: "49909FA2C7229220"
+				type: "item"
+				item: {
+					id: "create:super_glue"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "08BB9998A476FF97"
+				type: "item"
+				item: "createdeco:gold_coin"
+				count: 3
+			}]
+		}
+		{
+			title: "칙칙폭폭"
+			x: 9.0d
+			y: -1.5d
+			subtitle: "기차"
+			description: [
+				" 장거리로 무언가를 옮기거나 이동할때, 기차 같은 이동수단이 좋을 겁니다."
+				""
+				" 우선, 다닐 경로에 선로를 깝니다."
+				" 그 다음에 선로에 기차 정거장을 우클릭하고 근처에 설치합니다."
+				" 기차 정거장에서 기차를 만들도록 설정하고 기차 케이스를 표시된 선로에 설치하여 기차 틀을 만듭니다."
+				" 마지막으로 가차 틀에 원하는 디자인으로 꾸미고 기차 조종기를 달아줍니다. 강력 접착제로 붙히는 거 잊지마세요."
+				" 진짜 마지막으로 기차 정거장으로 기차를 완성시키면 됩니다."
+				""
+				" 기차 조종기를 우클릭하여 W,S로 조종할 수 있습니다."
+				" 기차에서 안 떨어지게 의자도 달아주는 것이 좋겠죠?"
+				""
+				" 자세한 설명은 아이템에 W를 눌러 보세요."
+			]
+			dependencies: [
+				"6C319B8139BC1FE6"
+				"7392483B857D5B78"
+				"71EAAAC7D6DD8394"
+			]
+			id: "3F2E91E26B192064"
+			tasks: [
+				{
+					id: "055EAA837E93E39C"
+					type: "item"
+					item: "create:track"
+				}
+				{
+					id: "3A950FFC7D926640"
+					type: "item"
+					item: "create:track_station"
+				}
+				{
+					id: "37D6CA0296647222"
+					type: "item"
+					item: "create:railway_casing"
+				}
+				{
+					id: "734EE30D439DA2EA"
+					type: "item"
+					item: "create:controls"
+				}
+			]
+			rewards: [{
+				id: "4AB7845723BE33AE"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "채집 도구들"
+			x: 4.5d
+			y: 2.0d
+			subtitle: "드릴과 톱, 수확기 그리고 쟁기"
+			description: [
+				" 드릴을 앞에 달면 흙과 돌류를 효율적으로 파낼 수 있습니다."
+				""
+				" 톱은 나무를 한꺼번에 벨수 있으며 추가적으로 여러 블록들을 가공할 수 있습니다."
+				""
+				" 수확기는 농작물을 제거하며 붙어있는 상자에 씨앗이 있다면 수확한 작물의 씨앗을 다시 심습니다."
+				""
+				" 쟁기는 완전한 블록이 아닌 것들을 부수며 흙을 경작할 수도, 아이템을 줍기도 하며 생명체를 날려버릴 수도 있습니다."
+			]
+			dependencies: [
+				"1C82307F2C14B5F8"
+				"71EAAAC7D6DD8394"
+			]
+			id: "0840FC1501E6A546"
+			tasks: [
+				{
+					id: "529388768B2F7D6E"
+					type: "item"
+					item: "create:mechanical_drill"
+				}
+				{
+					id: "6DF05F064C9EB0E8"
+					type: "item"
+					item: "create:mechanical_saw"
+				}
+				{
+					id: "1F7549F40F6634CC"
+					type: "item"
+					item: "create:mechanical_harvester"
+				}
+				{
+					id: "358251F3368A4C40"
+					type: "item"
+					item: "create:mechanical_plough"
+				}
+			]
+		}
+		{
+			title: "역동적인 것들"
+			x: 0.5d
+			y: -1.0d
+			subtitle: "피스톤과 갠트리 운반대 그리고 베어링"
+			description: [
+				" 피스톤은 뒤에 붙은 피스톤 연장 축의 길이에 따라 물체를 밀고 당길 수 있습니다."
+				""
+				" 갠트리 운반대는 갠트리에 붙어서 움직이며 갠트리의 회전에 따라 움직임이 다릅니다."
+				""
+				" 베어링은 회전시킬 수 있습니다."
+			]
+			dependencies: ["3B063A0D44795864"]
+			id: "6FE3D06902B65F4F"
+			tasks: [
+				{
+					id: "3D7012BF553D8A7E"
+					type: "item"
+					item: "create:sticky_mechanical_piston"
+				}
+				{
+					id: "0612AC262232483E"
+					type: "item"
+					item: "create:piston_extension_pole"
+					count: 8L
+				}
+				{
+					id: "07D958790260FBA6"
+					type: "item"
+					item: "create:gantry_carriage"
+				}
+				{
+					id: "2CBF47B4C8094429"
+					type: "item"
+					item: "create:gantry_shaft"
+					count: 8L
+				}
+				{
+					id: "1AA8EE72615F39C7"
+					type: "item"
+					item: "create:mechanical_bearing"
+				}
+			]
+		}
+		{
+			title: "산업 혁명"
+			x: 3.5d
+			y: -3.0d
+			subtitle: "증기 엔지 "
+			description: [
+				" 2*2 이상의 물이 담긴 탱크에 증기 엔진을 연결해 줍니다."
+				" 그리고 탱크 아래에 블레이즈 버너 등으로 열을 공급하면 물이 끓으면서 증기 엔진이 작동됩니다."
+				""
+				" 불의 화력과 많은 물이 엔진의 성능을 결정합니다."
+			]
+			dependencies: [
+				"3C437F3459CCCE22"
+				"37F3B16CD8DD04F4"
+			]
+			id: "38DB1FFBFF011628"
+			tasks: [{
+				id: "46FE005238AB4C53"
+				type: "item"
+				item: "create:steam_engine"
+			}]
+			rewards: [{
+				id: "5329A0E27337F2AA"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+				count: 2
+			}]
+		}
+		{
+			title: "속도 제어"
+			x: 9.0d
+			y: 0.5d
+			subtitle: "회전 속도 컨트롤러"
+			description: [
+				" 가운데 축에 동력을 주고 속도를 설정하면 위에 연결된 톱니의 속도를 변경할 수 있습니다."
+				" 물론, 그정도 피로도가 된다면요."
+			]
+			dependencies: ["7392483B857D5B78"]
+			id: "1C9AC4FEE6D0161B"
+			tasks: [{
+				id: "67358A014C30B499"
+				type: "item"
+				item: "create:rotation_speed_controller"
+			}]
+		}
+		{
+			title: "전기 생산"
+			x: 10.0d
+			y: 0.5d
+			shape: "square"
+			subtitle: "교류발전기"
+			description: [
+				" 동력을 받아 전기 에너지로 변환시킵니다."
+				" 발전량은 동력의 속도에 비례합니다."
+				""
+				" 초중반에 전기를 얻어야 한다면 이 방법이 좋을겁니다."
+			]
+			dependencies: ["525D93E8CFA42287"]
+			id: "01D1D4DA323F3756"
+			tasks: [{
+				id: "48A3B9366DA4F442"
+				type: "item"
+				item: "createaddition:alternator"
+			}]
+			rewards: [{
+				id: "000B8BA71448C30A"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 6512215439762885638L
+			}]
+		}
+		{
+			title: "입출력"
+			x: 7.0d
+			y: -1.5d
+			subtitle: "안산암 퍼널과 안산암 터널"
+			description: [" 저장 기능이 있는 블록에 아이템을 넣고 빼는 것을 도와줍니다."]
+			dependencies: ["76123B6C3D389405"]
+			id: "2ED3185748942866"
+			tasks: [
+				{
+					id: "63A821FE249C1486"
+					type: "item"
+					item: "create:andesite_funnel"
+				}
+				{
+					id: "1CB008D442A75366"
+					type: "item"
+					item: "create:andesite_tunnel"
+				}
+			]
+			rewards: [{
+				id: "485371E8CBB849DD"
+				type: "item"
+				item: "createdeco:gold_coin"
+			}]
+		}
+		{
+			title: "입출력 (고급)"
+			x: 7.0d
+			y: 1.5d
+			subtitle: "황동 퍼널과 황동 터널"
+			description: [
+				" 안산암 퍼널과 터널보다 나은점이라면 바로 운송 수량과 필터 기능이 추가되었다는 겁니다."
+				""
+				" 아이템을 등록시켜 해당 아이템만 받아드리게 할 수 있습니다."
+				" 만약, 블랙리스트나 여러 종류의 아이템을 등록하고 싶다면 아래 퀘스트를 참고하세요."
+			]
+			dependencies: [
+				"76123B6C3D389405"
+				"451B74F804169176"
+			]
+			id: "738EAFDD4EAA1358"
+			tasks: [
+				{
+					id: "6B0319322EC9031D"
+					type: "item"
+					item: "create:brass_funnel"
+				}
+				{
+					id: "372EB482786F4C94"
+					type: "item"
+					item: "create:brass_tunnel"
+				}
+			]
+		}
+		{
+			title: "들어가시면 안 됩니다"
+			x: 7.0d
+			y: 2.5d
+			subtitle: "필터 틀"
+			description: [
+				" 우클릭으로 아이템의 화이트/블랙 리스트 여부를 결정할 수 있습니다."
+				" 그 상태로 필터 적용 가능한 블록에 등록시킬 수 있습니다."
+			]
+			dependencies: ["738EAFDD4EAA1358"]
+			id: "1F82CE38B51D625E"
+			tasks: [{
+				id: "7B09C5EF95E14F59"
+				type: "item"
+				item: {
+					id: "create:filter"
+					Count: 1b
+					tag: {
+						RespectNBT: 0b
+						Blacklist: 0b
+						Items: {
+							Size: 18
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "4DEAB75AE98CCAD0"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "더미"
+			x: 8.0d
+			y: 2.0d
+			subtitle: "기계 팔"
+			description: [" 우클릭으로 블록에 대한 입출력을 결정하고 설치하면 동력이 전달되는 한, 아이템을 입력부분에서 출력부분으로 물리적으로 운송시킵니다."]
+			dependencies: ["7392483B857D5B78"]
+			id: "29526ACCB5611B79"
+			tasks: [{
+				id: "1C666D8A599FE257"
+				type: "item"
+				item: "create:mechanical_arm"
+			}]
+		}
+		{
+			title: "이동중 상호작용"
+			x: 0.5d
+			y: 1.0d
+			subtitle: "인터페이스와 동형 감지기"
+			description: [
+				" 움직이는 블록은 상자를 여는 것 같은 상호작용이 안됩니다."
+				" 아이템 인터페이스를 통해 움직이는 구조물의 인벤토리의 아이템을 관리할 수 있습니다."
+				""
+				" 동형 감지기로 움직이는 구조물의 동작을 감지할 수 있습니다."
+				" 어쩌면 타이머를 만들수도.."
+			]
+			dependencies: ["6FE3D06902B65F4F"]
+			id: "26D9B935CA162D9E"
+			tasks: [
+				{
+					id: "4AF3175B10070142"
+					type: "item"
+					item: "create:portable_storage_interface"
+					count: 2L
+				}
+				{
+					id: "3B8DE9DC6112D85B"
+					type: "item"
+					item: "create:portable_fluid_interface"
+					count: 2L
+				}
+				{
+					id: "12A323741F7D504D"
+					type: "item"
+					item: "create:redstone_contact"
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "회전 관리"
+			x: 1.5d
+			y: -1.0d
+			subtitle: "기어 박스와 클러치, 기어쉬프트 그리고 체인 드라이브"
+			description: [
+				" 기어 박스로 동력의 방향을 바꿀 수 있으며"
+				" 클러치로 동력을 끄고 켤 수도"
+				" 기어쉬프트로 동력의 회전 방향을 반전 시키거나"
+				" 체인 드라이브로 동력의 방향을 정리할 수 있습니다."
+				""
+				" 이것들을 잘 활용하는 것은 Create의 숙련도의 척도일 것입니다."
+			]
+			dependencies: ["3B063A0D44795864"]
+			id: "72585D7A6B8C7ECA"
+			tasks: [
+				{
+					id: "07D45D0DDD043ED3"
+					type: "item"
+					item: "create:gearbox"
+				}
+				{
+					id: "7EF571720ECD7540"
+					type: "item"
+					item: "create:vertical_gearbox"
+				}
+				{
+					id: "6041403507BDF048"
+					type: "item"
+					item: "create:clutch"
+				}
+				{
+					id: "2F80271CFBF5A659"
+					type: "item"
+					item: "create:gearshift"
+				}
+				{
+					id: "1105F346A6A35670"
+					type: "item"
+					item: "create:encased_chain_drive"
+				}
+			]
+			rewards: [{
+				id: "3470EBBC9B5C92ED"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+				count: 2
+			}]
+		}
+		{
+			title: "띠요요용"
+			icon: {
+				id: "create:extendo_grip"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 8.0d
+			y: 3.0d
+			subtitle: "외장형 연장 팔"
+			description: [
+				" 반대손에 착용한 채로 이용하면 팔 사거리가 늘어납니다."
+				""
+				" 이용시 내구도가 닳며 구리 산소통을 착용시, 내구도 대신 산소통의 산소를 이용합니다."
+				""
+				" 구리 산소통은 설치하고 위에 동력을 공급하면 산소가 채워집니다."
+			]
+			dependencies: ["7392483B857D5B78"]
+			id: "4F41D0574A241842"
+			tasks: [
+				{
+					id: "65F4574308AD7F91"
+					type: "item"
+					item: {
+						id: "create:extendo_grip"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6EE444D4CEFE343E"
+					type: "item"
+					item: {
+						id: "create:copper_backtank"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [{
+				id: "1879660799FF3DED"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "부품 저장"
+			x: 1.5d
+			y: 2.5d
+			subtitle: "공구상자"
+			description: [
+				" 어느 아이템이건 128개를 한 칸에 저장하여 최대 8칸을 저장할 수 있습니다."
+				""
+				" 근처에 공구상자가 설치되면 Alt로 원격으로 열 수 있습니다."
+				""
+				" 그리고 부숴도 안에 내용물이 보존되고요."
+				""
+				" 마지막으로 다양한 색상의 염색까지."
+			]
+			dependencies: ["1C82307F2C14B5F8"]
+			id: "72DA0A3D002401D4"
+			tasks: [{
+				id: "6F74CA5A27A31235"
+				type: "item"
+				item: {
+					id: "create:brown_toolbox"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "6CE73CDE1009232A"
+				type: "item"
+				item: "createdeco:gold_coin"
+				count: 2
+			}]
+		}
+		{
+			title: "더 많은 가죽"
+			icon: "minecraft:leather"
+			x: 6.0d
+			y: -2.5d
+			subtitle: "가죽 가공"
+			description: [
+				" 가죽 가공은 귀찮고 번거롭습니다. 이럴때 기계를 이용하는 것이죠."
+				""
+				" 생가죽을 선풍기로 세척한 뒤에 탄닌을 주입기로 주입하면 2배의 가죽을 얻을 수 있습니다."
+				""
+				" 탄닌은 대야에 물을 가열한 채로 나무를 넣어 빠르게 만들 수 있습니다."
+			]
+			dependencies: [
+				"3C437F3459CCCE22"
+				"69A54230D14A5B5C"
+				"37F3B16CD8DD04F4"
+			]
+			id: "7C1826817879F1BA"
+			tasks: [
+				{
+					id: "4123F8999B536A8D"
+					type: "item"
+					item: "minecraft:leather"
+					consume_items: true
+				}
+				{
+					id: "26A2078A294D418B"
+					type: "checkmark"
+					title: "설명 읽어보셨죠?"
+				}
+			]
+			rewards: [{
+				id: "4B939FFBF92B5832"
+				type: "item"
+				item: "createdeco:gold_coin"
+			}]
+		}
+		{
+			title: "더 많은 양털"
+			icon: "minecraft:white_wool"
+			x: 4.5d
+			y: 3.5d
+			subtitle: "양털 가공"
+			description: [
+				" 양털 가공은 귀찮고 번거롭습니다. 이럴때 기계를 이용하는 것이죠."
+				""
+				" 양가죽을 시작으로 하면, 톱으로 양털과 생가죽으로 분리한 뒤에 양털을 갈아버려(Create) 털실로 만듭니다."
+				" 그 다음에 가열된 대야로 압축하여 양털천을 만들 수 있으며 또 한 번 압축하여 양털(Minecraft)로 만들 수 있습니다."
+				""
+				" 이러면 조금 더 높은 효율을 낼 수 있습니다."
+			]
+			dependencies: [
+				"0840FC1501E6A546"
+				"37F3B16CD8DD04F4"
+				"245FBFB772A9DCCF"
+				"17C4238F1844014D"
+			]
+			dependency_requirement: "all_started"
+			id: "293E59EBDC21EF48"
+			tasks: [
+				{
+					id: "6DCE8A2F31FBA734"
+					type: "item"
+					item: "minecraft:white_wool"
+					consume_items: true
+				}
+				{
+					id: "4E153C3E116CAEB4"
+					type: "checkmark"
+					title: "설명 읽어보셨죠?"
+				}
+			]
+		}
+		{
+			title: "더 많은 삼베"
+			icon: "tfc:burlap_cloth"
+			x: 6.0d
+			y: 3.5d
+			subtitle: "삼베 가공"
+			description: [
+				" 삼베 가공은 귀찮고 번거롭습니다. 이럴때 기계를 이용하는 것이죠."
+				""
+				" 황마를 선풍기로 세척하여 황마 섬유로 만든 뒤에 가열된 대야에 압축하여 삼베 천을 만들 수 있습니다."
+				""
+				" 이렇게하면 빠르고 두 배로 생산됩니다."
+			]
+			dependencies: [
+				"69A54230D14A5B5C"
+				"37F3B16CD8DD04F4"
+				"65A1B6A14987D1C6"
+			]
+			dependency_requirement: "all_started"
+			id: "0FD4086CAB1C6FBE"
+			tasks: [
+				{
+					id: "4C039BFB0C408543"
+					type: "item"
+					item: "tfc:burlap_cloth"
+					consume_items: true
+				}
+				{
+					id: "3D29904FCEB80F47"
+					type: "checkmark"
+					title: "설명 읽어보셨죠?"
+				}
+			]
+		}
+		{
+			title: "풍동력"
+			x: 2.5d
+			y: 1.0d
+			subtitle: "풍차"
+			description: [
+				" 물레바퀴 보단 느린 속도를 제공하지만 높은 힘(피로도)를 제공합니다."
+				""
+				" 풍차 베어링을 중심으로 8개 이상의 날개를 달아주시면 됩니다."
+			]
+			dependencies: [
+				"3B063A0D44795864"
+				"17C4238F1844014D"
+			]
+			id: "05FF0AAB461DA09A"
+			tasks: [
+				{
+					id: "0FD95B0DE1B140F4"
+					type: "item"
+					item: "create:windmill_bearing"
+				}
+				{
+					id: "15F8952F04734B14"
+					type: "item"
+					item: "create:white_sail"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "3E394B6700347E40"
+				type: "item"
+				item: "create:white_sail"
+				count: 10
+			}]
+		}
+		{
+			title: "도핑"
+			x: 6.0d
+			y: 1.0d
+			subtitle: "블레이즈 케이크"
+			description: [
+				" 블레이즈가 좋아하는 음식입니다."
+				" 먹일 경우 블레이즈는 더 높은 화력을 냅니다."
+			]
+			dependencies: [
+				"3C437F3459CCCE22"
+				"64BDEE98AB029294"
+			]
+			id: "22702C30A006D557"
+			tasks: [{
+				id: "53328FFCD65336F7"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
+			rewards: [{
+				id: "34A90BFCFD8D5818"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "유연성"
+			x: 2.5d
+			y: 2.0d
+			subtitle: "압연기"
+			description: [" 주괴를 봉으로 판을 전선으로 가공하는 기계입니다."]
+			dependencies: ["1C82307F2C14B5F8"]
+			id: "41CD8DBBDFD66732"
+			tasks: [{
+				id: "4F5B5D7FCC607928"
+				type: "item"
+				item: "createaddition:rolling_mill"
+			}]
+		}
+		{
+			title: "너도 한 모금 할래?"
+			x: 3.5d
+			y: 2.0d
+			subtitle: "빨대"
+			description: [
+				" 블레이즈 버너에 장착하면 블레이즈 버너는 액체 연료를 받아들일 수 있게 됩니다."
+				""
+				" 액체 파이프도 연결할 수 있게되죠."
+			]
+			dependencies: [
+				"41CD8DBBDFD66732"
+				"37F3B16CD8DD04F4"
+			]
+			id: "49DDEBC046654296"
+			tasks: [{
+				id: "0996A31FED01F330"
+				type: "item"
+				item: "createaddition:straw"
+			}]
+		}
+		{
+			title: "스티브 더 다이버"
+			icon: {
+				id: "create:copper_diving_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 1.5d
+			y: 4.5d
+			subtitle: "다이빙 세트"
+			description: [
+				" 물속에서 작업을 할 때에 숨이 차거나 이동속도가 느려 불편함을 느꼈을 겁니다."
+				""
+				" 다이빙 헬멧은 산소통과 함께 착용하면 산소통의 산소를 소모하여 숨이 차지 않게 해줍니다."
+				" 산소통은 설치를 하여 윗면 축을 회전시켜 산소를 압축시킬 수 있습니다. 압축이 끝났다면 착용하여 산소를 필요로 하는 것들에 산소를 보충시킬 수 있습니다."
+				" 다이빙 부츠는 착용시 무거운 추 역할을 하여 물속에 빠르게 가라앉고 물속에서 걸을 수 있게 해 줍니다. 이건 호불호가 갈리겠네요."
+			]
+			dependencies: ["52122FCEBF2963EC"]
+			id: "7C17F67A18B4E1E8"
+			tasks: [
+				{
+					id: "029F633AE97A817A"
+					type: "item"
+					item: {
+						id: "create:copper_diving_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "119791E3074DBD63"
+					type: "item"
+					item: {
+						id: "create:copper_backtank"
+						Count: 1b
+						tag: {
+							Air: 900
+						}
+					}
+					match_nbt: false
+				}
+				{
+					id: "12D14CE3C27B1673"
+					type: "item"
+					item: {
+						id: "create:copper_diving_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "782E886BBBD9247F"
+				type: "item"
+				item: "createdeco:gold_coin"
+			}]
+		}
+		{
+			title: "스티브 더 핫 다이버"
+			icon: {
+				id: "create:netherite_diving_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 1.5d
+			y: 5.5d
+			subtitle: "네더라이트 다이빙 세트"
+			description: [
+				" 기존의 다이빙 세트를 네더라이트로 강화시킨 것들입니다. 가장 큰 특징으로는 용암에서도 활동하는 것을 가능케 한다는 겁니다."
+				""
+				" 헬멧은 용암속에서도 시야 제약이 줄어들며 부츠는 용암에서도 무게추 역할을 해줍니다."
+				""
+				" 그리고 더 큰 장점은 모든 네더라이트 세트(레깅스 포함)를 착용하면 용암을 포함한 화염 데미지에 면역이 됩니다."
+			]
+			dependencies: ["7C17F67A18B4E1E8"]
+			id: "69BA25D19737B03C"
+			tasks: [
+				{
+					id: "2D056E36923FD2F7"
+					type: "item"
+					item: {
+						id: "create:netherite_diving_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "69A59A3FCECA1FF1"
+					type: "item"
+					item: {
+						id: "create:netherite_backtank"
+						Count: 1b
+						tag: {
+							Air: 900
+						}
+					}
+					match_nbt: false
+				}
+				{
+					id: "22464CF68920CB98"
+					type: "item"
+					item: {
+						id: "create:netherite_diving_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "7A4667300B80D96C"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+				count: 3
+			}]
+		}
+		{
+			title: "대량 저장"
+			x: 7.0d
+			y: -2.5d
+			subtitle: "아이템 금고"
+			description: [
+				" 아이템 금고는 일반 상자들보다 많은 아이템을 보관할 수 있습니다."
+				" 다만, 플레이어가 직접 금고에 아이템을 넣고 뺄 수 없습니다."
+				""
+				" 퍼널 같은 기계적으로 아이템을 운송할 수단을 이용해야 합니다."
+			]
+			dependencies: ["2ED3185748942866"]
+			dependency_requirement: "all_started"
+			id: "1202DB02FC9DE5A1"
+			tasks: [{
+				id: "46FE271FED555022"
+				type: "item"
+				item: "create:item_vault"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

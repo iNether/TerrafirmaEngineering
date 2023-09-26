@@ -1,0 +1,163 @@
+{
+	id: "6A59582090A178A8"
+	group: "243E5F39EA4B9B78"
+	order_index: 0
+	filename: "6A59582090A178A8"
+	title: "요리왕"
+	subtitle: ["생존을 위한 음식 말고, 삶의 질을 높이는 음식을 만들어보세요."]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "영구화력"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "스토브"
+			description: [
+				" 난로는 이 뒤에서 다룰 요리 도구들을 이용하기 위해 필요한 구성요소 입니다."
+				" 뭐, 그냥 얘 혼자 써도 문제는 없죠."
+				""
+				" 구울 식재료를 위에 올려두면 구워집니다."
+				""
+				" 연료가 필요 없다는게 큰 장점이죠."
+			]
+			dependencies: ["20A2918A0D84C7B6"]
+			id: "2B01B6775E5F77B5"
+			tasks: [{
+				id: "246398BD9A589DAB"
+				type: "item"
+				item: "farmersdelight:stove"
+			}]
+		}
+		{
+			title: "짬통"
+			x: 1.0d
+			y: -1.0d
+			subtitle: "조리용 냄비"
+			description: [
+				" 스토브(난로) 위에 설치하고 레시피에 맞는 재료를 넣으면 완성이 되며 그릇으로 퍼낼 수 있습니다."
+				" 음식을 찌거나 삶는 것도 가능하죠."
+			]
+			dependencies: [
+				"2B01B6775E5F77B5"
+				"7C6CEB63C2DBD32C"
+			]
+			id: "1AC8706D657EB6AB"
+			tasks: [{
+				id: "0E42498C370DC755"
+				type: "item"
+				item: "farmersdelight:cooking_pot"
+			}]
+			rewards: [
+				{
+					id: "1A0854854D6E0E8B"
+					type: "item"
+					item: "createdeco:gold_coinstack"
+				}
+				{
+					id: "7A797ED7D50E90AC"
+					type: "item"
+					item: "minecraft:bowl"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "방탄은 아닙니다."
+			x: 1.0d
+			y: 1.0d
+			subtitle: "프라이팬"
+			description: [
+				" 프라이팬을 들고 다른 손에 다른 식재료를 든 상태에서 스토브(난로)의 위쪽을 바라보며 우클릭을 누르고 있으면 조리가 됩니다."
+				" 아니면 프라이팬을 바로 위에 설치하고 식재료를 넣어주면 조리가 되죠."
+			]
+			dependencies: [
+				"2B01B6775E5F77B5"
+				"7C6CEB63C2DBD32C"
+			]
+			id: "7290DBA1A61BA247"
+			tasks: [{
+				id: "4D9BD7C470453F12"
+				type: "item"
+				item: {
+					id: "farmersdelight:skillet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "67337D68D48CFD69"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "잘라내기"
+			x: 3.5d
+			y: -3.0d
+			subtitle: "도마와 식칼"
+			description: [
+				" 식재료를 도마 위에 올려놓고 식칼로 손질을 하면 보기에도 이쁘고 더 다양한 요리가 가능해 집니다."
+				""
+				" .. 저기요. 도마에 나무 올리고 도끼로 썰지 말아줄래요?"
+			]
+			dependencies: ["3871F77A91354476"]
+			id: "3074B781011E4C7A"
+			tasks: [
+				{
+					id: "688948467145E943"
+					type: "item"
+					item: "farmersdelight:cutting_board"
+				}
+				{
+					id: "080A26AE6618600C"
+					type: "item"
+					item: {
+						id: "farmersdelight:flint_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "6BAA6F34899E10B3"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+			}]
+		}
+		{
+			title: "장미칼"
+			x: 3.5d
+			y: -4.0d
+			subtitle: "네더라이트 식칼"
+			description: [" .. 그만큼 요리에 진심인거죠?"]
+			dependencies: [
+				"3074B781011E4C7A"
+				"74497A5479811838"
+			]
+			id: "4997448F9044E835"
+			tasks: [{
+				id: "426CB9B8739D97E7"
+				type: "item"
+				item: {
+					id: "farmersdelight:netherite_knife"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "138F148D6B96DEB2"
+				type: "item"
+				item: "createdeco:gold_coinstack"
+				count: 25
+			}]
+		}
+	]
+	quest_links: [ ]
+}
