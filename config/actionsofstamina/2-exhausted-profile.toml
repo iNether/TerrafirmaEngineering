@@ -12,7 +12,7 @@
 	#Range: 1 ~ 10
 	ExhaustAfterAttackingFor = 2
 	#Using stamina for attacking only when hitting entities
-	onlyForHits = false
+	onlyForHits = true
 	#Using stamina for attacking for any items in the main hand (even without any)
 	alsoForNonWeapons = false
 	#Determines how much additional stamina is spent when attacking entities with weapons depending on the attack weapons attack damage

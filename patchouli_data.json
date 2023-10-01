@@ -65,7 +65,15 @@
         "firmalife:firmalife/greenhouse",
         "firmalife:firmalife/sprinklers",
         "tfc:mechanics/steel",
-        "tfc:getting_started/firepit"
+        "tfc:getting_started/firepit",
+        "tfc:getting_started/introduction",
+        "tfc:the_world/flora",
+        "tfc:mechanics/sluices",
+        "tfships:tfships/shipbuilding",
+        "tfc:mechanics/leather_making",
+        "tfships:tfships/sailing",
+        "tfships:tfships/naval_warfare",
+        "waterflasks:waterflasks/recipes"
       ],
       "bookmarks": [],
       "completedManualQuests": []
